@@ -1,0 +1,267 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "consultancy": "Consultancy",
+    "projects": "Projects",
+    "insights": "Insights",
+    "about": "About",
+    "contact": "Contact",
+    "overview": "Overview",
+    "digitalTransformation": "Digital Transformation",
+    "digitalisierung": "Digitalization for Enterprises",
+    "mittelstand": "SMEs",
+    "industry40": "Industry 4.0",
+    "aiTransformation": "AI Transformation",
+    "cloudCybersecurity": "Cloud & Cybersecurity",
+    "technology": "Technology",
+    "softwareDevelopment": "Software Development",
+    "ai": "AI",
+    "iotEmbedded": "IoT & Embedded",
+    "digitalPlatforms": "Digital Platforms",
+    "medicalTechnology": "Medical Technology",
+    "digitalEducation": "Digital Education",
+    "ecommerce": "E-Commerce",
+    "sustainableSolutions": "Sustainable Solutions",
+    "water": "Water",
+    "energy": "Energy",
+    "ventilationHvac": "Ventilation & HVAC",
+    "environment": "Environment"
+  },
+  "cta": {
+    "startProject": "Start a Project",
+    "exploreSolutions": "Explore Solutions",
+    "viewAllProjects": "View all projects"
+  },
+  "ctaSection": {
+    "eyebrow": "Let's build together",
+    "title": "Ready to turn technology into growth?",
+    "description": "Whether you need strategy, software or a long-term innovation partner, GII helps you modernize operations and connect with German technology expertise."
+  },
+  "hero": {
+    "eyebrow": "German Innovation Institution",
+    "title": "Transforming Business Through Technology",
+    "subtitle": "Digital Transformation. Intelligent Technology. Sustainable Solutions.",
+    "description": "We help companies, institutions and development organizations modernize operations, unlock digital growth and connect international markets with German technology.",
+    "imageAlt": "Modern technology and innovation hero visual",
+    "capabilities": {
+      "digitalTransformation": "Digital Transformation",
+      "ict": "ICT",
+      "ai": "AI",
+      "iot": "IoT",
+      "software": "Software",
+      "digitalPlatforms": "Digital Platforms",
+      "industry40": "Industry 4.0",
+      "medicalTechnology": "Medical Technology",
+      "ecommerce": "E-Commerce",
+      "digitalEducation": "Digital Education",
+      "water": "Water",
+      "energy": "Energy",
+      "environment": "Environment",
+      "madeInGermany": "Made in Germany"
+    }
+  },
+  "aria": {
+    "home": "GII home",
+    "search": "Search insights, partners and projects",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language"
+  },
+  "serviceCards": {
+    "eyebrow": "Our Services",
+    "title": "Services that turn technology into growth",
+    "description": "From strategy and software to AI, IoT and sustainable technology, GII helps organizations modernize operations, build intelligent systems and connect international markets with German innovation.",
+    "cta": "Talk to our team",
+    "previous": "Previous {group} service",
+    "next": "Next {group} service",
+    "groups": {
+      "digitalTransformation": {
+        "label": "Digital Transformation",
+        "services": {
+          "digitalization": {
+            "title": "Digitalization for Enterprises",
+            "description": "Practical roadmaps that move companies from manual processes to connected digital operations."
+          },
+          "smes": {
+            "title": "SMEs",
+            "description": "Right-sized technology support that helps mid-sized businesses become more efficient and competitive."
+          },
+          "industry40": {
+            "title": "Industry 4.0",
+            "description": "Smart manufacturing solutions for connected machines, production data and industrial performance."
+          },
+          "aiTransformation": {
+            "title": "AI Transformation",
+            "description": "Identify, implement and scale AI use cases that improve decisions, workflows and customer experience."
+          },
+          "cloudCybersecurity": {
+            "title": "Cloud & Cybersecurity",
+            "description": "Secure cloud migration, infrastructure modernization and protection for critical systems and data."
+          }
+        }
+      },
+      "technology": {
+        "label": "Technology",
+        "services": {
+          "softwareDevelopment": {
+            "title": "Software Development",
+            "description": "Custom software, web applications and integrations built around real operational needs."
+          },
+          "ai": {
+            "title": "AI",
+            "description": "Intelligent systems, assistants and automation that support business and industry applications."
+          },
+          "iotEmbedded": {
+            "title": "IoT & Embedded",
+            "description": "Connected devices, sensors and firmware that turn physical operations into useful data."
+          },
+          "digitalPlatforms": {
+            "title": "Digital Platforms",
+            "description": "Multi-user platforms for institutions, partners, knowledge, events and administration."
+          },
+          "medicalTechnology": {
+            "title": "Medical Technology",
+            "description": "Digital health and medical software designed with privacy, security and usability in mind."
+          }
+        }
+      },
+      "sustainableGrowth": {
+        "label": "Sustainable Solutions",
+        "services": {
+          "digitalEducation": {
+            "title": "Digital Education",
+            "description": "Learning platforms, training systems and knowledge tools that expand access and outcomes."
+          },
+          "ecommerce": {
+            "title": "E-Commerce",
+            "description": "B2B and B2C commerce experiences that support catalogues, ordering, portals and marketplaces."
+          },
+          "water": {
+            "title": "Water",
+            "description": "Digital water solutions for monitoring, leak detection, quality and wastewater operations."
+          },
+          "energy": {
+            "title": "Energy",
+            "description": "Energy efficiency, monitoring and management platforms for buildings and infrastructure."
+          },
+          "ventilationHvac": {
+            "title": "Ventilation & HVAC",
+            "description": "Smart ventilation and HVAC technologies for indoor air quality and energy-efficient climate control."
+          },
+          "environment": {
+            "title": "Environment",
+            "description": "Environmental monitoring and resource-efficiency systems that support sustainable infrastructure."
+          }
+        }
+      }
+    }
+  },
+  "projects": {
+    "eyebrow": "Technology in Action",
+    "title": "Selected projects across industries",
+    "description": "A look at how GII turns strategy into applied solutions across digital transformation, industry and sustainable technology.",
+    "cta": "View all projects",
+    "items": {
+      "industry40": {
+        "category": "Industry 4.0",
+        "country": "Germany",
+        "title": "Smart production monitoring",
+        "description": "Connected machines, live production data and predictive insights for a manufacturing partner."
+      },
+      "water": {
+        "category": "Water",
+        "country": "International",
+        "title": "Digital water operations",
+        "description": "Monitoring, leak detection and quality insights for more efficient water infrastructure."
+      },
+      "digitalHealth": {
+        "category": "Medical Technology",
+        "country": "Germany",
+        "title": "Digital health platform",
+        "description": "A secure platform for patient services, data workflows and connected healthcare delivery."
+      }
+    }
+  },
+  "whyChooseUs": {
+    "eyebrow": "Why choose us",
+    "titleBefore": "Why",
+    "brand": "GII",
+    "titleAfter": "is the right choice for you",
+    "cards": {
+      "expertConsultants": {
+        "title": "Expert consultants",
+        "description": "Work with specialists who bring years of real-world experience in digital transformation, industry systems and sustainable technology delivering practical guidance grounded in German engineering standards."
+      },
+      "provenInnovation": {
+        "title": "Proven innovation",
+        "description": "Benefit from solutions shaped by German technology expertise, trusted by enterprises, institutions and international development partners across multiple industries."
+      },
+      "endToEndSolutions": {
+        "title": "15+ high-impact service areas",
+        "description": "From digitalization and AI to IoT, medical technology, water and energy. GII covers the full spectrum of modern technology needs with strategy, software and implementation under one roof."
+      },
+      "flexibleEngagement": {
+        "title": "Flexible engagement models",
+        "description": "Every organization moves at a different pace. GII adapts to your context with consultancy, project delivery and long-term partnership models that fit your goals and timeline.",
+        "descriptionSecondary": "Whether you are modernizing operations, launching a new platform or connecting international markets with German innovation, we scale support to match your needs."
+      }
+    }
+  },
+  "testimonials": {
+    "eyebrow": "Client voices",
+    "title": "Words of praise from others about our presence",
+    "items": {
+      "samantha": {
+        "quote": "GII exceeded our expectations with a practical digitalization roadmap that connected shop-floor data to decisions our teams could act on immediately.",
+        "name": "Samantha Johnson",
+        "role": "CEO, NordWerk Manufacturing"
+      },
+      "john": {
+        "quote": "Their ability to translate complex technology into clear business outcomes made them an invaluable partner throughout our Industry 4.0 rollout.",
+        "name": "John Peters",
+        "role": "Operations Director, RheinTech AG"
+      },
+      "elena": {
+        "quote": "From discovery to delivery, the team brought structure, transparency and German engineering quality to a project that had stalled for months.",
+        "name": "Elena Müller",
+        "role": "Head of Digital, AquaFlow Utilities"
+      },
+      "marcus": {
+        "quote": "We needed a partner who understood both enterprise software and medical compliance. GII delivered a platform our clinicians actually enjoy using.",
+        "name": "Marcus Weber",
+        "role": "CTO, VitalCare Systems"
+      },
+      "priya": {
+        "quote": "The collaboration felt genuinely strategic — not just development hours. They helped us connect international partners with the right German technology stack.",
+        "name": "Priya Sharma",
+        "role": "Program Lead, Global Development Alliance"
+      },
+      "thomas": {
+        "quote": "Flexible engagement, strong communication and reliable delivery. GII became an extension of our team rather than an external vendor.",
+        "name": "Thomas Berger",
+        "role": "Managing Partner, Bergmann Consulting"
+      }
+    }
+  },
+  "footer": {
+    "homeAria": "GII home",
+    "tagline": "Because if your technology strategy cannot handle today's disruption, neither will your business. GII connects organizations with German innovation, software and sustainable solutions.",
+    "navTitle": "Navigation",
+    "socialTitle": "Social",
+    "linkedin": "LinkedIn",
+    "twitter": "Twitter",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "contactEyebrow": "Contact",
+    "contactTitle": "Start a conversation",
+    "emailPlaceholder": "Enter your email..",
+    "submitAria": "Go to contact page",
+    "copyright": "© {year} German Innovation Institution",
+    "support": "Support",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "imprint": "Imprint"
+  }
+}
+

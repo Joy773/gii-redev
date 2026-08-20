@@ -1,0 +1,267 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "services": "Leistungen",
+    "consultancy": "Beratung",
+    "projects": "Projekte",
+    "insights": "Einblicke",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "overview": "Überblick",
+    "digitalTransformation": "Digitale Transformation",
+    "digitalisierung": "Digitalisierung für Unternehmen",
+    "mittelstand": "Mittelstand",
+    "industry40": "Industrie 4.0",
+    "aiTransformation": "KI-Transformation",
+    "cloudCybersecurity": "Cloud & Cybersicherheit",
+    "technology": "Technologie",
+    "softwareDevelopment": "Softwareentwicklung",
+    "ai": "KI",
+    "iotEmbedded": "IoT & Embedded",
+    "digitalPlatforms": "Digitale Plattformen",
+    "medicalTechnology": "Medizintechnik",
+    "digitalEducation": "Digitale Bildung",
+    "ecommerce": "E-Commerce",
+    "sustainableSolutions": "Nachhaltige Lösungen",
+    "water": "Wasser",
+    "energy": "Energie",
+    "ventilationHvac": "Lüftung & HVAC",
+    "environment": "Umwelt"
+  },
+  "cta": {
+    "startProject": "Projekt starten",
+    "exploreSolutions": "Lösungen entdecken",
+    "viewAllProjects": "Alle Projekte ansehen"
+  },
+  "ctaSection": {
+    "eyebrow": "Gemeinsam gestalten",
+    "title": "Bereit, Technologie in Wachstum zu verwandeln?",
+    "description": "Ob Strategie, Software oder langfristiger Innovationspartner — GII unterstützt Sie bei der Modernisierung Ihrer Abläufe und der Anbindung an deutsche Technologiekompetenz."
+  },
+  "hero": {
+    "eyebrow": "German Innovation Institution",
+    "title": "Unternehmen durch Technologie transformieren",
+    "subtitle": "Digitale Transformation. Intelligente Technologie. Nachhaltige Lösungen.",
+    "description": "Wir unterstützen Unternehmen, Institutionen und Entwicklungsorganisationen dabei, Prozesse zu modernisieren, digitales Wachstum zu erschließen und internationale Märkte mit deutscher Technologie zu verbinden.",
+    "imageAlt": "Modernes visuelles Motiv für Technologie und Innovation",
+    "capabilities": {
+      "digitalTransformation": "Digitale Transformation",
+      "ict": "IKT",
+      "ai": "KI",
+      "iot": "IoT",
+      "software": "Software",
+      "digitalPlatforms": "Digitale Plattformen",
+      "industry40": "Industrie 4.0",
+      "medicalTechnology": "Medizintechnik",
+      "ecommerce": "E-Commerce",
+      "digitalEducation": "Digitale Bildung",
+      "water": "Wasser",
+      "energy": "Energie",
+      "environment": "Umwelt",
+      "madeInGermany": "Made in Germany"
+    }
+  },
+  "aria": {
+    "home": "GII Startseite",
+    "search": "Einblicke, Partner und Projekte durchsuchen",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "language": "Sprache"
+  },
+  "serviceCards": {
+    "eyebrow": "Unsere Leistungen",
+    "title": "Leistungen, die Technologie in Wachstum verwandeln",
+    "description": "Von Strategie und Software bis hin zu KI, IoT und nachhaltiger Technologie unterstützt GII Organisationen dabei, Abläufe zu modernisieren, intelligente Systeme aufzubauen und internationale Märkte mit deutscher Innovation zu verbinden.",
+    "cta": "Sprechen Sie mit unserem Team",
+    "previous": "Vorherige {group}-Leistung",
+    "next": "Nächste {group}-Leistung",
+    "groups": {
+      "digitalTransformation": {
+        "label": "Digitale Transformation",
+        "services": {
+          "digitalization": {
+            "title": "Digitalisierung für Unternehmen",
+            "description": "Praxisnahe Roadmaps, die Unternehmen von manuellen Prozessen zu vernetzten digitalen Abläufen führen."
+          },
+          "smes": {
+            "title": "Mittelstand",
+            "description": "Passgenaue Technologieunterstützung, die mittelständische Unternehmen effizienter und wettbewerbsfähiger macht."
+          },
+          "industry40": {
+            "title": "Industrie 4.0",
+            "description": "Intelligente Fertigungslösungen für vernetzte Maschinen, Produktionsdaten und industrielle Leistung."
+          },
+          "aiTransformation": {
+            "title": "KI-Transformation",
+            "description": "KI-Anwendungsfälle identifizieren, umsetzen und skalieren, um Entscheidungen, Abläufe und Kundenerlebnisse zu verbessern."
+          },
+          "cloudCybersecurity": {
+            "title": "Cloud & Cybersicherheit",
+            "description": "Sichere Cloud-Migration, Infrastrukturmodernisierung und Schutz kritischer Systeme und Daten."
+          }
+        }
+      },
+      "technology": {
+        "label": "Technologie",
+        "services": {
+          "softwareDevelopment": {
+            "title": "Softwareentwicklung",
+            "description": "Individuelle Software, Webanwendungen und Integrationen, die auf reale betriebliche Anforderungen ausgerichtet sind."
+          },
+          "ai": {
+            "title": "KI",
+            "description": "Intelligente Systeme, Assistenten und Automatisierung für Geschäfts- und Industrieanwendungen."
+          },
+          "iotEmbedded": {
+            "title": "IoT & Embedded",
+            "description": "Vernetzte Geräte, Sensoren und Firmware, die physische Abläufe in nutzbare Daten verwandeln."
+          },
+          "digitalPlatforms": {
+            "title": "Digitale Plattformen",
+            "description": "Mehrbenutzer-Plattformen für Institutionen, Partner, Wissen, Veranstaltungen und Verwaltung."
+          },
+          "medicalTechnology": {
+            "title": "Medizintechnik",
+            "description": "Digitale Gesundheits- und Medizinsoftware mit Fokus auf Datenschutz, Sicherheit und Nutzbarkeit."
+          }
+        }
+      },
+      "sustainableGrowth": {
+        "label": "Nachhaltige Lösungen",
+        "services": {
+          "digitalEducation": {
+            "title": "Digitale Bildung",
+            "description": "Lernplattformen, Trainingssysteme und Wissenswerkzeuge, die Zugang und Ergebnisse verbessern."
+          },
+          "ecommerce": {
+            "title": "E-Commerce",
+            "description": "B2B- und B2C-Commerce-Erlebnisse für Kataloge, Bestellungen, Portale und Marktplätze."
+          },
+          "water": {
+            "title": "Wasser",
+            "description": "Digitale Wasserlösungen für Monitoring, Leckerkennung, Qualität und Abwasserbetrieb."
+          },
+          "energy": {
+            "title": "Energie",
+            "description": "Energieeffizienz, Monitoring und Management-Plattformen für Gebäude und Infrastruktur."
+          },
+          "ventilationHvac": {
+            "title": "Lüftung & HVAC",
+            "description": "Intelligente Lüftungs- und HVAC-Technologien für Raumluftqualität und energieeffiziente Klimasteuerung."
+          },
+          "environment": {
+            "title": "Umwelt",
+            "description": "Umweltmonitoring und Ressourceneffizienzsysteme für nachhaltige Infrastruktur."
+          }
+        }
+      }
+    }
+  },
+  "projects": {
+    "eyebrow": "Technologie in der Praxis",
+    "title": "Ausgewählte Projekte aus verschiedenen Branchen",
+    "description": "Ein Einblick, wie GII Strategie in konkrete Lösungen für digitale Transformation, Industrie und nachhaltige Technologie umsetzt.",
+    "cta": "Alle Projekte ansehen",
+    "items": {
+      "industry40": {
+        "category": "Industrie 4.0",
+        "country": "Deutschland",
+        "title": "Intelligentes Produktionsmonitoring",
+        "description": "Vernetzte Maschinen, Live-Produktionsdaten und prognostische Einblicke für einen Fertigungspartner."
+      },
+      "water": {
+        "category": "Wasser",
+        "country": "International",
+        "title": "Digitale Wasserwirtschaft",
+        "description": "Monitoring, Leckerkennung und Qualitätsdaten für eine effizientere Wasserinfrastruktur."
+      },
+      "digitalHealth": {
+        "category": "Medizintechnik",
+        "country": "Deutschland",
+        "title": "Digitale Gesundheitsplattform",
+        "description": "Eine sichere Plattform für Patientenservices, Datenabläufe und vernetzte Gesundheitsversorgung."
+      }
+    }
+  },
+  "whyChooseUs": {
+    "eyebrow": "Warum wir",
+    "titleBefore": "Warum",
+    "brand": "GII",
+    "titleAfter": "die richtige Wahl für Sie ist",
+    "cards": {
+      "expertConsultants": {
+        "title": "Erfahrene Berater",
+        "description": "Arbeiten Sie mit Spezialisten, die jahrelange Praxiserfahrung in digitaler Transformation, Industriesystemen und nachhaltiger Technologie mitbringen — mit praxisnaher Beratung auf Basis deutscher Ingenieursstandards."
+      },
+      "provenInnovation": {
+        "title": "Bewährte Innovation",
+        "description": "Profitieren Sie von Lösungen mit deutscher Technologiekompetenz, denen Unternehmen, Institutionen und internationale Entwicklungspartner in zahlreichen Branchen vertrauen."
+      },
+      "endToEndSolutions": {
+        "title": "15+ wirkungsvolle Leistungsbereiche",
+        "description": "Von Digitalisierung und KI bis IoT, Medizintechnik, Wasser und Energie — GII deckt das gesamte Spektrum moderner Technologie mit Strategie, Software und Umsetzung aus einer Hand ab."
+      },
+      "flexibleEngagement": {
+        "title": "Flexible Zusammenarbeitsmodelle",
+        "description": "Jede Organisation entwickelt sich in ihrem eigenen Tempo. GII passt sich mit Beratung, Projektdelivery und langfristigen Partnerschaften an Ihre Ziele und Ihren Zeitplan an.",
+        "descriptionSecondary": "Ob Modernisierung von Abläufen, Aufbau einer neuen Plattform oder Anbindung internationaler Märkte an deutsche Innovation — wir skalieren unsere Unterstützung nach Ihrem Bedarf."
+      }
+    }
+  },
+  "testimonials": {
+    "eyebrow": "Stimmen unserer Kunden",
+    "title": "Wertschätzende Worte anderer über unsere Arbeit",
+    "items": {
+      "samantha": {
+        "quote": "GII hat unsere Erwartungen mit einer praxisnahen Digitalisierungs-Roadmap übertroffen, die Shopfloor-Daten mit Entscheidungen verband, die unsere Teams sofort umsetzen konnten.",
+        "name": "Samantha Johnson",
+        "role": "CEO, NordWerk Manufacturing"
+      },
+      "john": {
+        "quote": "Ihre Fähigkeit, komplexe Technologie in klare Geschäftsergebnisse zu übersetzen, machte sie zu einem unschätzbaren Partner während unseres Industrie-4.0-Rollouts.",
+        "name": "John Peters",
+        "role": "Operations Director, RheinTech AG"
+      },
+      "elena": {
+        "quote": "Von der Analyse bis zur Lieferung brachte das Team Struktur, Transparenz und deutsche Ingenieursqualität in ein Projekt, das monatelang feststand.",
+        "name": "Elena Müller",
+        "role": "Head of Digital, AquaFlow Utilities"
+      },
+      "marcus": {
+        "quote": "Wir brauchten einen Partner, der Enterprise-Software und medizinische Compliance versteht. GII lieferte eine Plattform, die unsere Kliniker gerne nutzen.",
+        "name": "Marcus Weber",
+        "role": "CTO, VitalCare Systems"
+      },
+      "priya": {
+        "quote": "Die Zusammenarbeit wirkte wirklich strategisch — nicht nur Entwicklungsstunden. GII half uns, internationale Partner mit dem passenden deutschen Technologie-Stack zu verbinden.",
+        "name": "Priya Sharma",
+        "role": "Program Lead, Global Development Alliance"
+      },
+      "thomas": {
+        "quote": "Flexible Zusammenarbeit, starke Kommunikation und verlässliche Lieferung. GII wurde eher Teil unseres Teams als ein externer Dienstleister.",
+        "name": "Thomas Berger",
+        "role": "Managing Partner, Bergmann Consulting"
+      }
+    }
+  },
+  "footer": {
+    "homeAria": "GII Startseite",
+    "tagline": "Wenn Ihre Technologiestrategie die heutige Disruption nicht bewältigt, tut es Ihr Unternehmen auch nicht. GII verbindet Organisationen mit deutscher Innovation, Software und nachhaltigen Lösungen.",
+    "navTitle": "Navigation",
+    "socialTitle": "Social Media",
+    "linkedin": "LinkedIn",
+    "twitter": "Twitter",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "contactEyebrow": "Kontakt",
+    "contactTitle": "Gespräch beginnen",
+    "emailPlaceholder": "E-Mail eingeben..",
+    "submitAria": "Zur Kontaktseite",
+    "copyright": "© {year} German Innovation Institution",
+    "support": "Support",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen",
+    "imprint": "Impressum"
+  }
+}
+
