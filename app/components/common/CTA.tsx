@@ -4,8 +4,6 @@ import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { FiArrowRight } from "react-icons/fi";
 
-import LiquidChrome from "./LiquidChrome";
-
 export default function CTA() {
   const locale = useLocale();
   const t = useTranslations("ctaSection");
@@ -21,7 +19,7 @@ export default function CTA() {
     return (
       <Link
         href={`/${locale}${href}`}
-        className="pointer-events-auto group inline-flex items-center justify-between gap-4 rounded-full bg-[#0b0b0b] px-7 py-3 text-[13px] font-semibold text-white shadow-[0_12px_30px_rgba(0,0,0,0.28)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_18px_50px_rgba(0,0,0,0.4)]"
+        className="group inline-flex items-center justify-between gap-4 rounded-full bg-[#0b0b0b] px-7 py-3 text-[13px] font-semibold text-white shadow-[0_12px_30px_rgba(0,0,0,0.28)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_18px_50px_rgba(0,0,0,0.4)]"
       >
         <span>{label}</span>
         <span className="inline-flex size-8 items-center justify-center rounded-full bg-white/15 transition-all duration-300 group-hover:bg-white/25">
@@ -34,29 +32,21 @@ export default function CTA() {
   return (
     <section className="grid-surface grid-surface-soft py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="relative overflow-hidden rounded-[1.75rem] px-6 py-10 sm:px-10 sm:py-14">
-          <div className="absolute inset-0">
-            <LiquidChrome
-              // GII navy #123b56 as RGB (0–1)
-              baseColor={[0.071, 0.231, 0.337]}
-              speed={0.35}
-              amplitude={0.45}
-              frequencyX={2.5}
-              frequencyY={1.8}
-              interactive
-            />
-          </div>
-
-          {/* Soft primary tint so chrome stays on-brand */}
+        <div className="relative overflow-hidden rounded-[1.75rem] bg-gradient-to-r from-primary to-dark px-6 py-10 sm:px-10 sm:py-14">
+          {/* Decorative arcs (right side) */}
           <div
-            className="pointer-events-none absolute inset-0 bg-[linear-gradient(120deg,rgba(49,121,171,0.28)_0%,rgba(18,59,86,0.12)_45%,transparent_100%)]"
+            className="pointer-events-none absolute right-[-120px] top-[-160px] h-[520px] w-[520px] rounded-full bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.30)_0%,rgba(255,255,255,0.12)_30%,transparent_65%)]"
+            aria-hidden="true"
+          />
+          <div
+            className="pointer-events-none absolute right-[-120px] top-[30px] h-[520px] w-[520px] rounded-full bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.22)_0%,rgba(255,255,255,0.08)_28%,transparent_62%)]"
             aria-hidden="true"
           />
 
-          <div className="pointer-events-none relative grid gap-8 sm:grid-cols-[1.2fr_0.8fr] sm:items-center">
+          <div className="relative grid gap-8 sm:grid-cols-[1.2fr_0.8fr] sm:items-center">
             <div className="max-w-xl">
-              <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-sm font-medium text-white/90 backdrop-blur-sm">
-                <span className="size-2 rounded-full bg-primary" />
+              <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1 text-sm font-medium text-white/90">
+                <span className="size-2 rounded-full bg-white" />
                 {t("eyebrow")}
               </span>
 
@@ -64,7 +54,7 @@ export default function CTA() {
                 {t("title")}
               </h2>
 
-              <p className="mt-4 text-base leading-7 text-white/85 sm:text-lg">
+              <p className="mt-4 text-base leading-7 text-white/78 sm:text-lg">
                 {t("description")}
               </p>
             </div>
