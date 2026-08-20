@@ -88,7 +88,7 @@ body {
   }
 }
 
-.scroll-reveal {
+.section-fade {
   opacity: 0;
   transform: translateY(24px);
   transition:
@@ -96,7 +96,7 @@ body {
     transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.scroll-reveal-visible {
+.section-fade-visible {
   opacity: 1;
   transform: translateY(0);
 }
@@ -168,7 +168,7 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .scroll-reveal {
+  .section-fade {
     opacity: 1;
     transform: none;
     transition: none;
@@ -190,6 +190,25 @@ body {
   .testimonials-track {
     animation: none;
   }
+}
+
+/*
+ * Grid is painted as the section's own background so it always sits behind
+ * every child. Cards keep their solid fills and mask it out.
+ */
+.grid-surface {
+  background-image:
+    linear-gradient(to right, rgba(100, 125, 150, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(100, 125, 150, 0.08) 1px, transparent 1px);
+  background-size: 26px 26px;
+}
+
+.grid-surface-white {
+  background-color: var(--white);
+}
+
+.grid-surface-soft {
+  background-color: var(--soft-background);
 }
 
 .testimonials-row {
@@ -220,6 +239,16 @@ body {
 .testimonial-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 16px 40px rgba(18, 59, 86, 0.1);
+}
+
+@media (min-width: 1600px) {
+  .testimonials-track {
+    gap: 1.5rem;
+  }
+
+  .testimonial-card {
+    min-height: 18.5rem;
+  }
 }
 
 @keyframes testimonials-marquee-left {

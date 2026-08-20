@@ -23,6 +23,8 @@ import {
   FiZap,
 } from "react-icons/fi";
 
+import ScrollReveal from "./common/ScrollReveal";
+
 type ServiceItem = {
   id: string;
   icon: ComponentType<{ className?: string }>;
@@ -151,7 +153,7 @@ export default function ServiceCards() {
   const t = useTranslations("serviceCards");
 
   return (
-    <section className="bg-white py-20 sm:py-24">
+    <section className="grid-surface grid-surface-white py-20 sm:py-24">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-14 lg:px-8">
         <div className="max-w-xl">
           <span className="inline-flex items-center gap-2 rounded-full bg-primary/8 px-3 py-1 text-sm font-medium text-primary">
@@ -159,9 +161,16 @@ export default function ServiceCards() {
             {t("eyebrow")}
           </span>
 
-          <h2 className="mt-6 text-4xl font-semibold tracking-tight text-dark sm:text-5xl">
+          <ScrollReveal
+            baseOpacity={0.25}
+            enableBlur
+            baseRotation={4}
+            blurStrength={18}
+            containerClassName="mt-6"
+            textClassName="text-4xl font-semibold tracking-tight text-dark sm:text-5xl"
+          >
             {t("title")}
-          </h2>
+          </ScrollReveal>
 
           <p className="mt-6 text-lg leading-8 text-text/72">
             {t("description")}

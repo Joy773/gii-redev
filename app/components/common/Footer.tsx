@@ -3,57 +3,78 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
-import { type FormEvent, useState } from "react";
-import { FiArrowRight } from "react-icons/fi";
+import { type ComponentType, type FormEvent, useState } from "react";
+import {
+  FiArrowRight,
+  FiFacebook,
+  FiInstagram,
+  FiLinkedin,
+  FiTwitter,
+} from "react-icons/fi";
 
-import { NAV_LINKS, SERVICE_COLUMNS, type NavLink, type ServiceColumn } from "./navConfig";
+import { NAV_LINKS, SERVICE_COLUMNS, type NavLink } from "./navConfig";
 
-type FooterLink = NavLink & {
-  external?: boolean;
+type SocialLink = {
+  id: string;
+  labelKey: string;
+  href: string;
+  Icon: ComponentType<{ className?: string }>;
 };
 
-const SOCIAL_LINKS: FooterLink[] = [
-  { id: "linkedin", labelKey: "linkedin", href: "https://linkedin.com", external: true },
-  { id: "twitter", labelKey: "twitter", href: "https://twitter.com", external: true },
-  { id: "facebook", labelKey: "facebook", href: "https://facebook.com", external: true },
-  { id: "instagram", labelKey: "instagram", href: "https://instagram.com", external: true },
+const SOCIAL_LINKS: SocialLink[] = [
+  { id: "linkedin", labelKey: "linkedin", href: "https://linkedin.com", Icon: FiLinkedin },
+  { id: "twitter", labelKey: "twitter", href: "https://twitter.com", Icon: FiTwitter },
+  { id: "facebook", labelKey: "facebook", href: "https://facebook.com", Icon: FiFacebook },
+  { id: "instagram", labelKey: "instagram", href: "https://instagram.com", Icon: FiInstagram },
 ];
 
-const LEGAL_LINKS: FooterLink[] = [
+const LEGAL_LINKS: NavLink[] = [
   { id: "support", labelKey: "support", href: "/contact" },
   { id: "privacy", labelKey: "privacy", href: "/privacy" },
   { id: "terms", labelKey: "terms", href: "/terms" },
   { id: "imprint", labelKey: "imprint", href: "/imprint" },
 ];
 
+const COMPANY_LINKS = NAV_LINKS.filter((link) => link.id !== "services");
+
 function localizeHref(locale: string, href: string) {
   if (href.startsWith("http")) return href;
   return href === "/" ? `/${locale}` : `/${locale}${href}`;
 }
 
-function FooterLinkList({
+function FooterColumn({
   title,
+  titleHref,
   links,
-  labelNamespace,
 }: {
   title: string;
-  links: FooterLink[];
-  labelNamespace: "nav" | "footer";
+  titleHref?: string;
+  links: NavLink[];
 }) {
-  const t = useTranslations(labelNamespace);
+  const t = useTranslations("nav");
   const locale = useLocale();
 
   return (
     <div>
-      <h3 className="text-sm font-semibold tracking-wide text-white">{title}</h3>
-      <ul className="mt-4 space-y-2.5">
+      {titleHref ? (
+        <Link
+          href={localizeHref(locale, titleHref)}
+          className="text-[11px] font-semibold uppercase tracking-[0.16em] text-white/45 transition-colors hover:text-primary"
+        >
+          {title}
+        </Link>
+      ) : (
+        <h3 className="text-[11px] font-semibold uppercase tracking-[0.16em] text-white/45">
+          {title}
+        </h3>
+      )}
+
+      <ul className="mt-5 space-y-3">
         {links.map((link) => (
           <li key={link.id}>
             <Link
               href={localizeHref(locale, link.href)}
-              target={link.external ? "_blank" : undefined}
-              rel={link.external ? "noopener noreferrer" : undefined}
-              className="text-sm text-white/65 transition-colors hover:text-primary"
+              className="inline-block text-sm text-white/70 transition-all duration-200 hover:translate-x-0.5 hover:text-white"
             >
               {t(link.labelKey)}
             </Link>
@@ -64,36 +85,9 @@ function FooterLinkList({
   );
 }
 
-function FooterServiceColumn({ column }: { column: ServiceColumn }) {
-  const t = useTranslations("nav");
-  const locale = useLocale();
-
-  return (
-    <div>
-      <Link
-        href={localizeHref(locale, column.href)}
-        className="text-sm font-semibold tracking-wide text-white transition-colors hover:text-primary"
-      >
-        {t(column.labelKey)}
-      </Link>
-      <ul className="mt-4 space-y-2.5">
-        {column.items.map((item) => (
-          <li key={item.id}>
-            <Link
-              href={localizeHref(locale, item.href)}
-              className="text-sm text-white/65 transition-colors hover:text-primary"
-            >
-              {t(item.labelKey)}
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
-
 export default function Footer() {
   const t = useTranslations("footer");
+  const tNav = useTranslations("nav");
   const locale = useLocale();
   const [email, setEmail] = useState("");
 
@@ -105,12 +99,16 @@ export default function Footer() {
 
   return (
     <footer className="relative overflow-hidden bg-[#0e2433] text-white">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_10%_90%,rgba(49,121,171,0.14),transparent_28%),radial-gradient(circle_at_88%_20%,rgba(49,121,171,0.1),transparent_24%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_8%_0%,rgba(49,121,171,0.16),transparent_34%),radial-gradient(circle_at_92%_100%,rgba(49,121,171,0.12),transparent_30%)]" />
 
-      <div className="relative mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
-        <div className="grid gap-10 lg:grid-cols-12 lg:gap-8">
-          <div className="lg:col-span-3">
-            <Link href={localizeHref(locale, "/")} className="inline-block" aria-label={t("homeAria")}>
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="grid gap-10 border-b border-white/10 py-14 lg:grid-cols-12 lg:gap-12 lg:py-16">
+          <div className="lg:col-span-5">
+            <Link
+              href={localizeHref(locale, "/")}
+              className="inline-block"
+              aria-label={t("homeAria")}
+            >
               <Image
                 src="/GII-Logo.webp"
                 alt="German Innovation Institution"
@@ -119,35 +117,36 @@ export default function Footer() {
                 className="h-9 w-auto brightness-0 invert sm:h-10"
               />
             </Link>
-            <p className="mt-5 max-w-sm text-sm leading-7 text-white/65">
+
+            <p className="mt-5 max-w-md text-sm leading-7 text-white/60">
               {t("tagline")}
             </p>
+
+            <div className="mt-7 flex items-center gap-2.5">
+              {SOCIAL_LINKS.map(({ id, labelKey, href, Icon }) => (
+                <a
+                  key={id}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={t(labelKey)}
+                  className="inline-flex size-10 items-center justify-center rounded-full border border-white/12 bg-white/5 text-white/70 transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/40 hover:bg-primary/15 hover:text-white"
+                >
+                  <Icon className="size-4" />
+                </a>
+              ))}
+            </div>
           </div>
 
-          <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:col-span-6 lg:grid-cols-3 xl:grid-cols-5">
-            <FooterLinkList
-              title={t("navTitle")}
-              links={NAV_LINKS}
-              labelNamespace="nav"
-            />
-            {SERVICE_COLUMNS.map((column) => (
-              <FooterServiceColumn key={column.id} column={column} />
-            ))}
-            <FooterLinkList
-              title={t("socialTitle")}
-              links={SOCIAL_LINKS}
-              labelNamespace="footer"
-            />
-          </div>
-
-          <div className="lg:col-span-3">
+          <div className="lg:col-span-5 lg:col-start-8">
             <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">
               {t("contactEyebrow")}
             </span>
             <h3 className="mt-2 text-2xl font-semibold tracking-tight text-white sm:text-3xl">
               {t("contactTitle")}
             </h3>
-            <form onSubmit={handleSubmit} className="relative mt-5">
+
+            <form onSubmit={handleSubmit} className="relative mt-5 max-w-md">
               <label htmlFor="footer-email" className="sr-only">
                 {t("emailPlaceholder")}
               </label>
@@ -169,19 +168,31 @@ export default function Footer() {
             </form>
           </div>
         </div>
+
+        <div className="grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+          <FooterColumn title={t("navTitle")} links={COMPANY_LINKS} />
+          {SERVICE_COLUMNS.map((column) => (
+            <FooterColumn
+              key={column.id}
+              title={tNav(column.labelKey)}
+              titleHref={column.href}
+              links={column.items}
+            />
+          ))}
+        </div>
       </div>
 
       <div className="relative border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-6 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
-          <p className="text-sm text-white/50">
+          <p className="text-sm text-white/45">
             {t("copyright", { year: new Date().getFullYear() })}
           </p>
-          <ul className="flex flex-wrap gap-x-5 gap-y-2">
+          <ul className="flex flex-wrap gap-x-6 gap-y-2">
             {LEGAL_LINKS.map((link) => (
               <li key={link.id}>
                 <Link
                   href={localizeHref(locale, link.href)}
-                  className="text-sm text-white/50 transition-colors hover:text-white/80"
+                  className="text-sm text-white/45 transition-colors hover:text-white/80"
                 >
                   {t(link.labelKey)}
                 </Link>

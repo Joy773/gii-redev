@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
+import ScrollReveal from "./common/ScrollReveal";
+
 const TESTIMONIALS = [
   {
     id: "samantha",
@@ -46,7 +48,7 @@ function TestimonialCard({
   const t = useTranslations("testimonials.items");
 
   return (
-    <article className="testimonial-card flex w-[min(100%,22rem)] shrink-0 flex-col rounded-2xl border border-border/60 bg-soft-background p-6 shadow-[0_8px_24px_rgba(18,59,86,0.06)] sm:w-[22rem]">
+    <article className="testimonial-card flex w-[min(100%,24rem)] shrink-0 flex-col rounded-2xl border border-border/60 bg-soft-background p-6 shadow-[0_8px_24px_rgba(18,59,86,0.06)] sm:w-[clamp(22rem,24vw,28rem)]">
       <span className="text-3xl font-serif leading-none text-primary" aria-hidden="true">
         &ldquo;
       </span>
@@ -94,20 +96,27 @@ export default function Testimonials() {
   const t = useTranslations("testimonials");
 
   return (
-    <section className="overflow-hidden bg-[#F4F7F9] py-20 sm:py-24">
+    <section className="grid-surface grid-surface-soft py-20 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
           <span className="inline-flex items-center gap-2 rounded-full bg-primary/8 px-3 py-1 text-sm font-medium text-primary">
             <span className="size-2 rounded-full bg-primary" />
             {t("eyebrow")}
           </span>
-          <h2 className="mt-6 text-3xl font-semibold tracking-tight text-dark sm:text-4xl lg:text-5xl">
+          <ScrollReveal
+            baseOpacity={0.25}
+            enableBlur
+            baseRotation={4}
+            blurStrength={18}
+            containerClassName="mt-6 text-center"
+            textClassName="text-center text-3xl font-semibold tracking-tight text-dark sm:text-4xl lg:text-5xl 2xl:text-6xl"
+          >
             {t("title")}
-          </h2>
+          </ScrollReveal>
         </div>
       </div>
 
-      <div className="relative mt-12 sm:mt-14">
+      <div className="relative mt-12 overflow-hidden sm:mt-14">
         <div
           className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-[#F4F7F9] via-[#F4F7F9]/80 to-transparent sm:w-24 lg:w-32"
           aria-hidden="true"

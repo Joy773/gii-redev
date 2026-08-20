@@ -1,0 +1,17 @@
+.scroll-reveal {
+  margin: 0;
+  overflow: visible;
+}
+
+.scroll-reveal-text {
+  margin: 0;
+  line-height: 1.25;
+  font-weight: 600;
+  overflow: visible;
+}
+
+.word {
+  display: inline-block;
+  will-change: opacity, filter;
+  padding-inline: 0.02em;
+}

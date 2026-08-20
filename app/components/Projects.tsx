@@ -5,6 +5,7 @@ import { FiMapPin } from "react-icons/fi";
 
 import { useScrollReveal } from "../hooks/useScrollReveal";
 import { ViewAllProjectsButton } from "./common/buttons";
+import ScrollReveal from "./common/ScrollReveal";
 
 const FEATURED_PROJECTS = [
   {
@@ -22,7 +23,7 @@ const FEATURED_PROJECTS = [
 ] as const;
 
 function revealClass(visible: boolean) {
-  return visible ? "scroll-reveal scroll-reveal-visible" : "scroll-reveal";
+  return visible ? "section-fade section-fade-visible" : "section-fade";
 }
 
 export default function Projects() {
@@ -30,7 +31,7 @@ export default function Projects() {
   const { ref: sectionRef, isVisible } = useScrollReveal<HTMLElement>();
 
   return (
-    <section ref={sectionRef} className="bg-soft-background py-20 sm:py-24">
+    <section ref={sectionRef} className="grid-surface grid-surface-soft py-20 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div className="max-w-2xl">
@@ -41,12 +42,16 @@ export default function Projects() {
               <span className="eyebrow-dot-pulse size-2 rounded-full bg-primary" />
               {t("eyebrow")}
             </span>
-            <h2
-              className={`mt-6 text-4xl font-semibold tracking-tight text-dark sm:text-5xl ${revealClass(isVisible)}`}
-              style={{ transitionDelay: "80ms" }}
+            <ScrollReveal
+              baseOpacity={0.25}
+              enableBlur
+              baseRotation={4}
+              blurStrength={18}
+              containerClassName="mt-6"
+              textClassName="text-4xl font-semibold tracking-tight text-dark sm:text-5xl"
             >
               {t("title")}
-            </h2>
+            </ScrollReveal>
             <p
               className={`mt-4 max-w-xl text-lg leading-8 text-text/72 ${revealClass(isVisible)}`}
               style={{ transitionDelay: "160ms" }}

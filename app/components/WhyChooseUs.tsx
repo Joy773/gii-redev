@@ -10,6 +10,7 @@ import {
 } from "react-icons/fi";
 
 import { StartProjectButton } from "./common/buttons";
+import ScrollReveal from "./common/ScrollReveal";
 
 type LightCardId = "expertConsultants" | "provenInnovation" | "endToEndSolutions";
 
@@ -99,7 +100,7 @@ export default function WhyChooseUs() {
   const t = useTranslations("whyChooseUs");
 
   return (
-    <section className="bg-white py-20 sm:py-24">
+    <section className="grid-surface grid-surface-white py-20 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl">
           <span className="inline-flex items-center gap-2 rounded-full bg-primary/8 px-3 py-1 text-sm font-medium text-primary">
@@ -107,11 +108,16 @@ export default function WhyChooseUs() {
             {t("eyebrow")}
           </span>
 
-          <h2 className="mt-6 text-4xl font-semibold tracking-tight text-dark sm:text-5xl">
-            {t("titleBefore")}{" "}
-            <span className="text-primary">{t("brand")}</span>{" "}
-            {t("titleAfter")}
-          </h2>
+          <ScrollReveal
+            baseOpacity={0.25}
+            enableBlur
+            baseRotation={4}
+            blurStrength={18}
+            containerClassName="mt-6"
+            textClassName="text-4xl font-semibold tracking-tight text-dark sm:text-5xl"
+          >
+            {`${t("titleBefore")} ${t("brand")} ${t("titleAfter")}`}
+          </ScrollReveal>
         </div>
 
         <div className="mt-10 grid gap-3 sm:gap-4 lg:grid-cols-3 lg:grid-rows-[auto_auto]">
