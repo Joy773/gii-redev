@@ -44,7 +44,7 @@ export default function CTA() {
           />
 
           <div className="relative grid gap-8 sm:grid-cols-[1.2fr_0.8fr] sm:items-center">
-            <div className="max-w-xl">
+            <div className="mx-auto max-w-xl text-center sm:mx-0 sm:text-left">
               <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1 text-sm font-medium text-white/90">
                 <span className="size-2 rounded-full bg-white" />
                 {t("eyebrow")}
@@ -59,7 +59,7 @@ export default function CTA() {
               </p>
             </div>
 
-            <div className="flex flex-col items-start justify-center gap-3 sm:flex-row sm:items-center sm:justify-end sm:gap-4">
+            <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:items-center sm:justify-end sm:gap-4">
               <PillButton href="/contact" label={tCta("startProject")} />
               <PillButton href="/digital-transformation" label={tCta("exploreSolutions")} />
             </div>

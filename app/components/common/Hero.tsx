@@ -63,9 +63,9 @@ export default function Hero() {
             {t("description")}
           </p>
 
-          <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <ExploreSolutionsButton className="inline-flex" />
-            <StartProjectButton className="inline-flex" />
+          <div className="mt-8 flex flex-row flex-wrap items-center justify-center gap-2 sm:gap-3">
+            <ExploreSolutionsButton className="inline-flex whitespace-nowrap px-3.5 sm:px-4" />
+            <StartProjectButton className="inline-flex whitespace-nowrap px-3.5 sm:px-4" />
           </div>
         </div>
       </div>

@@ -169,7 +169,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+        <div className="grid grid-cols-2 gap-x-6 gap-y-10 py-14 lg:grid-cols-4 lg:gap-8">
           <FooterColumn title={t("navTitle")} links={COMPANY_LINKS} />
           {SERVICE_COLUMNS.map((column) => (
             <FooterColumn

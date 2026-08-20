@@ -102,7 +102,7 @@ export default function WhyChooseUs() {
   return (
     <section className="grid-surface grid-surface-white py-20 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl">
+        <div className="mx-auto max-w-3xl text-center lg:mx-0 lg:text-left">
           <span className="inline-flex items-center gap-2 rounded-full bg-primary/8 px-3 py-1 text-sm font-medium text-primary">
             <span className="size-2 rounded-full bg-primary" />
             {t("eyebrow")}
@@ -113,8 +113,8 @@ export default function WhyChooseUs() {
             enableBlur
             baseRotation={4}
             blurStrength={18}
-            containerClassName="mt-6"
-            textClassName="text-4xl font-semibold tracking-tight text-dark sm:text-5xl"
+            containerClassName="mt-6 text-center lg:text-left"
+            textClassName="text-center text-4xl font-semibold tracking-tight text-dark sm:text-5xl lg:text-left"
           >
             {`${t("titleBefore")} ${t("brand")} ${t("titleAfter")}`}
           </ScrollReveal>

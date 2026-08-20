@@ -48,7 +48,7 @@ function TestimonialCard({
   const t = useTranslations("testimonials.items");
 
   return (
-    <article className="testimonial-card flex w-[min(100%,24rem)] shrink-0 flex-col rounded-2xl border border-border/60 bg-soft-background p-6 shadow-[0_8px_24px_rgba(18,59,86,0.06)] sm:w-[clamp(22rem,24vw,28rem)]">
+    <article className="testimonial-card flex w-[min(20.5rem,calc(100vw-2.5rem))] shrink-0 flex-col rounded-2xl border border-border/60 bg-soft-background p-6 shadow-[0_8px_24px_rgba(18,59,86,0.06)] sm:w-[clamp(22rem,24vw,28rem)]">
       <span className="text-3xl font-serif leading-none text-primary" aria-hidden="true">
         &ldquo;
       </span>
@@ -84,10 +84,13 @@ function TestimonialRow({
   return (
     <div
       className={`testimonials-track ${reverse ? "testimonials-track-reverse" : ""}`}
-      aria-hidden="true"
     >
-      {cards}
-      {cards}
+      <div className="testimonials-group">{cards}</div>
+      <div className="testimonials-group" aria-hidden="true">
+        {TESTIMONIALS.map((item) => (
+          <TestimonialCard key={`${item.id}-dup`} {...item} />
+        ))}
+      </div>
     </div>
   );
 }

@@ -190,6 +190,21 @@ body {
   .testimonials-track {
     animation: none;
   }
+
+  .testimonials-row {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+  }
+
+  .testimonials-row::-webkit-scrollbar {
+    display: none;
+  }
+
+  .testimonials-group:last-child {
+    display: none;
+  }
 }
 
 /*
@@ -218,17 +233,40 @@ body {
 
 .testimonials-track {
   display: flex;
-  gap: 1rem;
   width: max-content;
-  animation: testimonials-marquee-left 38s linear infinite;
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  animation: testimonials-marquee-left 28s linear infinite;
+}
+
+.testimonials-group {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 1rem;
+  padding-right: 1rem;
+  min-width: max-content;
 }
 
 .testimonials-track-reverse {
-  animation: testimonials-marquee-right 42s linear infinite;
+  animation-name: testimonials-marquee-right;
+  animation-duration: 32s;
 }
 
-.testimonials-row:hover .testimonials-track {
-  animation-play-state: paused;
+@media (min-width: 640px) {
+  .testimonials-track {
+    animation-duration: 38s;
+  }
+
+  .testimonials-track-reverse {
+    animation-duration: 42s;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .testimonials-row:hover .testimonials-track {
+    animation-play-state: paused;
+  }
 }
 
 .testimonial-card {
@@ -242,8 +280,9 @@ body {
 }
 
 @media (min-width: 1600px) {
-  .testimonials-track {
+  .testimonials-group {
     gap: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .testimonial-card {
@@ -253,20 +292,20 @@ body {
 
 @keyframes testimonials-marquee-left {
   from {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
 
   to {
-    transform: translateX(-50%);
+    transform: translate3d(-50%, 0, 0);
   }
 }
 
 @keyframes testimonials-marquee-right {
   from {
-    transform: translateX(-50%);
+    transform: translate3d(-50%, 0, 0);
   }
 
   to {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
 }
