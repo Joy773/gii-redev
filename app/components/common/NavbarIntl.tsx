@@ -278,7 +278,12 @@ export default function NavbarIntl(): ReactNode {
             <SearchIcon />
           </Link>
 
-          <StartProjectButton className="group hidden items-center gap-2 md:inline-flex" arrowClassName="transition-transform duration-300 group-hover:translate-x-0.5" />
+          <div className="hidden md:block">
+            <StartProjectButton
+              className="group items-center gap-2"
+              arrowClassName="transition-transform duration-300 group-hover:translate-x-0.5"
+            />
+          </div>
 
           <button
             type="button"
