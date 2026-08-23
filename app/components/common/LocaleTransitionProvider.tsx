@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useState, type ReactNode } from "react";
+import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
 
 type LocaleTransitionContextValue = {
   isLangTransitioning: boolean;
@@ -29,6 +29,28 @@ export function useLocaleTransition() {
 
 export function LocaleTransitionBody({ children }: { children: ReactNode }) {
   const { isLangTransitioning } = useLocaleTransition();
+
+  useEffect(() => {
+    const onClick = (event: MouseEvent) => {
+      const link = (event.target as HTMLElement | null)?.closest("a[href^='#']");
+      if (!(link instanceof HTMLAnchorElement)) return;
+
+      const id = decodeURIComponent(link.hash.slice(1));
+      const target = id ? document.getElementById(id) : null;
+      if (!target) return;
+
+      event.preventDefault();
+      const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      target.scrollIntoView({
+        behavior: prefersReducedMotion ? "auto" : "smooth",
+        block: "start",
+      });
+      window.history.replaceState(null, "", link.hash);
+    };
+
+    document.addEventListener("click", onClick);
+    return () => document.removeEventListener("click", onClick);
+  }, []);
 
   return (
     <div

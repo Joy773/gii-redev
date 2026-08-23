@@ -9,8 +9,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { useLocaleTransition } from "./LocaleTransitionProvider";
 import { NAV_LINKS, SERVICE_COLUMNS } from "./navConfig";
-import { StartProjectButton } from "./buttons";
-import { FiMoon } from "react-icons/fi";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 import type { ReactNode } from "react";
 
@@ -21,7 +20,7 @@ const LOCALE_LABELS: Record<string, string> = {
 
 const SERVICE_ACCENTS = [
   "from-primary/15 to-primary/5",
-  "from-dark/12 to-dark/4",
+  "from-navy/12 to-navy/4",
   "from-primary/10 to-soft-background",
 ] as const;
 
@@ -41,12 +40,6 @@ function Chevron({ open }: { open: boolean }) {
         strokeLinejoin="round"
       />
     </svg>
-  );
-}
-
-function SearchIcon() {
-  return (
-    <FiMoon aria-hidden="true" className="size-[18px]" />
   );
 }
 
@@ -116,9 +109,13 @@ export default function NavbarIntl(): ReactNode {
     setIsLangTransitioning(true);
     scrollRestoreRef.current = window.scrollY;
     setLangTimeoutRef.current = window.setTimeout(() => {
-      const parts = pathname.split("/");
-      parts[1] = nextLocale;
-      const newPath = parts.join("/") || `/${nextLocale}`;
+      const segments = pathname.split("/");
+      const hasLocalePrefix = routing.locales.includes(
+        segments[1] as (typeof routing.locales)[number],
+      );
+      const newPath = hasLocalePrefix
+        ? ["", nextLocale, ...segments.slice(2)].join("/") || `/${nextLocale}`
+        : `/${nextLocale}${pathname === "/" ? "" : pathname}`;
       router.replace(newPath, { scroll: false });
     }, 120);
     clearLangTimeoutRef.current = window.setTimeout(() => {
@@ -140,8 +137,8 @@ export default function NavbarIntl(): ReactNode {
     <header
       className={`sticky top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "border-b border-border/80 bg-white/85 shadow-[0_8px_32px_rgba(18,59,86,0.06)] backdrop-blur-xl"
-          : "border-b border-transparent bg-white/70 backdrop-blur-lg"
+          ? "border-b border-border/80 bg-surface/85 shadow-[0_8px_32px_rgba(18,59,86,0.06)] backdrop-blur-xl dark:shadow-[0_8px_32px_rgba(0,0,0,0.28)]"
+          : "border-b border-transparent bg-surface/70 backdrop-blur-lg"
       }`}
     >
       <div
@@ -153,15 +150,15 @@ export default function NavbarIntl(): ReactNode {
           <Image
             src="/GII-Logo.webp"
             alt="German Innovation Institution"
-            width={220}
-            height={48}
-            className="h-9 w-auto sm:h-10"
+            width={280}
+            height={64}
+            className="h-12 w-auto sm:h-14 dark:brightness-0 dark:invert"
             priority
           />
         </Link>
 
-        <nav className="hidden min-w-0 flex-1 items-center justify-center lg:flex" aria-label="Primary">
-          <ul className="flex items-center gap-1 rounded-full border border-border/60 bg-soft-background/60 p-1">
+        <nav className="hidden min-w-0 flex-1 items-center justify-center xl:flex" aria-label="Primary">
+          <ul className="flex items-center gap-0.5 rounded-full border border-border/60 bg-soft-background/60 p-1">
             {NAV_LINKS.map((item) => {
               const active = isActive(item.href);
               const isServices = item.id === "services";
@@ -172,8 +169,8 @@ export default function NavbarIntl(): ReactNode {
                   <li key={item.id} className="relative">
                     <button
                       type="button"
-                      className={`flex items-center gap-1 rounded-full px-3.5 py-2 text-[13px] font-semibold transition-all duration-200 ${
-                        active || open ? "bg-primary/10 text-primary" : "text-text/80 hover:bg-white hover:text-dark"
+                      className={`flex items-center gap-1 rounded-full px-2.5 py-1.5 text-[12px] font-semibold whitespace-nowrap transition-all duration-200 ${
+                        active || open ? "bg-primary/10 text-primary" : "text-text/80 hover:bg-surface hover:text-dark"
                       }`}
                       aria-expanded={open}
                       aria-haspopup="true"
@@ -193,7 +190,7 @@ export default function NavbarIntl(): ReactNode {
                     </button>
 
                     <div
-                      className={`absolute top-[calc(100%+0.5rem)] left-1/2 z-50 w-[min(46rem,calc(100vw-2rem))] -translate-x-1/2 transition-all duration-300 ease-out ${
+                      className={`absolute top-[calc(100%+0.5rem)] left-1/2 z-50 w-[min(56rem,calc(100vw-2rem))] -translate-x-1/2 transition-all duration-300 ease-out ${
                         open ? "pointer-events-auto translate-y-0 opacity-100" : "pointer-events-none -translate-y-2 opacity-0"
                       }`}
                       onMouseEnter={() => {
@@ -201,8 +198,8 @@ export default function NavbarIntl(): ReactNode {
                       }}
                       onMouseLeave={() => setOpenServices(false)}
                     >
-                      <div className="overflow-hidden rounded-2xl border border-border/80 bg-white shadow-[0_24px_64px_rgba(18,59,86,0.12)]">
-                        <div className="grid grid-cols-3 divide-x divide-border/60">
+                      <div className="overflow-hidden rounded-2xl border border-border/80 bg-surface shadow-[0_24px_64px_rgba(18,59,86,0.12)] dark:shadow-[0_24px_64px_rgba(0,0,0,0.4)]">
+                        <div className="grid grid-cols-2 divide-x divide-y divide-border/60 md:grid-cols-3">
                           {SERVICE_COLUMNS.map((col, index) => (
                             <div key={col.id} className={`bg-gradient-to-b ${SERVICE_ACCENTS[index % SERVICE_ACCENTS.length]} p-5`}>
                     <Link href={localizeHref(col.href)} className="group/link flex items-start justify-between gap-2">
@@ -221,7 +218,7 @@ export default function NavbarIntl(): ReactNode {
                                   <li key={it.id}>
                                     <Link
                                       href={localizeHref(it.href)}
-                                      className="block rounded-lg px-2 py-1.5 text-[13px] text-text/75 transition-colors hover:bg-white/80 hover:text-primary"
+                                      className="block rounded-lg px-2 py-1.5 text-[13px] text-text/75 transition-colors hover:bg-canvas hover:text-primary"
                                     >
                                       {tNav(it.labelKey)}
                                     </Link>
@@ -241,7 +238,7 @@ export default function NavbarIntl(): ReactNode {
                 <li key={item.id}>
                   <Link
                     href={localizeHref(item.href)}
-                    className={`rounded-full px-3.5 py-2 text-[13px] font-semibold transition-all duration-200 ${
+                    className={`rounded-full px-2.5 py-1.5 text-[12px] font-semibold whitespace-nowrap transition-all duration-200 ${
                       active ? "bg-primary/10 text-primary" : "text-text/80 hover:bg-soft-background hover:text-dark"
                     }`}
                   >
@@ -260,7 +257,7 @@ export default function NavbarIntl(): ReactNode {
                 key={code}
                 type="button"
                 className={`rounded-full px-2.5 py-1.5 text-[11px] font-semibold tracking-wide transition-all duration-200 ${
-                  locale === code ? "bg-white text-primary shadow-sm" : "text-text/50 hover:text-dark"
+                  locale === code ? "bg-surface text-primary shadow-sm" : "text-text/50 hover:text-dark"
                 }`}
                 aria-pressed={locale === code}
                 onClick={() => switchLocale(code)}
@@ -270,24 +267,11 @@ export default function NavbarIntl(): ReactNode {
             ))}
           </div>
 
-          <Link
-            href={localizeHref("/insights")}
-            className="hidden size-9 items-center justify-center rounded-full border border-border/70 bg-white text-dark/70 transition-all duration-200 hover:border-primary/30 hover:bg-primary/5 hover:text-primary lg:inline-flex"
-            aria-label={tAria("search")}
-          >
-            <SearchIcon />
-          </Link>
-
-          <div className="hidden md:block">
-            <StartProjectButton
-              className="group items-center gap-2"
-              arrowClassName="transition-transform duration-300 group-hover:translate-x-0.5"
-            />
-          </div>
+          <ThemeToggle />
 
           <button
             type="button"
-            className="inline-flex size-9 items-center justify-center rounded-full border border-border/70 bg-white text-dark transition-colors hover:border-primary/30 hover:bg-primary/5 lg:hidden"
+            className="inline-flex size-9 items-center justify-center rounded-full border border-border/70 bg-surface text-dark transition-colors hover:border-primary/30 hover:bg-primary/5 xl:hidden"
             aria-controls={menuId}
             aria-expanded={mobileOpen}
             aria-label={mobileOpen ? tAria("closeMenu") : tAria("openMenu")}
@@ -301,7 +285,7 @@ export default function NavbarIntl(): ReactNode {
       {mobileOpen ? (
         <div
           id={menuId}
-          className="fixed inset-x-4 top-[calc(4.25rem+0.5rem)] z-50 max-h-[calc(100vh-5.5rem)] overflow-y-auto rounded-2xl border border-border/80 bg-white shadow-[0_24px_64px_rgba(18,59,86,0.15)] lg:hidden"
+          className="fixed inset-x-4 top-[calc(4.25rem+0.5rem)] z-50 max-h-[calc(100vh-5.5rem)] overflow-y-auto rounded-2xl border border-border/80 bg-surface shadow-[0_24px_64px_rgba(18,59,86,0.15)] dark:shadow-[0_24px_64px_rgba(0,0,0,0.45)] xl:hidden"
         >
           <nav aria-label="Mobile" className="p-4">
             <ul className="flex flex-col gap-1">
@@ -384,7 +368,7 @@ export default function NavbarIntl(): ReactNode {
                     key={code}
                     type="button"
                     className={`rounded-full px-3 py-1.5 text-[11px] font-semibold ${
-                      locale === code ? "bg-white text-primary shadow-sm" : "text-text/50"
+                      locale === code ? "bg-surface text-primary shadow-sm" : "text-text/50"
                     }`}
                     aria-pressed={locale === code}
                     onClick={() => switchLocale(code)}
@@ -394,12 +378,8 @@ export default function NavbarIntl(): ReactNode {
                 ))}
               </div>
 
-              <Link href={localizeHref("/insights")} className="flex size-9 items-center justify-center rounded-full border border-border/70 text-dark/70 hover:bg-soft-background" aria-label={tAria("search")}>
-                <SearchIcon />
-              </Link>
+              <ThemeToggle />
             </div>
-
-            <StartProjectButton className="mt-4 flex items-center justify-center gap-2 rounded-xl px-4 py-3 text-sm" />
           </nav>
         </div>
       ) : null}

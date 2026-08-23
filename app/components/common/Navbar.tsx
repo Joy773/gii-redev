@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useId, useRef, useState } from "react";
-import { StartProjectButton } from "./buttons";
 import { FiMoon } from "react-icons/fi";
 
 type NavLink = {
@@ -26,43 +25,55 @@ const SERVICE_GROUPS: NavLink[] = [
     label: "Digital Transformation",
     href: "/digital-transformation",
     children: [
-      {
-        label: "Digitalisierung für Unternehmen",
-        href: "/digital-transformation",
-      },
-      { label: "Mittelstand", href: "/mittelstand" },
+      { label: "Digitalization for Enterprises", href: "/digital-transformation" },
+      { label: "SMEs", href: "/mittelstand" },
       { label: "Industry 4.0", href: "/industry-4-0" },
-      { label: "AI Transformation", href: "/ai" },
-      {
-        label: "Cloud & Cybersecurity",
-        href: "/digital-transformation#cloud-cybersecurity",
-      },
     ],
   },
   {
-    label: "Technology",
-    href: "/technology",
+    label: "Software & Digital Platforms",
+    href: "/software",
     children: [
       { label: "Software Development", href: "/software" },
-      { label: "AI", href: "/ai" },
-      { label: "IoT & Embedded", href: "/iot" },
       { label: "Digital Platforms", href: "/platforms" },
-      { label: "Medical Technology", href: "/medical" },
       { label: "Digital Education", href: "/education" },
       { label: "E-Commerce", href: "/ecommerce" },
     ],
   },
   {
-    label: "Sustainable Solutions",
+    label: "AI & Data",
+    href: "/ai",
+    children: [
+      { label: "AI", href: "/ai" },
+      { label: "AI Transformation", href: "/ai" },
+    ],
+  },
+  {
+    label: "IoT, WSN & Smart Systems",
+    href: "/iot",
+    children: [
+      { label: "IoT & Embedded", href: "/iot" },
+      { label: "Medical Technology", href: "/medical" },
+    ],
+  },
+  {
+    label: "Sustainable Technology",
     href: "/sustainable-solutions",
     children: [
       { label: "Water", href: "/sustainable-solutions#water" },
       { label: "Energy", href: "/sustainable-solutions#energy" },
-      {
-        label: "Ventilation & HVAC",
-        href: "/sustainable-solutions#ventilation",
-      },
+      { label: "Ventilation & HVAC", href: "/sustainable-solutions#ventilation" },
       { label: "Environment", href: "/sustainable-solutions#environment" },
+    ],
+  },
+  {
+    label: "ICT Systems Integration",
+    href: "/ict",
+    children: [
+      {
+        label: "Cloud & Cybersecurity",
+        href: "/digital-transformation#cloud-cybersecurity",
+      },
     ],
   },
 ];
@@ -74,10 +85,12 @@ const NAV_ITEMS: NavItem[] = [
     href: "/digital-transformation",
     children: SERVICE_GROUPS,
   },
-  { label: "Consultancy", href: "/consultancy" },
+  { label: "Industries", href: "/industries" },
   { label: "Projects", href: "/projects" },
-  { label: "Insights", href: "/insights" },
+  { label: "Research & Innovation", href: "/research-innovation" },
+  { label: "Consultancy", href: "/consultancy" },
   { label: "About", href: "/about" },
+  { label: "Insights", href: "/insights" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -242,18 +255,18 @@ export default function Navbar() {
           <Image
             src="/GII-Logo.webp"
             alt="German Innovation Institution"
-            width={220}
-            height={48}
-            className="h-9 w-auto sm:h-10"
+            width={280}
+            height={64}
+            className="h-12 w-auto sm:h-14"
             priority
           />
         </Link>
 
         <nav
-          className="hidden min-w-0 flex-1 items-center justify-center lg:flex"
+          className="hidden min-w-0 flex-1 items-center justify-center xl:flex"
           aria-label="Primary"
         >
-          <ul className="flex items-center gap-1 rounded-full border border-border/60 bg-soft-background/60 p-1">
+          <ul className="flex items-center gap-0.5 rounded-full border border-border/60 bg-soft-background/60 p-1">
             {NAV_ITEMS.map((item) => {
               const active = isActive(pathname, item);
               const open = openDropdown === item.label;
@@ -263,7 +276,7 @@ export default function Navbar() {
                   <li key={item.label}>
                     <Link
                       href={item.href}
-                      className={`rounded-full px-3.5 py-2 text-[13px] font-semibold transition-all duration-200 ${navLinkClass(active)}`}
+                      className={`rounded-full px-2.5 py-1.5 text-[12px] font-semibold whitespace-nowrap transition-all duration-200 ${navLinkClass(active)}`}
                     >
                       {item.label}
                     </Link>
@@ -282,7 +295,7 @@ export default function Navbar() {
                 >
                   <button
                     type="button"
-                    className={`flex items-center gap-1 rounded-full px-3.5 py-2 text-[13px] font-semibold transition-all duration-200 ${
+                    className={`flex items-center gap-1 rounded-full px-2.5 py-1.5 text-[12px] font-semibold whitespace-nowrap transition-all duration-200 ${
                       active || open
                         ? "bg-primary/10 text-primary"
                         : "text-text/80 hover:bg-white hover:text-dark"
@@ -307,7 +320,7 @@ export default function Navbar() {
                   </button>
 
                   <div
-                    className={`absolute top-[calc(100%+0.5rem)] left-1/2 z-50 w-[min(46rem,calc(100vw-2rem))] -translate-x-1/2 transition-all duration-300 ease-out ${
+                    className={`absolute top-[calc(100%+0.5rem)] left-1/2 z-50 w-[min(56rem,calc(100vw-2rem))] -translate-x-1/2 transition-all duration-300 ease-out ${
                       open
                         ? "pointer-events-auto translate-y-0 opacity-100"
                         : "pointer-events-none -translate-y-2 opacity-0"
@@ -318,7 +331,7 @@ export default function Navbar() {
                     onMouseLeave={() => setOpenDropdown(null)}
                   >
                     <div className="overflow-hidden rounded-2xl border border-border/80 bg-white shadow-[0_24px_64px_rgba(18,59,86,0.12)]">
-                      <div className="grid grid-cols-3 divide-x divide-border/60">
+                      <div className="grid grid-cols-2 divide-x divide-y divide-border/60 md:grid-cols-3">
                         {item.children.map((group, index) => (
                           <div
                             key={group.label}
@@ -404,20 +417,15 @@ export default function Navbar() {
 
           <Link
             href="/insights"
-            className="hidden size-9 items-center justify-center rounded-full border border-border/70 bg-white text-dark/70 transition-all duration-200 hover:border-primary/30 hover:bg-primary/5 hover:text-primary lg:inline-flex"
+            className="hidden size-9 items-center justify-center rounded-full border border-border/70 bg-white text-dark/70 transition-all duration-200 hover:border-primary/30 hover:bg-primary/5 hover:text-primary xl:inline-flex"
             aria-label="Search insights, partners and projects"
           >
             <SearchIcon />
           </Link>
 
-          <StartProjectButton
-            className="group hidden items-center gap-2 md:inline-flex"
-            arrowClassName="transition-transform duration-300 group-hover:translate-x-0.5"
-          />
-
           <button
             type="button"
-            className="inline-flex size-9 items-center justify-center rounded-full border border-border/70 bg-white text-dark transition-colors hover:border-primary/30 hover:bg-primary/5 lg:hidden"
+            className="inline-flex size-9 items-center justify-center rounded-full border border-border/70 bg-white text-dark transition-colors hover:border-primary/30 hover:bg-primary/5 xl:hidden"
             aria-controls={menuId}
             aria-expanded={mobileOpen}
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
@@ -432,13 +440,13 @@ export default function Navbar() {
         <>
           <button
             type="button"
-            className="fixed inset-0 z-40 bg-dark/20 backdrop-blur-sm lg:hidden"
+            className="fixed inset-0 z-40 bg-dark/20 backdrop-blur-sm xl:hidden"
             aria-label="Close menu"
             onClick={() => setMobileOpen(false)}
           />
           <div
             id={menuId}
-            className="fixed inset-x-4 top-[calc(4.25rem+0.5rem)] z-50 max-h-[calc(100vh-5.5rem)] overflow-y-auto rounded-2xl border border-border/80 bg-white shadow-[0_24px_64px_rgba(18,59,86,0.15)] lg:hidden"
+            className="fixed inset-x-4 top-[calc(4.25rem+0.5rem)] z-50 max-h-[calc(100vh-5.5rem)] overflow-y-auto rounded-2xl border border-border/80 bg-white shadow-[0_24px_64px_rgba(18,59,86,0.15)] xl:hidden"
           >
             <nav aria-label="Mobile" className="p-4">
               <ul className="flex flex-col gap-1">
@@ -579,10 +587,6 @@ export default function Navbar() {
                   <SearchIcon />
                 </Link>
               </div>
-
-              <StartProjectButton
-                className="mt-4 flex items-center justify-center gap-2 rounded-xl px-4 py-3 text-sm"
-              />
             </nav>
           </div>
         </>

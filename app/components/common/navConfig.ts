@@ -14,10 +14,12 @@ export type ServiceColumn = {
 export const NAV_LINKS: NavLink[] = [
   { id: "home", labelKey: "home", href: "/" },
   { id: "services", labelKey: "services", href: "/digital-transformation" },
-  { id: "consultancy", labelKey: "consultancy", href: "/consultancy" },
+  { id: "industries", labelKey: "industries", href: "/industries" },
   { id: "projects", labelKey: "projects", href: "/projects" },
-  { id: "insights", labelKey: "insights", href: "/insights" },
+  { id: "researchInnovation", labelKey: "researchInnovation", href: "/research-innovation" },
+  { id: "consultancy", labelKey: "consultancy", href: "/consultancy" },
   { id: "about", labelKey: "about", href: "/about" },
+  { id: "insights", labelKey: "insights", href: "/insights" },
   { id: "contact", labelKey: "contact", href: "/contact" },
 ];
 
@@ -30,31 +32,40 @@ export const SERVICE_COLUMNS: ServiceColumn[] = [
       { id: "digitalisierung", labelKey: "digitalisierung", href: "/digital-transformation" },
       { id: "mittelstand", labelKey: "mittelstand", href: "/mittelstand" },
       { id: "industry40", labelKey: "industry40", href: "/industry-4-0" },
-      { id: "aiTransformation", labelKey: "aiTransformation", href: "/ai" },
-      {
-        id: "cloudCybersecurity",
-        labelKey: "cloudCybersecurity",
-        href: "/digital-transformation#cloud-cybersecurity",
-      },
     ],
   },
   {
-    id: "technology",
-    labelKey: "technology",
-    href: "/technology",
+    id: "softwareDigitalPlatforms",
+    labelKey: "softwareDigitalPlatforms",
+    href: "/software",
     items: [
       { id: "softwareDevelopment", labelKey: "softwareDevelopment", href: "/software" },
-      { id: "ai", labelKey: "ai", href: "/ai" },
-      { id: "iotEmbedded", labelKey: "iotEmbedded", href: "/iot" },
       { id: "digitalPlatforms", labelKey: "digitalPlatforms", href: "/platforms" },
-      { id: "medicalTechnology", labelKey: "medicalTechnology", href: "/medical" },
       { id: "digitalEducation", labelKey: "digitalEducation", href: "/education" },
       { id: "ecommerce", labelKey: "ecommerce", href: "/ecommerce" },
     ],
   },
   {
-    id: "sustainableSolutions",
-    labelKey: "sustainableSolutions",
+    id: "aiData",
+    labelKey: "aiData",
+    href: "/ai",
+    items: [
+      { id: "ai", labelKey: "ai", href: "/ai" },
+      { id: "aiTransformation", labelKey: "aiTransformation", href: "/ai" },
+    ],
+  },
+  {
+    id: "iotWsnSmartSystems",
+    labelKey: "iotWsnSmartSystems",
+    href: "/iot",
+    items: [
+      { id: "iotEmbedded", labelKey: "iotEmbedded", href: "/iot" },
+      { id: "medicalTechnology", labelKey: "medicalTechnology", href: "/medical" },
+    ],
+  },
+  {
+    id: "sustainableTechnology",
+    labelKey: "sustainableTechnology",
     href: "/sustainable-solutions",
     items: [
       { id: "water", labelKey: "water", href: "/sustainable-solutions#water" },
@@ -65,6 +76,18 @@ export const SERVICE_COLUMNS: ServiceColumn[] = [
         href: "/sustainable-solutions#ventilation",
       },
       { id: "environment", labelKey: "environment", href: "/sustainable-solutions#environment" },
+    ],
+  },
+  {
+    id: "ictSystemsIntegration",
+    labelKey: "ictSystemsIntegration",
+    href: "/ict",
+    items: [
+      {
+        id: "cloudCybersecurity",
+        labelKey: "cloudCybersecurity",
+        href: "/digital-transformation#cloud-cybersecurity",
+      },
     ],
   },
 ];

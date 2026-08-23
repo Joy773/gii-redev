@@ -2,13 +2,20 @@
   "nav": {
     "home": "Home",
     "services": "Services",
-    "consultancy": "Consultancy",
+    "industries": "Industries",
     "projects": "Projects",
-    "insights": "Insights",
+    "researchInnovation": "Research & Innovation",
+    "consultancy": "Consultancy",
     "about": "About",
+    "insights": "Insights",
     "contact": "Contact",
     "overview": "Overview",
     "digitalTransformation": "Digital Transformation",
+    "softwareDigitalPlatforms": "Software & Digital Platforms",
+    "aiData": "AI & Data",
+    "iotWsnSmartSystems": "IoT, WSN & Smart Systems",
+    "sustainableTechnology": "Sustainable Technology",
+    "ictSystemsIntegration": "ICT Systems Integration",
     "digitalisierung": "Digitalization for Enterprises",
     "mittelstand": "SMEs",
     "industry40": "Industry 4.0",
@@ -61,12 +68,20 @@
       "madeInGermany": "Made in Germany"
     }
   },
+  "qualificationStrip": {
+    "since2014": "Since 2014",
+    "germanyBased": "Germany-Based",
+    "internationalProjects": "International Projects",
+    "arabicEnglish": "Arabic & English Capability"
+  },
   "aria": {
     "home": "GII home",
     "search": "Search insights, partners and projects",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
-    "language": "Language"
+    "language": "Language",
+    "switchToDark": "Switch to dark mode",
+    "switchToLight": "Switch to light mode"
   },
   "serviceCards": {
     "eyebrow": "Our Services",
@@ -163,25 +178,118 @@
     "description": "A look at how GII turns strategy into applied solutions across digital transformation, industry and sustainable technology.",
     "cta": "View all projects",
     "items": {
-      "industry40": {
-        "category": "Industry 4.0",
-        "country": "Germany",
-        "title": "Smart production monitoring",
-        "description": "Connected machines, live production data and predictive insights for a manufacturing partner."
-      },
-      "water": {
+      "mewf": {
         "category": "Water",
-        "country": "International",
-        "title": "Digital water operations",
-        "description": "Monitoring, leak detection and quality insights for more efficient water infrastructure."
+        "country": "Middle East",
+        "title": "Middle East Water Forum (MEWF)",
+        "description": "A regional platform for utilities, experts and partners to share technical knowledge, training and innovation for sustainable water security.",
+        "overview": "MEWF is a regional platform that brings utilities, policymakers and technical partners together around water security. GII supports the programme with German engineering expertise, training formats and applied innovation for sustainable water systems.",
+        "challenge": "Water utilities and public institutions across the region often work in isolation, with limited access to applied engineering knowledge, structured training and practical innovation that can strengthen long-term water security.",
+        "solution": "GII helped shape MEWF as a working forum for technical exchange, capacity building and applied water innovation, connecting regional partners with German expertise in sustainable water systems, training and programme design.",
+        "technologies": [
+          "Water systems engineering",
+          "Capacity-building programmes",
+          "Knowledge-sharing platforms",
+          "Sustainable water technology",
+          "Technical workshops and training"
+        ],
+        "keyAreas": [
+          "Bilingual Arabic/English digital platform",
+          "Water resources management and water security",
+          "Professional and expert networking",
+          "Knowledge and technical information exchange",
+          "Water-sector innovation and technology",
+          "Training and capacity development",
+          "Events and professional dialogue",
+          "Regional stakeholder engagement",
+          "Water-Energy-Food-Environment (WEFE) Nexus",
+          "Climate change and sustainable water management"
+        ],
+        "expertise": [
+          "German water engineering",
+          "International programme design",
+          "Arabic and English delivery",
+          "Public-sector and utility engagement"
+        ]
       },
-      "digitalHealth": {
-        "category": "Medical Technology",
+      "clivent": {
+        "category": "Ventilation & HVAC",
         "country": "Germany",
-        "title": "Digital health platform",
-        "description": "A secure platform for patient services, data workflows and connected healthcare delivery."
+        "title": "CLIVENT",
+        "description": "Energy-efficient ventilation and climate technology, connecting German environmental engineering with smarter building operations.",
+        "overview": "CLIVENT develops energy-efficient ventilation and HVAC technology for buildings that need reliable climate control with lower energy demand. The project connects German environmental engineering with smarter operations for commercial and industrial facilities.",
+        "challenge": "Commercial and industrial buildings need stable indoor climate, but conventional HVAC systems often use too much energy and are difficult to operate efficiently over time.",
+        "solution": "GII connected German environmental engineering with smarter building operations through energy-efficient ventilation and HVAC technology designed to lower energy demand without weakening climate performance.",
+        "technologies": [
+          "Energy-efficient ventilation",
+          "HVAC systems",
+          "Building climate control",
+          "Environmental engineering",
+          "Operational optimisation"
+        ],
+        "keyAreas": [
+          "Indoor climate",
+          "Energy efficiency",
+          "Building operations",
+          "Industrial facilities",
+          "Commercial buildings"
+        ],
+        "expertise": [
+          "German environmental engineering",
+          "HVAC system design",
+          "Energy-efficient building technology",
+          "Industry-focused delivery"
+        ]
+      },
+      "germanCare": {
+        "category": "E-Commerce",
+        "country": "Germany",
+        "title": "German Care",
+        "description": "Medical technology and hospital-planning support for connected healthcare delivery, equipment and local supply.",
+        "overview": "German Care is an e-commerce and supply platform for medical technology, hospital planning and connected healthcare delivery. GII supports product access, equipment coordination and local supply so providers can source German-standard solutions more easily.",
+        "challenge": "Healthcare providers need reliable access to medical technology, hospital-planning support and local supply, but sourcing German-standard solutions is often fragmented across products, partners and logistics.",
+        "solution": "GII supports German Care as a digital commerce and supply platform that coordinates product access, medical equipment and hospital-planning support, making German-standard healthcare solutions easier to source and deliver.",
+        "technologies": [
+          "E-commerce platforms",
+          "Medical technology supply",
+          "Hospital planning support",
+          "Healthcare logistics",
+          "Digital product catalogues"
+        ],
+        "keyAreas": [
+          "Medical equipment",
+          "Hospital planning",
+          "Healthcare supply chains",
+          "Connected care",
+          "Product access"
+        ],
+        "expertise": [
+          "Medical technology",
+          "Digital commerce platforms",
+          "Healthcare logistics",
+          "German-standard product sourcing"
+        ]
       }
     }
+  },
+  "projectPage": {
+    "back": "Back to projects",
+    "related": "More projects",
+    "relatedDescription": "Explore more of GII’s work across water, energy, industry and digital platforms and see how German technology is applied in the field.",
+    "overview": "Overview",
+    "challenge": "Challenge",
+    "solution": "GII Solution",
+    "technologies": "Technologies / Services",
+    "keyAreas": "Key Areas",
+    "expertise": "GII Expertise",
+    "sectorRegion": "Sector / Region",
+    "sector": "Sector",
+    "region": "Region",
+    "viewProject": "View project",
+    "onThisPage": "On this page",
+    "ctaEyebrow": "Start a similar project",
+    "ctaTitle": "Want to build something like this?",
+    "ctaDescription": "Tell GII about your goals and we will connect you with the right specialists."
   },
   "whyChooseUs": {
     "eyebrow": "Why choose us",
@@ -208,39 +316,34 @@
       }
     }
   },
-  "testimonials": {
-    "eyebrow": "Client voices",
-    "title": "Words of praise from others about our presence",
+  "giiGlance": {
+    "eyebrow": "GII at a glance",
+    "title": "Experience that travels with every project",
+    "description": "From water and energy to digital platforms, GII brings German engineering, international delivery and bilingual capability to every engagement.",
     "items": {
-      "samantha": {
-        "quote": "GII exceeded our expectations with a practical digitalization roadmap that connected shop-floor data to decisions our teams could act on immediately.",
-        "name": "Samantha Johnson",
-        "role": "CEO, NordWerk Manufacturing"
+      "since2014": {
+        "title": "Since 2014",
+        "description": "Technology & innovation experience."
       },
-      "john": {
-        "quote": "Their ability to translate complex technology into clear business outcomes made them an invaluable partner throughout our Industry 4.0 rollout.",
-        "name": "John Peters",
-        "role": "Operations Director, RheinTech AG"
+      "hundredsOfProjects": {
+        "title": "Hundreds of projects",
+        "description": "Digital, technical & consulting solutions."
       },
-      "elena": {
-        "quote": "From discovery to delivery, the team brought structure, transparency and German engineering quality to a project that had stalled for months.",
-        "name": "Elena Müller",
-        "role": "Head of Digital, AquaFlow Utilities"
+      "internationalExperience": {
+        "title": "International experience",
+        "description": "Germany, Europe & MENA."
       },
-      "marcus": {
-        "quote": "We needed a partner who understood both enterprise software and medical compliance. GII delivered a platform our clinicians actually enjoy using.",
-        "name": "Marcus Weber",
-        "role": "CTO, VitalCare Systems"
+      "arabicEnglish": {
+        "title": "Arabic & English",
+        "description": "International communication capability."
       },
-      "priya": {
-        "quote": "The collaboration felt genuinely strategic — not just development hours. They helped us connect international partners with the right German technology stack.",
-        "name": "Priya Sharma",
-        "role": "Program Lead, Global Development Alliance"
+      "iotWsn": {
+        "title": "IoT & WSN expertise",
+        "description": "Smart & connected systems."
       },
-      "thomas": {
-        "quote": "Flexible engagement, strong communication and reliable delivery. GII became an extension of our team rather than an external vendor.",
-        "name": "Thomas Berger",
-        "role": "Managing Partner, Bergmann Consulting"
+      "multiSector": {
+        "title": "Multi-sector experience",
+        "description": "Water, energy, environment, healthcare, education & industry."
       }
     }
   },
@@ -262,6 +365,60 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Use",
     "imprint": "Imprint"
+  },
+  "contactPage": {
+    "metaTitle": "Contact | GII",
+    "eyebrow": "Start a project",
+    "title": "Tell us what you want to transform",
+    "description": "Share your goals, timeline and the technologies you want to explore. GII will follow up with a specialist who can help you modernize operations and connect with German innovation.",
+    "formHeading": "Contact our team",
+    "fields": {
+      "name": "Name",
+      "company": "Company",
+      "country": "Country",
+      "email": "Email",
+      "phone": "Phone",
+      "sector": "Sector",
+      "budget": "Budget",
+      "timeline": "Timeline",
+      "description": "Project description",
+      "file": "Attach a brief or specification (optional)"
+    },
+    "sector": {
+      "placeholder": "Select a service",
+      "undecided": "Not sure yet"
+    },
+    "budget": {
+      "placeholder": "Select a range",
+      "options": {
+        "undecided": "Not sure yet",
+        "s": "Under €25k",
+        "m": "€25k – €75k",
+        "l": "€75k – €150k",
+        "xl": "€150k+"
+      }
+    },
+    "timeline": {
+      "placeholder": "Select a timeline",
+      "options": {
+        "asap": "As soon as possible",
+        "threeMonths": "Within 3 months",
+        "sixMonths": "Within 6 months",
+        "exploring": "Still exploring"
+      }
+    },
+    "submit": "Send project request",
+    "successTitle": "Request received",
+    "successBody": "Thank you. A GII specialist will review your project and follow up shortly.",
+    "locationLabel": "Address",
+    "locationCompany": "G II – German Innovation Institution GmbH",
+    "locationStreet": "Helmholtzstr. 2-9",
+    "locationCity": "10587 Berlin",
+    "locationCountry": "Germany",
+    "emailLabel": "Email",
+    "emailValue": "info@g-ii.eu",
+    "phoneLabel": "Phone",
+    "phoneValue": "+49 (0) 30 53152061"
   }
 }
 

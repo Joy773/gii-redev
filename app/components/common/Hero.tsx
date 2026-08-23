@@ -1,12 +1,15 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { useTheme } from "next-themes";
 
 import { ExploreSolutionsButton, StartProjectButton } from "./buttons";
 import MoltenMetal from "./MoltenMetal";
 
 export default function Hero() {
   const t = useTranslations("hero");
+  const { resolvedTheme } = useTheme();
+  const isDark = resolvedTheme === "dark";
   const titleWords = t("title").split(" ");
 
   return (
@@ -15,17 +18,17 @@ export default function Hero() {
         <MoltenMetal
           color1="#123b56"
           color2="#3179ab"
-          color3="#F4F7F9"
+          color3={isDark ? "#1a3d52" : "#F4F7F9"}
           colorMode="frost"
           speed={0.28}
           scale={3.6}
           detail={3}
-          glow={1.4}
+          glow={isDark ? 0.9 : 1.4}
           coreSize={0.12}
           swirl={0.85}
           fold={-0.18}
-          blackPoint={0.08}
-          brightness={1.15}
+          blackPoint={isDark ? 0.22 : 0.08}
+          brightness={isDark ? 0.72 : 1.15}
           grain
           grainIntensity={0.04}
           mouseInteraction
@@ -34,12 +37,12 @@ export default function Hero() {
         />
       </div>
 
-      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(244,247,249,0.96)_0%,rgba(244,247,249,0.88)_36%,rgba(244,247,249,0.55)_62%,rgba(244,247,249,0.22)_100%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(49,121,171,0.14),transparent_35%),radial-gradient(circle_at_bottom_right,rgba(18,59,86,0.12),transparent_32%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(244,247,249,0.96)_0%,rgba(244,247,249,0.88)_36%,rgba(244,247,249,0.55)_62%,rgba(244,247,249,0.22)_100%)] dark:bg-[linear-gradient(90deg,rgba(11,26,36,0.88)_0%,rgba(11,26,36,0.72)_40%,rgba(11,26,36,0.42)_100%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(49,121,171,0.14),transparent_35%),radial-gradient(circle_at_bottom_right,rgba(18,59,86,0.12),transparent_32%)] dark:bg-[radial-gradient(circle_at_top_left,rgba(49,121,171,0.22),transparent_40%),radial-gradient(circle_at_bottom_right,rgba(18,59,86,0.28),transparent_36%)]" />
 
       <div className="relative mx-auto flex min-h-[calc(100vh-4.25rem)] max-w-7xl items-center justify-center px-4 py-12 sm:px-6 md:py-16 lg:px-8 lg:py-20">
         <div className="max-w-4xl text-center">
-          <span className="inline-flex rounded-full border border-primary/15 bg-white/80 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-primary shadow-sm">
+          <span className="inline-flex max-w-full rounded-full border border-primary/15 bg-surface/80 px-6 py-2.5 text-center text-2xl font-semibold uppercase tracking-tight text-primary shadow-sm">
             {t("eyebrow")}
           </span>
 

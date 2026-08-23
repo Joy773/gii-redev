@@ -19,10 +19,10 @@ export default function CTA() {
     return (
       <Link
         href={`/${locale}${href}`}
-        className="group inline-flex items-center justify-between gap-4 rounded-full bg-[#0b0b0b] px-7 py-3 text-[13px] font-semibold text-white shadow-[0_12px_30px_rgba(0,0,0,0.28)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_18px_50px_rgba(0,0,0,0.4)]"
+        className="group inline-flex items-center justify-between gap-4 rounded-full bg-[#0b0b0b] px-7 py-3 text-[13px] font-semibold text-white shadow-[0_12px_30px_rgba(0,0,0,0.28)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_18px_50px_rgba(0,0,0,0.4)] dark:bg-white dark:text-navy dark:shadow-[0_12px_30px_rgba(0,0,0,0.28)] dark:hover:bg-white dark:hover:text-navy dark:hover:shadow-[0_18px_50px_rgba(0,0,0,0.4)]"
       >
         <span>{label}</span>
-        <span className="inline-flex size-8 items-center justify-center rounded-full bg-white/15 transition-all duration-300 group-hover:bg-white/25">
+        <span className="inline-flex size-8 items-center justify-center rounded-full bg-white/15 transition-all duration-300 group-hover:bg-white/25 dark:bg-navy/10 dark:group-hover:bg-navy/15">
           <FiArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-0.5" aria-hidden="true" />
         </span>
       </Link>
@@ -30,9 +30,9 @@ export default function CTA() {
   };
 
   return (
-    <section className="grid-surface grid-surface-soft py-16 sm:py-20">
+    <section className="grid-surface bg-[#0C1F2C] py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="relative overflow-hidden rounded-[1.75rem] bg-gradient-to-r from-primary to-dark px-6 py-10 sm:px-10 sm:py-14">
+        <div className="relative overflow-hidden rounded-[1.75rem] bg-gradient-to-r from-primary to-navy px-6 py-10 sm:px-10 sm:py-14">
           {/* Decorative arcs (right side) */}
           <div
             className="pointer-events-none absolute right-[-120px] top-[-160px] h-[520px] w-[520px] rounded-full bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.30)_0%,rgba(255,255,255,0.12)_30%,transparent_65%)]"

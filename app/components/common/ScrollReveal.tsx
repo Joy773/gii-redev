@@ -19,6 +19,7 @@ type ScrollRevealProps = {
   textClassName?: string;
   rotationEnd?: string;
   wordAnimationEnd?: string;
+  playOnMount?: boolean;
 };
 
 export default function ScrollReveal({
@@ -32,6 +33,7 @@ export default function ScrollReveal({
   textClassName = "",
   rotationEnd = "top 55%",
   wordAnimationEnd = "top 55%",
+  playOnMount = false,
 }: ScrollRevealProps) {
   const containerRef = useRef<HTMLHeadingElement>(null);
 
@@ -57,51 +59,80 @@ export default function ScrollReveal({
     const triggers: ScrollTrigger[] = [];
     const tweens: gsap.core.Tween[] = [];
 
-    const rotationTween = gsap.fromTo(
-      el,
-      { transformOrigin: "0% 50%", rotate: baseRotation },
-      {
+    if (playOnMount) {
+      tweens.push(
+        gsap.fromTo(
+          el,
+          { transformOrigin: "0% 50%", rotate: baseRotation },
+          { ease: "power2.out", rotate: 0, duration: 1.15 },
+        ),
+      );
+
+      const wordElements = el.querySelectorAll(".word");
+      const wordFrom: gsap.TweenVars = {
+        opacity: baseOpacity,
+        willChange: "opacity, filter",
+      };
+      const wordTo: gsap.TweenVars = {
+        ease: "power2.out",
+        opacity: 1,
+        duration: 0.9,
+        stagger: 0.08,
+      };
+
+      if (enableBlur) {
+        wordFrom.filter = `blur(${blurStrength}px)`;
+        wordTo.filter = "blur(0px)";
+      }
+
+      tweens.push(gsap.fromTo(wordElements, wordFrom, wordTo));
+    } else {
+      const rotationTween = gsap.fromTo(
+        el,
+        { transformOrigin: "0% 50%", rotate: baseRotation },
+        {
+          ease: "none",
+          rotate: 0,
+          scrollTrigger: {
+            trigger: el,
+            scroller,
+            start: "top bottom",
+            end: rotationEnd,
+            scrub: 0.6,
+          },
+        },
+      );
+      tweens.push(rotationTween);
+      if (rotationTween.scrollTrigger) triggers.push(rotationTween.scrollTrigger);
+
+      const wordElements = el.querySelectorAll(".word");
+
+      const wordFrom: gsap.TweenVars = {
+        opacity: baseOpacity,
+        willChange: "opacity, filter",
+      };
+      const wordTo: gsap.TweenVars = {
         ease: "none",
-        rotate: 0,
+        opacity: 1,
+        stagger: 0.08,
         scrollTrigger: {
           trigger: el,
           scroller,
-          start: "top bottom",
-          end: rotationEnd,
+          start: "top 90%",
+          end: wordAnimationEnd,
           scrub: 0.6,
         },
-      },
-    );
-    tweens.push(rotationTween);
-    if (rotationTween.scrollTrigger) triggers.push(rotationTween.scrollTrigger);
+      };
 
-    const wordElements = el.querySelectorAll(".word");
+      if (enableBlur) {
+        wordFrom.filter = `blur(${blurStrength}px)`;
+        wordTo.filter = "blur(0px)";
+      }
 
-    const wordFrom: gsap.TweenVars = {
-      opacity: baseOpacity,
-      willChange: "opacity, filter",
-    };
-    const wordTo: gsap.TweenVars = {
-      ease: "none",
-      opacity: 1,
-      stagger: 0.08,
-      scrollTrigger: {
-        trigger: el,
-        scroller,
-        start: "top 90%",
-        end: wordAnimationEnd,
-        scrub: 0.6,
-      },
-    };
-
-    if (enableBlur) {
-      wordFrom.filter = `blur(${blurStrength}px)`;
-      wordTo.filter = "blur(0px)";
+      const wordTween = gsap.fromTo(wordElements, wordFrom, wordTo);
+      tweens.push(wordTween);
+      if (wordTween.scrollTrigger) triggers.push(wordTween.scrollTrigger);
     }
-
-    const wordTween = gsap.fromTo(wordElements, wordFrom, wordTo);
-    tweens.push(wordTween);
-    if (wordTween.scrollTrigger) triggers.push(wordTween.scrollTrigger);
 
     return () => {
       triggers.forEach((trigger) => trigger.kill());
@@ -115,6 +146,7 @@ export default function ScrollReveal({
     rotationEnd,
     wordAnimationEnd,
     blurStrength,
+    playOnMount,
   ]);
 
   return (

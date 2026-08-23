@@ -2,13 +2,20 @@
   "nav": {
     "home": "Startseite",
     "services": "Leistungen",
-    "consultancy": "Beratung",
+    "industries": "Branchen",
     "projects": "Projekte",
-    "insights": "Einblicke",
+    "researchInnovation": "Forschung & Innovation",
+    "consultancy": "Beratung",
     "about": "Über uns",
+    "insights": "Einblicke",
     "contact": "Kontakt",
     "overview": "Überblick",
     "digitalTransformation": "Digitale Transformation",
+    "softwareDigitalPlatforms": "Software & digitale Plattformen",
+    "aiData": "KI & Daten",
+    "iotWsnSmartSystems": "IoT, WSN & intelligente Systeme",
+    "sustainableTechnology": "Nachhaltige Technologie",
+    "ictSystemsIntegration": "IKT-Systemintegration",
     "digitalisierung": "Digitalisierung für Unternehmen",
     "mittelstand": "Mittelstand",
     "industry40": "Industrie 4.0",
@@ -61,12 +68,20 @@
       "madeInGermany": "Made in Germany"
     }
   },
+  "qualificationStrip": {
+    "since2014": "Seit 2014",
+    "germanyBased": "Standort Deutschland",
+    "internationalProjects": "Internationale Projekte",
+    "arabicEnglish": "Arabisch- & Englischkompetenz"
+  },
   "aria": {
     "home": "GII Startseite",
     "search": "Einblicke, Partner und Projekte durchsuchen",
     "openMenu": "Menü öffnen",
     "closeMenu": "Menü schließen",
-    "language": "Sprache"
+    "language": "Sprache",
+    "switchToDark": "Zum dunklen Modus wechseln",
+    "switchToLight": "Zum hellen Modus wechseln"
   },
   "serviceCards": {
     "eyebrow": "Unsere Leistungen",
@@ -163,25 +178,118 @@
     "description": "Ein Einblick, wie GII Strategie in konkrete Lösungen für digitale Transformation, Industrie und nachhaltige Technologie umsetzt.",
     "cta": "Alle Projekte ansehen",
     "items": {
-      "industry40": {
-        "category": "Industrie 4.0",
-        "country": "Deutschland",
-        "title": "Intelligentes Produktionsmonitoring",
-        "description": "Vernetzte Maschinen, Live-Produktionsdaten und prognostische Einblicke für einen Fertigungspartner."
-      },
-      "water": {
+      "mewf": {
         "category": "Wasser",
-        "country": "International",
-        "title": "Digitale Wasserwirtschaft",
-        "description": "Monitoring, Leckerkennung und Qualitätsdaten für eine effizientere Wasserinfrastruktur."
+        "country": "Naher Osten",
+        "title": "Middle East Water Forum (MEWF)",
+        "description": "Eine regionale Plattform für Versorger, Fachleute und Partner zum Austausch von technischem Wissen, Schulungen und Innovation für nachhaltige Wasserversorgung.",
+        "overview": "MEWF ist eine regionale Plattform, die Versorger, politische Entscheider und technische Partner rund um Wasserversorgung zusammenbringt. GII unterstützt das Programm mit deutscher Ingenieurkompetenz, Schulungsformaten und angewandter Innovation für nachhaltige Wassersysteme.",
+        "challenge": "Wasserversorger und öffentliche Institutionen in der Region arbeiten oft isoliert und haben nur begrenzten Zugang zu angewandtem Ingenieurwissen, strukturierten Schulungen und praxisnaher Innovation für langfristige Wasserversorgung.",
+        "solution": "GII hat MEWF als Arbeitsforum für technischen Austausch, Kompetenzaufbau und angewandte Wasserinnovation mitgestaltet und regionale Partner mit deutscher Expertise in nachhaltigen Wassersystemen, Schulung und Programmgestaltung verbunden.",
+        "technologies": [
+          "Ingenieurwesen für Wassersysteme",
+          "Programme zum Kompetenzaufbau",
+          "Wissensplattformen",
+          "Nachhaltige Wassertechnologie",
+          "Technische Workshops und Schulungen"
+        ],
+        "keyAreas": [
+          "Zweisprachige digitale Plattform (Arabisch/Englisch)",
+          "Wasserressourcenmanagement und Wasserversorgungssicherheit",
+          "Netzwerk von Fachleuten und Expertinnen/Experten",
+          "Austausch von Wissen und technischen Informationen",
+          "Innovation und Technologie im Wassersektor",
+          "Schulung und Kompetenzentwicklung",
+          "Veranstaltungen und fachlicher Dialog",
+          "Einbindung regionaler Stakeholder",
+          "Wasser-Energie-Ernährung-Umwelt-Nexus (WEFE)",
+          "Klimawandel und nachhaltiges Wassermanagement"
+        ],
+        "expertise": [
+          "Deutsche Wassertechnik",
+          "Internationale Programmgestaltung",
+          "Umsetzung auf Arabisch und Englisch",
+          "Zusammenarbeit mit öffentlichem Sektor und Versorgern"
+        ]
       },
-      "digitalHealth": {
-        "category": "Medizintechnik",
+      "clivent": {
+        "category": "Lüftung & HVAC",
         "country": "Deutschland",
-        "title": "Digitale Gesundheitsplattform",
-        "description": "Eine sichere Plattform für Patientenservices, Datenabläufe und vernetzte Gesundheitsversorgung."
+        "title": "CLIVENT",
+        "description": "Energieeffiziente Lüftungs- und Klimatechnik, die deutsche Umwelttechnik mit smarter Gebäudetechnik verbindet.",
+        "overview": "CLIVENT entwickelt energieeffiziente Lüftungs- und Klimatechnik für Gebäude, die zuverlässige Klimatisierung bei geringerem Energiebedarf brauchen. Das Projekt verbindet deutsche Umwelttechnik mit smarter Betriebsführung für gewerbliche und industrielle Anlagen.",
+        "challenge": "Gewerbe- und Industriegebäude brauchen ein stabiles Innenklima, doch konventionelle HVAC-Systeme verbrauchen oft zu viel Energie und lassen sich im laufenden Betrieb nur schwer effizient steuern.",
+        "solution": "GII hat deutsche Umwelttechnik mit smarter Gebäudetechnik verbunden: energieeffiziente Lüftungs- und Klimasysteme, die den Energiebedarf senken, ohne die Klimaperformance zu schwächen.",
+        "technologies": [
+          "Energieeffiziente Lüftung",
+          "HVAC-Systeme",
+          "Gebäudeklimatisierung",
+          "Umwelttechnik",
+          "Betriebsoptimierung"
+        ],
+        "keyAreas": [
+          "Innenklima",
+          "Energieeffizienz",
+          "Gebäudebetrieb",
+          "Industrieanlagen",
+          "Gewerbeimmobilien"
+        ],
+        "expertise": [
+          "Deutsche Umwelttechnik",
+          "Auslegung von HVAC-Systemen",
+          "Energieeffiziente Gebäudetechnik",
+          "Umsetzung für die Industrie"
+        ]
+      },
+      "germanCare": {
+        "category": "E-Commerce",
+        "country": "Deutschland",
+        "title": "German Care",
+        "description": "Unterstützung in Medizintechnik und Krankenhausplanung für vernetzte Versorgung, Ausstattung und lokale Lieferketten.",
+        "overview": "German Care ist eine E-Commerce- und Versorgungslösung für Medizintechnik, Krankenhausplanung und vernetzte Gesundheitsversorgung. GII unterstützt Produktzugang, Ausstattungskoordination und lokale Lieferketten, damit Einrichtungen Lösungen nach deutschem Standard leichter beziehen können.",
+        "challenge": "Gesundheitseinrichtungen brauchen zuverlässigen Zugang zu Medizintechnik, Krankenhausplanung und lokaler Versorgung, doch die Beschaffung von Lösungen nach deutschem Standard ist oft über Produkte, Partner und Logistik zersplittert.",
+        "solution": "GII unterstützt German Care als digitale Handels- und Versorgungsplattform, die Produktzugang, Medizintechnik und Krankenhausplanung koordiniert und Lösungen nach deutschem Standard leichter verfügbar macht.",
+        "technologies": [
+          "E-Commerce-Plattformen",
+          "Versorgung mit Medizintechnik",
+          "Unterstützung in der Krankenhausplanung",
+          "Logistik im Gesundheitswesen",
+          "Digitale Produktkataloge"
+        ],
+        "keyAreas": [
+          "Medizinische Ausstattung",
+          "Krankenhausplanung",
+          "Lieferketten im Gesundheitswesen",
+          "Vernetzte Versorgung",
+          "Produktzugang"
+        ],
+        "expertise": [
+          "Medizintechnik",
+          "Digitale Handelsplattformen",
+          "Logistik im Gesundheitswesen",
+          "Beschaffung nach deutschem Standard"
+        ]
       }
     }
+  },
+  "projectPage": {
+    "back": "Zurück zu den Projekten",
+    "related": "Weitere Projekte",
+    "relatedDescription": "Entdecken Sie weitere GII-Projekte in Wasser, Energie, Industrie und digitalen Plattformen und sehen Sie, wie deutsche Technologie in der Praxis umgesetzt wird.",
+    "overview": "Überblick",
+    "challenge": "Herausforderung",
+    "solution": "GII-Lösung",
+    "technologies": "Technologien / Leistungen",
+    "keyAreas": "Schwerpunkte",
+    "expertise": "GII-Kompetenz",
+    "sectorRegion": "Sektor / Region",
+    "sector": "Sektor",
+    "region": "Region",
+    "viewProject": "Projekt ansehen",
+    "onThisPage": "Auf dieser Seite",
+    "ctaEyebrow": "Ähnliches Projekt starten",
+    "ctaTitle": "Möchten Sie etwas Vergleichbares umsetzen?",
+    "ctaDescription": "Schildern Sie GII Ihre Ziele – wir verbinden Sie mit den richtigen Fachleuten."
   },
   "whyChooseUs": {
     "eyebrow": "Warum wir",
@@ -208,39 +316,34 @@
       }
     }
   },
-  "testimonials": {
-    "eyebrow": "Stimmen unserer Kunden",
-    "title": "Wertschätzende Worte anderer über unsere Arbeit",
+  "giiGlance": {
+    "eyebrow": "GII im Überblick",
+    "title": "Erfahrung, die in jedes Projekt einfließt",
+    "description": "Von Wasser und Energie bis zu digitalen Plattformen bringt GII deutsche Ingenieurskunst, internationale Umsetzung und zweisprachige Kompetenz in jedes Projekt.",
     "items": {
-      "samantha": {
-        "quote": "GII hat unsere Erwartungen mit einer praxisnahen Digitalisierungs-Roadmap übertroffen, die Shopfloor-Daten mit Entscheidungen verband, die unsere Teams sofort umsetzen konnten.",
-        "name": "Samantha Johnson",
-        "role": "CEO, NordWerk Manufacturing"
+      "since2014": {
+        "title": "Seit 2014",
+        "description": "Erfahrung in Technologie und Innovation."
       },
-      "john": {
-        "quote": "Ihre Fähigkeit, komplexe Technologie in klare Geschäftsergebnisse zu übersetzen, machte sie zu einem unschätzbaren Partner während unseres Industrie-4.0-Rollouts.",
-        "name": "John Peters",
-        "role": "Operations Director, RheinTech AG"
+      "hundredsOfProjects": {
+        "title": "Hunderte Projekte",
+        "description": "Digitale, technische und Beratungslösungen."
       },
-      "elena": {
-        "quote": "Von der Analyse bis zur Lieferung brachte das Team Struktur, Transparenz und deutsche Ingenieursqualität in ein Projekt, das monatelang feststand.",
-        "name": "Elena Müller",
-        "role": "Head of Digital, AquaFlow Utilities"
+      "internationalExperience": {
+        "title": "Internationale Erfahrung",
+        "description": "Deutschland, Europa und MENA."
       },
-      "marcus": {
-        "quote": "Wir brauchten einen Partner, der Enterprise-Software und medizinische Compliance versteht. GII lieferte eine Plattform, die unsere Kliniker gerne nutzen.",
-        "name": "Marcus Weber",
-        "role": "CTO, VitalCare Systems"
+      "arabicEnglish": {
+        "title": "Arabisch & Englisch",
+        "description": "Internationale Kommunikationskompetenz."
       },
-      "priya": {
-        "quote": "Die Zusammenarbeit wirkte wirklich strategisch — nicht nur Entwicklungsstunden. GII half uns, internationale Partner mit dem passenden deutschen Technologie-Stack zu verbinden.",
-        "name": "Priya Sharma",
-        "role": "Program Lead, Global Development Alliance"
+      "iotWsn": {
+        "title": "IoT- & WSN-Expertise",
+        "description": "Intelligente und vernetzte Systeme."
       },
-      "thomas": {
-        "quote": "Flexible Zusammenarbeit, starke Kommunikation und verlässliche Lieferung. GII wurde eher Teil unseres Teams als ein externer Dienstleister.",
-        "name": "Thomas Berger",
-        "role": "Managing Partner, Bergmann Consulting"
+      "multiSector": {
+        "title": "Branchenübergreifende Erfahrung",
+        "description": "Wasser, Energie, Umwelt, Gesundheitswesen, Bildung und Industrie."
       }
     }
   },
@@ -262,6 +365,60 @@
     "privacy": "Datenschutz",
     "terms": "Nutzungsbedingungen",
     "imprint": "Impressum"
+  },
+  "contactPage": {
+    "metaTitle": "Kontakt | GII",
+    "eyebrow": "Projekt starten",
+    "title": "Sagen Sie uns, was Sie transformieren möchten",
+    "description": "Teilen Sie Ziele, Zeitrahmen und die Technologien, die Sie prüfen möchten. GII meldet sich mit einer Fachperson, die Ihnen hilft, Abläufe zu modernisieren und deutsche Innovation anzubinden.",
+    "formHeading": "Kontaktieren Sie unser Team",
+    "fields": {
+      "name": "Name",
+      "company": "Unternehmen",
+      "country": "Land",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "sector": "Branche",
+      "budget": "Budget",
+      "timeline": "Zeitrahmen",
+      "description": "Projektbeschreibung",
+      "file": "Briefing oder Spezifikation anhängen (optional)"
+    },
+    "sector": {
+      "placeholder": "Leistung wählen",
+      "undecided": "Noch unsicher"
+    },
+    "budget": {
+      "placeholder": "Rahmen wählen",
+      "options": {
+        "undecided": "Noch unsicher",
+        "s": "Unter 25.000 €",
+        "m": "25.000 € – 75.000 €",
+        "l": "75.000 € – 150.000 €",
+        "xl": "150.000 €+"
+      }
+    },
+    "timeline": {
+      "placeholder": "Zeitrahmen wählen",
+      "options": {
+        "asap": "So schnell wie möglich",
+        "threeMonths": "Innerhalb von 3 Monaten",
+        "sixMonths": "Innerhalb von 6 Monaten",
+        "exploring": "Noch in der Orientierung"
+      }
+    },
+    "submit": "Projektanfrage senden",
+    "successTitle": "Anfrage erhalten",
+    "successBody": "Vielen Dank. Eine Fachperson von GII prüft Ihr Projekt und meldet sich in Kürze.",
+    "locationLabel": "Adresse",
+    "locationCompany": "G II – German Innovation Institution GmbH",
+    "locationStreet": "Helmholtzstr. 2-9",
+    "locationCity": "10587 Berlin",
+    "locationCountry": "Deutschland",
+    "emailLabel": "E-Mail",
+    "emailValue": "info@g-ii.eu",
+    "phoneLabel": "Telefon",
+    "phoneValue": "+49 (0) 30 53152061"
   }
 }
 

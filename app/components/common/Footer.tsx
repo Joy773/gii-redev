@@ -35,8 +35,6 @@ const LEGAL_LINKS: NavLink[] = [
   { id: "imprint", labelKey: "imprint", href: "/imprint" },
 ];
 
-const COMPANY_LINKS = NAV_LINKS.filter((link) => link.id !== "services");
-
 function localizeHref(locale: string, href: string) {
   if (href.startsWith("http")) return href;
   return href === "/" ? `/${locale}` : `/${locale}${href}`;
@@ -59,12 +57,12 @@ function FooterColumn({
       {titleHref ? (
         <Link
           href={localizeHref(locale, titleHref)}
-          className="text-[11px] font-semibold uppercase tracking-[0.16em] text-white/45 transition-colors hover:text-primary"
+          className="text-[11px] font-semibold uppercase tracking-[0.16em] text-white/70 transition-colors hover:text-primary"
         >
           {title}
         </Link>
       ) : (
-        <h3 className="text-[11px] font-semibold uppercase tracking-[0.16em] text-white/45">
+        <h3 className="text-[11px] font-semibold uppercase tracking-[0.16em] text-white/70">
           {title}
         </h3>
       )}
@@ -156,7 +154,7 @@ export default function Footer() {
                 value={email}
                 onChange={(event) => setEmail(event.target.value)}
                 placeholder={t("emailPlaceholder")}
-                className="w-full rounded-full border border-white/10 bg-white py-3.5 pr-14 pl-5 text-sm text-dark outline-none transition-shadow placeholder:text-text/45 focus:border-primary/40 focus:shadow-[0_0_0_3px_rgba(49,121,171,0.2)]"
+                className="w-full rounded-full border border-white/10 bg-surface py-3.5 pr-14 pl-5 text-sm text-dark outline-none transition-shadow placeholder:text-text/45 focus:border-primary/40 focus:shadow-[0_0_0_3px_rgba(49,121,171,0.2)]"
               />
               <button
                 type="submit"
@@ -169,8 +167,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-x-6 gap-y-10 py-14 lg:grid-cols-4 lg:gap-8">
-          <FooterColumn title={t("navTitle")} links={COMPANY_LINKS} />
+        <div className="grid grid-cols-2 gap-x-6 gap-y-10 py-14 sm:grid-cols-3 lg:grid-cols-4">
+          <FooterColumn title={t("navTitle")} links={NAV_LINKS} />
           {SERVICE_COLUMNS.map((column) => (
             <FooterColumn
               key={column.id}
@@ -184,7 +182,7 @@ export default function Footer() {
 
       <div className="relative border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-6 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
-          <p className="text-sm text-white/45">
+          <p className="text-sm text-white/70">
             {t("copyright", { year: new Date().getFullYear() })}
           </p>
           <ul className="flex flex-wrap gap-x-6 gap-y-2">
@@ -192,7 +190,7 @@ export default function Footer() {
               <li key={link.id}>
                 <Link
                   href={localizeHref(locale, link.href)}
-                  className="text-sm text-white/45 transition-colors hover:text-white/80"
+                  className="text-sm text-white/70 transition-colors hover:text-white"
                 >
                   {t(link.labelKey)}
                 </Link>

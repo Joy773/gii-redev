@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 
-import { PROJECTS } from "../data/projects";
+import type { Project } from "../data/projects";
 import { useScrollReveal } from "../hooks/useScrollReveal";
 import { ViewAllProjectsButton } from "./common/buttons";
 import ProjectCard from "./ProjectCard";
@@ -12,41 +12,33 @@ function revealClass(visible: boolean) {
   return visible ? "section-fade section-fade-visible" : "section-fade";
 }
 
-export default function Projects() {
-  const t = useTranslations("projects");
+export default function RelatedProjects({ projects }: { projects: Project[] }) {
+  const tPage = useTranslations("projectPage");
   const { ref: sectionRef, isVisible } = useScrollReveal<HTMLElement>();
 
   return (
     <section
       ref={sectionRef}
-      id="projects"
-      className="grid-surface grid-surface-soft scroll-mt-24 py-20 sm:py-24"
+      className="grid-surface bg-[#122A3B] py-16 sm:py-20 lg:py-24"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center gap-6 text-center sm:flex-row sm:items-end sm:justify-between sm:text-left">
           <div className="max-w-2xl">
-            <span
-              className={`inline-flex items-center gap-2 rounded-full bg-primary/8 px-3 py-1 text-sm font-medium text-primary ${revealClass(isVisible)}`}
-              style={{ transitionDelay: "0ms" }}
-            >
-              <span className="eyebrow-dot-pulse size-2 rounded-full bg-primary" />
-              {t("eyebrow")}
-            </span>
             <ScrollReveal
               baseOpacity={0.25}
               enableBlur
               baseRotation={4}
               blurStrength={18}
-              containerClassName="mt-6 text-center sm:text-left"
-              textClassName="text-center text-4xl font-semibold tracking-tight text-dark sm:text-left sm:text-5xl"
+              containerClassName="text-center sm:text-left"
+              textClassName="text-center text-4xl font-semibold tracking-tight text-white sm:text-left sm:text-5xl"
             >
-              {t("title")}
+              {tPage("related")}
             </ScrollReveal>
             <p
-              className={`mt-4 max-w-xl text-lg leading-8 text-text/72 ${revealClass(isVisible)}`}
+              className={`mt-4 max-w-xl text-lg leading-8 text-white/70 ${revealClass(isVisible)}`}
               style={{ transitionDelay: "160ms" }}
             >
-              {t("description")}
+              {tPage("relatedDescription")}
             </p>
           </div>
 
@@ -59,7 +51,7 @@ export default function Projects() {
         </div>
 
         <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-          {PROJECTS.map((project, index) => (
+          {projects.map((project, index) => (
             <ProjectCard
               key={project.id}
               project={project}

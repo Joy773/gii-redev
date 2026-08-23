@@ -1,10 +1,16 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
+  color-scheme: light;
   --primary: #3179ab;
-  --dark: #123b56;
+  --navy: #123b56;
+  --ink: #123b56;
   --text: #2f3437;
   --soft-background: #f4f7f9;
+  --elevated: #ffffff;
+  --canvas: #ffffff;
   --border: #d9e2e7;
   --white: #ffffff;
 
@@ -12,11 +18,28 @@
   --foreground: var(--text);
 }
 
+.dark {
+  color-scheme: dark;
+  --primary: #5aa3d4;
+  --ink: #eef4f7;
+  --text: #c5d3dc;
+  --soft-background: #122a3b;
+  --elevated: #173445;
+  --canvas: #0c1f2c;
+  --border: #3a5d73;
+
+  --background: #0b1a24;
+  --foreground: var(--ink);
+}
+
 @theme inline {
   --color-primary: var(--primary);
-  --color-dark: var(--dark);
+  --color-dark: var(--ink);
+  --color-navy: var(--navy);
   --color-text: var(--text);
   --color-soft-background: var(--soft-background);
+  --color-surface: var(--elevated);
+  --color-canvas: var(--canvas);
   --color-border: var(--border);
   --color-white: var(--white);
   --color-background: var(--background);
@@ -25,10 +48,29 @@
   --font-mono: var(--font-geist-mono);
 }
 
+html {
+  scroll-padding-top: 7rem;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), sans-serif;
+}
+
+.panel-surface {
+  background-color: var(--elevated);
+}
+
+.field-fill {
+  background-color: var(--canvas);
+  color: var(--ink);
+}
+
+select option,
+select optgroup {
+  background-color: var(--elevated);
+  color: var(--ink);
 }
 
 .hero-title-word {
@@ -156,6 +198,11 @@ body {
   transform: translateX(130%);
 }
 
+.project-card-media-photo {
+  animation: none;
+  background: #123b56;
+}
+
 @keyframes project-gradient-shift {
   0%,
   100% {
@@ -168,6 +215,10 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
   .section-fade {
     opacity: 1;
     transform: none;
@@ -186,25 +237,6 @@ body {
   .group:hover .project-card-media {
     transform: none;
   }
-
-  .testimonials-track {
-    animation: none;
-  }
-
-  .testimonials-row {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    overscroll-behavior-x: contain;
-    scrollbar-width: none;
-  }
-
-  .testimonials-row::-webkit-scrollbar {
-    display: none;
-  }
-
-  .testimonials-group:last-child {
-    display: none;
-  }
 }
 
 /*
@@ -218,94 +250,16 @@ body {
   background-size: 26px 26px;
 }
 
+.dark .grid-surface {
+  background-image:
+    linear-gradient(to right, rgba(160, 190, 210, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(160, 190, 210, 0.08) 1px, transparent 1px);
+}
+
 .grid-surface-white {
-  background-color: var(--white);
+  background-color: var(--canvas);
 }
 
 .grid-surface-soft {
   background-color: var(--soft-background);
-}
-
-.testimonials-row {
-  overflow: hidden;
-  width: 100%;
-}
-
-.testimonials-track {
-  display: flex;
-  width: max-content;
-  will-change: transform;
-  backface-visibility: hidden;
-  transform: translateZ(0);
-  animation: testimonials-marquee-left 28s linear infinite;
-}
-
-.testimonials-group {
-  display: flex;
-  flex: 0 0 auto;
-  gap: 1rem;
-  padding-right: 1rem;
-  min-width: max-content;
-}
-
-.testimonials-track-reverse {
-  animation-name: testimonials-marquee-right;
-  animation-duration: 32s;
-}
-
-@media (min-width: 640px) {
-  .testimonials-track {
-    animation-duration: 38s;
-  }
-
-  .testimonials-track-reverse {
-    animation-duration: 42s;
-  }
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .testimonials-row:hover .testimonials-track {
-    animation-play-state: paused;
-  }
-}
-
-.testimonial-card {
-  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
-    box-shadow 0.3s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.testimonial-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 40px rgba(18, 59, 86, 0.1);
-}
-
-@media (min-width: 1600px) {
-  .testimonials-group {
-    gap: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  .testimonial-card {
-    min-height: 18.5rem;
-  }
-}
-
-@keyframes testimonials-marquee-left {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-
-  to {
-    transform: translate3d(-50%, 0, 0);
-  }
-}
-
-@keyframes testimonials-marquee-right {
-  from {
-    transform: translate3d(-50%, 0, 0);
-  }
-
-  to {
-    transform: translate3d(0, 0, 0);
-  }
 }

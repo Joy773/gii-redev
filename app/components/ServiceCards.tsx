@@ -98,7 +98,7 @@ function ServiceGroupCard({
 
   return (
     <article
-      className={`group flex flex-col overflow-hidden rounded-3xl border border-border/70 bg-soft-background p-5 shadow-[0_12px_32px_rgba(18,59,86,0.07)] transition-all duration-300 hover:-translate-y-1 hover:border-primary/25 hover:bg-white hover:shadow-[0_18px_44px_rgba(18,59,86,0.12)] ${group.className}`}
+      className={`group flex flex-col overflow-hidden rounded-3xl border border-border/70 bg-soft-background p-5 shadow-[0_12px_32px_rgba(18,59,86,0.07)] transition-all duration-300 hover:-translate-y-1 hover:border-primary/25 hover:bg-surface hover:shadow-[0_18px_44px_rgba(18,59,86,0.12)] ${group.className}`}
     >
       <div
         key={index}
@@ -127,7 +127,7 @@ function ServiceGroupCard({
             type="button"
             aria-label={t("previous", { group: groupLabel })}
             onClick={showPrevious}
-            className="inline-flex size-8 items-center justify-center rounded-full border border-border/80 bg-white text-dark/70 transition-all duration-300 hover:border-primary/25 hover:text-primary group-hover:border-primary/25 group-hover:text-primary"
+            className="inline-flex size-8 items-center justify-center rounded-full border border-border/80 bg-surface text-dark/70 transition-all duration-300 hover:border-primary/25 hover:text-primary group-hover:border-primary/25 group-hover:text-primary"
           >
             <FiArrowLeft className="size-4" />
           </button>
@@ -135,7 +135,7 @@ function ServiceGroupCard({
             type="button"
             aria-label={t("next", { group: groupLabel })}
             onClick={showNext}
-            className="inline-flex size-8 items-center justify-center rounded-full border border-border/80 bg-white text-dark/70 transition-all duration-300 hover:border-primary/25 hover:text-primary group-hover:border-primary/25 group-hover:text-primary"
+            className="inline-flex size-8 items-center justify-center rounded-full border border-border/80 bg-surface text-dark/70 transition-all duration-300 hover:border-primary/25 hover:text-primary group-hover:border-primary/25 group-hover:text-primary"
           >
             <FiArrowRight className="size-4" />
           </button>
