@@ -105,10 +105,24 @@ const SERVICE_ACCENTS = [
   "from-primary/10 to-soft-background",
 ] as const;
 
+function stripLocale(path: string) {
+  const stripped = path.replace(/^\/(en|de)(?=\/|$)/, "");
+  return stripped === "" ? "/" : stripped;
+}
+
 function matchesPath(pathname: string, href: string) {
-  const path = href.split("#")[0];
-  if (path === "/") return pathname === "/";
-  return pathname === path || pathname.startsWith(`${path}/`);
+  const path = stripLocale(href.split("#")[0]);
+  const current = stripLocale(pathname.split("#")[0]);
+  if (path === "/") return current === "/";
+  return current === path || current.startsWith(`${path}/`);
+}
+
+function withLocale(pathname: string, href: string) {
+  const locale = pathname.split("/")[1] === "de" ? "de" : "en";
+  if (href.startsWith("http")) return href;
+  const [path, hash] = href.split("#");
+  const localized = path === "/" ? `/${locale}` : `/${locale}${path}`;
+  return hash ? `${localized}#${hash}` : localized;
 }
 
 function isActive(pathname: string, item: NavLink): boolean {
@@ -190,6 +204,7 @@ function MenuIcon({ open }: { open: boolean }) {
 
 export default function Navbar() {
   const pathname = usePathname();
+  const localizeHref = (href: string) => withLocale(pathname, href);
   const menuId = useId();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
@@ -248,7 +263,7 @@ export default function Navbar() {
         }`}
       >
         <Link
-          href="/"
+          href={localizeHref("/")}
           className="group shrink-0 transition-transform duration-300 hover:scale-[1.02]"
           aria-label="GII home"
         >
@@ -275,7 +290,7 @@ export default function Navbar() {
                 return (
                   <li key={item.label}>
                     <Link
-                      href={item.href}
+                      href={localizeHref(item.href)}
                       className={`rounded-full px-2.5 py-1.5 text-[12px] font-semibold whitespace-nowrap transition-all duration-200 ${navLinkClass(active)}`}
                     >
                       {item.label}
@@ -338,7 +353,7 @@ export default function Navbar() {
                             className={`bg-gradient-to-b ${SERVICE_ACCENTS[index % SERVICE_ACCENTS.length]} p-5`}
                           >
                             <Link
-                              href={group.href}
+                              href={localizeHref(group.href)}
                               className="group/link flex items-start justify-between gap-2"
                             >
                               <span>
@@ -355,7 +370,7 @@ export default function Navbar() {
                               {group.children?.map((child) => (
                                 <li key={child.label}>
                                   <Link
-                                    href={child.href}
+                                    href={localizeHref(child.href)}
                                     className="block rounded-lg px-2 py-1.5 text-[13px] text-text/75 transition-colors hover:bg-white/80 hover:text-primary"
                                   >
                                     {child.label}
@@ -416,7 +431,7 @@ export default function Navbar() {
           </div>
 
           <Link
-            href="/insights"
+            href={localizeHref("/insights")}
             className="hidden size-9 items-center justify-center rounded-full border border-border/70 bg-white text-dark/70 transition-all duration-200 hover:border-primary/30 hover:bg-primary/5 hover:text-primary xl:inline-flex"
             aria-label="Search insights, partners and projects"
           >
@@ -458,7 +473,7 @@ export default function Navbar() {
                     return (
                       <li key={item.label}>
                         <Link
-                          href={item.href}
+                          href={localizeHref(item.href)}
                           className={`block rounded-xl px-3 py-2.5 text-sm font-semibold transition-colors ${
                             active
                               ? "bg-primary/10 text-primary"
@@ -510,7 +525,7 @@ export default function Navbar() {
                                   <ul className="mb-1 space-y-0.5 ps-3">
                                     <li>
                                       <Link
-                                        href={group.href}
+                                        href={localizeHref(group.href)}
                                         className="block rounded-lg px-3 py-1.5 text-sm text-text/70 hover:bg-soft-background hover:text-primary"
                                       >
                                         Overview
@@ -519,7 +534,7 @@ export default function Navbar() {
                                     {group.children?.map((child) => (
                                       <li key={child.label}>
                                         <Link
-                                          href={child.href}
+                                          href={localizeHref(child.href)}
                                           className="block rounded-lg px-3 py-1.5 text-sm text-text/70 hover:bg-soft-background hover:text-primary"
                                         >
                                           {child.label}
@@ -580,7 +595,7 @@ export default function Navbar() {
                 </div>
 
                 <Link
-                  href="/insights"
+                  href={localizeHref("/insights")}
                   className="flex size-9 items-center justify-center rounded-full border border-border/70 text-dark/70 hover:bg-soft-background"
                   aria-label="Search insights, partners and projects"
                 >

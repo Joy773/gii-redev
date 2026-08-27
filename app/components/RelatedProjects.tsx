@@ -19,7 +19,7 @@ export default function RelatedProjects({ projects }: { projects: Project[] }) {
   return (
     <section
       ref={sectionRef}
-      className="grid-surface bg-[#122A3B] py-16 sm:py-20 lg:py-24"
+      className="grid-surface grid-surface-soft py-16 sm:py-20 lg:py-24"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center gap-6 text-center sm:flex-row sm:items-end sm:justify-between sm:text-left">
@@ -30,12 +30,12 @@ export default function RelatedProjects({ projects }: { projects: Project[] }) {
               baseRotation={4}
               blurStrength={18}
               containerClassName="text-center sm:text-left"
-              textClassName="text-center text-4xl font-semibold tracking-tight text-white sm:text-left sm:text-5xl"
+              textClassName="text-center text-4xl font-semibold tracking-tight text-dark sm:text-left sm:text-5xl"
             >
               {tPage("related")}
             </ScrollReveal>
             <p
-              className={`mt-4 max-w-xl text-lg leading-8 text-white/70 ${revealClass(isVisible)}`}
+              className={`mt-4 max-w-xl text-lg leading-8 text-text/72 ${revealClass(isVisible)}`}
               style={{ transitionDelay: "160ms" }}
             >
               {tPage("relatedDescription")}
@@ -51,7 +51,7 @@ export default function RelatedProjects({ projects }: { projects: Project[] }) {
         </div>
 
         <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-          {projects.map((project, index) => (
+          {projects.slice(0, 3).map((project, index) => (
             <ProjectCard
               key={project.id}
               project={project}

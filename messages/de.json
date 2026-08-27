@@ -175,8 +175,20 @@
   "projects": {
     "eyebrow": "Technologie in der Praxis",
     "title": "Ausgewählte Projekte aus verschiedenen Branchen",
+    "subtitle": "Digitale Transformation. Industrie. Nachhaltige Technologie.",
     "description": "Ein Einblick, wie GII Strategie in konkrete Lösungen für digitale Transformation, Industrie und nachhaltige Technologie umsetzt.",
     "cta": "Alle Projekte ansehen",
+    "metaTitle": "Projekte | GII",
+    "filters": {
+      "aria": "Projekte nach Branche filtern",
+      "all": "Alle",
+      "searchPlaceholder": "Nach Name, Branche oder Region suchen",
+      "searchAria": "Projekte suchen",
+      "clearSearch": "Suche zurücksetzen",
+      "empty": "Keine Projekte passen zu dieser Suche.",
+      "emptyHint": "Versuchen Sie ein anderes Stichwort oder wählen Sie Alle, um jedes Projekt zu sehen.",
+      "resultCount": "{count, plural, one {# Projekt} other {# Projekte}}"
+    },
     "items": {
       "mewf": {
         "category": "Wasser",
@@ -269,6 +281,123 @@
           "Logistik im Gesundheitswesen",
           "Beschaffung nach deutschem Standard"
         ]
+      },
+      "urbanFeeding": {
+        "category": "IoT & WSN",
+        "country": "International",
+        "title": "Intelligente urbane Fütterungs- und Wasserstation",
+        "description": "IoT und drahtlose Sensornetze für eine intelligente Fütterungs- und Wasserstation im urbanen Raum, entwickelt für OneNex.",
+        "overview": "GII hat an einer intelligenten Fütterungs- und Wasserstation für urbane Umgebungen mitgewirkt, entwickelt für OneNex. Das System verbindet automatisierte Servicefunktionen mit intelligenter Überwachung und Konnektivität und nutzt WSN- und IoT-Technologien, um Sensoren, Monitoring-Komponenten und Steuerungsfunktionen in einer smarten städtischen Infrastruktur zu verknüpfen.",
+        "challenge": "Urbane Fütterungs- und Wasserinfrastruktur ist oft nicht vernetzt überwacht. Betreiber können Verfügbarkeit von Futter und Wasser, Verbrauch, Betriebsstatus und Umweltbedingungen im öffentlichen Raum daher kaum zuverlässig nachvollziehen.",
+        "solution": "GII hat IoT- und WSN-Technologien eingesetzt, um Sensoren, Monitoring und Steuerung in einer Architektur zu verbinden — als Grundlage für Fernüberwachung und datengetriebenes Ressourcenmanagement, anpassbar für Smart-City-, Umwelt- und öffentliche Anwendungen.",
+        "technologies": [
+          "Internet of Things (IoT)",
+          "Wireless Sensor Networks (WSN)",
+          "Sensortechnologien",
+          "Intelligentes Monitoring",
+          "Automatisierung",
+          "Smart-City-Infrastruktur"
+        ],
+        "keyAreas": [
+          "Internet of Things (IoT)",
+          "Wireless Sensor Networks (WSN)",
+          "Smart-City-Technologien",
+          "Sensorbasierte Überwachung",
+          "Intelligente Fütterungs- und Wassersysteme",
+          "Fernüberwachung und Konnektivität",
+          "Datengetriebenes Ressourcenmanagement",
+          "Smarte Umweltinfrastruktur",
+          "Energie- und ressourceneffizienter Betrieb",
+          "Skalierbare Technologiearchitektur"
+        ],
+        "expertise": [
+          "IoT",
+          "Wireless Sensor Networks",
+          "Smarte Infrastruktur",
+          "Sensortechnologien",
+          "Intelligentes Monitoring",
+          "Automatisierung",
+          "Umwelttechnik",
+          "Smart-City-Lösungen"
+        ]
+      },
+      "enerbe": {
+        "category": "Energie",
+        "country": "Naher Osten",
+        "title": "ENERBE – Intelligentes Energiemonitoring & IKT-Plattform",
+        "description": "Eine EU-geförderte IKT-Plattform und Gebäude-Energieüberwachung für öffentliche Gebäude — mit Smart Metering, Cloud-Monitoring und Energieeffizienz.",
+        "overview": "GII hat im Nahen Osten ein IKT-gestütztes Energiemonitoring für öffentliche Gebäude im EU-geförderten ENERBE-Vorhaben umgesetzt — Energy Efficiency through ICT-driven Behavioural Change in Public Buildings. Als beauftragter Technologiepartner hat GII die technische Unterstützung für ein cloudbasiertes Building Energy Monitoring System geleistet.",
+        "challenge": "Öffentliche Gebäude sollen Energie durch Verhaltensänderung einsparen, doch Verbrauchsdaten sind oft zersplittert und lassen sich kaum über eine zentrale digitale Plattform erfassen, überwachen und steuern.",
+        "solution": "GII hat eine cloudbasierte IKT-Plattform mit Smart Metering, Fernüberwachung und -steuerung, mehrstufiger Administration und skalierbarer Architektur entwickelt, damit energierelevante Informationen öffentlicher Gebäude zentral erfasst, überwacht und gesteuert werden können.",
+        "technologies": [
+          "Smart Metering",
+          "Cloudbasierte IKT-Plattformen",
+          "Building Energy Monitoring Systems",
+          "Fernüberwachung und -steuerung",
+          "Datengetriebenes Energiemanagement"
+        ],
+        "keyAreas": [
+          "Smart Metering und Energiemonitoring",
+          "Cloudbasierte IKT-Plattformen",
+          "Building Energy Monitoring Systems",
+          "Überwachung des Energieverbrauchs",
+          "Fernüberwachung und -steuerung",
+          "Smart-Building-Technologien",
+          "Datengetriebenes Energiemanagement",
+          "Energieeffizienz",
+          "Skalierbare IKT-Architektur",
+          "Digitalisierung im öffentlichen Sektor",
+          "Internationale Projektumsetzung"
+        ],
+        "expertise": [
+          "Smart Metering",
+          "Energieeffizienz",
+          "IKT-Plattformen",
+          "Cloudbasiertes Monitoring",
+          "Smart Buildings",
+          "Datenmanagement",
+          "Skalierbare Systeme",
+          "Internationale Projektumsetzung"
+        ]
+      },
+      "svAkafa": {
+        "category": "Automotive",
+        "country": "Deutschland",
+        "title": "Fahrzeugprüfung & digitale Infrastruktur",
+        "description": "IKT-Systemintegration und digitale Prozessoptimierung für eine Fahrzeugprüfstelle — inklusive ASA-Schnittstellen, Netzwerken und Online-Terminverwaltung.",
+        "overview": "GII hat die digitale und technische Modernisierung des KFZ-Sachverständigenbüros SV-Akafa unterstützt, einer Fahrzeugprüfstelle in Deutschland. Im Mittelpunkt standen Integration, Stabilität und Optimierung der IKT-Infrastruktur und digitaler Abläufe — intern in der Prüfung und nach außen in den Kundenservices.",
+        "challenge": "Der Prüfbetrieb braucht zuverlässige Datenübertragung, Netzwerkinfrastruktur und digitale Kundenservices. Spezialisierte Prüfsysteme und die alltägliche IKT liegen jedoch oft getrennt und sind schwer synchron zu halten.",
+        "solution": "GII hat die Datenkommunikation über ASA-Schnittstellen optimiert, Netzwerk und Hardware konfiguriert, Prüfsoftware gewartet und die Website-Performance sowie eine Online-Terminlösung mit Outlook- und Google-Synchronisation unterstützt — inklusive laufender technischer Betreuung digitaler Prüfprozesse.",
+        "technologies": [
+          "IKT-Systemintegration",
+          "ASA-Schnittstellenintegration",
+          "Netzwerkinfrastruktur",
+          "Softwarewartung",
+          "Web- und Terminsysteme"
+        ],
+        "keyAreas": [
+          "IKT-Systemintegration und -optimierung",
+          "Digitale Prozessoptimierung",
+          "ASA-Schnittstelle und Datentransfer",
+          "Netzwerkinfrastruktur und Konnektivität",
+          "Hardwareinstallation und -konfiguration",
+          "Softwarewartung und Systemupdates",
+          "Digitale Fahrzeugprüfsysteme",
+          "Website-Performance-Optimierung",
+          "Online-Terminverwaltung",
+          "Outlook- und Google-Synchronisation",
+          "Technischer Support und Anwenderbetreuung"
+        ],
+        "expertise": [
+          "IKT-Systemintegration",
+          "Digitalisierung",
+          "Prozessoptimierung",
+          "Netzwerkinfrastruktur",
+          "Datenkonnektivität",
+          "Softwareintegration",
+          "Weblösungen",
+          "Technischer Support"
+        ]
       }
     }
   },
@@ -287,9 +416,11 @@
     "region": "Region",
     "viewProject": "Projekt ansehen",
     "onThisPage": "Auf dieser Seite",
-    "ctaEyebrow": "Ähnliches Projekt starten",
-    "ctaTitle": "Möchten Sie etwas Vergleichbares umsetzen?",
-    "ctaDescription": "Schildern Sie GII Ihre Ziele – wir verbinden Sie mit den richtigen Fachleuten."
+    "cta": {
+      "eyebrow": "Ähnliches Projekt starten",
+      "title": "Möchten Sie etwas Vergleichbares umsetzen?",
+      "description": "Schildern Sie GII Ihre Ziele – wir verbinden Sie mit den richtigen Fachleuten."
+    }
   },
   "whyChooseUs": {
     "eyebrow": "Warum wir",
@@ -347,6 +478,37 @@
       }
     }
   },
+  "processTimeline": {
+    "eyebrow": "Wie wir arbeiten",
+    "title": "Von der Diagnose zur Umsetzung",
+    "description": "Wir gehen vom Verständnis des Betriebs zu einem funktionierenden System. Beratung, Software und Integration greifen ineinander, damit Empfehlungen zu Lösungen werden, die Teams betreiben können.",
+    "items": {
+      "diagnose": {
+        "title": "Diagnose",
+        "description": "Wir erfassen Abläufe, Rahmenbedingungen und das Ergebnis, das die Organisation tatsächlich braucht."
+      },
+      "design": {
+        "title": "Konzeption",
+        "description": "Wir gestalten Architektur, Software und Umsetzungsplan entlang realer Einsatzbedingungen."
+      },
+      "deliver": {
+        "title": "Umsetzung",
+        "description": "Wir entwickeln individuelle Software, Plattformen und technische Systeme nach deutschen Ingenieurstandards."
+      },
+      "integrate": {
+        "title": "Integration",
+        "description": "Wir binden neue Systeme in bestehende Prozesse ein, damit sie im Alltag funktionieren."
+      },
+      "enable": {
+        "title": "Befähigung",
+        "description": "Wir schulen Betreiber und übergeben Dokumentation, damit die Lösung im Einsatz bleibt."
+      },
+      "partner": {
+        "title": "Partnerschaft",
+        "description": "Wir bleiben für Beratung, ein definiertes Projekt oder eine längere Innovationspartnerschaft an Ihrer Seite."
+      }
+    }
+  },
   "footer": {
     "homeAria": "GII Startseite",
     "tagline": "Wenn Ihre Technologiestrategie die heutige Disruption nicht bewältigt, tut es Ihr Unternehmen auch nicht. GII verbindet Organisationen mit deutscher Innovation, Software und nachhaltigen Lösungen.",
@@ -365,6 +527,209 @@
     "privacy": "Datenschutz",
     "terms": "Nutzungsbedingungen",
     "imprint": "Impressum"
+  },
+  "insightsPage": {
+    "metaTitle": "Einblicke | GII",
+    "eyebrow": "GII Knowledge Center",
+    "title": "Wissen, das Technologie praxisnah macht",
+    "subtitle": "News. Leitfäden. Technologie-Einblicke.",
+    "description": "Artikel, Berichte und praxisnahe Beiträge aus der Arbeit von GII in Digitalisierung, Industrie und nachhaltiger Technologie.",
+    "readArticle": "Artikel lesen",
+    "back": "Zurück zu den Einblicken",
+    "onThisPage": "Auf dieser Seite",
+    "overview": "Überblick",
+    "article": "Artikel",
+    "related": "Mehr aus dem Knowledge Center",
+    "relatedDescription": "Weitere Beiträge zu Digitalisierung, Industrie und nachhaltiger Technologie aus der Arbeit von GII.",
+    "filters": {
+      "aria": "Einblicke nach Typ filtern",
+      "all": "Alle",
+      "searchPlaceholder": "Nach Titel, Thema oder Typ suchen",
+      "searchAria": "Einblicke suchen",
+      "clearSearch": "Suche zurücksetzen",
+      "empty": "Keine Einblicke passen zu dieser Suche.",
+      "emptyHint": "Versuchen Sie ein anderes Stichwort oder wählen Sie Alle, um jeden Beitrag zu sehen.",
+      "resultCount": "{count, plural, one {# Einblick} other {# Einblicke}}"
+    },
+    "types": {
+      "news": "News",
+      "article": "Artikel",
+      "guide": "Leitfaden",
+      "caseStudy": "Fallstudie",
+      "whitePaper": "Whitepaper",
+      "report": "Bericht",
+      "webinar": "Webinar"
+    },
+    "items": {
+      "mittelstandRoadmap": {
+        "title": "Ein praxisnaher Digitalisierungsfahrplan für den Mittelstand",
+        "excerpt": "Wie mittelständische Unternehmen von einer Reifegradprüfung zu Systemen kommen, die im Alltag laufen.",
+        "body": [
+          "Viele mittelständische Unternehmen wissen, dass sie digitalisieren müssen. Die schwierigere Frage ist, wo sie anfangen, welche Prozesse zuerst angefasst werden und wie sie Software vermeiden, die nach sechs Monaten niemand mehr bedient.",
+          "GII behandelt den Fahrplan als Lieferfolge, nicht als Folienpräsentation. Wir beginnen mit einer digitalen Reifegradprüfung, beschreiben das Betriebsmodell und spezifizieren dann die ersten Systeme, die manuelle Arbeit reduzieren, ohne die gesamte IT zu ersetzen. Jeder Schritt hat eine verantwortliche Person, einen Schulungsweg und ein Maß dafür, ob der Prozess tatsächlich genutzt wird.",
+          "Das Ergebnis ist ein Plan, der zu Mittelstandbedingungen passt: vorhandene Anlagen, kleine IT-Teams und die Notwendigkeit, die Produktion weiterlaufen zu lassen, während neue Werkzeuge eingeführt werden. Strategie zählt erst, wenn das nächste System live ist."
+        ]
+      },
+      "iotWaterUtilities": {
+        "title": "Was IoT-Monitoring für Wasserversorger ändert",
+        "excerpt": "Sensoren helfen nur, wenn Betreiber die Daten im Alltag sehen, prüfen und nutzen können.",
+        "body": [
+          "Wasserversorger erfassen oft mehr Sensordaten, als sie nutzen können. Durchfluss, Druck, Qualität und Anlagenstatus liegen in getrennten Systemen oder landen in einem Dashboard, das im Nachtdienst niemand prüft.",
+          "IoT und drahtlose Sensornetze ändern das nur, wenn Monitoring um den Betrieb herum gebaut wird. GII verbindet Sensoren, Kommunikation und Steuerung so, dass Betreiber ein klares Bild vom Netz erhalten und Meldungen zu Handlungen passen, die sie bereits kennen.",
+          "Der Nutzen liegt nicht in der Gerätezahl. Es geht um Leckagen, die nachvollziehbar sind, Qualitätsereignisse, die sich zurückverfolgen lassen, und eine Monitoring-Architektur, die Versorger mit eigenen Teams betreiben können."
+        ]
+      },
+      "industry40Smes": {
+        "title": "Industrie 4.0 ohne Werksneubau",
+        "excerpt": "Wie kleinere Hersteller Konnektivität und Daten an bestehende Linien anbinden, statt sie zu ersetzen.",
+        "body": [
+          "Industrie-4.0-Programme setzen oft eine neue Fabrik voraus. Die meisten Hersteller, mit denen GII arbeitet, haben Linien, die noch Geld verdienen, erfahrene Bedienteams und kein Interesse an einem kompletten Neustart.",
+          "Der praktische Weg ist, Konnektivität dort zu ergänzen, wo sie einen bekannten Engpass verbessert: Maschinenstatus, Qualitätsprüfungen, Energieeinsatz oder Instandhaltung. Die Daten müssen die Schicht erreichen, nicht nur ein zentrales Analyseteam.",
+          "Deutsche Ingenieurstandards gelten weiterhin. Schnittstellen, Dokumentation und Schulung entscheiden, ob eine vernetzte Linie nach dem Projektende vernetzt bleibt."
+        ]
+      },
+      "hvacEnergy": {
+        "title": "Weniger Energie, ohne das Innenklima zu verlieren",
+        "excerpt": "Wie energieeffiziente Lüftung in Gewerbegebäuden spezifiziert, in Betrieb genommen und betrieben werden kann.",
+        "body": [
+          "Gewerbe- und Industriegebäude brauchen ein stabiles Innenklima, aber konventionelle HVAC-Systeme verbrauchen oft mehr Energie, als der Betrieb tragen kann. Verbrauch zu senken gelingt nur, wenn Komfort, Luftqualität und Zuverlässigkeit erhalten bleiben.",
+          "Diese Fallstudie betrachtet energieeffiziente Lüftung für den Alltag, nicht für eine einmalige Effizienzaussage. Inbetriebnahme, Schulung und Monitoring entscheiden, ob die geplanten Einsparungen in der Energierechnung ankommen.",
+          "Die Arbeit von GII verbindet deutsche Umwelttechnik mit dem Gebäudebetrieb: Die Technologie muss installierbar, einstellbar und für das Facility-Team verständlich sein, das sie übernimmt."
+        ]
+      },
+      "germanTechMena": {
+        "title": "Deutsche Technologie mit MENA-Programmen verbinden",
+        "excerpt": "Was internationale Partner brauchen, wenn deutsche Ingenieurleistungen geliefert, geschult und grenzüberschreitend betrieben werden sollen.",
+        "body": [
+          "Deutsche Technologie hat in Wasser, Energie, Medizintechnik und industrieller Software einen starken Ruf. Internationale Programme scheitern trotzdem, wenn Anlagen ohne Schulung, Ersatzteile, zweisprachige Dokumentation oder einen Partner nach der Übergabe ankommen.",
+          "Dieses Papier beschreibt, wie GII diesen Transfer strukturiert: deutsche Ingenieurstandards, arabische und englische Umsetzung wo nötig, und ein Weg von der Spezifikation zum Betrieb. Ziel ist Technologie, die lokale Teams fahren können, nicht ein Katalog ungenutzter Produkte.",
+          "Öffentliche Einrichtungen und Entwicklungspartner brauchen diese Betriebsebene ebenso wie die Hardware. Partnerschaften funktionieren, wenn Rollen für Schulung, Wartung und Wissensaustausch von Anfang an klar sind."
+        ]
+      },
+      "mewfForumRecap": {
+        "title": "Notizen vom Middle East Water Forum",
+        "excerpt": "Themen aus dem regionalen Austausch zu Wasserversorgung, Schulung und angewandter deutscher Wassertechnik.",
+        "body": [
+          "Das Middle East Water Forum bringt Versorger, politische Entscheider und technische Partner rund um Wasserversorgung zusammen. Die Rolle von GII ist, den Austausch praktisch zu halten: angewandte Wassersysteme, Schulungsformate und deutsche Ingenieurkompetenz für regionale Bedingungen.",
+          "Wiederkehrende Themen in diesem Jahr waren zweisprachige Wissensplattformen, der Nexus aus Wasser, Energie, Ernährung und Umwelt sowie der Mangel an strukturiertem Kapazitätsaufbau für Versorgerpersonal. Technologie ohne Betreiber bleibt eine kurzlebige Investition.",
+          "MEWF bleibt ein Arbeitsforum, keine einmalige Konferenz. Der Wert liegt im Netzwerk aus Versorgern und Fachleuten, die Methoden teilen können, nicht nur Vorträge."
+        ]
+      },
+      "publicDigitalPlatforms": {
+        "title": "Webinar: Digitale Plattformen für öffentliche Einrichtungen",
+        "excerpt": "Eine Sitzung zu Portalen, Wissensbibliotheken und zweisprachigen Plattformen, die öffentliche Teams selbst verwalten können.",
+        "body": [
+          "Öffentliche Einrichtungen brauchen Plattformen, die Menschen, Dokumente, Veranstaltungen und Dienste verbinden, ohne zu einem weiteren System zu werden, das nur ein Anbieter ändern kann. Dieses Webinar führt durch die Module, die GII am häufigsten spezifiziert: Verzeichnisse, Wissensbibliotheken, mehrsprachige Inhalte und rollenbasierte Verwaltung.",
+          "Die Sitzung richtet sich an Programmverantwortliche und IT-Gegenstücke, die eine Plattform nach dem Start am Leben halten müssen. Wir behandeln, was in die erste Version gehört, was warten kann und wie arabisch-englische Umsetzung die Informationsarchitektur verändert.",
+          "Aufzeichnungen und Notizen gehen an angemeldete Teilnehmende. Wer ein Portal oder eine Wissensplattform plant, kann dieselben Fragen in ein Projektgespräch mit GII mitnehmen."
+        ]
+      },
+      "smartUrbanInfra": {
+        "title": "Intelligente urbane Infrastruktur: ein Feldbericht",
+        "excerpt": "Erfahrungen aus der Vernetzung von Sensoren, Fütterungsstationen und Wasserstellen im öffentlichen Raum.",
+        "body": [
+          "Smart-City-Projekte beginnen oft mit einem Dashboard. Vor Ort ist das erste Problem meist einfacher: ob eine Fütterungs- oder Wasserstation Vorrat hat, ob ein Sensor noch sendet und wer zuständig ist, wenn nicht.",
+          "Dieser Bericht stützt sich auf die Arbeit von GII mit IoT und drahtlosen Sensornetzen für urbane Fütterungs- und Wasserinfrastruktur. Konnektivität, Monitoring und Steuerung müssen in einer Architektur sitzen, die Betreiber im öffentlichen Raum warten können.",
+          "Die Lehre ist Skalierung über den Betrieb, nicht über mehr Geräte. Eine Station, die zuverlässig meldet und lokal gewartet werden kann, nützt mehr als ein Netz, das auf der Karte vollständig wirkt."
+        ]
+      }
+    }
+  },
+  "aboutPage": {
+    "metaTitle": "Über uns | GII",
+    "eyebrow": "Über GII",
+    "title": "Deutsche Technologie, international angewendet",
+    "subtitle": "Beratung. Software. Angewandte Ingenieurkompetenz.",
+    "description": "GII ist ein in Berlin ansässiger Innovationspartner für Unternehmen, öffentliche Einrichtungen und Entwicklungsorganisationen. Wir modernisieren Abläufe, liefern digitale und industrielle Systeme und verbinden internationale Märkte mit deutscher Technologiekompetenz.",
+    "whoTitle": "Wer wir sind",
+    "whoLead": "GII verbindet Beratung, Software und angewandte Ingenieurkompetenz. Von Berlin aus arbeiten wir mit Partnern in Deutschland, Europa und der MENA-Region, die Technologie brauchen, die sich umsetzen, betreiben und verantworten lässt.",
+    "whoBody": "Unsere Arbeit reicht von digitaler Transformation und Industrie 4.0 über KI und IoT bis zu Medizintechnik, Wasser, Energie und Umwelttechnik. Wir bleiben bei der Umsetzung: Strategie, Software, Systeme und Qualifizierung aus einer Hand.",
+    "ourStory": {
+      "eyebrow": "Unsere Geschichte",
+      "title": "Eine Berliner Institution für internationale Umsetzung",
+      "description": "GII wurde gegründet, um deutsche Ingenieurkompetenz mit Organisationen zu verbinden, die Technologie brauchen, die sie betreiben können — nicht nur spezifizieren. Von Berlin aus arbeiten wir mit Unternehmen, öffentlichen Einrichtungen und Entwicklungspartnern in Europa und der MENA-Region.",
+      "body": "Beratung, Software und angewandte Ingenieurkompetenz sitzen unter einem Dach, damit Strategie zu Systemen wird, die Teams wirklich betreiben.",
+      "facts": {
+        "years": {
+          "value": "10+",
+          "title": "Jahre Umsetzung",
+          "body": "Erfahrung in Technologie und Innovation seit 2014."
+        },
+        "projects": {
+          "value": "100+",
+          "title": "Umgesetzte Projekte",
+          "body": "Digitale, technische und Beratungslösungen über Branchen hinweg."
+        },
+        "regions": {
+          "value": "3",
+          "title": "Kernregionen",
+          "body": "Aktive Umsetzung in Deutschland, Europa und der MENA-Region."
+        }
+      }
+    },
+    "approachEyebrow": "Wie wir arbeiten",
+    "approachTitle": "Von der Diagnose zur Umsetzung",
+    "approach": {
+      "mission": {
+        "title": "Auftrag",
+        "body": "Technologie in verlässlichere Abläufe und messbares Wachstum übersetzen — mit deutschen Ingenieurstandards, angewendet auf reale Projektbedingungen."
+      },
+      "method": {
+        "title": "Methode",
+        "body": "Wir gehen von der Diagnose über das Design zur Umsetzung. Beratung, Software und Systemintegration gehören zusammen, damit Empfehlungen zu funktionierenden Lösungen werden."
+      },
+      "partnership": {
+        "title": "Partnerschaft",
+        "body": "Beauftragen Sie uns für Beratung, ein abgegrenztes Projekt oder eine längere Innovationspartnerschaft. Die Unterstützung folgt dem Tempo der Organisation, nicht einem starren Produktpaket."
+      }
+    },
+    "team": {
+      "eyebrow": "Das Team",
+      "title": "Wir sind die Menschen, die GII ausmachen",
+      "description": "Unsere Haltung ist einfach: Spezialistinnen und Spezialisten zusammenbringen, die deutsche Technologie umsetzen — und ihnen den Raum geben, mit internationalen Partnern ihre beste Arbeit zu leisten.",
+      "members": {
+        "lukas": {
+          "name": "Dr. Lukas Weber",
+          "role": "Geschäftsführer",
+          "bio": "Verantwortet Strategie von Berlin aus. Verbindet deutsche Ingenieurstandards mit internationalen Partnern."
+        },
+        "amira": {
+          "name": "Amira Haddad",
+          "role": "Direktorin Internationale Programme",
+          "bio": "Baut zweisprachige Programme in Europa und der MENA-Region auf."
+        },
+        "jonas": {
+          "name": "Jonas Richter",
+          "role": "Leiter Software & Plattformen",
+          "bio": "Konzipiert individuelle Software, Portale und Plattformen, die Teams wirklich betreiben können."
+        },
+        "lena": {
+          "name": "Dr. Lena Krüger",
+          "role": "Leiterin Nachhaltige Technologie",
+          "bio": "Bringt deutsche Ingenieurkompetenz in Wasser-, Energie-, HVAC- und Umweltsysteme."
+        },
+        "faris": {
+          "name": "Faris Al-Mansour",
+          "role": "Principal Consultant Digitale Transformation",
+          "bio": "Berät Unternehmen und den Mittelstand zu Digitalisierung, Industrie 4.0 und Cloud."
+        },
+        "sophie": {
+          "name": "Sophie Brandt",
+          "role": "Leiterin Partnerschaften",
+          "bio": "Verbindet GII mit deutschen Technologiepartnern, Institutionen und Umsetzungsnetzwerken."
+        },
+        "tobias": {
+          "name": "Tobias Neumann",
+          "role": "Lead IoT & Embedded Systems",
+          "bio": "Entwickelt vernetzte Geräte, Sensorik und WSN-Architekturen für den Alltag der Betreiber."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "Sprechen Sie mit dem Team",
+      "title": "Starten Sie Ihr nächstes Projekt mit GII",
+      "description": "Teilen Sie Ihre Ziele mit den Fachleuten hinter der Arbeit. Wir melden uns mit einem klaren Weg von der Diagnose zur Umsetzung."
+    }
   },
   "contactPage": {
     "metaTitle": "Kontakt | GII",

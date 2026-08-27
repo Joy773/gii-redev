@@ -5,7 +5,7 @@ import { getTranslations } from "next-intl/server";
 import ProjectDetail from "../../components/ProjectDetail";
 import { PROJECTS, getProjectBySlug } from "../../data/projects";
 
-export const dynamicParams = false;
+export const dynamicParams = true;
 
 export function generateStaticParams() {
   return PROJECTS.map((project) => ({ slug: project.slug }));

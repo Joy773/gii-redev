@@ -175,8 +175,20 @@
   "projects": {
     "eyebrow": "Technology in Action",
     "title": "Selected projects across industries",
+    "subtitle": "Digital transformation. Industry. Sustainable technology.",
     "description": "A look at how GII turns strategy into applied solutions across digital transformation, industry and sustainable technology.",
     "cta": "View all projects",
+    "metaTitle": "Projects | GII",
+    "filters": {
+      "aria": "Filter projects by sector",
+      "all": "All",
+      "searchPlaceholder": "Search by name, sector or region",
+      "searchAria": "Search projects",
+      "clearSearch": "Clear search",
+      "empty": "No projects match that search.",
+      "emptyHint": "Try another keyword or choose All to see every project.",
+      "resultCount": "{count, plural, one {# project} other {# projects}}"
+    },
     "items": {
       "mewf": {
         "category": "Water",
@@ -269,6 +281,123 @@
           "Healthcare logistics",
           "German-standard product sourcing"
         ]
+      },
+      "urbanFeeding": {
+        "category": "IoT & WSN",
+        "country": "International",
+        "title": "Smart Urban Feeding & Water Station",
+        "description": "IoT and wireless sensor networks for a smart feeding and water station in urban environments, developed for OneNex.",
+        "overview": "GII contributed to a smart feeding and water station for urban environments, developed for OneNex. The system combines automated service functions with intelligent monitoring and connectivity, applying wireless sensor networks and IoT to link sensors, monitoring components and control functions in smart urban infrastructure.",
+        "challenge": "Urban feeding and water infrastructure often lacks connected monitoring, so operators cannot reliably track food and water availability, consumption, operating status or environmental conditions in public space.",
+        "solution": "GII applied IoT and WSN technologies to connect sensors, monitoring and control in one architecture, creating a foundation for remote monitoring and data-driven resource management that can be adapted to smart-city, environmental and public-space applications.",
+        "technologies": [
+          "Internet of Things (IoT)",
+          "Wireless Sensor Networks (WSN)",
+          "Sensor technologies",
+          "Intelligent monitoring",
+          "Automation",
+          "Smart-city infrastructure"
+        ],
+        "keyAreas": [
+          "Internet of Things (IoT)",
+          "Wireless Sensor Networks (WSN)",
+          "Smart-city technologies",
+          "Sensor-based monitoring",
+          "Intelligent feeding and water systems",
+          "Remote monitoring and connectivity",
+          "Data-driven resource management",
+          "Smart environmental infrastructure",
+          "Energy- and resource-efficient operation",
+          "Scalable technology architecture"
+        ],
+        "expertise": [
+          "IoT",
+          "Wireless Sensor Networks",
+          "Smart infrastructure",
+          "Sensor technologies",
+          "Intelligent monitoring",
+          "Automation",
+          "Environmental technology",
+          "Smart-city solutions"
+        ]
+      },
+      "enerbe": {
+        "category": "Energy",
+        "country": "Middle East",
+        "title": "ENERBE – Smart Energy Monitoring & ICT Platform",
+        "description": "An EU-funded ICT platform and building energy monitoring system for public buildings, combining smart metering, cloud monitoring and energy efficiency.",
+        "overview": "GII implemented an ICT-driven smart energy monitoring project for public buildings in the Middle East within the EU-funded ENERBE initiative — Energy Efficiency through ICT-driven Behavioural Change in Public Buildings. As the contracted technology partner, GII provided technical assistance for a cloud-based Building Energy Monitoring System.",
+        "challenge": "Public buildings need to cut energy use through behavioural change, but consumption data is often fragmented and difficult to collect, monitor or manage through a single digital platform.",
+        "solution": "GII designed and developed a cloud-based ICT platform with smart metering, remote monitoring and control, multilevel administration and a scalable architecture, so energy-related information across public buildings can be collected, monitored and managed centrally.",
+        "technologies": [
+          "Smart metering",
+          "Cloud-based ICT platforms",
+          "Building Energy Monitoring Systems",
+          "Remote monitoring and control",
+          "Data-driven energy management"
+        ],
+        "keyAreas": [
+          "Smart metering and energy monitoring",
+          "Cloud-based ICT platforms",
+          "Building Energy Monitoring Systems",
+          "Energy-consumption monitoring",
+          "Remote monitoring and control",
+          "Smart-building technologies",
+          "Data-driven energy management",
+          "Energy efficiency",
+          "Scalable ICT architecture",
+          "Public-sector digitalization",
+          "International project implementation"
+        ],
+        "expertise": [
+          "Smart metering",
+          "Energy efficiency",
+          "ICT platforms",
+          "Cloud-based monitoring",
+          "Smart buildings",
+          "Data management",
+          "Scalable systems",
+          "International project implementation"
+        ]
+      },
+      "svAkafa": {
+        "category": "Automotive",
+        "country": "Germany",
+        "title": "Automotive Inspection & Digital Infrastructure",
+        "description": "ICT systems integration and digital process optimization for a vehicle inspection facility, including ASA interfaces, networks and online appointment management.",
+        "overview": "GII supported the digital and technical modernization of KFZ-Sachverständigenbüro SV-Akafa, a vehicle inspection facility in Germany. The work focused on integrating, stabilizing and optimizing ICT infrastructure and digital workflows across internal inspection systems and customer-facing services.",
+        "challenge": "Vehicle inspection operations depend on reliable data transfer, network hardware and digital customer services, but specialized inspection systems and everyday ICT often sit apart and are difficult to keep in sync.",
+        "solution": "GII optimized data communication through ASA interfaces, configured network and hardware, maintained inspection software, and supported website performance plus an online appointment solution synchronized with Outlook and Google — with ongoing technical support for digital inspection processes.",
+        "technologies": [
+          "ICT systems integration",
+          "ASA interface integration",
+          "Network infrastructure",
+          "Software maintenance",
+          "Web and appointment systems"
+        ],
+        "keyAreas": [
+          "ICT systems integration and optimization",
+          "Digital process optimization",
+          "ASA interface and data-transfer integration",
+          "Network infrastructure and connectivity",
+          "Hardware installation and configuration",
+          "Software maintenance and system updates",
+          "Digital vehicle inspection systems",
+          "Website performance optimization",
+          "Online appointment management",
+          "Outlook and Google synchronization",
+          "Technical support and user assistance"
+        ],
+        "expertise": [
+          "ICT systems integration",
+          "Digitalization",
+          "Process optimization",
+          "Network infrastructure",
+          "Data connectivity",
+          "Software integration",
+          "Web solutions",
+          "Technical support"
+        ]
       }
     }
   },
@@ -287,9 +416,11 @@
     "region": "Region",
     "viewProject": "View project",
     "onThisPage": "On this page",
-    "ctaEyebrow": "Start a similar project",
-    "ctaTitle": "Want to build something like this?",
-    "ctaDescription": "Tell GII about your goals and we will connect you with the right specialists."
+    "cta": {
+      "eyebrow": "Start a similar project",
+      "title": "Want to build something like this?",
+      "description": "Tell GII about your goals and we will connect you with the right specialists."
+    }
   },
   "whyChooseUs": {
     "eyebrow": "Why choose us",
@@ -347,6 +478,37 @@
       }
     }
   },
+  "processTimeline": {
+    "eyebrow": "How we work",
+    "title": "From diagnosis to delivery",
+    "description": "We move from understanding the operation to a working system. Advisory, software and integration sit together so recommendations become solutions teams can run.",
+    "items": {
+      "diagnose": {
+        "title": "Diagnose",
+        "description": "Map the operation, constraints and the outcome the organisation actually needs."
+      },
+      "design": {
+        "title": "Design",
+        "description": "Shape the architecture, software and delivery plan around real field conditions."
+      },
+      "deliver": {
+        "title": "Deliver",
+        "description": "Build custom software, platforms and technical systems to German engineering standards."
+      },
+      "integrate": {
+        "title": "Integrate",
+        "description": "Connect new systems to existing processes so they work in day-to-day operations."
+      },
+      "enable": {
+        "title": "Enable",
+        "description": "Train operators and hand over documentation so the solution stays in use."
+      },
+      "partner": {
+        "title": "Partner",
+        "description": "Stay on for consultancy, a defined project or a longer innovation partnership."
+      }
+    }
+  },
   "footer": {
     "homeAria": "GII home",
     "tagline": "Because if your technology strategy cannot handle today's disruption, neither will your business. GII connects organizations with German innovation, software and sustainable solutions.",
@@ -365,6 +527,209 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Use",
     "imprint": "Imprint"
+  },
+  "insightsPage": {
+    "metaTitle": "Insights | GII",
+    "eyebrow": "GII Knowledge Center",
+    "title": "Knowledge that turns technology into practice",
+    "subtitle": "News. Guides. Technology insight.",
+    "description": "Articles, reports and practical notes from GII’s work in digitalization, industry and sustainable technology.",
+    "readArticle": "Read article",
+    "back": "Back to insights",
+    "onThisPage": "On this page",
+    "overview": "Overview",
+    "article": "Article",
+    "related": "More from the Knowledge Center",
+    "relatedDescription": "Further notes on digitalization, industry and sustainable technology from GII’s work.",
+    "filters": {
+      "aria": "Filter insights by type",
+      "all": "All",
+      "searchPlaceholder": "Search by title, topic or type",
+      "searchAria": "Search insights",
+      "clearSearch": "Clear search",
+      "empty": "No insights match that search.",
+      "emptyHint": "Try another keyword or choose All to see every insight.",
+      "resultCount": "{count, plural, one {# insight} other {# insights}}"
+    },
+    "types": {
+      "news": "News",
+      "article": "Article",
+      "guide": "Guide",
+      "caseStudy": "Case study",
+      "whitePaper": "White paper",
+      "report": "Report",
+      "webinar": "Webinar"
+    },
+    "items": {
+      "mittelstandRoadmap": {
+        "title": "A practical digitalization roadmap for the Mittelstand",
+        "excerpt": "How mid-sized companies move from a digital maturity check to a sequence of systems they can actually run.",
+        "body": [
+          "Many mid-sized companies already know they need to digitalize. The harder question is where to start, which processes to touch first, and how to avoid buying software that operators cannot run six months later.",
+          "GII treats the roadmap as a delivery sequence, not a slide deck. We begin with a digital maturity check, map the operating model, then specify the first systems that reduce manual work without forcing a full IT replacement. Each step has an owner, a training path and a way to measure whether the process is actually in use.",
+          "The result is a plan that fits German Mittelstand conditions: existing machinery, limited IT teams, and the need to keep production running while new tools are introduced. Strategy only counts when the next system is live."
+        ]
+      },
+      "iotWaterUtilities": {
+        "title": "What IoT monitoring changes for water utilities",
+        "excerpt": "Sensors only help if operators can see, trust and act on the data in daily operations.",
+        "body": [
+          "Water utilities collect more sensor data than they can often use. Flow, pressure, quality and asset status sit in separate systems, or they reach a dashboard that nobody checks during a night shift.",
+          "IoT and wireless sensor networks change that only when monitoring is designed around operations. GII connects sensors, communications and control so operators get a clear picture of what is happening in the network, and so alerts map to actions they already know how to take.",
+          "The value is not the device count. It is leak detection that can be verified, quality events that can be traced, and a monitoring architecture that utilities can maintain with their own teams."
+        ]
+      },
+      "industry40Smes": {
+        "title": "Industry 4.0 without a factory reset",
+        "excerpt": "How smaller manufacturers add connectivity and data to existing lines instead of replacing them.",
+        "body": [
+          "Industry 4.0 programmes often assume a greenfield plant. Most manufacturers GII works with have lines that still earn money, skilled operators, and no appetite for a factory reset.",
+          "The practical path is to add connectivity where it improves a known bottleneck: machine status, quality checks, energy use or maintenance. Data then has to reach the people who run the shift, not only a central analytics team.",
+          "German engineering standards still apply. Interfaces, documentation and training decide whether a connected line stays connected after the project team leaves."
+        ]
+      },
+      "hvacEnergy": {
+        "title": "Lower energy use without losing indoor climate",
+        "excerpt": "A look at how energy-efficient ventilation can be specified, commissioned and operated in commercial buildings.",
+        "body": [
+          "Commercial and industrial buildings need stable indoor climate, but conventional HVAC systems often use more energy than the operation can justify. Cutting consumption only works if comfort, air quality and reliability stay intact.",
+          "This case looks at energy-efficient ventilation specified for day-to-day operations rather than a one-off efficiency claim. Commissioning, operator training and monitoring decide whether the designed savings appear in the energy bill.",
+          "GII’s work in this area connects German environmental engineering with building operations: the technology has to be installable, tunable and understandable for the facilities team that inherits it."
+        ]
+      },
+      "germanTechMena": {
+        "title": "Connecting German technology with MENA programmes",
+        "excerpt": "What international partners need when German engineering has to be delivered, trained and maintained across borders.",
+        "body": [
+          "German technology has a strong reputation in water, energy, medical systems and industrial software. International programmes still fail when equipment arrives without training, spare parts, bilingual documentation or a partner who stays after handover.",
+          "This paper sets out how GII structures that transfer: German engineering standards, Arabic and English delivery where needed, and a path from specification to operation. The goal is technology that local teams can run, not a catalogue of products left unused.",
+          "Public institutions and development partners need that operating layer as much as the hardware. Partnerships work when roles for training, maintenance and knowledge exchange are defined at the start."
+        ]
+      },
+      "mewfForumRecap": {
+        "title": "Notes from the Middle East Water Forum",
+        "excerpt": "Themes from regional exchange on water security, training and applied German water technology.",
+        "body": [
+          "The Middle East Water Forum brings utilities, policymakers and technical partners together around water security. GII’s role is to keep the exchange practical: applied water systems, training formats and German engineering that can be used in regional conditions.",
+          "Recurring themes this year included bilingual knowledge platforms, the water-energy-food-environment nexus, and the shortage of structured capacity building for utility staff. Technology without operators remains a short-lived investment.",
+          "MEWF continues as a working forum rather than a one-off conference. The value is the network of utilities and experts who can share methods, not only presentations."
+        ]
+      },
+      "publicDigitalPlatforms": {
+        "title": "Webinar: Digital platforms for public institutions",
+        "excerpt": "A session on portals, knowledge libraries and bilingual platforms that public teams can administer.",
+        "body": [
+          "Public institutions need platforms that connect people, documents, events and services without becoming another system only a vendor can change. This webinar walks through the modules GII specifies most often: directories, knowledge libraries, multilingual content and role-based administration.",
+          "The session is aimed at programme leads and IT counterparts who have to keep a platform alive after launch. We cover what belongs in the first release, what can wait, and how Arabic/English delivery changes information architecture.",
+          "Recordings and notes are shared with registered participants. If you are planning a portal or knowledge platform, the same questions can be taken into a project conversation with GII."
+        ]
+      },
+      "smartUrbanInfra": {
+        "title": "Smart urban infrastructure: a field report",
+        "excerpt": "Lessons from connecting sensors, feeding stations and water points in public space.",
+        "body": [
+          "Smart-city projects often start with a dashboard. In the field, the first problem is usually simpler: whether a feeding or water station has supply, whether a sensor is still transmitting, and who is responsible when it is not.",
+          "This report draws on GII’s work with IoT and wireless sensor networks for urban feeding and water infrastructure. Connectivity, monitoring and control have to sit in one architecture that operators can service in public space.",
+          "The lesson is scale through operations, not through more devices. A station that reports reliably and can be maintained locally is more useful than a network that looks complete on a map."
+        ]
+      }
+    }
+  },
+  "aboutPage": {
+    "metaTitle": "About | GII",
+    "eyebrow": "About GII",
+    "title": "German technology, applied internationally",
+    "subtitle": "Consultancy. Software. Applied engineering.",
+    "description": "GII is a Berlin-based innovation partner for companies, public institutions and development organizations. We modernize operations, deliver digital and industrial systems, and connect international markets with German technology expertise.",
+    "whoTitle": "Who we are",
+    "whoLead": "GII combines consultancy, software and applied engineering. From Berlin, we work with partners in Germany, Europe and the MENA region who need technology that can be delivered, operated and trusted.",
+    "whoBody": "Our work spans digital transformation, Industry 4.0, AI, IoT, medical technology, water, energy and environmental systems. We stay with the implementation: strategy, software, systems and training under one roof.",
+    "ourStory": {
+      "eyebrow": "Our Story",
+      "title": "A Berlin institution built for international delivery",
+      "description": "GII was founded to connect German engineering with organisations that need technology they can operate, not just specify. From Berlin we work with companies, public institutions and development partners across Europe and the MENA region.",
+      "body": "Consultancy, software and applied engineering sit under one roof, so strategy becomes systems that teams can run.",
+      "facts": {
+        "years": {
+          "value": "10+",
+          "title": "Years of delivery",
+          "body": "Technology and innovation experience since 2014."
+        },
+        "projects": {
+          "value": "100+",
+          "title": "Projects delivered",
+          "body": "Digital, technical and consulting solutions across sectors."
+        },
+        "regions": {
+          "value": "3",
+          "title": "Core regions",
+          "body": "Active delivery across Germany, Europe and the MENA region."
+        }
+      }
+    },
+    "approachEyebrow": "How we work",
+    "approachTitle": "From diagnosis to delivery",
+    "approach": {
+      "mission": {
+        "title": "Mission",
+        "body": "Turn technology into more reliable operations and measurable growth, with German engineering standards applied to real project conditions."
+      },
+      "method": {
+        "title": "Method",
+        "body": "We move from diagnosis to design to delivery. Advisory, software and systems integration sit together so recommendations become working solutions."
+      },
+      "partnership": {
+        "title": "Partnership",
+        "body": "Engage us for consultancy, a defined project or a longer innovation partnership. Support scales to the pace of the organization, not a fixed product package."
+      }
+    },
+    "team": {
+      "eyebrow": "The team",
+      "title": "We are the people who make up GII",
+      "description": "Our philosophy is simple: hire specialists who can deliver German technology, then give them the space to do their best work with international partners.",
+      "members": {
+        "lukas": {
+          "name": "Dr. Lukas Weber",
+          "role": "Managing Director",
+          "bio": "Leads GII’s strategy from Berlin. Connects German engineering with public and industrial partners."
+        },
+        "amira": {
+          "name": "Amira Haddad",
+          "role": "Director, International Programmes",
+          "bio": "Builds bilingual programmes across Europe and the MENA region."
+        },
+        "jonas": {
+          "name": "Jonas Richter",
+          "role": "Head of Software & Platforms",
+          "bio": "Designs custom software, portals and platforms that teams can actually run."
+        },
+        "lena": {
+          "name": "Dr. Lena Krüger",
+          "role": "Head of Sustainable Technology",
+          "bio": "Applies German engineering to water, energy, HVAC and environmental systems."
+        },
+        "faris": {
+          "name": "Faris Al-Mansour",
+          "role": "Principal Consultant, Digital Transformation",
+          "bio": "Advises enterprises and SMEs on digitalization, Industry 4.0 and cloud."
+        },
+        "sophie": {
+          "name": "Sophie Brandt",
+          "role": "Head of Partnerships",
+          "bio": "Connects GII with German technology partners, institutions and delivery networks."
+        },
+        "tobias": {
+          "name": "Tobias Neumann",
+          "role": "Lead, IoT & Embedded Systems",
+          "bio": "Builds connected devices, sensors and WSN architectures for day-to-day operations."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "Talk to the team",
+      "title": "Start your next project with GII",
+      "description": "Share your goals with the specialists behind the work. We will follow up with a clear path from diagnosis to delivery."
+    }
   },
   "contactPage": {
     "metaTitle": "Contact | GII",

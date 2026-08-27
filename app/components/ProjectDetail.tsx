@@ -39,7 +39,7 @@ export default async function ProjectDetail({
       <section className="grid-surface grid-surface-white py-12 sm:py-16 lg:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Link
-          href={`/${locale}#projects`}
+          href={`/${locale}/projects`}
           className="inline-flex items-center gap-2 text-sm font-semibold text-text/65 transition-colors hover:text-primary"
         >
           <FiArrowLeft className="size-4" aria-hidden="true" />

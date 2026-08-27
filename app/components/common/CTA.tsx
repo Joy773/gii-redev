@@ -4,9 +4,17 @@ import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { FiArrowRight } from "react-icons/fi";
 
-export default function CTA() {
+type CTAProps = {
+  namespace?: "ctaSection" | "aboutPage.cta" | "projectPage.cta";
+  backgroundClassName?: string;
+};
+
+export default function CTA({
+  namespace = "ctaSection",
+  backgroundClassName = "grid-surface-white",
+}: CTAProps) {
   const locale = useLocale();
-  const t = useTranslations("ctaSection");
+  const t = useTranslations(namespace);
   const tCta = useTranslations("cta");
 
   const PillButton = ({
@@ -30,7 +38,7 @@ export default function CTA() {
   };
 
   return (
-    <section className="grid-surface bg-[#0C1F2C] py-16 sm:py-20">
+    <section className={`grid-surface py-16 sm:py-20 ${backgroundClassName}`}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="relative overflow-hidden rounded-[1.75rem] bg-gradient-to-r from-primary to-navy px-6 py-10 sm:px-10 sm:py-14">
           {/* Decorative arcs (right side) */}
