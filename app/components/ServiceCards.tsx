@@ -117,9 +117,10 @@ const SERVICE_CARDS_CONFIG = {
   },
   industries: {
     namespace: "industriesPage.sectors",
-    backgroundClassName: "bg-[#122A3B]",
+    backgroundClassName: "grid-surface-soft",
     cardsClassName: "grid gap-4 sm:grid-cols-2",
-    onDark: true,
+    onDark: false,
+    themeBand: true,
   },
 } as const;
 
@@ -128,6 +129,9 @@ const lightCarouselCardClassName =
 
 const darkCarouselCardClassName =
   "group flex flex-col overflow-hidden rounded-3xl border border-white/15 bg-[#0B1F2C] p-5 shadow-[0_12px_32px_rgba(0,0,0,0.28)] transition-all duration-300 hover:-translate-y-1 hover:border-primary/35 hover:shadow-[0_18px_44px_rgba(0,0,0,0.38)]";
+
+const industrySectorCardClassName =
+  "group flex flex-col overflow-hidden rounded-3xl border border-border/70 bg-surface p-5 shadow-[0_12px_32px_rgba(18,59,86,0.07)] transition-all duration-300 hover:-translate-y-1 hover:border-primary/25 hover:shadow-[0_18px_44px_rgba(18,59,86,0.12)] dark:border-white/15 dark:bg-[#0B1F2C] dark:shadow-[0_12px_32px_rgba(0,0,0,0.28)] dark:hover:border-primary/35 dark:hover:shadow-[0_18px_44px_rgba(0,0,0,0.38)]";
 
 function ServiceGroupCard({
   group,
@@ -250,19 +254,19 @@ function IndustrySectorCard({
   const label = t(`items.${id}.title`);
 
   return (
-    <article className={`${darkCarouselCardClassName} ${className}`}>
-      <div className="inline-flex items-center gap-2 text-sm font-medium text-white/72 transition-colors duration-300 group-hover:text-white">
-        <span className="inline-flex size-7 items-center justify-center rounded-full bg-primary/20 text-primary transition-all duration-300 group-hover:scale-110 group-hover:bg-primary/28">
+    <article className={`${industrySectorCardClassName} ${className}`}>
+      <div className="inline-flex items-center gap-2 text-sm font-medium text-text/72 transition-colors duration-300 group-hover:text-dark dark:text-white/72 dark:group-hover:text-white">
+        <span className="inline-flex size-7 items-center justify-center rounded-full bg-primary/10 text-primary transition-all duration-300 group-hover:scale-110 group-hover:bg-primary/15 dark:bg-primary/20 dark:group-hover:bg-primary/28">
           <Icon className="size-3.5 transition-transform duration-300 group-hover:scale-110" />
         </span>
         {label}
       </div>
 
       <div className="mt-8 flex-1">
-        <div className="text-xl font-semibold tracking-tight text-white transition-colors duration-300 group-hover:text-primary sm:text-2xl">
+        <div className="text-xl font-semibold tracking-tight text-dark transition-colors duration-300 group-hover:text-primary dark:text-white sm:text-2xl">
           {label}
         </div>
-        <p className="mt-2 max-w-sm text-sm leading-6 text-white/70">
+        <p className="mt-2 max-w-sm text-sm leading-6 text-text/70 dark:text-white/70">
           {t(`items.${id}.description`)}
         </p>
       </div>
@@ -273,7 +277,7 @@ function IndustrySectorCard({
             type="button"
             aria-label={t("previous", { group: label })}
             disabled
-            className="inline-flex size-8 items-center justify-center rounded-full border border-white/20 bg-white/5 text-white/35"
+            className="inline-flex size-8 items-center justify-center rounded-full border border-border/80 bg-surface text-dark/35 dark:border-white/20 dark:bg-white/5 dark:text-white/35"
           >
             <FiArrowLeft className="size-4" />
           </button>
@@ -281,12 +285,12 @@ function IndustrySectorCard({
             type="button"
             aria-label={t("next", { group: label })}
             disabled
-            className="inline-flex size-8 items-center justify-center rounded-full border border-white/20 bg-white/5 text-white/35"
+            className="inline-flex size-8 items-center justify-center rounded-full border border-border/80 bg-surface text-dark/35 dark:border-white/20 dark:bg-white/5 dark:text-white/35"
           >
             <FiArrowRight className="size-4" />
           </button>
         </div>
-        <span className="text-xs font-medium tracking-wide text-white/45">1 / 1</span>
+        <span className="text-xs font-medium tracking-wide text-text/45 dark:text-white/45">1 / 1</span>
       </div>
     </article>
   );
@@ -334,6 +338,7 @@ export default function ServiceCards({
         : null;
 
   const onDark = config.onDark;
+  const themeBand = "themeBand" in config && config.themeBand;
 
   return (
     <section className={`grid-surface ${config.backgroundClassName} py-20 sm:py-24`}>
@@ -341,9 +346,11 @@ export default function ServiceCards({
         <div className="mx-auto max-w-xl text-center lg:mx-0 lg:text-left">
           <span
             className={`inline-flex items-center gap-2 rounded-full px-3 py-1 text-sm font-medium ${
-              onDark
-                ? "bg-white/10 text-white/90"
-                : "bg-primary/8 text-primary"
+              themeBand
+                ? "bg-primary/8 text-primary dark:bg-white/10 dark:text-white/90"
+                : onDark
+                  ? "bg-white/10 text-white/90"
+                  : "bg-primary/8 text-primary"
             }`}
           >
             <span
@@ -359,7 +366,7 @@ export default function ServiceCards({
             blurStrength={18}
             containerClassName="mt-6 text-center lg:text-left"
             textClassName={`text-center text-4xl font-semibold tracking-tight sm:text-5xl lg:text-left ${
-              onDark ? "text-white" : "text-dark"
+              themeBand ? "text-dark dark:text-white" : onDark ? "text-white" : "text-dark"
             }`}
           >
             {t("title")}
@@ -367,7 +374,11 @@ export default function ServiceCards({
 
           <p
             className={`mt-6 text-lg leading-8 ${
-              onDark ? "text-white/78" : "text-text/72"
+              themeBand
+                ? "text-text/72 dark:text-white/78"
+                : onDark
+                  ? "text-white/78"
+                  : "text-text/72"
             }`}
           >
             {t("description")}
@@ -376,9 +387,11 @@ export default function ServiceCards({
           <Link
             href={`/${locale}/contact`}
             className={`mt-8 inline-flex items-center gap-2 text-sm font-semibold transition-colors ${
-              onDark
-                ? "text-primary hover:text-white"
-                : "text-primary hover:text-dark"
+              themeBand
+                ? "text-primary hover:text-dark dark:hover:text-white"
+                : onDark
+                  ? "text-primary hover:text-white"
+                  : "text-primary hover:text-dark"
             }`}
           >
             {t("cta")}

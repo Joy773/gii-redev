@@ -25,7 +25,7 @@ export default function IndustriesPage() {
       <IndustryServices />
       <CTA
         namespace="industriesPage.cta"
-        backgroundClassName="bg-[#122A3B]"
+        backgroundClassName="grid-surface-soft"
         secondaryButtonKey="viewProjects"
         secondaryHref="/projects"
       />

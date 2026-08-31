@@ -321,3 +321,11 @@ select optgroup {
 .grid-surface-soft {
   background-color: var(--soft-background);
 }
+
+.grid-surface-deep {
+  background-color: var(--canvas);
+}
+
+.dark .grid-surface-deep {
+  background-color: #0b1f2c;
+}

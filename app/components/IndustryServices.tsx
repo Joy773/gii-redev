@@ -48,6 +48,7 @@ function ServiceCarousel({
   renderContent,
   minHeightClassName = "min-h-[12rem] sm:min-h-[13rem]",
   onDark = false,
+  themeBand = false,
 }: {
   itemIds: readonly string[];
   previousLabel: string;
@@ -56,6 +57,7 @@ function ServiceCarousel({
   renderContent: (itemId: string) => ReactNode;
   minHeightClassName?: string;
   onDark?: boolean;
+  themeBand?: boolean;
 }) {
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState<1 | -1>(1);
@@ -76,9 +78,11 @@ function ServiceCarousel({
     <div>
       <article
         className={`${minHeightClassName} rounded-3xl border p-6 shadow-[0_12px_32px_rgba(18,59,86,0.07)] sm:p-8 ${
-          onDark
-            ? "border-white/15 bg-[#122A3B] shadow-[0_12px_32px_rgba(0,0,0,0.28)]"
-            : "border-border/70 bg-soft-background"
+          themeBand
+            ? "border-border/70 bg-soft-background dark:border-white/15 dark:bg-[#122A3B] dark:shadow-[0_12px_32px_rgba(0,0,0,0.28)]"
+            : onDark
+              ? "border-white/15 bg-[#122A3B] shadow-[0_12px_32px_rgba(0,0,0,0.28)]"
+              : "border-border/70 bg-soft-background"
         }`}
       >
         <div
@@ -92,7 +96,11 @@ function ServiceCarousel({
       <div className="mt-6 flex flex-col items-center gap-3 sm:flex-row sm:justify-between">
         <p
           className={`text-sm font-medium ${
-            onDark ? "text-white/45" : "text-text/50"
+            themeBand
+              ? "text-text/50 dark:text-white/45"
+              : onDark
+                ? "text-white/45"
+                : "text-text/50"
           }`}
         >
           {formatPageIndicator(index + 1, count)}
@@ -103,9 +111,11 @@ function ServiceCarousel({
             aria-label={previousLabel}
             onClick={showPrevious}
             className={`inline-flex size-9 items-center justify-center rounded-full border transition-all duration-300 ${
-              onDark
-                ? "border-white/20 bg-white/5 text-white/75 hover:border-primary/35 hover:text-primary"
-                : "border-border/80 bg-surface text-dark/70 hover:border-primary/25 hover:text-primary"
+              themeBand
+                ? "border-border/80 bg-surface text-dark/70 hover:border-primary/25 hover:text-primary dark:border-white/20 dark:bg-white/5 dark:text-white/75 dark:hover:border-primary/35 dark:hover:text-primary"
+                : onDark
+                  ? "border-white/20 bg-white/5 text-white/75 hover:border-primary/35 hover:text-primary"
+                  : "border-border/80 bg-surface text-dark/70 hover:border-primary/25 hover:text-primary"
             }`}
           >
             <FiArrowLeft className="size-4" aria-hidden="true" />
@@ -115,9 +125,11 @@ function ServiceCarousel({
             aria-label={nextLabel}
             onClick={showNext}
             className={`inline-flex size-9 items-center justify-center rounded-full border transition-all duration-300 ${
-              onDark
-                ? "border-white/20 bg-white/5 text-white/75 hover:border-primary/35 hover:text-primary"
-                : "border-border/80 bg-surface text-dark/70 hover:border-primary/25 hover:text-primary"
+              themeBand
+                ? "border-border/80 bg-surface text-dark/70 hover:border-primary/25 hover:text-primary dark:border-white/20 dark:bg-white/5 dark:text-white/75 dark:hover:border-primary/35 dark:hover:text-primary"
+                : onDark
+                  ? "border-white/20 bg-white/5 text-white/75 hover:border-primary/35 hover:text-primary"
+                  : "border-border/80 bg-surface text-dark/70 hover:border-primary/25 hover:text-primary"
             }`}
           >
             <FiArrowRight className="size-4" aria-hidden="true" />
@@ -131,11 +143,11 @@ function ServiceCarousel({
 function IndustryIntro({
   title,
   description,
-  onDark = false,
+  themeBand = false,
 }: {
   title: string;
   description: string;
-  onDark?: boolean;
+  themeBand?: boolean;
 }) {
   return (
     <div>
@@ -146,20 +158,20 @@ function IndustryIntro({
         blurStrength={18}
         containerClassName="text-left"
         textClassName={`text-left text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl ${
-          onDark ? "text-white" : "text-dark"
+          themeBand ? "text-dark dark:text-white" : "text-dark"
         }`}
       >
         {title}
       </ScrollReveal>
       <p
         className={`mt-5 text-base leading-7 sm:text-lg sm:leading-8 ${
-          onDark ? "text-white/78" : "text-text/72"
+          themeBand ? "text-text/72 dark:text-white/78" : "text-text/72"
         }`}
       >
         {description}
       </p>
       <div className="mt-8">
-        <StartProjectButton variant={onDark ? "onDark" : "default"} />
+        <StartProjectButton />
       </div>
     </div>
   );
@@ -207,7 +219,7 @@ export default function IndustryServices() {
         </div>
       </section>
 
-      <section className="grid-surface bg-[#0B1F2C] py-16 sm:py-20 lg:py-24">
+      <section className="grid-surface grid-surface-deep py-16 sm:py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-start gap-10 sm:gap-12 lg:grid-cols-2 lg:gap-16">
             <div className="order-2 lg:order-1">
@@ -216,7 +228,7 @@ export default function IndustryServices() {
                 previousLabel={tServices("previous")}
                 nextLabel={tServices("next")}
                 minHeightClassName="min-h-[14rem] sm:min-h-[16rem]"
-                onDark
+                themeBand
                 formatPageIndicator={(current, total) =>
                   tServices("pageIndicator", { current, total })
                 }
@@ -225,10 +237,10 @@ export default function IndustryServices() {
 
                   return (
                     <>
-                      <h3 className="text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+                      <h3 className="text-2xl font-semibold tracking-tight text-dark dark:text-white sm:text-3xl">
                         {tEcs(`items.${id}.title`)}
                       </h3>
-                      <p className="mt-4 text-base leading-7 text-white/70 sm:text-lg sm:leading-8">
+                      <p className="mt-4 text-base leading-7 text-text/72 dark:text-white/70 sm:text-lg sm:leading-8">
                         {tEcs(`items.${id}.description`)}
                       </p>
                     </>
@@ -241,20 +253,20 @@ export default function IndustryServices() {
               <IndustryIntro
                 title={tEcs("title")}
                 description={tEcs("description")}
-                onDark
+                themeBand
               />
             </div>
           </div>
         </div>
       </section>
 
-      <section className="grid-surface bg-[#0B1F2C] py-16 sm:py-20 lg:py-24">
+      <section className="grid-surface grid-surface-deep py-16 sm:py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-start gap-10 sm:gap-12 lg:grid-cols-2 lg:gap-16">
             <IndustryIntro
               title={tResearch("title")}
               description={tResearch("description")}
-              onDark
+              themeBand
             />
 
             <ServiceCarousel
@@ -262,7 +274,7 @@ export default function IndustryServices() {
               previousLabel={tServices("previous")}
               nextLabel={tServices("next")}
               minHeightClassName="min-h-[14rem] sm:min-h-[16rem]"
-              onDark
+              themeBand
               formatPageIndicator={(current, total) =>
                 tServices("pageIndicator", { current, total })
               }
@@ -271,10 +283,10 @@ export default function IndustryServices() {
 
                 return (
                   <>
-                    <h3 className="text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+                    <h3 className="text-2xl font-semibold tracking-tight text-dark dark:text-white sm:text-3xl">
                       {tResearch(`items.${id}.title`)}
                     </h3>
-                    <p className="mt-4 text-base leading-7 text-white/70 sm:text-lg sm:leading-8">
+                    <p className="mt-4 text-base leading-7 text-text/72 dark:text-white/70 sm:text-lg sm:leading-8">
                       {tResearch(`items.${id}.description`)}
                     </p>
                   </>
