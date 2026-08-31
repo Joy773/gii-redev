@@ -38,7 +38,11 @@
   "cta": {
     "startProject": "Start a Project",
     "exploreSolutions": "Explore Solutions",
-    "viewAllProjects": "View all projects"
+    "viewAllProjects": "View all projects",
+    "viewProjects": "View Projects",
+    "contactUs": "Contact Us",
+    "bookConsultancySession": "Book Session",
+    "startCollaboration": "Start a collaboration"
   },
   "ctaSection": {
     "eyebrow": "Let's build together",
@@ -527,6 +531,364 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Use",
     "imprint": "Imprint"
+  },
+  "industriesPage": {
+    "metaTitle": "Industries | GII",
+    "eyebrow": "Industries",
+    "title": "Technology for the sectors you operate in",
+    "subtitle": "Manufacturing. Healthcare. Water & energy. Public sector.",
+    "description": "GII delivers German engineering and digital systems across manufacturing, utilities, healthcare and public institutions — from strategy and software to field-ready implementation.",
+    "imageAlt": "Industrial technology and engineering workspace",
+    "sectors": {
+      "eyebrow": "Sectors",
+      "title": "Industries",
+      "description": "GII supports organizations across manufacturing, education and facilitation, and research-driven innovation.",
+      "cta": "Discuss your sector",
+      "previous": "Previous {group} sector",
+      "next": "Next {group} sector",
+      "items": {
+        "manufacturing": {
+          "title": "Manufacturing",
+          "description": "G-ii's innovative solutions can assist ICT manufacturers realize their strategic goals."
+        },
+        "ecsFacilitates": {
+          "title": "Ecs Facilitates",
+          "description": "Design and facilitation of educational opportunities, strategy development, community and organizational analysis."
+        },
+        "researchDevelopment": {
+          "title": "Research and Development",
+          "description": "With continuous new trends and technologies, coupled with rising consumer expectations, organizations."
+        }
+      }
+    },
+    "industryServices": {
+      "previous": "Previous service",
+      "next": "Next service",
+      "pageIndicator": "{current} / {total}",
+      "manufacturing": {
+        "title": "Manufacturing",
+        "description": "G-ii's innovative solutions can assist ICT manufacturers realize their strategic goals."
+      },
+      "contentManagement": {
+        "title": "Content Management",
+        "description": "Management of regulatory compliance documents, digital rights, website content and product information."
+      },
+      "afterSalesServices": {
+        "title": "After Sales Services",
+        "description": "Service, warranty, and spare parts management."
+      },
+      "multilingualDealer": {
+        "title": "Multi-lingual dealer",
+        "description": "Multi-lingual dealer management systems and customer portals."
+      },
+      "consultancyServiceSolutions": {
+        "title": "Consultancy Service Solutions",
+        "description": "For required product engineering."
+      },
+      "eProcurementErp": {
+        "title": "E-procurement and Erp",
+        "description": "Boosting productivity and lowering costs with production planning, warehouse management and supplier portals and scorecards."
+      },
+      "supplyChainOptimization": {
+        "title": "Optimization of Supply Chains",
+        "description": "Streamlining processes for higher operational efficiency."
+      },
+      "ecsFacilitates": {
+        "title": "Ecs Facilitates",
+        "description": "Design and facilitation of educational opportunities, strategy development, community and organizational analysis.",
+        "items": {
+          "educationalOpportunities": {
+            "title": "Educational opportunities",
+            "description": "Design and facilitation of educational opportunities, strategy development, community and organizational analysis to include learner and educational policy maker's input."
+          },
+          "technicalAssistance": {
+            "title": "Technical assistance & training",
+            "description": "Technical assistance and training on organizational ability to successfully attract, educate, motivate and engage learners."
+          },
+          "leadershipDevelopment": {
+            "title": "Leadership development",
+            "description": "Faculty and administrative leadership development to take effective responsibility for learner achievement, outcomes, and success."
+          },
+          "professionalDevelopment": {
+            "title": "Professional development",
+            "description": "Professional development to assist education leaders, teachers and staff in developing and sustaining quality and effective school climates to develop positive, safe, caring, and learner-centered educational environments that fosters meaningful learning."
+          },
+          "policyEvaluation": {
+            "title": "Policy evaluation",
+            "description": "Evaluation of governmental/state, district and local educational policies to determine the outcomes and impacts on students, and how education stakeholders can use the corresponding data and analyses to improve their practices."
+          },
+          "changeProcess": {
+            "title": "Change process & strategy",
+            "description": "Understanding the change process especially in regard to specific client needs, with a high regard to cultures and traditions, and how to develop opportunities/strategies to achieve desired educational outcomes."
+          }
+        }
+      },
+      "researchDevelopment": {
+        "title": "Research and Development",
+        "description": "GII engineering research and development services assist in transforming product vision into real-world design successes through expertise in engineering and ecosystem partnerships.",
+        "items": {
+          "convertVision": {
+            "title": "Converting vision to R&D",
+            "description": "GII helps organizations navigate rapid market changes — anticipating consumer needs, shortening product development cycles, and turning vision into profitable innovation."
+          },
+          "transformingVision": {
+            "title": "Transforming product vision",
+            "description": "GII engineering research and development services assists in transforming product vision into real-world design successes through expertise in engineering and ecosystem partnerships."
+          },
+          "acceleratorsFrameworks": {
+            "title": "Accelerators, frameworks and building blocks",
+            "description": "Proven accelerators, frameworks, and building blocks reduce risk, speed time-to-market, and sustain legacy products — so teams can focus on new development."
+          },
+          "engineeringInvestment": {
+            "title": "Technology investment and flexible models",
+            "description": "GII invests in Bluetooth, IoT, and emerging technologies — backed by certified teams and flexible business models for evolving markets."
+          },
+          "wirelessSensorRfid": {
+            "title": "Wireless sensor networks and RFID systems",
+            "description": "GII conducts research and development activities of new technologies based on wireless sensor networks and RFID systems, through strategic partnerships with universities, research centers, regional industrial systems and SMEs."
+          },
+          "iotEmbeddedElectronics": {
+            "title": "IoT and embedded electronics",
+            "description": "Deep expertise in embedded electronics and IoT, with broad Hi-Tech market knowledge to help electronics and telecom manufacturers innovate."
+          },
+          "iotApplications": {
+            "title": "IoT across industries",
+            "description": "The set of IoT technologies can be functionally applied in many several areas of human life: Smart City, Smart Building, Smart Home, Smart Metering, Industry 4.0, Smart Grid, Smart Environment, Smart Logistics, Smart Factory, Smart Agriculture, Smart Car, eHealth, etc."
+          },
+          "innovativeSolutions": {
+            "title": "Innovative and competitive solutions",
+            "description": "Over the years, GII has increasingly developed more innovative and competitive solutions, displaying an ability to anticipate market needs, through direct sales or implementing research projects funded by national and international entities."
+          }
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "Next step",
+      "title": "Turn sector expertise into delivery",
+      "description": "Share your industry goals with GII. We will connect manufacturing, facilitation, and R&D capabilities with a practical path from strategy to implementation."
+    }
+  },
+  "researchPage": {
+    "metaTitle": "Research & Innovation | GII",
+    "eyebrow": "Research & Innovation",
+    "title": "Applied research that turns technology into practice",
+    "subtitle": "Methods. Prototypes. Technology transfer.",
+    "description": "GII bridges research and delivery — validating ideas, shaping programmes and moving German innovation into real operations across digital and sustainable domains.",
+    "imageAlt": "Technology circuitry and digital innovation visual",
+    "themes": {
+      "eyebrow": "Focus areas",
+      "title": "Where research meets delivery",
+      "description": "GII turns applied research into programmes, partnerships and systems that organizations can operate — across digital technology and sustainable innovation.",
+      "cta": "Start a collaboration",
+      "items": {
+        "appliedRd": {
+          "title": "Applied R&D",
+          "description": "Validate concepts, prototype solutions and test technology under real operating constraints before full-scale delivery."
+        },
+        "technologyTransfer": {
+          "title": "Technology transfer",
+          "description": "Move German engineering and digital capabilities into international markets with clear handovers and local capacity."
+        },
+        "programmeDesign": {
+          "title": "Programme design",
+          "description": "Shape multi-partner programmes — from scope and governance to training formats and measurable outcomes."
+        },
+        "sustainabilityInnovation": {
+          "title": "Sustainability innovation",
+          "description": "Advance water, energy, environment and climate solutions that connect digital tools with field operations."
+        }
+      }
+    },
+    "processTimeline": {
+      "eyebrow": "How we innovate",
+      "title": "From exploration to scale",
+      "description": "GII follows a structured path from research questions to transferable solutions — so innovation lands in operations, not only in reports.",
+      "items": {
+        "explore": {
+          "title": "Explore",
+          "description": "Map the challenge, stakeholders and constraints to define where applied research can create the most impact."
+        },
+        "design": {
+          "title": "Design",
+          "description": "Shape research questions, methods and partnership models aligned with delivery goals and field realities."
+        },
+        "prototype": {
+          "title": "Prototype",
+          "description": "Build early technical and organisational prototypes that teams can test without full-scale commitment."
+        },
+        "validate": {
+          "title": "Validate",
+          "description": "Prove the approach with partners, data and operating conditions before wider rollout."
+        },
+        "transfer": {
+          "title": "Transfer",
+          "description": "Hand over knowledge, systems and capability so local teams can run and adapt the solution."
+        },
+        "scale": {
+          "title": "Scale",
+          "description": "Expand successful models across sites, programmes or markets with continued partnership support."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "Next step",
+      "title": "Turn research into a working partnership",
+      "description": "Share your challenge with GII. We will help define the research path, transfer model and delivery steps that move innovation into practice."
+    }
+  },
+  "consultancyPage": {
+    "metaTitle": "Consultancy | GII",
+    "eyebrow": "Consultancy",
+    "title": "Technology & Sustainable Solutions Consultancy",
+    "subtitle": "ICT advisory. Sustainable technology. From assessment to implementation.",
+    "description": "GII helps organizations assess technology options, plan roadmaps, select solutions and move from strategy to delivery across digital and sustainable domains.",
+    "consultancies": {
+      "eyebrow": "Advisory areas",
+      "title": "Two domains. One delivery partner.",
+      "description": "Whether you need digital strategy or sustainable engineering guidance, GII advisory sits alongside software and applied delivery under one roof.",
+      "ict": {
+        "label": "ICT",
+        "title": "ICT Consultancy",
+        "description": "Strategy, architecture and technology roadmaps for digital transformation, platforms and intelligent systems."
+      },
+      "sustainable": {
+        "label": "Sustainable",
+        "title": "Sustainable Technology Consultancy",
+        "description": "Applied engineering guidance for water, energy, ventilation and environmental systems that teams can operate."
+      },
+      "showMore": "Show more areas",
+      "pageIndicator": "Page {current} of {total}",
+      "items": {
+        "digitalTransformation": {
+          "title": "Digital transformation",
+          "description": "Modernize processes, systems and operating models with a roadmap teams can follow."
+        },
+        "itStrategy": {
+          "title": "IT strategy",
+          "description": "Align technology choices with business goals, budgets and delivery capacity."
+        },
+        "softwareArchitecture": {
+          "title": "Software architecture",
+          "description": "Design scalable, maintainable systems that fit your operations and integrations."
+        },
+        "aiStrategy": {
+          "title": "AI strategy",
+          "description": "Identify practical AI use cases, readiness and governance before implementation."
+        },
+        "iotStrategy": {
+          "title": "IoT strategy",
+          "description": "Connect devices, sensors and platforms into architectures operators can run."
+        },
+        "cloudStrategy": {
+          "title": "Cloud strategy",
+          "description": "Plan cloud adoption, migration and operating models with clear cost control."
+        },
+        "cybersecurity": {
+          "title": "Cybersecurity",
+          "description": "Strengthen security posture across infrastructure, applications and data."
+        },
+        "digitalPlatforms": {
+          "title": "Digital platforms",
+          "description": "Shape portals, marketplaces and service platforms users can administer."
+        },
+        "technologyRoadmaps": {
+          "title": "Technology roadmaps",
+          "description": "Sequence investments and delivery steps from assessment to rollout."
+        },
+        "water": {
+          "title": "Water",
+          "description": "Advisory for water management, monitoring and utility-scale systems."
+        },
+        "wastewater": {
+          "title": "Wastewater",
+          "description": "Guidance on treatment, monitoring and operational water infrastructure."
+        },
+        "energy": {
+          "title": "Energy",
+          "description": "Efficiency, monitoring and energy systems that reduce cost without losing reliability."
+        },
+        "renewableEnergy": {
+          "title": "Renewable energy",
+          "description": "Integrate renewable generation and storage into practical operations."
+        },
+        "ventilation": {
+          "title": "Ventilation",
+          "description": "Ventilation design and optimization for healthier, efficient buildings."
+        },
+        "hvac": {
+          "title": "HVAC",
+          "description": "Climate systems specified for comfort, energy use and day-to-day operation."
+        },
+        "environmentalTechnology": {
+          "title": "Environmental technology",
+          "description": "Applied solutions for monitoring, compliance and resource efficiency."
+        },
+        "smartInfrastructure": {
+          "title": "Smart infrastructure",
+          "description": "Connected infrastructure for cities, utilities and public-space operations."
+        }
+      }
+    },
+    "processTimeline": {
+      "eyebrow": "Advisory process",
+      "title": "From assessment to optimization",
+      "description": "GII consultancy follows a structured path from understanding your operation to measurable improvement — across ICT strategy and sustainable technology.",
+      "items": {
+        "assess": {
+          "title": "Assess",
+          "description": "Review current systems, operations and constraints to identify where advisory support will create the most impact."
+        },
+        "plan": {
+          "title": "Plan",
+          "description": "Define priorities, architecture and a phased roadmap aligned with budget, teams and regulatory requirements."
+        },
+        "select": {
+          "title": "Select",
+          "description": "Compare vendors, platforms and technical options against operational needs and long-term fit."
+        },
+        "integrate": {
+          "title": "Integrate",
+          "description": "Connect new solutions with existing infrastructure, workflows and data so they work in daily operations."
+        },
+        "implement": {
+          "title": "Implement",
+          "description": "Deliver software, controls and field systems with engineering discipline and clear handover criteria."
+        },
+        "optimize": {
+          "title": "Optimize",
+          "description": "Monitor performance, refine configuration and improve outcomes after go-live."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "Next step",
+      "title": "Turn advisory insight into a clear plan",
+      "description": "Book a session with GII specialists. We will review your goals, map the right ICT or sustainable technology path, and outline practical next steps from assessment to delivery."
+    },
+    "audiences": {
+      "eyebrow": "Who we advise",
+      "title": "Organizations we guide from strategy to delivery",
+      "description": "GII consultancy supports enterprises, public bodies, international partners and operators — with ICT strategy and sustainable technology advisory grounded in German engineering practice.",
+      "cta": "Talk to our advisors",
+      "items": {
+        "enterprisesMittelstand": {
+          "title": "Enterprises & Mittelstand",
+          "description": "Digitalization and Industry 4.0 — roadmaps, architecture and operational modernization for companies and mid-sized manufacturers."
+        },
+        "publicInstitutions": {
+          "title": "Public institutions",
+          "description": "Platforms, digital services and capacity building for agencies, municipalities and public-sector operators."
+        },
+        "internationalMena": {
+          "title": "International / MENA partners",
+          "description": "German technology transfer and programme design for development partnerships, market entry and joint delivery."
+        },
+        "utilitiesSustainability": {
+          "title": "Utilities & sustainability operators",
+          "description": "Water, energy, HVAC and environment — applied advisory for utilities, infrastructure teams and sustainability operators."
+        }
+      }
+    }
   },
   "insightsPage": {
     "metaTitle": "Insights | GII",

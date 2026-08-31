@@ -5,13 +5,29 @@ import { useLocale, useTranslations } from "next-intl";
 import { FiArrowRight } from "react-icons/fi";
 
 type CTAProps = {
-  namespace?: "ctaSection" | "aboutPage.cta" | "projectPage.cta";
+  namespace?:
+    | "ctaSection"
+    | "aboutPage.cta"
+    | "projectPage.cta"
+    | "consultancyPage.cta"
+    | "researchPage.cta"
+    | "industriesPage.cta";
   backgroundClassName?: string;
+  singlePrimaryButton?: boolean;
+  primaryButtonKey?: string;
+  primaryHref?: string;
+  secondaryButtonKey?: string;
+  secondaryHref?: string;
 };
 
 export default function CTA({
   namespace = "ctaSection",
   backgroundClassName = "grid-surface-white",
+  singlePrimaryButton = false,
+  primaryButtonKey = "startProject",
+  primaryHref = "/contact",
+  secondaryButtonKey = "exploreSolutions",
+  secondaryHref = "/digital-transformation",
 }: CTAProps) {
   const locale = useLocale();
   const t = useTranslations(namespace);
@@ -27,9 +43,9 @@ export default function CTA({
     return (
       <Link
         href={`/${locale}${href}`}
-        className="group inline-flex items-center justify-between gap-4 rounded-full bg-[#0b0b0b] px-7 py-3 text-[13px] font-semibold text-white shadow-[0_12px_30px_rgba(0,0,0,0.28)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_18px_50px_rgba(0,0,0,0.4)] dark:bg-white dark:text-navy dark:shadow-[0_12px_30px_rgba(0,0,0,0.28)] dark:hover:bg-white dark:hover:text-navy dark:hover:shadow-[0_18px_50px_rgba(0,0,0,0.4)]"
+        className="group inline-flex shrink-0 items-center justify-between gap-3 whitespace-nowrap rounded-full bg-[#0b0b0b] px-6 py-3 text-[13px] font-semibold text-white shadow-[0_12px_30px_rgba(0,0,0,0.28)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_18px_50px_rgba(0,0,0,0.4)] dark:bg-white dark:text-navy dark:shadow-[0_12px_30px_rgba(0,0,0,0.28)] dark:hover:bg-white dark:hover:text-navy dark:hover:shadow-[0_18px_50px_rgba(0,0,0,0.4)]"
       >
-        <span>{label}</span>
+        <span className="whitespace-nowrap">{label}</span>
         <span className="inline-flex size-8 items-center justify-center rounded-full bg-white/15 transition-all duration-300 group-hover:bg-white/25 dark:bg-navy/10 dark:group-hover:bg-navy/15">
           <FiArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-0.5" aria-hidden="true" />
         </span>
@@ -67,9 +83,11 @@ export default function CTA({
               </p>
             </div>
 
-            <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:items-center sm:justify-end sm:gap-4">
-              <PillButton href="/contact" label={tCta("startProject")} />
-              <PillButton href="/digital-transformation" label={tCta("exploreSolutions")} />
+            <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:justify-end sm:gap-4">
+              <PillButton href={primaryHref} label={tCta(primaryButtonKey)} />
+              {!singlePrimaryButton ? (
+                <PillButton href={secondaryHref} label={tCta(secondaryButtonKey)} />
+              ) : null}
             </div>
           </div>
         </div>

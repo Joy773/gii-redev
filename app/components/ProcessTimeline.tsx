@@ -12,32 +12,85 @@ import {
 } from "react-icons/fi";
 
 import ScrollReveal from "./common/ScrollReveal";
-import { StartProjectButton } from "./common/buttons";
+import { ContactUsButton, StartProjectButton } from "./common/buttons";
 
-const PROCESS_STEPS = [
+type ProcessStep = {
+  id: string;
+  icon: ComponentType<{ className?: string }>;
+};
+
+const ABOUT_PROCESS_STEPS: ProcessStep[] = [
   { id: "diagnose", icon: FiSearch },
   { id: "design", icon: FiLayers },
   { id: "deliver", icon: FiTool },
   { id: "integrate", icon: FiCheckCircle },
   { id: "enable", icon: FiUsers },
   { id: "partner", icon: FiRefreshCw },
-] as const;
+];
+
+const CONSULTANCY_PROCESS_STEPS: ProcessStep[] = [
+  { id: "assess", icon: FiSearch },
+  { id: "plan", icon: FiLayers },
+  { id: "select", icon: FiCheckCircle },
+  { id: "integrate", icon: FiTool },
+  { id: "implement", icon: FiUsers },
+  { id: "optimize", icon: FiRefreshCw },
+];
+
+const RESEARCH_PROCESS_STEPS: ProcessStep[] = [
+  { id: "explore", icon: FiSearch },
+  { id: "design", icon: FiLayers },
+  { id: "prototype", icon: FiTool },
+  { id: "validate", icon: FiCheckCircle },
+  { id: "transfer", icon: FiUsers },
+  { id: "scale", icon: FiRefreshCw },
+];
+
+const PROCESS_CONFIG = {
+  about: {
+    namespace: "processTimeline",
+    steps: ABOUT_PROCESS_STEPS,
+    backgroundClassName: "grid-surface-white",
+    cta: "startProject" as const,
+    onDark: false,
+  },
+  consultancy: {
+    namespace: "consultancyPage.processTimeline",
+    steps: CONSULTANCY_PROCESS_STEPS,
+    backgroundClassName: "bg-[#122A3B]",
+    cta: "contactUs" as const,
+    onDark: true,
+  },
+  research: {
+    namespace: "researchPage.processTimeline",
+    steps: RESEARCH_PROCESS_STEPS,
+    backgroundClassName: "grid-surface-white",
+    cta: "contactUs" as const,
+    onDark: false,
+  },
+};
 
 function ProcessRow({
   id,
   icon: Icon,
   index,
+  namespace,
+  onDark = false,
 }: {
-  id: (typeof PROCESS_STEPS)[number]["id"];
+  id: string;
   icon: ComponentType<{ className?: string }>;
   index: number;
+  namespace: string;
+  onDark?: boolean;
 }) {
-  const t = useTranslations("processTimeline.items");
+  const t = useTranslations(`${namespace}.items`);
 
   return (
     <li className="group relative">
       <span
-        className="pointer-events-none absolute inset-x-0 inset-y-1 rounded-2xl bg-surface opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+        className={`pointer-events-none absolute inset-x-0 inset-y-1 rounded-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 ${
+          onDark ? "bg-white/5" : "bg-surface"
+        }`}
         aria-hidden="true"
       />
       <span
@@ -51,15 +104,29 @@ function ProcessRow({
         </span>
 
         <div className="min-w-0 flex-1">
-          <h3 className="text-lg font-semibold tracking-tight text-dark transition-colors duration-300 group-hover:text-primary sm:text-xl">
+          <h3
+            className={`text-lg font-semibold tracking-tight transition-colors duration-300 group-hover:text-primary sm:text-xl ${
+              onDark ? "text-white" : "text-dark"
+            }`}
+          >
             {t(`${id}.title`)}
           </h3>
-          <p className="mt-1.5 text-sm leading-6 text-text/70 sm:text-[15px]">
+          <p
+            className={`mt-1.5 text-sm leading-6 sm:text-[15px] ${
+              onDark ? "text-white/70" : "text-text/70"
+            }`}
+          >
             {t(`${id}.description`)}
           </p>
         </div>
 
-        <span className="mt-0.5 inline-flex size-10 shrink-0 items-center justify-center rounded-full border border-border/70 text-text/45 transition-all duration-300 group-hover:border-primary/30 group-hover:bg-primary/10 group-hover:text-primary">
+        <span
+          className={`mt-0.5 inline-flex size-10 shrink-0 items-center justify-center rounded-full border transition-all duration-300 group-hover:border-primary/30 group-hover:bg-primary/10 group-hover:text-primary ${
+            onDark
+              ? "border-white/20 text-white/45"
+              : "border-border/70 text-text/45"
+          }`}
+        >
           <Icon className="size-4" aria-hidden="true" />
         </span>
       </div>
@@ -67,41 +134,71 @@ function ProcessRow({
   );
 }
 
-export default function ProcessTimeline() {
-  const t = useTranslations("processTimeline");
+export default function ProcessTimeline({
+  variant = "about",
+}: {
+  variant?: keyof typeof PROCESS_CONFIG;
+}) {
+  const config = PROCESS_CONFIG[variant];
+  const onDark = config.onDark;
+  const t = useTranslations(config.namespace);
 
   return (
-    <section className="grid-surface grid-surface-white py-20 sm:py-24">
+    <section className={`grid-surface ${config.backgroundClassName} py-20 sm:py-24`}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
           <div className="text-center lg:sticky lg:top-28 lg:self-start lg:text-left">
-            <span className="inline-flex items-center gap-2 rounded-full bg-primary/8 px-3 py-1 text-sm font-medium text-primary">
+            <span
+              className={`inline-flex items-center gap-2 rounded-full px-3 py-1 text-sm font-medium ${
+                onDark
+                  ? "border border-white/15 bg-white/10 text-white/90"
+                  : "bg-primary/8 text-primary"
+              }`}
+            >
               <span className="size-2 rounded-full bg-primary" />
               {t("eyebrow")}
             </span>
-            <div className="mt-6 sm:mt-5">
-              <ScrollReveal
-                baseOpacity={0.25}
-                enableBlur
-                baseRotation={4}
-                blurStrength={18}
-                containerClassName="text-center lg:text-left"
-                textClassName="text-center text-3xl font-semibold tracking-tight text-dark sm:text-4xl lg:text-left lg:text-5xl"
-              >
-                {t("title")}
-              </ScrollReveal>
-            </div>
-            <p className="mt-5 text-base leading-7 text-text/72 sm:text-lg sm:leading-8">
+
+            <ScrollReveal
+              baseOpacity={0.25}
+              enableBlur
+              baseRotation={4}
+              blurStrength={18}
+              containerClassName="mt-6 text-center lg:text-left"
+              textClassName={`text-center text-3xl font-semibold tracking-tight sm:text-4xl lg:text-left lg:text-5xl ${
+                onDark ? "text-white" : "text-dark"
+              }`}
+              wordAnimationEnd="top 50%"
+              rotationEnd="top 50%"
+            >
+              {t("title")}
+            </ScrollReveal>
+
+            <p
+              className={`mt-4 text-base leading-7 sm:text-lg sm:leading-8 ${
+                onDark ? "text-white/78" : "text-text/72"
+              }`}
+            >
               {t("description")}
             </p>
             <div className="mt-7 flex justify-center lg:justify-start">
-              <StartProjectButton />
+              {config.cta === "contactUs" ? <ContactUsButton /> : <StartProjectButton />}
             </div>
           </div>
 
-          <ul className="divide-y divide-border/60 border-y border-border/60">
-            {PROCESS_STEPS.map((item, index) => (
-              <ProcessRow key={item.id} index={index} {...item} />
+          <ul
+            className={`divide-y border-y ${
+              onDark ? "divide-white/15 border-white/15" : "divide-border/60 border-border/60"
+            }`}
+          >
+            {config.steps.map((item, index) => (
+              <ProcessRow
+                key={item.id}
+                index={index}
+                namespace={config.namespace}
+                onDark={onDark}
+                {...item}
+              />
             ))}
           </ul>
         </div>
