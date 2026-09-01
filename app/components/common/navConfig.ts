@@ -30,7 +30,7 @@ export const SERVICE_COLUMNS: ServiceColumn[] = [
     href: "/digital-transformation",
     items: [
       { id: "digitalisierung", labelKey: "digitalisierung", href: "/digital-transformation" },
-      { id: "mittelstand", labelKey: "mittelstand", href: "/mittelstand" },
+      { id: "mittelstand", labelKey: "mittelstand", href: "/sme" },
       { id: "industry40", labelKey: "industry40", href: "/industry-4-0" },
     ],
   },
@@ -51,7 +51,7 @@ export const SERVICE_COLUMNS: ServiceColumn[] = [
     href: "/ai",
     items: [
       { id: "ai", labelKey: "ai", href: "/ai" },
-      { id: "aiTransformation", labelKey: "aiTransformation", href: "/ai" },
+      { id: "aiTransformation", labelKey: "aiTransformation", href: "/ai-transformation" },
     ],
   },
   {
@@ -68,25 +68,25 @@ export const SERVICE_COLUMNS: ServiceColumn[] = [
     labelKey: "sustainableTechnology",
     href: "/sustainable-solutions",
     items: [
-      { id: "water", labelKey: "water", href: "/sustainable-solutions#water" },
-      { id: "energy", labelKey: "energy", href: "/sustainable-solutions#energy" },
+      { id: "water", labelKey: "water", href: "/water" },
+      { id: "energy", labelKey: "energy", href: "/energy" },
       {
         id: "ventilationHvac",
         labelKey: "ventilationHvac",
-        href: "/sustainable-solutions#ventilation",
+        href: "/ventilation-hvac",
       },
-      { id: "environment", labelKey: "environment", href: "/sustainable-solutions#environment" },
+      { id: "environment", labelKey: "environment", href: "/environment" },
     ],
   },
   {
     id: "ictSystemsIntegration",
     labelKey: "ictSystemsIntegration",
-    href: "/ict",
+    href: "/cloud-cybersecurity",
     items: [
       {
         id: "cloudCybersecurity",
         labelKey: "cloudCybersecurity",
-        href: "/digital-transformation#cloud-cybersecurity",
+        href: "/cloud-cybersecurity",
       },
     ],
   },

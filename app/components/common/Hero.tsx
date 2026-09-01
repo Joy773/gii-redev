@@ -10,11 +10,65 @@ import { ExploreSolutionsButton, StartProjectButton } from "./buttons";
 import LightTunnel from "./LightTunnel";
 import MoltenMetal from "./MoltenMetal";
 
+function refreshScrollTriggers() {
+  void import("gsap/ScrollTrigger").then(({ ScrollTrigger }) => {
+    ScrollTrigger.refresh();
+  });
+}
+
 const RESEARCH_HERO_IMAGE =
   "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2400&q=80";
 
 const INDUSTRIES_HERO_IMAGE =
   "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=2400&q=80";
+
+const DIGITALIZATION_HERO_IMAGE =
+  "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2400&q=80";
+
+const SME_HERO_IMAGE =
+  "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=2400&q=80";
+
+const INDUSTRY40_HERO_IMAGE =
+  "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=2400&q=80";
+
+const IOT_EMBEDDED_HERO_IMAGE =
+  "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?auto=format&fit=crop&w=2400&q=80";
+
+const MEDICAL_TECHNOLOGY_HERO_IMAGE =
+  "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=2400&q=80";
+
+const CLOUD_CYBERSECURITY_HERO_IMAGE =
+  "https://images.unsplash.com/photo-1633265486064-086b219458ec?auto=format&fit=crop&w=2400&q=80";
+
+const AI_TRANSFORMATION_HERO_IMAGE =
+  "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=2400&q=80";
+
+const AI_HERO_IMAGE =
+  "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=2400&q=80";
+
+const WATER_HERO_IMAGE =
+  "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=2400&q=80";
+
+const ENERGY_HERO_IMAGE =
+  "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=2400&q=80";
+
+const VENTILATION_HVAC_HERO_IMAGE =
+  "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=2400&q=80";
+
+const ENVIRONMENT_HERO_IMAGE =
+  "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=2400&q=80";
+
+const SOFTWARE_DEVELOPMENT_HERO_IMAGE =
+  "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=2400&q=80";
+
+const DIGITAL_PLATFORMS_HERO_IMAGE =
+  "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=2400&q=80";
+
+const DIGITAL_EDUCATION_HERO_IMAGE =
+  "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=2400&q=80";
+
+const ECOMMERCE_HERO_IMAGE =
+  "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=2400&q=80";
 
 const hexToRgb = (hex: string): [number, number, number] => {
   const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
@@ -1370,7 +1424,30 @@ function AcidSquares({
 }
 
 type HeroProps = {
-  variant?: "home" | "about" | "projects" | "insights" | "consultancy" | "research" | "industries";
+  variant?:
+    | "home"
+    | "about"
+    | "projects"
+    | "insights"
+    | "consultancy"
+    | "research"
+    | "industries"
+    | "digitalizationForEnterprises"
+    | "sme"
+    | "industry40"
+    | "iotEmbedded"
+    | "medicalTechnology"
+    | "cloudCybersecurity"
+    | "aiTransformation"
+    | "ai"
+    | "water"
+    | "energy"
+    | "ventilationHvac"
+    | "environment"
+    | "softwareDevelopment"
+    | "digitalPlatforms"
+    | "digitalEducation"
+    | "ecommerce";
 };
 
 export default function Hero({ variant = "home" }: HeroProps) {
@@ -1380,9 +1457,64 @@ export default function Hero({ variant = "home" }: HeroProps) {
   const isConsultancy = variant === "consultancy";
   const isResearch = variant === "research";
   const isIndustries = variant === "industries";
-  const isImageHero = isResearch || isIndustries;
+  const isDigitalizationForEnterprises = variant === "digitalizationForEnterprises";
+  const isSme = variant === "sme";
+  const isIndustry40 = variant === "industry40";
+  const isIotEmbedded = variant === "iotEmbedded";
+  const isMedicalTechnology = variant === "medicalTechnology";
+  const isCloudCybersecurity = variant === "cloudCybersecurity";
+  const isAiTransformation = variant === "aiTransformation";
+  const isAi = variant === "ai";
+  const isWater = variant === "water";
+  const isEnergy = variant === "energy";
+  const isVentilationHvac = variant === "ventilationHvac";
+  const isEnvironment = variant === "environment";
+  const isSoftwareDevelopment = variant === "softwareDevelopment";
+  const isDigitalPlatforms = variant === "digitalPlatforms";
+  const isDigitalEducation = variant === "digitalEducation";
+  const isEcommerce = variant === "ecommerce";
+  const isImageHero =
+    isResearch ||
+    isIndustries ||
+    isDigitalizationForEnterprises ||
+    isSme ||
+    isIndustry40 ||
+    isIotEmbedded ||
+    isMedicalTechnology ||
+    isCloudCybersecurity ||
+    isAiTransformation ||
+    isAi ||
+    isWater ||
+    isEnergy ||
+    isVentilationHvac ||
+    isEnvironment ||
+    isSoftwareDevelopment ||
+    isDigitalPlatforms ||
+    isDigitalEducation ||
+    isEcommerce;
   const isCompact =
-    isAbout || isProjects || isInsights || isConsultancy || isResearch || isIndustries;
+    isAbout ||
+    isProjects ||
+    isInsights ||
+    isConsultancy ||
+    isResearch ||
+    isIndustries ||
+    isDigitalizationForEnterprises ||
+    isSme ||
+    isIndustry40 ||
+    isIotEmbedded ||
+    isMedicalTechnology ||
+    isCloudCybersecurity ||
+    isAiTransformation ||
+    isAi ||
+    isWater ||
+    isEnergy ||
+    isVentilationHvac ||
+    isEnvironment ||
+    isSoftwareDevelopment ||
+    isDigitalPlatforms ||
+    isDigitalEducation ||
+    isEcommerce;
   const t = useTranslations(
     isAbout
       ? "aboutPage"
@@ -1396,32 +1528,93 @@ export default function Hero({ variant = "home" }: HeroProps) {
               ? "researchPage"
               : isIndustries
                 ? "industriesPage"
-                : "hero",
+                : isDigitalizationForEnterprises
+                  ? "digitalizationForEnterprisesPage"
+                  : isSme
+                    ? "smePage"
+                    : isIndustry40
+                      ? "industry40Page"
+                      : isIotEmbedded
+                        ? "iotEmbeddedPage"
+                        : isMedicalTechnology
+                          ? "medicalTechnologyPage"
+                          : isCloudCybersecurity
+                            ? "cloudCybersecurityPage"
+                            : isAiTransformation
+                              ? "aiTransformationPage"
+                              : isAi
+                                ? "aiPage"
+                                : isWater
+                                  ? "waterPage"
+                                  : isEnergy
+                                    ? "energyPage"
+                                    : isVentilationHvac
+                                      ? "ventilationHvacPage"
+                                      : isEnvironment
+                                        ? "environmentPage"
+                                        : isSoftwareDevelopment
+                                          ? "softwareDevelopmentPage"
+                                          : isDigitalPlatforms
+                                            ? "digitalPlatformsPage"
+                                            : isDigitalEducation
+                                              ? "digitalEducationPage"
+                                              : isEcommerce
+                                                ? "ecommercePage"
+                                                : "hero",
   );
   const { resolvedTheme } = useTheme();
   const isDark = resolvedTheme === "dark";
   const titleWords = t("title").split(" ");
+  const imageHeroSrc = isResearch
+    ? RESEARCH_HERO_IMAGE
+    : isIndustries
+      ? INDUSTRIES_HERO_IMAGE
+      : isDigitalizationForEnterprises
+        ? DIGITALIZATION_HERO_IMAGE
+        : isSme
+          ? SME_HERO_IMAGE
+          : isIndustry40
+            ? INDUSTRY40_HERO_IMAGE
+            : isIotEmbedded
+              ? IOT_EMBEDDED_HERO_IMAGE
+              : isMedicalTechnology
+                ? MEDICAL_TECHNOLOGY_HERO_IMAGE
+                : isCloudCybersecurity
+                  ? CLOUD_CYBERSECURITY_HERO_IMAGE
+                  : isAiTransformation
+                    ? AI_TRANSFORMATION_HERO_IMAGE
+                    : isAi
+                      ? AI_HERO_IMAGE
+                      : isWater
+                        ? WATER_HERO_IMAGE
+                        : isEnergy
+                          ? ENERGY_HERO_IMAGE
+                          : isVentilationHvac
+                            ? VENTILATION_HVAC_HERO_IMAGE
+                            : isEnvironment
+                              ? ENVIRONMENT_HERO_IMAGE
+                              : isSoftwareDevelopment
+                                ? SOFTWARE_DEVELOPMENT_HERO_IMAGE
+                                : isDigitalPlatforms
+                                  ? DIGITAL_PLATFORMS_HERO_IMAGE
+                                  : isDigitalEducation
+                                    ? DIGITAL_EDUCATION_HERO_IMAGE
+                                    : isEcommerce
+                                      ? ECOMMERCE_HERO_IMAGE
+                                      : null;
 
   return (
     <section className="relative overflow-hidden bg-soft-background">
       <div className="absolute inset-0">
-        {isResearch ? (
+        {imageHeroSrc ? (
           <Image
-            src={RESEARCH_HERO_IMAGE}
+            src={imageHeroSrc}
             alt={t("imageAlt")}
             fill
             priority
             sizes="100vw"
             className="object-cover object-center"
-          />
-        ) : isIndustries ? (
-          <Image
-            src={INDUSTRIES_HERO_IMAGE}
-            alt={t("imageAlt")}
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover object-center"
+            onLoad={refreshScrollTriggers}
           />
         ) : isAbout ? (
           <LightTunnel
@@ -1575,11 +1768,11 @@ export default function Hero({ variant = "home" }: HeroProps) {
         }
       >
         <div className="max-w-4xl text-center">
-          <span className="inline-flex max-w-full rounded-full border border-primary/15 bg-surface/80 px-3.5 py-1.5 text-center text-xs font-semibold tracking-[0.12em] text-primary uppercase shadow-sm sm:px-6 sm:py-2.5 sm:text-xl sm:tracking-tight md:text-2xl">
+          <span className="inline-flex max-w-full rounded-full border border-primary/15 bg-surface/80 px-3.5 py-1.5 text-center text-xs font-semibold tracking-[0.12em] text-primary uppercase shadow-sm dark:border-white/15 dark:bg-[#122A3B]/80 sm:px-6 sm:py-2.5 sm:text-xl sm:tracking-tight md:text-2xl">
             {t("eyebrow")}
           </span>
 
-          <h1 className="mt-6 text-4xl font-semibold tracking-tight text-dark sm:text-5xl lg:text-6xl">
+          <h1 className="mt-6 text-4xl font-semibold tracking-tight text-dark dark:text-white sm:text-5xl lg:text-6xl">
             {titleWords.map((word, index) => (
               <span
                 key={`${word}-${index}`}
@@ -1591,9 +1784,9 @@ export default function Hero({ variant = "home" }: HeroProps) {
             ))}
           </h1>
 
-          <p className="mt-4 text-lg leading-8 text-text/75">{t("subtitle")}</p>
+          <p className="mt-4 text-lg leading-8 text-text/75 dark:text-white/78">{t("subtitle")}</p>
 
-          <p className="mt-5 text-base leading-7 text-text/70 sm:text-lg">
+          <p className="mt-5 text-base leading-7 text-text/70 dark:text-white/70 sm:text-lg">
             {t("description")}
           </p>
 

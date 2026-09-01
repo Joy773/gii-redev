@@ -20,6 +20,8 @@ type ScrollRevealProps = {
   rotationEnd?: string;
   wordAnimationEnd?: string;
   playOnMount?: boolean;
+  /** Use the nearest section as the ScrollTrigger target (fixes sticky sidebar titles). */
+  triggerScope?: "self" | "section";
 };
 
 export default function ScrollReveal({
@@ -34,11 +36,13 @@ export default function ScrollReveal({
   rotationEnd = "top 55%",
   wordAnimationEnd = "top 55%",
   playOnMount = false,
+  triggerScope = "self",
 }: ScrollRevealProps) {
   const containerRef = useRef<HTMLHeadingElement>(null);
 
+  const text = typeof children === "string" ? children : "";
+
   const splitText = useMemo(() => {
-    const text = typeof children === "string" ? children : "";
     return text.split(/(\s+)/).map((word, index) => {
       if (word.match(/^\s+$/)) return word;
       return (
@@ -47,17 +51,45 @@ export default function ScrollReveal({
         </span>
       );
     });
-  }, [children]);
+  }, [text]);
 
   useEffect(() => {
     const el = containerRef.current;
-    if (!el) return;
+    if (!el || !text.trim()) return;
+
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (prefersReducedMotion) {
+      gsap.set(el.querySelectorAll(".word"), { opacity: 1, filter: "blur(0px)", rotate: 0 });
+      gsap.set(el, { rotate: 0 });
+      return;
+    }
 
     const scroller =
       scrollContainerRef?.current != null ? scrollContainerRef.current : window;
 
+    const triggerEl =
+      triggerScope === "section" ? (el.closest("section") ?? el) : el;
+
     const triggers: ScrollTrigger[] = [];
     const tweens: gsap.core.Tween[] = [];
+
+    const wordElements = el.querySelectorAll(".word");
+    if (wordElements.length === 0) return;
+
+    const wordFrom: gsap.TweenVars = {
+      opacity: baseOpacity,
+      willChange: "opacity, filter",
+    };
+    const wordTo: gsap.TweenVars = {
+      opacity: 1,
+    };
+
+    if (enableBlur) {
+      wordFrom.filter = `blur(${blurStrength}px)`;
+      wordTo.filter = "blur(0px)";
+    }
+
+    gsap.set(wordElements, wordFrom);
 
     if (playOnMount) {
       tweens.push(
@@ -68,24 +100,14 @@ export default function ScrollReveal({
         ),
       );
 
-      const wordElements = el.querySelectorAll(".word");
-      const wordFrom: gsap.TweenVars = {
-        opacity: baseOpacity,
-        willChange: "opacity, filter",
-      };
-      const wordTo: gsap.TweenVars = {
-        ease: "power2.out",
-        opacity: 1,
-        duration: 0.9,
-        stagger: 0.08,
-      };
-
-      if (enableBlur) {
-        wordFrom.filter = `blur(${blurStrength}px)`;
-        wordTo.filter = "blur(0px)";
-      }
-
-      tweens.push(gsap.fromTo(wordElements, wordFrom, wordTo));
+      tweens.push(
+        gsap.fromTo(wordElements, wordFrom, {
+          ...wordTo,
+          ease: "power2.out",
+          duration: 0.9,
+          stagger: 0.08,
+        }),
+      );
     } else {
       const rotationTween = gsap.fromTo(
         el,
@@ -94,51 +116,47 @@ export default function ScrollReveal({
           ease: "none",
           rotate: 0,
           scrollTrigger: {
-            trigger: el,
+            trigger: triggerEl,
             scroller,
             start: "top bottom",
             end: rotationEnd,
             scrub: 0.6,
+            invalidateOnRefresh: true,
           },
         },
       );
       tweens.push(rotationTween);
       if (rotationTween.scrollTrigger) triggers.push(rotationTween.scrollTrigger);
 
-      const wordElements = el.querySelectorAll(".word");
-
-      const wordFrom: gsap.TweenVars = {
-        opacity: baseOpacity,
-        willChange: "opacity, filter",
-      };
-      const wordTo: gsap.TweenVars = {
+      const wordTween = gsap.fromTo(wordElements, wordFrom, {
+        ...wordTo,
         ease: "none",
-        opacity: 1,
         stagger: 0.08,
         scrollTrigger: {
-          trigger: el,
+          trigger: triggerEl,
           scroller,
           start: "top 90%",
           end: wordAnimationEnd,
           scrub: 0.6,
+          invalidateOnRefresh: true,
         },
-      };
-
-      if (enableBlur) {
-        wordFrom.filter = `blur(${blurStrength}px)`;
-        wordTo.filter = "blur(0px)";
-      }
-
-      const wordTween = gsap.fromTo(wordElements, wordFrom, wordTo);
+      });
       tweens.push(wordTween);
       if (wordTween.scrollTrigger) triggers.push(wordTween.scrollTrigger);
     }
 
+    const refresh = () => ScrollTrigger.refresh();
+    const refreshTimeout = window.setTimeout(refresh, 0);
+    window.addEventListener("load", refresh);
+
     return () => {
+      window.clearTimeout(refreshTimeout);
+      window.removeEventListener("load", refresh);
       triggers.forEach((trigger) => trigger.kill());
       tweens.forEach((tween) => tween.kill());
     };
   }, [
+    text,
     scrollContainerRef,
     enableBlur,
     baseRotation,
@@ -147,6 +165,7 @@ export default function ScrollReveal({
     wordAnimationEnd,
     blurStrength,
     playOnMount,
+    triggerScope,
   ]);
 
   return (

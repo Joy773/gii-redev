@@ -11,7 +11,23 @@ type CTAProps = {
     | "projectPage.cta"
     | "consultancyPage.cta"
     | "researchPage.cta"
-    | "industriesPage.cta";
+    | "industriesPage.cta"
+    | "digitalizationForEnterprisesPage.cta"
+    | "smePage.cta"
+    | "industry40Page.cta"
+    | "iotEmbeddedPage.cta"
+    | "medicalTechnologyPage.cta"
+    | "cloudCybersecurityPage.cta"
+    | "aiTransformationPage.cta"
+    | "aiPage.cta"
+    | "waterPage.cta"
+    | "energyPage.cta"
+    | "ventilationHvacPage.cta"
+    | "environmentPage.cta"
+    | "softwareDevelopmentPage.cta"
+    | "digitalPlatformsPage.cta"
+    | "digitalEducationPage.cta"
+    | "ecommercePage.cta";
   backgroundClassName?: string;
   singlePrimaryButton?: boolean;
   primaryButtonKey?: string;

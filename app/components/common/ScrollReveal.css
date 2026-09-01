@@ -12,6 +12,15 @@
 
 .word {
   display: inline-block;
+  opacity: 0.25;
+  filter: blur(18px);
   will-change: opacity, filter;
   padding-inline: 0.02em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .word {
+    opacity: 1;
+    filter: none;
+  }
 }

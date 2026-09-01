@@ -96,6 +96,118 @@ const INDUSTRIES_SECTORS: (ServiceItem & { className: string })[] = [
   { id: "researchDevelopment", icon: FiCpu, className: "" },
 ];
 
+const DIGITAL_TRANSFORMATION_SERVICES: ServiceItem[] = [
+  { id: "smes", icon: FiBriefcase },
+  { id: "industry40", icon: FiSettings },
+  { id: "aiTransformation", icon: FiCpu },
+  { id: "cloudCybersecurity", icon: FiLock },
+];
+
+const SME_RELATED_SERVICES: ServiceItem[] = [
+  { id: "digitalization", icon: FiRefreshCcw },
+  { id: "industry40", icon: FiSettings },
+  { id: "aiTransformation", icon: FiCpu },
+  { id: "cloudCybersecurity", icon: FiLock },
+];
+
+const INDUSTRY40_RELATED_SERVICES: ServiceItem[] = [
+  { id: "digitalization", icon: FiRefreshCcw },
+  { id: "smes", icon: FiBriefcase },
+  { id: "aiTransformation", icon: FiCpu },
+  { id: "iotEmbedded", icon: FiWifi },
+];
+
+const IOT_EMBEDDED_RELATED_SERVICES: ServiceItem[] = [
+  { id: "industry40", icon: FiSettings },
+  { id: "softwareDevelopment", icon: FiCode },
+  { id: "ai", icon: FiCpu },
+  { id: "water", icon: FiDroplet },
+];
+
+const MEDICAL_RELATED_SERVICES: ServiceItem[] = [
+  { id: "iotEmbedded", icon: FiWifi },
+  { id: "softwareDevelopment", icon: FiCode },
+  { id: "digitalization", icon: FiRefreshCcw },
+  { id: "cloudCybersecurity", icon: FiLock },
+];
+
+const CLOUD_CYBERSECURITY_RELATED_SERVICES: ServiceItem[] = [
+  { id: "digitalization", icon: FiRefreshCcw },
+  { id: "smes", icon: FiBriefcase },
+  { id: "softwareDevelopment", icon: FiCode },
+  { id: "aiTransformation", icon: FiCpu },
+];
+
+const AI_TRANSFORMATION_RELATED_SERVICES: ServiceItem[] = [
+  { id: "digitalization", icon: FiRefreshCcw },
+  { id: "industry40", icon: FiSettings },
+  { id: "softwareDevelopment", icon: FiCode },
+  { id: "cloudCybersecurity", icon: FiLock },
+];
+
+const AI_RELATED_SERVICES: ServiceItem[] = [
+  { id: "aiTransformation", icon: FiCpu },
+  { id: "softwareDevelopment", icon: FiCode },
+  { id: "industry40", icon: FiSettings },
+  { id: "iotEmbedded", icon: FiWifi },
+];
+
+const WATER_RELATED_SERVICES: ServiceItem[] = [
+  { id: "iotEmbedded", icon: FiWifi },
+  { id: "energy", icon: FiZap },
+  { id: "environment", icon: FiCompass },
+  { id: "digitalization", icon: FiRefreshCcw },
+];
+
+const ENERGY_RELATED_SERVICES: ServiceItem[] = [
+  { id: "iotEmbedded", icon: FiWifi },
+  { id: "water", icon: FiDroplet },
+  { id: "ventilationHvac", icon: FiWind },
+  { id: "environment", icon: FiCompass },
+];
+
+const VENTILATION_HVAC_RELATED_SERVICES: ServiceItem[] = [
+  { id: "energy", icon: FiZap },
+  { id: "environment", icon: FiCompass },
+  { id: "iotEmbedded", icon: FiWifi },
+  { id: "water", icon: FiDroplet },
+];
+
+const ENVIRONMENT_RELATED_SERVICES: ServiceItem[] = [
+  { id: "water", icon: FiDroplet },
+  { id: "energy", icon: FiZap },
+  { id: "iotEmbedded", icon: FiWifi },
+  { id: "ventilationHvac", icon: FiWind },
+];
+
+const SOFTWARE_DEVELOPMENT_RELATED_SERVICES: ServiceItem[] = [
+  { id: "digitalization", icon: FiRefreshCcw },
+  { id: "ai", icon: FiCpu },
+  { id: "cloudCybersecurity", icon: FiLock },
+  { id: "digitalPlatforms", icon: FiLayers },
+];
+
+const DIGITAL_PLATFORMS_RELATED_SERVICES: ServiceItem[] = [
+  { id: "softwareDevelopment", icon: FiCode },
+  { id: "digitalization", icon: FiRefreshCcw },
+  { id: "cloudCybersecurity", icon: FiLock },
+  { id: "ecommerce", icon: FiShoppingCart },
+];
+
+const DIGITAL_EDUCATION_RELATED_SERVICES: ServiceItem[] = [
+  { id: "digitalPlatforms", icon: FiLayers },
+  { id: "softwareDevelopment", icon: FiCode },
+  { id: "digitalization", icon: FiRefreshCcw },
+  { id: "ai", icon: FiCpu },
+];
+
+const ECOMMERCE_RELATED_SERVICES: ServiceItem[] = [
+  { id: "softwareDevelopment", icon: FiCode },
+  { id: "digitalPlatforms", icon: FiLayers },
+  { id: "cloudCybersecurity", icon: FiLock },
+  { id: "digitalization", icon: FiRefreshCcw },
+];
+
 const SERVICE_CARDS_CONFIG = {
   default: {
     namespace: "serviceCards",
@@ -122,10 +234,106 @@ const SERVICE_CARDS_CONFIG = {
     onDark: false,
     themeBand: true,
   },
+  digitalizationForEnterprises: {
+    namespace: "digitalizationForEnterprisesPage.relatedServices",
+    backgroundClassName: "grid-surface-white",
+    cardsClassName: "grid gap-4 sm:grid-cols-2",
+    onDark: false,
+  },
+  sme: {
+    namespace: "smePage.relatedServices",
+    backgroundClassName: "grid-surface-white",
+    cardsClassName: "grid gap-4 sm:grid-cols-2",
+    onDark: false,
+  },
+  industry40: {
+    namespace: "industry40Page.relatedServices",
+    backgroundClassName: "grid-surface-white",
+    cardsClassName: "grid gap-4 sm:grid-cols-2",
+    onDark: false,
+  },
+  iotEmbedded: {
+    namespace: "iotEmbeddedPage.relatedServices",
+    backgroundClassName: "grid-surface-white",
+    cardsClassName: "grid gap-4 sm:grid-cols-2",
+    onDark: false,
+  },
+  medicalTechnology: {
+    namespace: "medicalTechnologyPage.relatedServices",
+    backgroundClassName: "grid-surface-white",
+    cardsClassName: "grid gap-4 sm:grid-cols-2",
+    onDark: false,
+  },
+  cloudCybersecurity: {
+    namespace: "cloudCybersecurityPage.relatedServices",
+    backgroundClassName: "grid-surface-white",
+    cardsClassName: "grid gap-4 sm:grid-cols-2",
+    onDark: false,
+  },
+  aiTransformation: {
+    namespace: "aiTransformationPage.relatedServices",
+    backgroundClassName: "grid-surface-white",
+    cardsClassName: "grid gap-4 sm:grid-cols-2",
+    onDark: false,
+  },
+  ai: {
+    namespace: "aiPage.relatedServices",
+    backgroundClassName: "grid-surface-white",
+    cardsClassName: "grid gap-4 sm:grid-cols-2",
+    onDark: false,
+  },
+  water: {
+    namespace: "waterPage.relatedServices",
+    backgroundClassName: "grid-surface-white",
+    cardsClassName: "grid gap-4 sm:grid-cols-2",
+    onDark: false,
+  },
+  energy: {
+    namespace: "energyPage.relatedServices",
+    backgroundClassName: "grid-surface-white",
+    cardsClassName: "grid gap-4 sm:grid-cols-2",
+    onDark: false,
+  },
+  ventilationHvac: {
+    namespace: "ventilationHvacPage.relatedServices",
+    backgroundClassName: "grid-surface-white",
+    cardsClassName: "grid gap-4 sm:grid-cols-2",
+    onDark: false,
+  },
+  environment: {
+    namespace: "environmentPage.relatedServices",
+    backgroundClassName: "grid-surface-white",
+    cardsClassName: "grid gap-4 sm:grid-cols-2",
+    onDark: false,
+  },
+  softwareDevelopment: {
+    namespace: "softwareDevelopmentPage.relatedServices",
+    backgroundClassName: "grid-surface-white",
+    cardsClassName: "grid gap-4 sm:grid-cols-2",
+    onDark: false,
+  },
+  digitalPlatforms: {
+    namespace: "digitalPlatformsPage.relatedServices",
+    backgroundClassName: "grid-surface-white",
+    cardsClassName: "grid gap-4 sm:grid-cols-2",
+    onDark: false,
+  },
+  digitalEducation: {
+    namespace: "digitalEducationPage.relatedServices",
+    backgroundClassName: "grid-surface-white",
+    cardsClassName: "grid gap-4 sm:grid-cols-2",
+    onDark: false,
+  },
+  ecommerce: {
+    namespace: "ecommercePage.relatedServices",
+    backgroundClassName: "grid-surface-white",
+    cardsClassName: "grid gap-4 sm:grid-cols-2",
+    onDark: false,
+  },
 } as const;
 
 const lightCarouselCardClassName =
-  "group flex flex-col overflow-hidden rounded-3xl border border-border/70 bg-soft-background p-5 shadow-[0_12px_32px_rgba(18,59,86,0.07)] transition-all duration-300 hover:-translate-y-1 hover:border-primary/25 hover:bg-surface hover:shadow-[0_18px_44px_rgba(18,59,86,0.12)]";
+  "group flex flex-col overflow-hidden rounded-3xl border border-border/70 bg-soft-background p-5 shadow-[0_12px_32px_rgba(18,59,86,0.07)] transition-all duration-300 hover:-translate-y-1 hover:border-primary/25 hover:bg-surface hover:shadow-[0_18px_44px_rgba(18,59,86,0.12)] dark:border-white/15 dark:bg-[#0B1F2C] dark:shadow-[0_12px_32px_rgba(0,0,0,0.28)] dark:hover:border-primary/35 dark:hover:bg-[#122A3B] dark:hover:shadow-[0_18px_44px_rgba(0,0,0,0.38)]";
 
 const darkCarouselCardClassName =
   "group flex flex-col overflow-hidden rounded-3xl border border-white/15 bg-[#0B1F2C] p-5 shadow-[0_12px_32px_rgba(0,0,0,0.28)] transition-all duration-300 hover:-translate-y-1 hover:border-primary/35 hover:shadow-[0_18px_44px_rgba(0,0,0,0.38)]";
@@ -305,15 +513,15 @@ function ThemeCard({
 
   return (
     <article className={lightCarouselCardClassName}>
-      <span className="inline-flex size-7 items-center justify-center rounded-full bg-primary/10 text-primary transition-all duration-300 group-hover:scale-110 group-hover:bg-primary/15">
+      <span className="inline-flex size-7 items-center justify-center rounded-full bg-primary/10 text-primary transition-all duration-300 group-hover:scale-110 group-hover:bg-primary/15 dark:bg-primary/20 dark:group-hover:bg-primary/28">
         <Icon className="size-3.5" aria-hidden="true" />
       </span>
 
       <div className="mt-6 flex-1">
-        <h3 className="text-xl font-semibold tracking-tight text-dark transition-colors duration-300 group-hover:text-primary sm:text-2xl">
+        <h3 className="text-xl font-semibold tracking-tight text-dark transition-colors duration-300 group-hover:text-primary dark:text-white sm:text-2xl">
           {t(`items.${id}.title`)}
         </h3>
-        <p className="mt-2 text-sm leading-6 text-text/70">
+        <p className="mt-2 text-sm leading-6 text-text/70 dark:text-white/70">
           {t(`items.${id}.description`)}
         </p>
       </div>
@@ -335,10 +543,41 @@ export default function ServiceCards({
       ? CONSULTANCY_AUDIENCES
       : variant === "research"
         ? RESEARCH_THEMES
-        : null;
+        : variant === "digitalizationForEnterprises"
+          ? DIGITAL_TRANSFORMATION_SERVICES
+          : variant === "sme"
+            ? SME_RELATED_SERVICES
+            : variant === "industry40"
+              ? INDUSTRY40_RELATED_SERVICES
+              : variant === "iotEmbedded"
+                ? IOT_EMBEDDED_RELATED_SERVICES
+                : variant === "medicalTechnology"
+                  ? MEDICAL_RELATED_SERVICES
+                    : variant === "cloudCybersecurity"
+                      ? CLOUD_CYBERSECURITY_RELATED_SERVICES
+                      : variant === "aiTransformation"
+                        ? AI_TRANSFORMATION_RELATED_SERVICES
+                        : variant === "ai"
+                          ? AI_RELATED_SERVICES
+                          : variant === "water"
+                            ? WATER_RELATED_SERVICES
+                            : variant === "energy"
+                              ? ENERGY_RELATED_SERVICES
+                              : variant === "ventilationHvac"
+                                ? VENTILATION_HVAC_RELATED_SERVICES
+                                : variant === "environment"
+                                  ? ENVIRONMENT_RELATED_SERVICES
+                                  : variant === "softwareDevelopment"
+                                    ? SOFTWARE_DEVELOPMENT_RELATED_SERVICES
+                                    : variant === "digitalPlatforms"
+                                      ? DIGITAL_PLATFORMS_RELATED_SERVICES
+                                      : variant === "digitalEducation"
+                                        ? DIGITAL_EDUCATION_RELATED_SERVICES
+                                        : variant === "ecommerce"
+                                          ? ECOMMERCE_RELATED_SERVICES
+                                          : null;
 
   const onDark = config.onDark;
-  const themeBand = "themeBand" in config && config.themeBand;
 
   return (
     <section className={`grid-surface ${config.backgroundClassName} py-20 sm:py-24`}>
@@ -346,11 +585,9 @@ export default function ServiceCards({
         <div className="mx-auto max-w-xl text-center lg:mx-0 lg:text-left">
           <span
             className={`inline-flex items-center gap-2 rounded-full px-3 py-1 text-sm font-medium ${
-              themeBand
-                ? "bg-primary/8 text-primary dark:bg-white/10 dark:text-white/90"
-                : onDark
-                  ? "bg-white/10 text-white/90"
-                  : "bg-primary/8 text-primary"
+              onDark
+                ? "bg-white/10 text-white/90"
+                : "bg-primary/8 text-primary dark:bg-white/10 dark:text-white/90"
             }`}
           >
             <span
@@ -366,7 +603,7 @@ export default function ServiceCards({
             blurStrength={18}
             containerClassName="mt-6 text-center lg:text-left"
             textClassName={`text-center text-4xl font-semibold tracking-tight sm:text-5xl lg:text-left ${
-              themeBand ? "text-dark dark:text-white" : onDark ? "text-white" : "text-dark"
+              onDark ? "text-white" : "text-dark dark:text-white"
             }`}
           >
             {t("title")}
@@ -374,11 +611,7 @@ export default function ServiceCards({
 
           <p
             className={`mt-6 text-lg leading-8 ${
-              themeBand
-                ? "text-text/72 dark:text-white/78"
-                : onDark
-                  ? "text-white/78"
-                  : "text-text/72"
+              onDark ? "text-white/78" : "text-text/72 dark:text-white/78"
             }`}
           >
             {t("description")}
@@ -387,11 +620,9 @@ export default function ServiceCards({
           <Link
             href={`/${locale}/contact`}
             className={`mt-8 inline-flex items-center gap-2 text-sm font-semibold transition-colors ${
-              themeBand
-                ? "text-primary hover:text-dark dark:hover:text-white"
-                : onDark
-                  ? "text-primary hover:text-white"
-                  : "text-primary hover:text-dark"
+              onDark
+                ? "text-primary hover:text-white"
+                : "text-primary hover:text-dark dark:hover:text-white"
             }`}
           >
             {t("cta")}

@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { FiCheck, FiChevronDown, FiSearch, FiX } from "react-icons/fi";
 
-import { PROJECT_SECTORS, PROJECTS, type ProjectSector } from "../data/projects";
+import { PROJECT_SECTORS, PROJECTS, type Project, type ProjectSector } from "../data/projects";
 import { useScrollReveal } from "../hooks/useScrollReveal";
 import { ViewAllProjectsButton } from "./common/buttons";
 import ProjectCard from "./ProjectCard";
@@ -19,17 +19,26 @@ type FilterSector = "all" | ProjectSector;
 type ProjectsProps = {
   hideViewAll?: boolean;
   showFilters?: boolean;
+  filterBySector?: ProjectSector;
+  filterByProjectIds?: Project["id"][];
+  sectionNamespace?: string;
+  backgroundClassName?: string;
 };
 
 export default function Projects({
   hideViewAll = false,
   showFilters = false,
+  filterBySector,
+  filterByProjectIds,
+  sectionNamespace = "projects",
+  backgroundClassName = "grid-surface-soft",
 }: ProjectsProps) {
   const t = useTranslations("projects");
+  const tSection = useTranslations(sectionNamespace);
   const tNav = useTranslations("nav");
   const { ref: sectionRef, isVisible } = useScrollReveal<HTMLElement>();
   const [query, setQuery] = useState("");
-  const [sector, setSector] = useState<FilterSector>("all");
+  const [selectedSector, setSelectedSector] = useState<FilterSector>("all");
   const [sectorOpen, setSectorOpen] = useState(false);
   const sectorRef = useRef<HTMLDivElement>(null);
 
@@ -37,14 +46,20 @@ export default function Projects({
     id === "all" ? t("filters.all") : tNav(id);
 
   const filteredProjects = useMemo(() => {
-    const source = showFilters ? PROJECTS : PROJECTS.filter((project) => project.showOnHome);
+    const source = filterByProjectIds?.length
+      ? PROJECTS.filter((project) => filterByProjectIds.includes(project.id))
+      : filterBySector
+        ? PROJECTS.filter((project) => project.sector === filterBySector)
+        : showFilters
+          ? PROJECTS
+          : PROJECTS.filter((project) => project.showOnHome);
 
     if (!showFilters) return [...source];
 
     const normalizedQuery = query.trim().toLowerCase();
 
     return source.filter((project) => {
-      if (sector !== "all" && project.sector !== sector) return false;
+      if (selectedSector !== "all" && project.sector !== selectedSector) return false;
       if (!normalizedQuery) return true;
 
       const haystack = [
@@ -59,7 +74,7 @@ export default function Projects({
 
       return haystack.includes(normalizedQuery);
     });
-  }, [showFilters, query, sector, t, tNav]);
+  }, [filterByProjectIds, filterBySector, showFilters, query, selectedSector, t, tNav]);
 
   useEffect(() => {
     if (!sectorOpen) return;
@@ -78,18 +93,18 @@ export default function Projects({
     <section
       ref={sectionRef}
       id="projects"
-      className="grid-surface grid-surface-soft scroll-mt-24 py-20 sm:py-24"
+      className={`grid-surface ${backgroundClassName} scroll-mt-24 py-20 sm:py-24`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {!hideViewAll ? (
           <div className="flex flex-col items-center gap-6 text-center sm:flex-row sm:items-end sm:justify-between sm:text-left">
             <div className="max-w-2xl">
               <span
-                className={`inline-flex items-center gap-2 rounded-full bg-primary/8 px-3 py-1 text-sm font-medium text-primary ${revealClass(isVisible)}`}
+                className={`inline-flex items-center gap-2 rounded-full bg-primary/8 px-3 py-1 text-sm font-medium text-primary dark:bg-white/10 dark:text-white/90 ${revealClass(isVisible)}`}
                 style={{ transitionDelay: "0ms" }}
               >
                 <span className="eyebrow-dot-pulse size-2 rounded-full bg-primary" />
-                {t("eyebrow")}
+                {tSection("eyebrow")}
               </span>
               <ScrollReveal
                 baseOpacity={0.25}
@@ -97,15 +112,15 @@ export default function Projects({
                 baseRotation={4}
                 blurStrength={18}
                 containerClassName="mt-6 text-center sm:text-left"
-                textClassName="text-center text-4xl font-semibold tracking-tight text-dark sm:text-left sm:text-5xl"
+                textClassName="text-center text-4xl font-semibold tracking-tight text-dark dark:text-white sm:text-left sm:text-5xl"
               >
-                {t("title")}
+                {tSection("title")}
               </ScrollReveal>
               <p
-                className={`mt-4 max-w-xl text-lg leading-8 text-text/72 ${revealClass(isVisible)}`}
+                className={`mt-4 max-w-xl text-lg leading-8 text-text/72 dark:text-white/78 ${revealClass(isVisible)}`}
                 style={{ transitionDelay: "160ms" }}
               >
-                {t("description")}
+                {tSection("description")}
               </p>
             </div>
 
@@ -155,7 +170,7 @@ export default function Projects({
                   onClick={() => setSectorOpen((open) => !open)}
                   className="flex w-full items-center justify-between gap-3 rounded-2xl border border-transparent bg-soft-background py-3.5 pr-4 pl-4 text-left text-sm font-medium text-dark outline-none transition-[border,box-shadow,background] hover:bg-surface focus:border-primary/25 focus:bg-surface focus:shadow-[0_0_0_4px_rgba(49,121,171,0.12)]"
                 >
-                  <span className="min-w-0 truncate">{sectorLabel(sector)}</span>
+                  <span className="min-w-0 truncate">{sectorLabel(selectedSector)}</span>
                   <FiChevronDown
                     className={`size-4 shrink-0 text-text/45 transition-transform duration-200 ${
                       sectorOpen ? "rotate-180" : ""
@@ -171,13 +186,13 @@ export default function Projects({
                     className="absolute z-50 mt-2 max-h-80 w-full overflow-auto rounded-2xl border border-border/70 bg-surface p-1.5 shadow-[0_18px_50px_rgba(18,59,86,0.14)]"
                   >
                     {(["all", ...PROJECT_SECTORS] as const).map((id) => {
-                      const selected = sector === id;
+                      const selected = selectedSector === id;
                       return (
                         <li key={id} role="option" aria-selected={selected}>
                           <button
                             type="button"
                             onClick={() => {
-                              setSector(id);
+                              setSelectedSector(id);
                               setSectorOpen(false);
                             }}
                             className={`flex w-full items-center justify-between gap-3 rounded-xl px-3 py-2.5 text-left text-sm transition-colors ${

@@ -325,6 +325,198 @@
           "Smart-city solutions"
         ]
       },
+      "waterNetworkMonitoring": {
+        "category": "Water",
+        "country": "Germany",
+        "title": "Utility Water Network Monitoring",
+        "description": "IoT-based monitoring for distribution networks — flow, pressure and quality data that helps utilities detect issues before they reach customers.",
+        "overview": "GII supports water utilities with connected monitoring for distribution networks, combining flow, pressure and quality sensors with dashboards operators can use during daily shifts. The approach focuses on practical leak detection, network visibility and alert paths maintenance teams can act on.",
+        "challenge": "Water utilities often lack real-time visibility across distribution networks, so leaks, pressure drops and quality issues are discovered late — after customer complaints or costly losses.",
+        "solution": "GII designs IoT monitoring architectures that connect field sensors, edge gateways and operator dashboards, giving utilities early signals on network performance with documentation and handover criteria field teams can support.",
+        "technologies": [
+          "IoT sensor networks",
+          "Flow and pressure monitoring",
+          "Water quality sensing",
+          "Edge gateways",
+          "Utility dashboards and alerts"
+        ],
+        "keyAreas": [
+          "Distribution network monitoring",
+          "Leak detection",
+          "Pressure management",
+          "Water quality indicators",
+          "Remote monitoring",
+          "Operator dashboards",
+          "Field commissioning",
+          "Maintenance documentation"
+        ],
+        "expertise": [
+          "Water utility systems",
+          "IoT and WSN architecture",
+          "German engineering standards",
+          "Field-ready monitoring delivery"
+        ]
+      },
+      "buildingEnergyMonitoring": {
+        "category": "Energy",
+        "country": "Germany",
+        "title": "Building Energy Monitoring Platform",
+        "description": "Cloud-based energy monitoring for commercial and public buildings — consumption visibility, alerts and reporting that help operators reduce cost without losing reliability.",
+        "overview": "GII builds building energy monitoring platforms that combine smart metering, dashboards and alert logic for facility teams. The focus is practical consumption visibility, baseline tracking and operating rules maintenance staff can support after handover.",
+        "challenge": "Facility teams often lack a single view of energy use across buildings, floors and systems, so inefficiency is discovered late and savings are hard to verify after upgrades.",
+        "solution": "GII delivers cloud-based monitoring with smart metering integration, role-based dashboards and documented alert thresholds, giving operators the visibility to act on consumption patterns in daily work.",
+        "technologies": [
+          "Smart metering",
+          "Cloud-based monitoring platforms",
+          "Building energy dashboards",
+          "Alert and reporting logic",
+          "Multi-site administration"
+        ],
+        "keyAreas": [
+          "Consumption monitoring",
+          "Baseline and trend tracking",
+          "Operator dashboards",
+          "Multi-building administration",
+          "Alert thresholds",
+          "Reporting for facility teams",
+          "Integration with existing meters",
+          "Handover documentation"
+        ],
+        "expertise": [
+          "Building energy systems",
+          "ICT platform delivery",
+          "German engineering standards",
+          "Facility operations integration"
+        ]
+      },
+      "hvacOperationsMonitoring": {
+        "category": "Ventilation & HVAC",
+        "country": "Germany",
+        "title": "HVAC Operations Monitoring",
+        "description": "Monitoring and alert paths for ventilation and climate systems — indoor air quality, equipment status and energy performance facility teams can act on.",
+        "overview": "GII supports facility teams with HVAC operations monitoring that connects ventilation assets, climate controls and performance indicators in one operator view. The focus is practical indoor climate, equipment visibility and alert logic maintenance staff can support.",
+        "challenge": "Commercial buildings run complex ventilation and HVAC systems, but operators often lack unified visibility into air quality, equipment status and whether designed efficiency is maintained after commissioning.",
+        "solution": "GII delivers monitoring dashboards and alert paths mapped to daily facility work, with documented thresholds, training and handover criteria so climate performance stays reliable over time.",
+        "technologies": [
+          "HVAC monitoring platforms",
+          "Indoor air quality indicators",
+          "Equipment status tracking",
+          "Energy performance dashboards",
+          "Alert and maintenance workflows"
+        ],
+        "keyAreas": [
+          "Indoor air quality monitoring",
+          "Ventilation system status",
+          "Climate control performance",
+          "Operator dashboards",
+          "Maintenance alert paths",
+          "Commissioning documentation",
+          "Energy efficiency tracking",
+          "Facility team training"
+        ],
+        "expertise": [
+          "Ventilation and HVAC systems",
+          "Building operations integration",
+          "German environmental engineering",
+          "Facility-ready monitoring delivery"
+        ]
+      },
+      "environmentalMonitoringNetwork": {
+        "category": "Environment",
+        "country": "International",
+        "title": "Environmental Monitoring Network",
+        "description": "Sensor-based monitoring for air, resource use and environmental conditions — connected infrastructure teams can operate in public space and smart-city settings.",
+        "overview": "GII supports environmental monitoring networks that connect field sensors, edge gateways and operator dashboards for teams managing public infrastructure, utilities and smart-city applications. The focus is practical visibility into environmental conditions and resource use operators can act on.",
+        "challenge": "Public infrastructure and smart-city programmes often deploy sensors in isolation, so environmental data stays fragmented and teams cannot respond quickly to changing conditions or resource pressure.",
+        "solution": "GII designs monitoring architectures that link sensors, communications and dashboards in one maintainable system, with documented alert paths and handover criteria field teams can support.",
+        "technologies": [
+          "Environmental sensor networks",
+          "Wireless sensor networks (WSN)",
+          "Edge gateways",
+          "Remote monitoring platforms",
+          "Smart infrastructure integration"
+        ],
+        "keyAreas": [
+          "Environmental condition monitoring",
+          "Resource-efficiency tracking",
+          "Public-space infrastructure",
+          "Remote monitoring and alerts",
+          "Smart-city applications",
+          "Data-driven resource management",
+          "Field commissioning",
+          "Operator handover"
+        ],
+        "expertise": [
+          "Environmental technology",
+          "IoT and WSN architecture",
+          "Smart infrastructure delivery",
+          "International programme support"
+        ]
+      },
+      "digitalLearningPlatform": {
+        "category": "Digital Education",
+        "country": "International",
+        "title": "Digital Learning Platform",
+        "description": "A bilingual learning and training platform for professional programmes — courses, workshops and knowledge resources educators and learners can use across regions.",
+        "overview": "GII supports digital learning platforms that combine course delivery, training workflows and knowledge resources for professional and capacity-building programmes. The focus is practical access for educators and learners, with administration paths programme teams can sustain.",
+        "challenge": "Training programmes often rely on fragmented documents, in-person sessions and email coordination, making it hard to scale learning, track progress or support learners across regions and languages.",
+        "solution": "GII delivers a structured learning platform with course modules, training paths, bilingual content support and admin reporting, giving programme teams a digital foundation they can extend as cohorts grow.",
+        "technologies": [
+          "Learning management platforms",
+          "Course and module delivery",
+          "Bilingual content support",
+          "Training workflow design",
+          "Learner progress reporting"
+        ],
+        "keyAreas": [
+          "Digital course delivery",
+          "Training programme administration",
+          "Bilingual Arabic/English support",
+          "Workshop and event coordination",
+          "Learner progress tracking",
+          "Educator onboarding",
+          "Knowledge resource libraries",
+          "Programme reporting"
+        ],
+        "expertise": [
+          "Digital education platforms",
+          "International programme delivery",
+          "Bilingual content paths",
+          "Capacity-building programme design"
+        ]
+      },
+      "digitalCommerceMarketplace": {
+        "category": "E-Commerce",
+        "country": "Germany",
+        "title": "Digital Commerce Marketplace",
+        "description": "A B2B ordering portal with product catalogues, account pricing and order tracking — built for specialist suppliers and procurement teams.",
+        "overview": "GII supports digital commerce marketplaces that connect specialist product catalogues with B2B ordering, account management and fulfillment visibility. The focus is practical buying for customers and manageable catalogues for operations teams.",
+        "challenge": "Specialist suppliers often manage orders through phone, email and static PDF catalogues, making it hard for buyers to compare products, track status or scale ordering across accounts and regions.",
+        "solution": "GII delivers a structured commerce portal with searchable catalogues, account-based ordering and admin tools, giving sales and operations teams a digital channel they can extend as product ranges grow.",
+        "technologies": [
+          "B2B commerce platforms",
+          "Product catalogue management",
+          "Account-based ordering",
+          "Order tracking and reporting",
+          "Payment and billing integration"
+        ],
+        "keyAreas": [
+          "B2B ordering portals",
+          "Product catalogue structure",
+          "Account and pricing management",
+          "Order status tracking",
+          "Admin and reporting tools",
+          "Multilingual product content",
+          "Fulfillment coordination",
+          "Platform handover"
+        ],
+        "expertise": [
+          "B2B e-commerce delivery",
+          "Catalogue and ordering workflows",
+          "German engineering markets",
+          "Commerce platform operations"
+        ]
+      },
       "enerbe": {
         "category": "Energy",
         "country": "Middle East",
@@ -401,6 +593,528 @@
           "Software integration",
           "Web solutions",
           "Technical support"
+        ]
+      },
+      "nexaOps": {
+        "category": "Digital Transformation",
+        "country": "Germany",
+        "title": "NexaOps Enterprise Platform",
+        "description": "A connected operations platform that unifies workflows, reporting and supplier coordination for a multi-site manufacturer.",
+        "overview": "GII helped a German manufacturer replace fragmented spreadsheets and legacy tools with NexaOps — a digital operations platform that connects production planning, service teams and management reporting in one place.",
+        "challenge": "Operations ran across multiple sites with disconnected systems, making it hard to track orders, service cases and performance in real time.",
+        "solution": "GII designed and delivered a modular platform with role-based dashboards, workflow automation and ERP integrations that teams could adopt step by step.",
+        "technologies": [
+          "Enterprise web platform",
+          "Workflow automation",
+          "ERP integration",
+          "Role-based dashboards",
+          "Reporting and analytics"
+        ],
+        "keyAreas": [
+          "Operations visibility",
+          "Multi-site coordination",
+          "Service workflow management",
+          "Management reporting",
+          "Supplier coordination"
+        ],
+        "expertise": [
+          "Digital transformation",
+          "Platform delivery",
+          "Process modernization",
+          "Systems integration"
+        ]
+      },
+      "mittelstandCloud": {
+        "category": "Cloud Migration",
+        "country": "Germany",
+        "title": "Mittelstand Cloud Modernization",
+        "description": "Secure cloud migration and infrastructure modernization for a mid-sized enterprise moving off legacy on-premise systems.",
+        "overview": "GII supported a Mittelstand company through a phased cloud migration — modernizing infrastructure, securing data access and keeping business-critical applications available throughout the transition.",
+        "challenge": "Legacy servers, manual backups and limited remote access slowed growth and made it difficult to roll out new digital services safely.",
+        "solution": "GII planned and executed a staged migration with identity management, monitored workloads and clear rollback paths so teams could move to the cloud without disrupting daily operations.",
+        "technologies": [
+          "Cloud infrastructure",
+          "Identity and access management",
+          "Backup and monitoring",
+          "Application migration",
+          "Network security"
+        ],
+        "keyAreas": [
+          "Infrastructure modernization",
+          "Secure remote access",
+          "Application availability",
+          "Cost-controlled migration",
+          "Operational handover"
+        ],
+        "expertise": [
+          "Cloud strategy",
+          "Enterprise digitalization",
+          "ICT systems integration",
+          "Change management"
+        ]
+      },
+      "publicServiceHub": {
+        "category": "Public Sector",
+        "country": "Germany",
+        "title": "Public Service Digital Hub",
+        "description": "A citizen-facing digital hub for appointments, service requests and multilingual information across municipal departments.",
+        "overview": "GII delivered a public service digital hub that lets citizens book appointments, submit requests and access department information online — reducing phone load and improving response times for municipal staff.",
+        "challenge": "Citizens had to navigate multiple channels and paper forms, while staff spent significant time on repetitive enquiries and manual scheduling.",
+        "solution": "GII built a unified portal with multilingual content, online forms, appointment booking and admin tools that integrated with existing department workflows.",
+        "technologies": [
+          "Citizen portal",
+          "Online forms",
+          "Appointment booking",
+          "Multilingual CMS",
+          "Administration dashboard"
+        ],
+        "keyAreas": [
+          "Citizen self-service",
+          "Department coordination",
+          "Multilingual access",
+          "Appointment management",
+          "Digital service delivery"
+        ],
+        "expertise": [
+          "Public-sector digitalization",
+          "Platform design",
+          "Process optimization",
+          "Multilingual delivery"
+        ]
+      },
+      "smeProcurementHub": {
+        "category": "E-Procurement",
+        "country": "Germany",
+        "title": "Mittelstand Procurement Hub",
+        "description": "A right-sized e-procurement portal that digitized supplier orders, approvals and stock visibility for a family-owned manufacturer.",
+        "overview": "GII helped a mid-sized manufacturer replace email-based ordering and spreadsheet stock lists with a procurement hub that purchasing, warehouse and management teams could run without a large IT department.",
+        "challenge": "Purchase requests moved through inboxes and phone calls, making it hard to track approvals, compare suppliers or see what was already on order.",
+        "solution": "GII delivered a phased portal with supplier catalogs, approval workflows and inventory snapshots integrated into existing ERP processes.",
+        "technologies": [
+          "E-procurement portal",
+          "Approval workflows",
+          "Supplier catalog integration",
+          "Inventory visibility",
+          "ERP connectivity"
+        ],
+        "keyAreas": [
+          "Purchase order digitization",
+          "Supplier coordination",
+          "Approval transparency",
+          "Stock visibility",
+          "Back-office efficiency"
+        ],
+        "expertise": [
+          "Mittelstand digitalization",
+          "Process digitization",
+          "ERP integration",
+          "Phased delivery"
+        ]
+      },
+      "smeProductionPilot": {
+        "category": "Industry 4.0",
+        "country": "Germany",
+        "title": "Production Line Connectivity Pilot",
+        "description": "Machine status and quality data connected on an existing production line — without replacing equipment or stopping shifts.",
+        "overview": "GII ran a focused Industry 4.0 pilot for a Mittelstand manufacturer, adding connectivity to one bottleneck line so operators and shift leads could see downtime and quality events in real time.",
+        "challenge": "Production issues were reported verbally at shift handover, with no reliable view of machine status or recurring quality defects during the run.",
+        "solution": "GII connected selected machines, built operator-facing dashboards and trained shift leads to act on alerts — proving value before expanding to other lines.",
+        "technologies": [
+          "Machine connectivity",
+          "Operator dashboards",
+          "Quality event logging",
+          "Shift reporting",
+          "Edge data collection"
+        ],
+        "keyAreas": [
+          "Machine status visibility",
+          "Quality traceability",
+          "Shift handover",
+          "Pilot-to-scale roadmap",
+          "Operator adoption"
+        ],
+        "expertise": [
+          "Industry 4.0",
+          "Mittelstand manufacturing",
+          "IoT integration",
+          "Hands-on training"
+        ]
+      },
+      "smeFieldServiceApp": {
+        "category": "Field Service",
+        "country": "Germany",
+        "title": "Dealer Field Service App",
+        "description": "A mobile service app for technicians and dealers to log visits, parts and customer cases from the field.",
+        "overview": "GII digitized after-sales service for a Mittelstand equipment supplier — giving technicians a mobile app for job sheets, spare parts requests and customer history while keeping admin workflows simple.",
+        "challenge": "Service teams relied on paper job sheets and late office data entry, delaying invoicing and making it difficult to see open cases across dealers.",
+        "solution": "GII built a mobile-first field service app with offline-friendly job capture, parts lookup and a lightweight back-office view for coordinators.",
+        "technologies": [
+          "Mobile field service app",
+          "Offline job capture",
+          "Parts catalog lookup",
+          "Case management",
+          "Dealer coordination"
+        ],
+        "keyAreas": [
+          "After-sales digitization",
+          "Technician productivity",
+          "Dealer network support",
+          "Faster invoicing",
+          "Customer case history"
+        ],
+        "expertise": [
+          "SME digital platforms",
+          "Mobile delivery",
+          "Service process design",
+          "Operator training"
+        ]
+      },
+      "industry40OeeDashboard": {
+        "category": "OEE Monitoring",
+        "country": "Germany",
+        "title": "Shop-Floor OEE Dashboard",
+        "description": "Real-time OEE, downtime and shift reporting for operators and production leads on a connected assembly line.",
+        "overview": "GII connected machine signals from an existing assembly line and delivered operator-facing OEE dashboards — giving shift leads a live view of availability, performance and quality without replacing equipment.",
+        "challenge": "Downtime was tracked manually at shift handover, with no shared view of which machines were running, idle or waiting on maintenance.",
+        "solution": "GII integrated machine data, built shift dashboards and trained production leads to use alerts during the run — starting with one line before expanding plant-wide.",
+        "technologies": [
+          "Machine data integration",
+          "OEE dashboards",
+          "Downtime logging",
+          "Shift reporting",
+          "Edge data collection"
+        ],
+        "keyAreas": [
+          "Production visibility",
+          "Operator dashboards",
+          "Downtime analysis",
+          "Shift performance",
+          "Pilot-to-scale roadmap"
+        ],
+        "expertise": [
+          "Industry 4.0",
+          "Smart manufacturing",
+          "Data integration",
+          "Operator training"
+        ]
+      },
+      "industry40PredictiveMaintenance": {
+        "category": "Predictive Maintenance",
+        "country": "Germany",
+        "title": "Predictive Maintenance Pilot",
+        "description": "Sensor-based condition monitoring on critical assets to reduce unplanned downtime on a manufacturing plant floor.",
+        "overview": "GII ran a predictive maintenance pilot for a manufacturer — monitoring vibration and temperature on selected assets and routing alerts to maintenance teams before failures stopped production.",
+        "challenge": "Maintenance was largely reactive, with breakdowns causing unplanned stops and limited data on which assets were degrading.",
+        "solution": "GII installed sensors, defined alert thresholds and connected maintenance workflows so technicians could act on warnings during planned windows.",
+        "technologies": [
+          "Condition monitoring sensors",
+          "Alert routing",
+          "Asset health dashboards",
+          "Maintenance workflow integration",
+          "Edge analytics"
+        ],
+        "keyAreas": [
+          "Unplanned downtime reduction",
+          "Asset monitoring",
+          "Maintenance planning",
+          "Technician alerts",
+          "Pilot validation"
+        ],
+        "expertise": [
+          "Industry 4.0",
+          "IoT integration",
+          "Predictive maintenance",
+          "Manufacturing operations"
+        ]
+      },
+      "industry40QualityTraceability": {
+        "category": "Quality Traceability",
+        "country": "Germany",
+        "title": "Digital Quality Traceability",
+        "description": "Lot-level quality logging and traceability across production steps for a precision parts manufacturer.",
+        "overview": "GII digitized quality checks and lot traceability for a precision manufacturer — replacing paper logs with digital capture at key production steps and searchable history for quality teams.",
+        "challenge": "Quality records lived in paper binders, making it slow to trace defects back to a batch, machine or operator shift.",
+        "solution": "GII built digital quality forms, barcode-linked lot tracking and reporting views that quality and production teams could use without disrupting the line.",
+        "technologies": [
+          "Digital quality forms",
+          "Lot and batch tracking",
+          "Barcode integration",
+          "Quality reporting",
+          "Production step logging"
+        ],
+        "keyAreas": [
+          "Defect traceability",
+          "Batch history",
+          "Quality compliance",
+          "Production accountability",
+          "Paperless quality checks"
+        ],
+        "expertise": [
+          "Industry 4.0",
+          "Manufacturing software",
+          "Quality systems",
+          "Process digitization"
+        ]
+      },
+      "iotUtilityMonitoring": {
+        "category": "Utility IoT",
+        "country": "Germany",
+        "title": "Utility IoT Monitoring Network",
+        "description": "Wireless sensor network for flow, pressure and asset monitoring across a utility distribution network.",
+        "overview": "GII deployed an IoT monitoring network for a utility operator — connecting field sensors, edge gateways and operator dashboards so teams could see network status and respond to alerts during daily operations.",
+        "challenge": "Sensor data sat in separate systems or never reached the teams on shift, making it hard to verify leaks, pressure events or asset faults quickly.",
+        "solution": "GII integrated sensors, communications and monitoring views mapped to operator actions — with documentation and training so utility teams could maintain the network.",
+        "technologies": [
+          "Wireless sensor networks",
+          "Edge gateways",
+          "Remote monitoring",
+          "Alert routing",
+          "Operator dashboards"
+        ],
+        "keyAreas": [
+          "Network visibility",
+          "Leak and pressure monitoring",
+          "Shift-ready alerts",
+          "Field maintainability",
+          "Data-driven operations"
+        ],
+        "expertise": [
+          "IoT",
+          "Wireless sensor networks",
+          "Utility operations",
+          "Embedded connectivity"
+        ]
+      },
+      "iotIndustrialEdgeGateway": {
+        "category": "Industrial IoT",
+        "country": "Germany",
+        "title": "Industrial Edge Gateway Rollout",
+        "description": "Edge gateways that collect machine and sensor data on the plant floor for dashboards and integration platforms.",
+        "overview": "GII rolled out industrial edge gateways for a manufacturer — collecting machine signals at the line, buffering data locally and forwarding structured events to monitoring and integration systems.",
+        "challenge": "Production data was trapped at machines or required manual exports, with no reliable path from the shop floor to the systems teams used for reporting.",
+        "solution": "GII specified edge hardware, connectivity and data models, then deployed gateways with clear handover criteria for plant IT and maintenance teams.",
+        "technologies": [
+          "Edge gateways",
+          "Machine data collection",
+          "Industrial protocols",
+          "Local buffering",
+          "Platform integration"
+        ],
+        "keyAreas": [
+          "Shop-floor connectivity",
+          "Structured machine events",
+          "Edge reliability",
+          "Integration readiness",
+          "Operator and IT handover"
+        ],
+        "expertise": [
+          "IoT",
+          "Embedded systems",
+          "Industrial integration",
+          "Industry 4.0"
+        ]
+      },
+      "medicalDeviceMonitoring": {
+        "category": "Medical IoT",
+        "country": "Germany",
+        "title": "Medical Device Monitoring Platform",
+        "description": "Connected monitoring for medical devices with alert routing, status dashboards and maintenance workflows for clinical teams.",
+        "overview": "GII built a medical device monitoring platform that connects equipment status, alerts and maintenance workflows — giving clinical and technical teams shared visibility without replacing existing hospital systems.",
+        "challenge": "Device status and maintenance alerts were scattered across vendor tools, making it hard for clinical and technical teams to respond consistently during daily operations.",
+        "solution": "GII integrated device signals, monitoring views and alert paths mapped to the roles that act on them — with documentation and training for sustainable hospital operation.",
+        "technologies": [
+          "Medical device connectivity",
+          "Monitoring dashboards",
+          "Alert routing",
+          "Role-based access",
+          "Maintenance workflows"
+        ],
+        "keyAreas": [
+          "Clinical visibility",
+          "Device status monitoring",
+          "Alert response",
+          "Maintenance coordination",
+          "Secure operation"
+        ],
+        "expertise": [
+          "Medical technology",
+          "IoT",
+          "Healthcare software",
+          "Device integration"
+        ]
+      },
+      "hospitalPlanningPlatform": {
+        "category": "Healthcare Digital",
+        "country": "Germany",
+        "title": "Hospital Planning Digital Platform",
+        "description": "Digital platform for hospital planning, equipment coordination and connected care delivery workflows.",
+        "overview": "GII supported a hospital planning platform that coordinates equipment requirements, planning workflows and connected care delivery — helping providers manage complex healthcare projects in one digital environment.",
+        "challenge": "Hospital planning involved fragmented spreadsheets, email threads and supplier coordination, slowing equipment decisions and connected care rollout.",
+        "solution": "GII shaped a digital planning platform with structured workflows, equipment coordination and handover documentation so clinical, planning and supply teams could work from shared information.",
+        "technologies": [
+          "Healthcare platforms",
+          "Workflow management",
+          "Equipment coordination",
+          "Digital planning tools",
+          "Secure document exchange"
+        ],
+        "keyAreas": [
+          "Hospital planning",
+          "Equipment coordination",
+          "Connected care delivery",
+          "Cross-team workflows",
+          "Operational handover"
+        ],
+        "expertise": [
+          "Medical technology",
+          "Healthcare software",
+          "Hospital planning",
+          "Digital transformation"
+        ]
+      },
+      "cloudSecurityOperations": {
+        "category": "Cloud Security",
+        "country": "Germany",
+        "title": "Cloud Security Operations Platform",
+        "description": "Monitoring, access control and security operations for cloud workloads supporting business-critical applications.",
+        "overview": "GII built a cloud security operations platform that centralizes monitoring, access policies and incident workflows — giving IT teams shared visibility across workloads without replacing existing business applications.",
+        "challenge": "Cloud environments grew faster than security practices, leaving inconsistent access control, unclear monitoring and reactive incident handling across critical workloads.",
+        "solution": "GII integrated monitoring views, role-based access and operating procedures mapped to the teams that maintain cloud services — with documentation and training for sustainable security operations.",
+        "technologies": [
+          "Cloud monitoring",
+          "Identity and access management",
+          "Security operations",
+          "Backup and recovery",
+          "Incident response workflows"
+        ],
+        "keyAreas": [
+          "Workload visibility",
+          "Access control",
+          "Security monitoring",
+          "Operational handover",
+          "Protected cloud operation"
+        ],
+        "expertise": [
+          "Cloud & cybersecurity",
+          "ICT systems integration",
+          "Infrastructure modernization",
+          "Security operations"
+        ]
+      },
+      "aiOperationsAssistant": {
+        "category": "AI Automation",
+        "country": "Germany",
+        "title": "AI Operations Assistant",
+        "description": "An AI assistant embedded in daily operations workflows to route tasks, summarize cases and support service teams.",
+        "overview": "GII delivered an AI operations assistant for a multi-site organization — helping service teams summarize cases, route work and find answers inside the platform they already used for daily operations.",
+        "challenge": "Operations teams spent too much time searching records, writing summaries and manually routing cases across disconnected tools.",
+        "solution": "GII integrated an assistant into existing workflows with role-based access, audit-friendly outputs and human review paths so teams could adopt AI support step by step.",
+        "technologies": [
+          "AI assistants",
+          "Workflow automation",
+          "Role-based access",
+          "Platform integration",
+          "Operational analytics"
+        ],
+        "keyAreas": [
+          "Case summarization",
+          "Task routing",
+          "Team enablement",
+          "Platform embedding",
+          "Controlled adoption"
+        ],
+        "expertise": [
+          "AI transformation",
+          "Workflow automation",
+          "Operations platforms",
+          "Systems integration"
+        ]
+      },
+      "aiQualityAnalytics": {
+        "category": "AI Analytics",
+        "country": "Germany",
+        "title": "AI Quality Analytics Pilot",
+        "description": "A pilot analytics layer that flags quality patterns and supports production teams with faster insight from shop-floor data.",
+        "overview": "GII built an AI quality analytics pilot for a manufacturer — surfacing patterns in production and quality data so teams could investigate issues faster without replacing existing MES workflows.",
+        "challenge": "Quality data existed but sat in reports teams reviewed too late, making it hard to connect recurring defects to line conditions or process steps.",
+        "solution": "GII connected structured production signals with an analytics layer and review workflows mapped to quality and shift leads, with clear handover criteria before wider rollout.",
+        "technologies": [
+          "AI analytics",
+          "Production data integration",
+          "Pattern detection",
+          "Review workflows",
+          "Dashboard delivery"
+        ],
+        "keyAreas": [
+          "Quality insight",
+          "Production data use",
+          "Shift-ready review",
+          "Pilot validation",
+          "Scale readiness"
+        ],
+        "expertise": [
+          "AI transformation",
+          "Manufacturing analytics",
+          "Industry 4.0",
+          "Data integration"
+        ]
+      },
+      "aiKnowledgeAssistant": {
+        "category": "AI Assistant",
+        "country": "Germany",
+        "title": "AI Knowledge Assistant",
+        "description": "A secure knowledge assistant that helps teams query manuals, policies and project history inside their operational platform.",
+        "overview": "GII delivered an AI knowledge assistant for an organization with scattered documentation — enabling teams to search institutional knowledge, summarize answers and cite sources without leaving the tools they already use.",
+        "challenge": "Critical knowledge lived across PDFs, wikis and email threads, making it slow for staff to find reliable answers during customer and project work.",
+        "solution": "GII indexed approved content sources, built a role-aware assistant with source citations and integrated it into the existing operations platform with audit-friendly access rules.",
+        "technologies": [
+          "Retrieval-augmented generation",
+          "Knowledge indexing",
+          "Role-based access",
+          "Platform integration",
+          "Source citation"
+        ],
+        "keyAreas": [
+          "Institutional knowledge",
+          "Secure search",
+          "Assistant UX",
+          "Operational embedding",
+          "Governed content access"
+        ],
+        "expertise": [
+          "AI",
+          "Knowledge systems",
+          "Software integration",
+          "Enterprise platforms"
+        ]
+      },
+      "aiDocumentProcessing": {
+        "category": "AI Automation",
+        "country": "Germany",
+        "title": "AI Document Processing",
+        "description": "Automated classification and data extraction for inbound documents, forms and supplier records.",
+        "overview": "GII implemented an AI document processing pipeline for a back-office team — classifying incoming files, extracting key fields and routing results into existing review workflows.",
+        "challenge": "Staff manually opened, sorted and re-keyed information from large volumes of PDFs and scanned forms, creating delays and inconsistent data entry.",
+        "solution": "GII built a document intake flow with AI classification and extraction, human review for exceptions and direct handoff to downstream systems teams already maintained.",
+        "technologies": [
+          "Document classification",
+          "Data extraction",
+          "Workflow routing",
+          "Human-in-the-loop review",
+          "System integration"
+        ],
+        "keyAreas": [
+          "Back-office automation",
+          "Document intake",
+          "Exception review",
+          "Data quality",
+          "Process speed"
+        ],
+        "expertise": [
+          "AI",
+          "Document processing",
+          "Workflow automation",
+          "Systems integration"
         ]
       }
     }
@@ -666,6 +1380,1750 @@
       "eyebrow": "Next step",
       "title": "Turn sector expertise into delivery",
       "description": "Share your industry goals with GII. We will connect manufacturing, facilitation, and R&D capabilities with a practical path from strategy to implementation."
+    }
+  },
+  "digitalizationForEnterprisesPage": {
+    "metaTitle": "Digitalization for Enterprises | GII",
+    "eyebrow": "Digital Transformation",
+    "title": "Digitalization for Enterprises",
+    "subtitle": "Strategy. Platforms. Connected operations.",
+    "description": "GII helps enterprises move from manual processes to connected digital operations with practical roadmaps, modern platforms and implementation teams that deliver.",
+    "imageAlt": "Modern enterprise workspace with digital collaboration",
+    "capabilities": {
+      "eyebrow": "Capabilities",
+      "title": "What enterprise digitalization covers",
+      "description": "From process modernization and IT strategy to cloud, platforms and roadmaps — GII helps enterprises build connected operations teams can run.",
+      "featured": {
+        "title": "Flexible delivery partnership",
+        "description": "Every organization moves at a different pace. GII adapts with consultancy, phased delivery and long-term partnership models that fit your goals and timeline.",
+        "descriptionSecondary": "Whether you are modernizing core operations, launching a new platform or connecting international markets with German innovation, we scale support to match your needs."
+      },
+      "items": {
+        "processModernization": {
+          "title": "Process modernization",
+          "description": "Work with specialists who map manual workflows, remove bottlenecks and connect teams with digital processes grounded in German engineering practice."
+        },
+        "itStrategy": {
+          "title": "IT strategy",
+          "description": "Align technology choices with business goals, budgets and delivery capacity — with roadmaps teams can follow."
+        },
+        "softwareArchitecture": {
+          "title": "Cloud, platforms and roadmaps",
+          "description": "From cloud migration and digital platforms to technology roadmaps. GII covers the full spectrum of enterprise digitalization needs with strategy, software and implementation under one roof."
+        },
+        "cloudMigration": {
+          "title": "Cloud migration",
+          "description": "Plan secure cloud adoption, infrastructure modernization and operating models with clear cost control."
+        },
+        "digitalPlatforms": {
+          "title": "Digital platforms",
+          "description": "Build multi-user platforms for partners, customers, content and administration."
+        },
+        "technologyRoadmaps": {
+          "title": "Technology roadmaps",
+          "description": "Define phased priorities, milestones and investments that teams can execute."
+        }
+      }
+    },
+    "relatedServices": {
+      "eyebrow": "Related services",
+      "title": "More digital transformation paths",
+      "description": "Explore complementary services across SMEs, Industry 4.0, AI transformation and cloud security.",
+      "cta": "Talk to our team",
+      "items": {
+        "smes": {
+          "title": "SMEs",
+          "description": "Right-sized technology support that helps mid-sized businesses become more efficient and competitive."
+        },
+        "industry40": {
+          "title": "Industry 4.0",
+          "description": "Smart manufacturing solutions for connected machines, production data and industrial performance."
+        },
+        "aiTransformation": {
+          "title": "AI Transformation",
+          "description": "Identify, implement and scale AI use cases that improve decisions, workflows and customer experience."
+        },
+        "cloudCybersecurity": {
+          "title": "Cloud & Cybersecurity",
+          "description": "Secure cloud migration, infrastructure modernization and protection for critical systems and data."
+        }
+      }
+    },
+    "processTimeline": {
+      "eyebrow": "Delivery process",
+      "title": "From assessment to optimization",
+      "description": "GII follows a structured path from understanding your operations to connected digital delivery — with clear milestones teams can execute.",
+      "items": {
+        "assess": {
+          "title": "Assess",
+          "description": "Review current processes, systems and constraints to identify where digitalization will create the most impact."
+        },
+        "plan": {
+          "title": "Plan",
+          "description": "Define priorities, architecture and a phased roadmap aligned with budget, teams and business goals."
+        },
+        "design": {
+          "title": "Design",
+          "description": "Shape platforms, workflows and integrations that fit how your teams actually operate."
+        },
+        "build": {
+          "title": "Build",
+          "description": "Develop and deploy solutions with engineering discipline and clear handover criteria."
+        },
+        "integrate": {
+          "title": "Integrate",
+          "description": "Connect new systems with legacy infrastructure, data and daily workflows."
+        },
+        "optimize": {
+          "title": "Optimize",
+          "description": "Monitor performance, refine configuration and scale outcomes after go-live."
+        }
+      }
+    },
+    "projects": {
+      "eyebrow": "Technology in action",
+      "title": "Digitalization projects in practice",
+      "description": "See how GII helps enterprises modernize operations, migrate to the cloud and deliver connected digital services."
+    },
+    "cta": {
+      "eyebrow": "Next step",
+      "title": "Turn digitalization into delivery",
+      "description": "Share your enterprise goals with GII. We will map the right digital path — from strategy and platforms to implementation teams that deliver."
+    }
+  },
+  "smePage": {
+    "metaTitle": "SMEs | GII",
+    "eyebrow": "SMEs",
+    "title": "Right-sized digitalization for mid-sized businesses",
+    "subtitle": "Roadmaps. Platforms. Teams you can run.",
+    "description": "GII helps Mittelstand companies move from manual processes to connected digital operations — with phased roadmaps, practical platforms and implementation support sized for smaller IT teams.",
+    "imageAlt": "Small business team collaborating on digital planning in a modern office",
+    "capabilities": {
+      "eyebrow": "Capabilities",
+      "title": "What SME digitalization covers",
+      "description": "From maturity checks and phased roadmaps to ERP, cloud and operator training — GII helps Mittelstand teams build digital operations they can run themselves.",
+      "featured": {
+        "title": "Right-sized delivery partnership",
+        "description": "Mittelstand companies rarely have large IT departments. GII adapts with phased pilots, hands-on training and delivery models that fit your team size and budget.",
+        "descriptionSecondary": "Whether you are digitizing procurement, connecting production data or migrating to the cloud, we scale support so the first system is live before the next phase begins."
+      },
+      "items": {
+        "digitalMaturityCheck": {
+          "title": "Digital maturity check",
+          "description": "Review current processes, systems and constraints to identify where digitalization will create the most impact for a mid-sized operation."
+        },
+        "phasedRoadmaps": {
+          "title": "Phased roadmaps",
+          "description": "Define a delivery sequence teams can execute — with clear priorities, owners and milestones instead of a strategy deck that never ships."
+        },
+        "erpAndProcessDigitization": {
+          "title": "ERP, e-procurement and process digitization",
+          "description": "Modernize procurement, order handling and back-office workflows with systems sized for Mittelstand teams — integrated with how your people already work."
+        },
+        "cloudMigration": {
+          "title": "Cloud migration",
+          "description": "Plan secure cloud adoption and infrastructure modernization with clear cost control and support for smaller in-house IT teams."
+        },
+        "industry40ExistingLines": {
+          "title": "Industry 4.0 on existing lines",
+          "description": "Add connectivity and production data to current machinery without a factory reset — focused on bottlenecks operators can act on."
+        },
+        "operatorTraining": {
+          "title": "Operator training and handover",
+          "description": "Document, train and hand over systems so your teams can run and maintain new tools after go-live."
+        }
+      }
+    },
+    "relatedServices": {
+      "eyebrow": "Related services",
+      "title": "More paths for Mittelstand digitalization",
+      "description": "Explore complementary services across enterprise digitalization, Industry 4.0, AI transformation and cloud security.",
+      "cta": "Talk to our team",
+      "items": {
+        "digitalization": {
+          "title": "Digitalization for Enterprises",
+          "description": "Practical roadmaps that move companies from manual processes to connected digital operations."
+        },
+        "industry40": {
+          "title": "Industry 4.0",
+          "description": "Smart manufacturing solutions for connected machines, production data and industrial performance."
+        },
+        "aiTransformation": {
+          "title": "AI Transformation",
+          "description": "Identify, implement and scale AI use cases that improve decisions, workflows and customer experience."
+        },
+        "cloudCybersecurity": {
+          "title": "Cloud & Cybersecurity",
+          "description": "Secure cloud migration, infrastructure modernization and protection for critical systems and data."
+        }
+      }
+    },
+    "processTimeline": {
+      "eyebrow": "Delivery process",
+      "title": "From maturity check to scale",
+      "description": "GII follows a Mittelstand-friendly path — pilot first, train operators and scale only after the first system is live.",
+      "items": {
+        "assess": {
+          "title": "Assess",
+          "description": "Run a digital maturity check and map processes, systems and constraints for a mid-sized operation."
+        },
+        "plan": {
+          "title": "Plan",
+          "description": "Define a phased roadmap with clear priorities, owners and budget aligned to your IT capacity."
+        },
+        "pilot": {
+          "title": "Pilot",
+          "description": "Start with a focused pilot that proves value without disrupting production or daily operations."
+        },
+        "build": {
+          "title": "Build",
+          "description": "Develop and deploy the solution with handover criteria your team can maintain."
+        },
+        "train": {
+          "title": "Train",
+          "description": "Document workflows and train operators so new tools are adopted after go-live."
+        },
+        "scale": {
+          "title": "Scale",
+          "description": "Extend what works to the next process, site or system once the first rollout is stable."
+        }
+      }
+    },
+    "projects": {
+      "eyebrow": "Technology in action",
+      "title": "Mittelstand projects in practice",
+      "description": "See how GII helps mid-sized businesses modernize operations, migrate to the cloud and digitize core processes."
+    },
+    "cta": {
+      "eyebrow": "Next step",
+      "title": "Start with a maturity check",
+      "description": "Share your Mittelstand goals with GII. We will map a right-sized digital path — from the first pilot to systems your team can run."
+    }
+  },
+  "industry40Page": {
+    "metaTitle": "Industry 4.0 | GII",
+    "eyebrow": "Industry 4.0",
+    "title": "Smart manufacturing for connected production",
+    "subtitle": "Connected machines. Production data. Industrial performance.",
+    "description": "GII helps manufacturers add connectivity, data and digital control to existing operations — with pilots on real production lines, operator-facing dashboards and integration teams can maintain.",
+    "imageAlt": "Automated robotic arm on a modern smart manufacturing production line",
+    "capabilities": {
+      "eyebrow": "Capabilities",
+      "title": "What Industry 4.0 delivery covers",
+      "description": "From machine connectivity and operator dashboards to MES/ERP integration and plant-scale rollout — GII helps manufacturers connect production without a factory reset.",
+      "featured": {
+        "title": "Pilot on existing lines",
+        "description": "Most plants cannot stop earning production for a full rebuild. GII starts with a bottleneck line, proves value with operators and scales only after the first connected system is stable.",
+        "descriptionSecondary": "Whether you need OEE visibility, quality traceability or predictive maintenance, we design interfaces, documentation and training so the line stays connected after handover."
+      },
+      "items": {
+        "machineConnectivity": {
+          "title": "Machine connectivity",
+          "description": "Connect existing machines and production assets to capture status, counts and events without replacing equipment that still earns its keep."
+        },
+        "operatorDashboards": {
+          "title": "Operator dashboards",
+          "description": "Give shift leads and operators live views of downtime, quality events and line performance — designed for the shop floor, not only central analytics."
+        },
+        "mesErpIntegration": {
+          "title": "MES, ERP and data integration",
+          "description": "Link shop-floor data with MES, ERP and maintenance workflows so production, quality and planning teams work from the same signals."
+        },
+        "predictiveMaintenance": {
+          "title": "Predictive maintenance",
+          "description": "Monitor critical assets with sensors and alerts that help maintenance teams act before unplanned downtime stops the line."
+        },
+        "qualityTraceability": {
+          "title": "Quality traceability",
+          "description": "Digitize quality checks and lot tracking so defects can be traced to batch, step and shift without paper binders."
+        },
+        "oeeMonitoring": {
+          "title": "OEE monitoring",
+          "description": "Measure availability, performance and quality in real time with dashboards production teams actually use during the shift."
+        }
+      }
+    },
+    "relatedServices": {
+      "eyebrow": "Related services",
+      "title": "More paths for smart manufacturing",
+      "description": "Explore complementary services across enterprise digitalization, SMEs, AI and IoT systems integration.",
+      "cta": "Talk to our team",
+      "items": {
+        "digitalization": {
+          "title": "Digitalization for Enterprises",
+          "description": "Practical roadmaps that move companies from manual processes to connected digital operations."
+        },
+        "smes": {
+          "title": "SMEs",
+          "description": "Right-sized technology support that helps mid-sized businesses become more efficient and competitive."
+        },
+        "aiTransformation": {
+          "title": "AI Transformation",
+          "description": "Identify, implement and scale AI use cases that improve decisions, workflows and customer experience."
+        },
+        "iotEmbedded": {
+          "title": "IoT & Embedded",
+          "description": "Connected devices, sensor networks and embedded systems built for real operating environments."
+        }
+      }
+    },
+    "processTimeline": {
+      "eyebrow": "Delivery process",
+      "title": "From bottleneck to plant scale",
+      "description": "GII follows a manufacturing-friendly path — assess the line, pilot connectivity, integrate data and scale only after operators adopt the first rollout.",
+      "items": {
+        "assess": {
+          "title": "Assess",
+          "description": "Identify the production bottleneck, data gaps and integration constraints on the line you want to connect first."
+        },
+        "plan": {
+          "title": "Plan",
+          "description": "Define architecture, sensor points, dashboards and integration scope aligned with maintenance and IT capacity."
+        },
+        "pilot": {
+          "title": "Pilot",
+          "description": "Connect one line or asset group and prove value with operators before expanding across the plant."
+        },
+        "integrate": {
+          "title": "Integrate",
+          "description": "Link shop-floor data with MES, ERP, quality and maintenance workflows teams already use."
+        },
+        "train": {
+          "title": "Train",
+          "description": "Document interfaces and train shift leads, operators and maintenance so alerts turn into action."
+        },
+        "scale": {
+          "title": "Scale",
+          "description": "Extend connectivity, dashboards and integrations to the next line, site or plant area once the pilot is stable."
+        }
+      }
+    },
+    "projects": {
+      "eyebrow": "Technology in action",
+      "title": "Industry 4.0 projects in practice",
+      "description": "See how GII helps manufacturers connect lines, monitor performance and digitize quality on real production floors."
+    },
+    "cta": {
+      "eyebrow": "Next step",
+      "title": "Start with a production pilot",
+      "description": "Share your manufacturing goals with GII. We will map a practical Industry 4.0 path — from the first connected line to systems your teams can run."
+    }
+  },
+  "iotEmbeddedPage": {
+    "metaTitle": "IoT & Embedded | GII",
+    "eyebrow": "IoT & Embedded",
+    "title": "Connected devices for real operations",
+    "subtitle": "Sensors. Edge devices. Wireless networks.",
+    "description": "GII builds IoT and embedded systems that turn physical operations into useful data — with sensor networks, firmware and monitoring architectures operators can maintain in the field.",
+    "imageAlt": "Embedded electronics and IoT sensor hardware on a workbench",
+    "capabilities": {
+      "eyebrow": "Capabilities",
+      "title": "What IoT & embedded delivery covers",
+      "description": "From sensor integration and embedded firmware to WSN architecture and operator-ready monitoring — GII connects field systems teams can run.",
+      "featured": {
+        "title": "Monitoring built for operators",
+        "description": "Sensor data only creates value when shift teams can see, trust and act on it. GII designs IoT architectures around daily operations, not device counts alone.",
+        "descriptionSecondary": "Whether you need utility monitoring, industrial edge gateways or smart infrastructure in public space, we document interfaces and train teams so systems stay connected after handover."
+      },
+      "items": {
+        "sensorIntegration": {
+          "title": "Sensor integration",
+          "description": "Connect flow, pressure, status, environmental and asset sensors with architectures suited to field power and connectivity constraints."
+        },
+        "embeddedFirmware": {
+          "title": "Embedded firmware",
+          "description": "Develop device logic, edge processing and reliable firmware for connected hardware operating in real environments."
+        },
+        "wsnConnectivity": {
+          "title": "WSN & connectivity architecture",
+          "description": "Design wireless sensor networks, gateways, RFID and communications layers that link devices, monitoring and control in one maintainable system."
+        },
+        "remoteMonitoring": {
+          "title": "Remote monitoring",
+          "description": "Build monitoring views and alert paths mapped to actions operators already know how to take during a shift."
+        },
+        "platformIntegration": {
+          "title": "Platform integration",
+          "description": "Connect IoT data with dashboards, control systems and backend platforms teams use for reporting and operations."
+        },
+        "fieldCommissioning": {
+          "title": "Field commissioning",
+          "description": "Install, test, document and hand over devices and networks with criteria maintenance teams can support."
+        }
+      }
+    },
+    "relatedServices": {
+      "eyebrow": "Related services",
+      "title": "More paths for connected systems",
+      "description": "Explore complementary services across Industry 4.0, software, AI and sustainable technology.",
+      "cta": "Talk to our team",
+      "items": {
+        "industry40": {
+          "title": "Industry 4.0",
+          "description": "Smart manufacturing solutions for connected machines, production data and industrial performance."
+        },
+        "softwareDevelopment": {
+          "title": "Software Development",
+          "description": "Custom software, web applications and integrations built around real operational needs."
+        },
+        "ai": {
+          "title": "AI",
+          "description": "Intelligent systems, assistants and automation that support business and industry applications."
+        },
+        "water": {
+          "title": "Water",
+          "description": "Digital water solutions for monitoring, leak detection, quality and wastewater operations."
+        }
+      }
+    },
+    "processTimeline": {
+      "eyebrow": "Delivery process",
+      "title": "From use case to field operation",
+      "description": "GII follows a field-ready path — assess constraints, prototype in real conditions, integrate with platforms and hand over systems operators can maintain.",
+      "items": {
+        "assess": {
+          "title": "Assess",
+          "description": "Define the use case, field constraints, power, connectivity and the outcomes operators need in daily work."
+        },
+        "design": {
+          "title": "Design",
+          "description": "Shape sensor points, edge devices, communications and data models for the environment they must run in."
+        },
+        "prototype": {
+          "title": "Prototype",
+          "description": "Build and test a pilot device or sensor network under real operating conditions before wider rollout."
+        },
+        "integrate": {
+          "title": "Integrate",
+          "description": "Connect IoT data with dashboards, control systems and platforms teams already use."
+        },
+        "commission": {
+          "title": "Commission",
+          "description": "Install, verify, document and train field teams on devices, alerts and maintenance procedures."
+        },
+        "operate": {
+          "title": "Operate",
+          "description": "Support handover, monitoring refinement and scale-out once the first network is stable in the field."
+        }
+      }
+    },
+    "projects": {
+      "eyebrow": "Technology in action",
+      "title": "IoT projects in practice",
+      "description": "See how GII connects sensors, edge devices and monitoring networks for utilities, industry and smart infrastructure."
+    },
+    "cta": {
+      "eyebrow": "Next step",
+      "title": "Start with a sensor pilot",
+      "description": "Share your IoT goals with GII. We will map a practical path — from the first connected devices to monitoring your teams can run."
+    }
+  },
+  "medicalTechnologyPage": {
+    "metaTitle": "Medical Technology | GII",
+    "eyebrow": "Medical Technology",
+    "title": "Digital health systems built for care teams",
+    "subtitle": "Medical software. Connected devices. Secure delivery.",
+    "description": "GII builds medical technology solutions with privacy, security and usability in mind — from hospital planning platforms and device monitoring to supply and integration teams can maintain.",
+    "imageAlt": "Medical professional using digital healthcare technology in a clinical environment",
+    "capabilities": {
+      "eyebrow": "Capabilities",
+      "title": "What medical technology delivery covers",
+      "description": "From medical software and device connectivity to compliance, security and hospital planning — GII supports healthcare systems teams can operate with confidence.",
+      "featured": {
+        "title": "Built for clinical reality",
+        "description": "Healthcare systems fail when software ignores ward workflows, privacy rules or maintenance capacity. GII designs medical technology around the teams who use it every day.",
+        "descriptionSecondary": "Whether you need device monitoring, hospital planning support or a supply platform for medical equipment, we document interfaces and train teams so systems stay secure after handover."
+      },
+      "items": {
+        "medicalSoftware": {
+          "title": "Medical software",
+          "description": "Develop clinical, planning and operational software with workflows, roles and interfaces suited to healthcare environments."
+        },
+        "deviceConnectivity": {
+          "title": "Device connectivity",
+          "description": "Connect medical devices, sensors and monitoring hardware with architectures that support reliability and traceability."
+        },
+        "complianceSecurity": {
+          "title": "Compliance & security",
+          "description": "Design privacy, access control and documentation practices so medical systems meet regulatory expectations and stay maintainable."
+        },
+        "hospitalPlanning": {
+          "title": "Hospital planning support",
+          "description": "Support planning, equipment coordination and digital workflows for hospital and care-facility delivery."
+        },
+        "supplyPlatforms": {
+          "title": "Medical supply platforms",
+          "description": "Build digital commerce and supply paths that help providers source medical technology and equipment more reliably."
+        },
+        "integrationHandover": {
+          "title": "Integration & handover",
+          "description": "Connect medical systems with existing platforms and train clinical, IT and operations teams for sustainable operation."
+        }
+      }
+    },
+    "relatedServices": {
+      "eyebrow": "Related services",
+      "title": "More paths for connected healthcare",
+      "description": "Explore complementary services across IoT, software development, enterprise digitalization and cloud security.",
+      "cta": "Talk to our team",
+      "items": {
+        "iotEmbedded": {
+          "title": "IoT & Embedded",
+          "description": "Connected devices, sensor networks and embedded systems built for real operating environments."
+        },
+        "softwareDevelopment": {
+          "title": "Software Development",
+          "description": "Custom software, web applications and integrations built around real operational needs."
+        },
+        "digitalization": {
+          "title": "Digitalization for Enterprises",
+          "description": "Practical roadmaps that move organizations from manual processes to connected digital operations."
+        },
+        "cloudCybersecurity": {
+          "title": "Cloud & Cybersecurity",
+          "description": "Secure cloud architecture, identity management and protection for business-critical systems."
+        }
+      }
+    },
+    "processTimeline": {
+      "eyebrow": "Delivery process",
+      "title": "From clinical need to secure operation",
+      "description": "GII follows a healthcare-ready path — assess workflows and constraints, prototype in controlled conditions, validate compliance and hand over systems care teams can run.",
+      "items": {
+        "assess": {
+          "title": "Assess",
+          "description": "Define clinical workflows, privacy requirements, device constraints and the outcomes care teams need in daily operation."
+        },
+        "design": {
+          "title": "Design",
+          "description": "Shape software architecture, device interfaces, roles and data models for the healthcare environment they must serve."
+        },
+        "prototype": {
+          "title": "Prototype",
+          "description": "Build and test a pilot system in controlled conditions before wider clinical or operational rollout."
+        },
+        "validate": {
+          "title": "Validate",
+          "description": "Review usability, security, documentation and compliance criteria with clinical, IT and operations stakeholders."
+        },
+        "integrate": {
+          "title": "Integrate",
+          "description": "Connect medical systems with hospital platforms, supply workflows and monitoring tools teams already use."
+        },
+        "operate": {
+          "title": "Operate",
+          "description": "Support handover, training and refinement once the first medical system is stable in live operation."
+        }
+      }
+    },
+    "projects": {
+      "eyebrow": "Technology in action",
+      "title": "Medical technology projects in practice",
+      "description": "See how GII supports medical supply, device monitoring and hospital planning platforms for connected healthcare delivery."
+    },
+    "cta": {
+      "eyebrow": "Next step",
+      "title": "Start with a healthcare pilot",
+      "description": "Share your medical technology goals with GII. We will map a practical path — from the first connected system to platforms your care teams can run."
+    }
+  },
+  "cloudCybersecurityPage": {
+    "metaTitle": "Cloud & Cybersecurity | GII",
+    "eyebrow": "Cloud & Cybersecurity",
+    "title": "Secure cloud foundations for critical systems",
+    "subtitle": "Cloud migration. Identity control. Protected operations.",
+    "description": "GII helps organizations modernize infrastructure, migrate to cloud environments and protect business-critical systems — with architecture, security practices and handover IT teams can maintain.",
+    "imageAlt": "Secure server infrastructure and cloud data center environment",
+    "capabilities": {
+      "eyebrow": "Capabilities",
+      "title": "What cloud & cybersecurity delivery covers",
+      "description": "From cloud migration and identity management to security operations and infrastructure modernization — GII supports secure systems teams can run with confidence.",
+      "featured": {
+        "title": "Security built into migration",
+        "description": "Cloud projects fail when security is added late or operations are ignored. GII designs migration paths with access control, monitoring and maintainability from the start.",
+        "descriptionSecondary": "Whether you need SME cloud migration, ICT integration or security operations for critical workloads, we document architecture and train teams so systems stay protected after handover."
+      },
+      "items": {
+        "cloudMigration": {
+          "title": "Cloud migration",
+          "description": "Move workloads, applications and data to cloud environments with phased plans that limit disruption to daily operations."
+        },
+        "identityAccess": {
+          "title": "Identity & access control",
+          "description": "Design roles, authentication and permission models so the right people and systems access the right resources securely."
+        },
+        "securityOperations": {
+          "title": "Security operations",
+          "description": "Establish monitoring, patching, backup and incident-response practices suited to the systems and teams you already have."
+        },
+        "infrastructureModernization": {
+          "title": "Infrastructure modernization",
+          "description": "Upgrade networks, servers and integration layers so digital services run on stable, maintainable foundations."
+        },
+        "complianceDocumentation": {
+          "title": "Compliance & documentation",
+          "description": "Document architecture, controls and operating procedures so security expectations stay clear after delivery."
+        },
+        "ictIntegration": {
+          "title": "ICT systems integration",
+          "description": "Connect cloud platforms with existing business systems, interfaces and operational workflows teams rely on."
+        }
+      }
+    },
+    "relatedServices": {
+      "eyebrow": "Related services",
+      "title": "More paths for secure digital operations",
+      "description": "Explore complementary services across enterprise digitalization, SMEs, software development and AI transformation.",
+      "cta": "Talk to our team",
+      "items": {
+        "digitalization": {
+          "title": "Digitalization for Enterprises",
+          "description": "Practical roadmaps that move organizations from manual processes to connected digital operations."
+        },
+        "smes": {
+          "title": "SMEs",
+          "description": "Right-sized technology support that helps mid-sized businesses become more efficient and competitive."
+        },
+        "softwareDevelopment": {
+          "title": "Software Development",
+          "description": "Custom software, web applications and integrations built around real operational needs."
+        },
+        "aiTransformation": {
+          "title": "AI Transformation",
+          "description": "Identify, implement and scale AI use cases that improve decisions, workflows and customer experience."
+        }
+      }
+    },
+    "processTimeline": {
+      "eyebrow": "Delivery process",
+      "title": "From assessment to secure operation",
+      "description": "GII follows a security-aware path — assess current systems, plan migration, harden access and hand over cloud environments IT teams can operate.",
+      "items": {
+        "assess": {
+          "title": "Assess",
+          "description": "Review current infrastructure, workloads, access patterns and the security outcomes your organization needs."
+        },
+        "plan": {
+          "title": "Plan",
+          "description": "Define migration phases, architecture, roles and rollback criteria aligned with business and IT capacity."
+        },
+        "design": {
+          "title": "Design",
+          "description": "Shape cloud architecture, identity models, network boundaries and monitoring for the systems being moved."
+        },
+        "migrate": {
+          "title": "Migrate",
+          "description": "Move workloads in controlled phases with validation checkpoints before wider production cutover."
+        },
+        "secure": {
+          "title": "Secure",
+          "description": "Apply access controls, monitoring, backup and operating procedures before full handover."
+        },
+        "operate": {
+          "title": "Operate",
+          "description": "Support training, documentation and refinement once the first cloud environment is stable in live operation."
+        }
+      }
+    },
+    "projects": {
+      "eyebrow": "Technology in action",
+      "title": "Cloud & security projects in practice",
+      "description": "See how GII supports cloud migration, ICT integration and security operations for organizations moving critical systems forward."
+    },
+    "cta": {
+      "eyebrow": "Next step",
+      "title": "Start with a cloud assessment",
+      "description": "Share your infrastructure goals with GII. We will map a practical path — from the first secure migration to systems your IT teams can run."
+    }
+  },
+  "aiPage": {
+    "metaTitle": "AI | GII",
+    "eyebrow": "AI",
+    "title": "Intelligent systems built for real applications",
+    "subtitle": "Assistants. Machine learning. Automation.",
+    "description": "GII develops AI capabilities that support business and industry applications — from intelligent assistants and document processing to machine learning integrations teams can adopt in daily work.",
+    "imageAlt": "Futuristic artificial intelligence and neural network visualization",
+    "capabilities": {
+      "eyebrow": "Capabilities",
+      "title": "What AI delivery covers",
+      "description": "From intelligent assistants and machine learning to automation and platform integration — GII builds AI features that fit existing systems and workflows.",
+      "featured": {
+        "title": "AI that fits your stack",
+        "description": "Standalone AI demos rarely survive contact with operations. GII embeds intelligent features into the software, platforms and workflows teams already use.",
+        "descriptionSecondary": "Whether you need a knowledge assistant, document processing or machine-learning insights inside an existing product, we build with integration, access control and maintainability in mind."
+      },
+      "items": {
+        "intelligentAssistants": {
+          "title": "Intelligent assistants",
+          "description": "Build assistants that help teams find answers, summarize information and complete tasks inside operational tools."
+        },
+        "machineLearning": {
+          "title": "Machine learning",
+          "description": "Apply classification, prediction and pattern detection to business and industrial data with models suited to real use cases."
+        },
+        "automationIntegrations": {
+          "title": "Automation & integrations",
+          "description": "Connect AI features with ERP, CRM, operations platforms and custom software through APIs and workflow hooks."
+        },
+        "documentProcessing": {
+          "title": "Document processing",
+          "description": "Extract, classify and route information from documents and forms to reduce manual handling in back-office workflows."
+        },
+        "knowledgeSystems": {
+          "title": "Knowledge systems",
+          "description": "Organize institutional knowledge so teams can query policies, manuals and project history through secure search and assistants."
+        },
+        "modelDeployment": {
+          "title": "Model deployment",
+          "description": "Deploy and monitor AI features with versioning, access rules and operating practices IT teams can support."
+        }
+      }
+    },
+    "relatedServices": {
+      "eyebrow": "Related services",
+      "title": "More paths for intelligent technology",
+      "description": "Explore complementary services across AI transformation, software development, Industry 4.0 and IoT systems.",
+      "cta": "Talk to our team",
+      "items": {
+        "aiTransformation": {
+          "title": "AI Transformation",
+          "description": "Identify, implement and scale AI use cases that improve decisions, workflows and customer experience."
+        },
+        "softwareDevelopment": {
+          "title": "Software Development",
+          "description": "Custom software, web applications and integrations built around real operational needs."
+        },
+        "industry40": {
+          "title": "Industry 4.0",
+          "description": "Smart manufacturing solutions for connected machines, production data and industrial performance."
+        },
+        "iotEmbedded": {
+          "title": "IoT & Embedded",
+          "description": "Connected devices, sensor networks and embedded systems built for real operating environments."
+        }
+      }
+    },
+    "processTimeline": {
+      "eyebrow": "Delivery process",
+      "title": "From concept to production AI",
+      "description": "GII follows a product-minded AI path — assess the use case, design the feature, integrate with existing systems and hand over capabilities teams can operate.",
+      "items": {
+        "assess": {
+          "title": "Assess",
+          "description": "Define the problem, data sources, users and success criteria for the AI capability you want to introduce."
+        },
+        "design": {
+          "title": "Design",
+          "description": "Shape model approach, user experience, data flows and integration points with existing platforms."
+        },
+        "build": {
+          "title": "Build",
+          "description": "Develop the AI feature, models or assistant with testing against representative inputs and edge cases."
+        },
+        "integrate": {
+          "title": "Integrate",
+          "description": "Embed AI capabilities into applications, dashboards and workflows teams already rely on."
+        },
+        "validate": {
+          "title": "Validate",
+          "description": "Review accuracy, usability, security and operating rules with stakeholders before wider rollout."
+        },
+        "operate": {
+          "title": "Operate",
+          "description": "Support monitoring, retraining and refinement once the first AI feature is live in production use."
+        }
+      }
+    },
+    "projects": {
+      "eyebrow": "Technology in action",
+      "title": "AI projects in practice",
+      "description": "See how GII builds assistants, knowledge systems and document processing capabilities for operational teams."
+    },
+    "cta": {
+      "eyebrow": "Next step",
+      "title": "Start with an AI prototype",
+      "description": "Share your AI goals with GII. We will map a practical path — from the first intelligent feature to systems your teams can use every day."
+    }
+  },
+  "waterPage": {
+    "metaTitle": "Water | GII",
+    "eyebrow": "Water",
+    "title": "Digital water systems utilities can operate",
+    "subtitle": "Monitoring. Leak detection. Quality.",
+    "description": "GII builds digital water solutions for utilities and infrastructure operators — with network monitoring, leak detection, quality sensing and platforms teams can maintain in the field.",
+    "imageAlt": "Water waves and sustainable water infrastructure concept",
+    "capabilities": {
+      "eyebrow": "Capabilities",
+      "title": "What water technology delivery covers",
+      "description": "From leak detection and quality monitoring to utility network architecture — GII connects field sensors with operator-ready systems.",
+      "featured": {
+        "title": "Monitoring built for utility teams",
+        "description": "Water data only helps when shift teams can see issues early and act with confidence. GII designs monitoring around daily utility operations, not sensor counts alone.",
+        "descriptionSecondary": "Whether you need distribution monitoring, quality indicators or smart infrastructure in public space, we document interfaces and train teams so networks stay visible after handover."
+      },
+      "items": {
+        "leakDetection": {
+          "title": "Leak detection",
+          "description": "Detect pressure anomalies, flow changes and network events early with monitoring mapped to maintenance workflows."
+        },
+        "qualityMonitoring": {
+          "title": "Quality monitoring",
+          "description": "Track water quality indicators and operational thresholds with alerts operators can verify in the field."
+        },
+        "utilityNetworks": {
+          "title": "Utility network architecture",
+          "description": "Design sensor points, communications and data models for distribution networks, treatment assets and remote sites."
+        },
+        "remoteMonitoring": {
+          "title": "Remote monitoring",
+          "description": "Build dashboards and alert paths mapped to actions utility teams already know how to take during a shift."
+        },
+        "platformIntegration": {
+          "title": "Platform integration",
+          "description": "Connect water data with SCADA, GIS, reporting and backend platforms teams use for operations."
+        },
+        "fieldCommissioning": {
+          "title": "Field commissioning",
+          "description": "Install, test, document and hand over sensors and networks with criteria maintenance teams can support."
+        }
+      }
+    },
+    "relatedServices": {
+      "eyebrow": "Related services",
+      "title": "More paths for sustainable infrastructure",
+      "description": "Explore complementary services across IoT, energy, environment and enterprise digitalization.",
+      "cta": "Talk to our team",
+      "items": {
+        "iotEmbedded": {
+          "title": "IoT & Embedded",
+          "description": "Connected devices, sensor networks and embedded systems built for real operating environments."
+        },
+        "energy": {
+          "title": "Energy",
+          "description": "Energy efficiency, monitoring and management platforms for buildings and infrastructure."
+        },
+        "environment": {
+          "title": "Environment",
+          "description": "Environmental monitoring and resource-efficiency systems that support sustainable infrastructure."
+        },
+        "digitalization": {
+          "title": "Digitalization for Enterprises",
+          "description": "Practical roadmaps that move organizations from manual processes to connected digital operations."
+        }
+      }
+    },
+    "processTimeline": {
+      "eyebrow": "Delivery process",
+      "title": "From assessment to operating network",
+      "description": "GII follows a utility-ready path — assess network constraints, design monitoring points, deploy in the field and hand over systems operators can maintain.",
+      "items": {
+        "assess": {
+          "title": "Assess",
+          "description": "Review network layout, field constraints, connectivity and the outcomes utility teams need in daily operations."
+        },
+        "design": {
+          "title": "Design",
+          "description": "Shape sensor points, communications, alert logic and data models for the assets and sites they must monitor."
+        },
+        "deploy": {
+          "title": "Deploy",
+          "description": "Install sensors, edge devices and communications layers with testing under real operating conditions."
+        },
+        "integrate": {
+          "title": "Integrate",
+          "description": "Connect monitoring data with dashboards, SCADA and platforms teams already use for reporting and operations."
+        },
+        "commission": {
+          "title": "Commission",
+          "description": "Verify alerts, document procedures and train field teams on devices, thresholds and maintenance routines."
+        },
+        "operate": {
+          "title": "Operate",
+          "description": "Support handover, monitoring refinement and scale-out once the first network is stable in the field."
+        }
+      }
+    },
+    "projects": {
+      "eyebrow": "Technology in action",
+      "title": "Water projects in practice",
+      "description": "See how GII supports utilities, regional programmes and smart infrastructure with monitoring, training and applied water innovation."
+    },
+    "cta": {
+      "eyebrow": "Next step",
+      "title": "Start with a network assessment",
+      "description": "Share your water monitoring goals with GII. We will map a practical path — from the first sensors to visibility your utility teams can operate."
+    }
+  },
+  "energyPage": {
+    "metaTitle": "Energy | GII",
+    "eyebrow": "Energy",
+    "title": "Energy systems operators can trust",
+    "subtitle": "Monitoring. Efficiency. Smart metering.",
+    "description": "GII builds energy efficiency, monitoring and management platforms for buildings and infrastructure — with smart metering, consumption visibility and systems facility teams can operate.",
+    "imageAlt": "Solar panels and sustainable energy infrastructure",
+    "capabilities": {
+      "eyebrow": "Capabilities",
+      "title": "What energy technology delivery covers",
+      "description": "From smart metering and building monitoring to energy management platforms — GII connects field data with operator-ready dashboards.",
+      "featured": {
+        "title": "Efficiency built for facility teams",
+        "description": "Energy data only helps when operators can see consumption patterns and act without disrupting reliability. GII designs monitoring around daily building operations, not dashboard vanity metrics.",
+        "descriptionSecondary": "Whether you need public-building programmes, commercial portfolio monitoring or HVAC efficiency upgrades, we document interfaces and train teams so savings stay visible after handover."
+      },
+      "items": {
+        "smartMetering": {
+          "title": "Smart metering",
+          "description": "Connect meters and sub-meters with architectures suited to multi-building portfolios and public-sector administration."
+        },
+        "buildingMonitoring": {
+          "title": "Building monitoring",
+          "description": "Track consumption, baselines and anomalies with dashboards mapped to actions facility teams already know how to take."
+        },
+        "energyManagement": {
+          "title": "Energy management platforms",
+          "description": "Design cloud platforms with reporting, alerts and role-based access for operators, administrators and maintenance staff."
+        },
+        "efficiencyUpgrades": {
+          "title": "Efficiency upgrades",
+          "description": "Specify HVAC, ventilation and control improvements that reduce energy use without weakening comfort or reliability."
+        },
+        "renewableIntegration": {
+          "title": "Renewable integration",
+          "description": "Connect generation, storage and consumption data so teams can monitor hybrid energy systems in one view."
+        },
+        "operationalReporting": {
+          "title": "Operational reporting",
+          "description": "Build reporting paths for facility managers, sustainability teams and programme sponsors who need verified outcomes."
+        }
+      }
+    },
+    "relatedServices": {
+      "eyebrow": "Related services",
+      "title": "More paths for sustainable infrastructure",
+      "description": "Explore complementary services across IoT, water, HVAC and environmental monitoring.",
+      "cta": "Talk to our team",
+      "items": {
+        "iotEmbedded": {
+          "title": "IoT & Embedded",
+          "description": "Connected devices, sensor networks and embedded systems built for real operating environments."
+        },
+        "water": {
+          "title": "Water",
+          "description": "Digital water solutions for monitoring, leak detection, quality and wastewater operations."
+        },
+        "ventilationHvac": {
+          "title": "Ventilation & HVAC",
+          "description": "Smart ventilation and HVAC technologies for indoor air quality and energy-efficient climate control."
+        },
+        "environment": {
+          "title": "Environment",
+          "description": "Environmental monitoring and resource-efficiency systems that support sustainable infrastructure."
+        }
+      }
+    },
+    "processTimeline": {
+      "eyebrow": "Delivery process",
+      "title": "From baseline to verified savings",
+      "description": "GII follows a facility-ready path — assess consumption, establish baselines, deploy monitoring and refine systems until operators see measurable improvement.",
+      "items": {
+        "assess": {
+          "title": "Assess",
+          "description": "Review buildings, meters, operating constraints and the outcomes facility teams need from energy monitoring."
+        },
+        "baseline": {
+          "title": "Baseline",
+          "description": "Establish consumption baselines, reporting needs and alert thresholds before upgrades or platform rollout."
+        },
+        "design": {
+          "title": "Design",
+          "description": "Shape metering points, dashboards, integrations and operating rules for the sites and teams they must serve."
+        },
+        "deploy": {
+          "title": "Deploy",
+          "description": "Install meters, gateways and platform components with testing under real operating conditions."
+        },
+        "integrate": {
+          "title": "Integrate",
+          "description": "Connect energy data with dashboards, BMS and reporting tools teams already use for daily operations."
+        },
+        "optimize": {
+          "title": "Optimize",
+          "description": "Support handover, threshold refinement and efficiency improvements once monitoring is stable in production use."
+        }
+      }
+    },
+    "projects": {
+      "eyebrow": "Technology in action",
+      "title": "Energy projects in practice",
+      "description": "See how GII supports public programmes, commercial buildings and efficient HVAC with monitoring, platforms and applied engineering."
+    },
+    "cta": {
+      "eyebrow": "Next step",
+      "title": "Start with an energy baseline review",
+      "description": "Share your efficiency goals with GII. We will map a practical path — from the first meters to monitoring your facility teams can operate."
+    }
+  },
+  "ventilationHvacPage": {
+    "metaTitle": "Ventilation & HVAC | GII",
+    "eyebrow": "Ventilation & HVAC",
+    "title": "Climate systems built for daily operation",
+    "subtitle": "Ventilation. Indoor air. Energy efficiency.",
+    "description": "GII delivers ventilation and HVAC technology for commercial and industrial buildings — with indoor air quality, energy-efficient climate control and systems facility teams can commission and operate.",
+    "imageAlt": "Industrial ventilation and HVAC equipment in a building environment",
+    "capabilities": {
+      "eyebrow": "Capabilities",
+      "title": "What ventilation & HVAC delivery covers",
+      "description": "From indoor air quality and HVAC specification to commissioning and operations monitoring — GII supports climate systems teams can run reliably.",
+      "featured": {
+        "title": "Comfort without wasted energy",
+        "description": "Ventilation projects fail when equipment is specified for a brochure, not a shift. GII designs climate systems around indoor air quality, energy use and the maintenance routines facility teams already follow.",
+        "descriptionSecondary": "Whether you need energy-efficient ventilation upgrades, HVAC monitoring or environmental engineering for a commercial portfolio, we document commissioning criteria and train operators so performance holds after handover."
+      },
+      "items": {
+        "indoorAirQuality": {
+          "title": "Indoor air quality",
+          "description": "Specify ventilation paths, filtration and monitoring that support healthier indoor environments without over-engineering controls."
+        },
+        "hvacSystems": {
+          "title": "HVAC systems",
+          "description": "Design and integrate heating, cooling and ventilation systems suited to commercial, industrial and public-building operations."
+        },
+        "climateControlOperations": {
+          "title": "Climate control operations",
+          "description": "Connect equipment status, setpoints and alerts with dashboards and workflows facility teams can use during daily work."
+        },
+        "energyEfficientVentilation": {
+          "title": "Energy-efficient ventilation",
+          "description": "Reduce energy demand through smarter ventilation specification, controls and operational tuning without weakening climate performance."
+        },
+        "commissioningSupport": {
+          "title": "Commissioning support",
+          "description": "Test, document and hand over systems with criteria operators and maintenance teams can verify in the field."
+        },
+        "maintenanceEnablement": {
+          "title": "Maintenance enablement",
+          "description": "Document equipment, thresholds and service routines so HVAC performance stays reliable after go-live."
+        }
+      }
+    },
+    "relatedServices": {
+      "eyebrow": "Related services",
+      "title": "More paths for building performance",
+      "description": "Explore complementary services across energy, environment, IoT and water systems.",
+      "cta": "Talk to our team",
+      "items": {
+        "energy": {
+          "title": "Energy",
+          "description": "Energy efficiency, monitoring and management platforms for buildings and infrastructure."
+        },
+        "environment": {
+          "title": "Environment",
+          "description": "Environmental monitoring and resource-efficiency systems that support sustainable infrastructure."
+        },
+        "iotEmbedded": {
+          "title": "IoT & Embedded",
+          "description": "Connected devices, sensor networks and embedded systems built for real operating environments."
+        },
+        "water": {
+          "title": "Water",
+          "description": "Digital water solutions for monitoring, leak detection, quality and wastewater operations."
+        }
+      }
+    },
+    "processTimeline": {
+      "eyebrow": "Delivery process",
+      "title": "From assessment to reliable climate control",
+      "description": "GII follows a facility-ready path — assess building needs, specify systems, commission in the field and refine performance until operators see stable indoor climate.",
+      "items": {
+        "assess": {
+          "title": "Assess",
+          "description": "Review building use, indoor air requirements, existing equipment and the outcomes facility teams need from ventilation and HVAC."
+        },
+        "design": {
+          "title": "Design",
+          "description": "Shape ventilation routes, HVAC architecture, controls and monitoring points for the spaces and operations they must serve."
+        },
+        "specify": {
+          "title": "Specify",
+          "description": "Define equipment, efficiency targets, interfaces and operating rules aligned with German environmental engineering practice."
+        },
+        "install": {
+          "title": "Install",
+          "description": "Coordinate installation and integration with building systems, controls and the teams responsible for day-to-day operation."
+        },
+        "commission": {
+          "title": "Commission",
+          "description": "Test airflow, climate performance and alerts, then document handover criteria operators can verify."
+        },
+        "optimize": {
+          "title": "Optimize",
+          "description": "Support tuning, monitoring refinement and efficiency improvements once systems are stable in production use."
+        }
+      }
+    },
+    "projects": {
+      "eyebrow": "Technology in action",
+      "title": "Ventilation & HVAC projects in practice",
+      "description": "See how GII supports energy-efficient ventilation, climate monitoring and environmental engineering for commercial and industrial buildings."
+    },
+    "cta": {
+      "eyebrow": "Next step",
+      "title": "Start with a building climate review",
+      "description": "Share your ventilation and HVAC goals with GII. We will map a practical path — from specification to systems your facility teams can operate."
+    }
+  },
+  "environmentPage": {
+    "metaTitle": "Environment | GII",
+    "eyebrow": "Environment",
+    "title": "Environmental systems teams can operate",
+    "subtitle": "Monitoring. Resource efficiency. Smart infrastructure.",
+    "description": "GII delivers environmental monitoring and resource-efficiency systems for utilities, infrastructure operators and smart-city programmes — with sensor networks, dashboards and handover teams can maintain in the field.",
+    "imageAlt": "Natural landscape representing environmental monitoring and sustainable infrastructure",
+    "capabilities": {
+      "eyebrow": "Capabilities",
+      "title": "What environment technology delivery covers",
+      "description": "From environmental monitoring and resource efficiency to smart infrastructure — GII connects field sensors with operator-ready systems.",
+      "featured": {
+        "title": "Monitoring built for real conditions",
+        "description": "Environmental data only helps when teams can see changing conditions early and act with confidence. GII designs monitoring around daily operations in public space, utilities and infrastructure — not isolated sensor pilots.",
+        "descriptionSecondary": "Whether you need smart-city monitoring, resource-efficiency tracking or environmental engineering for a regional programme, we document interfaces and train teams so systems stay connected after handover."
+      },
+      "items": {
+        "environmentalMonitoring": {
+          "title": "Environmental monitoring",
+          "description": "Track air, resource and environmental indicators with sensor networks suited to field power, connectivity and maintenance constraints."
+        },
+        "resourceEfficiency": {
+          "title": "Resource efficiency",
+          "description": "Connect consumption, waste and resource-use data with dashboards that help operators reduce pressure without losing reliability."
+        },
+        "smartInfrastructure": {
+          "title": "Smart infrastructure",
+          "description": "Design connected infrastructure for cities, utilities and public-space operations with maintainable communications and alert paths."
+        },
+        "complianceReporting": {
+          "title": "Compliance reporting",
+          "description": "Build reporting paths for environmental thresholds, programme sponsors and teams who need verified operational outcomes."
+        },
+        "platformIntegration": {
+          "title": "Platform integration",
+          "description": "Connect environmental data with GIS, SCADA, reporting and backend platforms teams use for daily operations."
+        },
+        "fieldCommissioning": {
+          "title": "Field commissioning",
+          "description": "Install, test, document and hand over sensors and networks with criteria maintenance teams can support."
+        }
+      }
+    },
+    "relatedServices": {
+      "eyebrow": "Related services",
+      "title": "More paths for sustainable infrastructure",
+      "description": "Explore complementary services across water, energy, IoT and ventilation systems.",
+      "cta": "Talk to our team",
+      "items": {
+        "water": {
+          "title": "Water",
+          "description": "Digital water solutions for monitoring, leak detection, quality and wastewater operations."
+        },
+        "energy": {
+          "title": "Energy",
+          "description": "Energy efficiency, monitoring and management platforms for buildings and infrastructure."
+        },
+        "iotEmbedded": {
+          "title": "IoT & Embedded",
+          "description": "Connected devices, sensor networks and embedded systems built for real operating environments."
+        },
+        "ventilationHvac": {
+          "title": "Ventilation & HVAC",
+          "description": "Smart ventilation and HVAC technologies for indoor air quality and energy-efficient climate control."
+        }
+      }
+    },
+    "processTimeline": {
+      "eyebrow": "Delivery process",
+      "title": "From assessment to operating network",
+      "description": "GII follows a field-ready path — assess environmental needs, design monitoring points, deploy sensors and hand over systems operators can maintain.",
+      "items": {
+        "assess": {
+          "title": "Assess",
+          "description": "Review sites, environmental goals, connectivity constraints and the outcomes operators need in daily work."
+        },
+        "design": {
+          "title": "Design",
+          "description": "Shape sensor points, communications, alert logic and data models for the environments they must monitor."
+        },
+        "deploy": {
+          "title": "Deploy",
+          "description": "Install sensors, edge devices and communications layers with testing under real operating conditions."
+        },
+        "integrate": {
+          "title": "Integrate",
+          "description": "Connect monitoring data with dashboards, GIS and platforms teams already use for reporting and operations."
+        },
+        "commission": {
+          "title": "Commission",
+          "description": "Verify alerts, document procedures and train field teams on devices, thresholds and maintenance routines."
+        },
+        "operate": {
+          "title": "Operate",
+          "description": "Support handover, monitoring refinement and scale-out once the first network is stable in the field."
+        }
+      }
+    },
+    "projects": {
+      "eyebrow": "Technology in action",
+      "title": "Environment projects in practice",
+      "description": "See how GII supports smart infrastructure, environmental engineering and resource monitoring for public space and sustainable programmes."
+    },
+    "cta": {
+      "eyebrow": "Next step",
+      "title": "Start with an environmental assessment",
+      "description": "Share your monitoring goals with GII. We will map a practical path — from the first sensors to systems your teams can operate."
+    }
+  },
+  "softwareDevelopmentPage": {
+    "metaTitle": "Software Development | GII",
+    "eyebrow": "Software Development",
+    "title": "Custom software built for real operations",
+    "subtitle": "Applications. Web platforms. Integrations.",
+    "description": "GII develops custom software, web applications and integrations around real operational needs — with architecture, delivery discipline and handover teams can maintain.",
+    "imageAlt": "Developer working on custom software at a laptop",
+    "capabilities": {
+      "eyebrow": "Capabilities",
+      "title": "What software development delivery covers",
+      "description": "From custom applications and web platforms to API integrations — GII builds software aligned with how teams actually work.",
+      "featured": {
+        "title": "Software shaped by daily work",
+        "description": "Custom software fails when it ignores the workflows, roles and systems teams already rely on. GII designs applications around operational reality, not generic feature lists.",
+        "descriptionSecondary": "Whether you need a public-service portal, field-service app or enterprise integration layer, we prototype with real users, document interfaces and hand over code teams can support."
+      },
+      "items": {
+        "customApplications": {
+          "title": "Custom applications",
+          "description": "Build business applications with workflows, roles and data models mapped to how teams complete tasks every day."
+        },
+        "webApplications": {
+          "title": "Web applications",
+          "description": "Develop responsive web platforms for operations, customer-facing services and internal teams with maintainable architecture."
+        },
+        "systemIntegrations": {
+          "title": "System integrations",
+          "description": "Connect custom software with ERP, CRM, IoT platforms and legacy systems through APIs and reliable data flows."
+        },
+        "apiDevelopment": {
+          "title": "API development",
+          "description": "Design and implement APIs that let new applications exchange data securely with existing platforms."
+        },
+        "legacyModernization": {
+          "title": "Legacy modernization",
+          "description": "Replace or wrap outdated tools with modern software while preserving critical business logic and data access."
+        },
+        "maintenanceSupport": {
+          "title": "Maintenance & support",
+          "description": "Document, version and support applications with handover criteria IT and operations teams can sustain."
+        }
+      }
+    },
+    "relatedServices": {
+      "eyebrow": "Related services",
+      "title": "More paths for digital delivery",
+      "description": "Explore complementary services across enterprise digitalization, AI, cloud security and digital platforms.",
+      "cta": "Talk to our team",
+      "items": {
+        "digitalization": {
+          "title": "Digitalization for Enterprises",
+          "description": "Practical roadmaps that move organizations from manual processes to connected digital operations."
+        },
+        "ai": {
+          "title": "AI",
+          "description": "Intelligent systems, assistants and automation that support business and industry applications."
+        },
+        "cloudCybersecurity": {
+          "title": "Cloud & Cybersecurity",
+          "description": "Secure cloud architecture, identity management and protection for business-critical systems."
+        },
+        "digitalPlatforms": {
+          "title": "Digital Platforms",
+          "description": "Shape portals, marketplaces and service platforms users can administer."
+        }
+      }
+    },
+    "processTimeline": {
+      "eyebrow": "Delivery process",
+      "title": "From requirements to production software",
+      "description": "GII follows a product-minded software path — assess needs, design architecture, build with real users and hand over applications teams can operate.",
+      "items": {
+        "assess": {
+          "title": "Assess",
+          "description": "Review workflows, systems, users and success criteria for the software capability you want to introduce."
+        },
+        "design": {
+          "title": "Design",
+          "description": "Shape application architecture, user flows, data models and integration points with existing platforms."
+        },
+        "build": {
+          "title": "Build",
+          "description": "Develop the application with testing against representative tasks, roles and edge cases from daily work."
+        },
+        "integrate": {
+          "title": "Integrate",
+          "description": "Connect the software with ERP, operations platforms, APIs and data sources teams already rely on."
+        },
+        "validate": {
+          "title": "Validate",
+          "description": "Review usability, security, performance and operating rules with stakeholders before wider rollout."
+        },
+        "operate": {
+          "title": "Operate",
+          "description": "Support documentation, training and refinement once the first release is live in production use."
+        }
+      }
+    },
+    "projects": {
+      "eyebrow": "Technology in action",
+      "title": "Software projects in practice",
+      "description": "See how GII builds public-service platforms, field applications and enterprise software teams use every day."
+    },
+    "cta": {
+      "eyebrow": "Next step",
+      "title": "Start with a software discovery session",
+      "description": "Share your software goals with GII. We will map a practical path — from the first prototype to applications your teams can operate."
+    }
+  },
+  "digitalPlatformsPage": {
+    "metaTitle": "Digital Platforms | GII",
+    "eyebrow": "Digital Platforms",
+    "title": "Platforms institutions and partners can run",
+    "subtitle": "Portals. Administration. Knowledge sharing.",
+    "description": "GII builds multi-user digital platforms for institutions, partners and programmes — with portals, administration, events and knowledge sharing teams can operate.",
+    "imageAlt": "Digital platform dashboard with analytics and administration views",
+    "capabilities": {
+      "eyebrow": "Capabilities",
+      "title": "What digital platform delivery covers",
+      "description": "From portals and marketplaces to multi-user administration and platform architecture — GII builds systems aligned with how organisations collaborate.",
+      "featured": {
+        "title": "Platforms built for many users",
+        "description": "Digital platforms fail when they serve one department but not partners, admins or field teams. GII designs around roles, permissions and the workflows each group needs.",
+        "descriptionSecondary": "Whether you need a regional knowledge forum, public-service hub or operations platform, we prototype with real administrators and hand over systems teams can extend."
+      },
+      "items": {
+        "portalsAndMarketplaces": {
+          "title": "Portals & marketplaces",
+          "description": "Build service portals and partner marketplaces with catalogues, workflows and access rules suited to multi-organisation use."
+        },
+        "multiUserAdministration": {
+          "title": "Multi-user administration",
+          "description": "Design role-based administration, content management and approval paths for institutions with many stakeholders."
+        },
+        "platformArchitecture": {
+          "title": "Platform architecture",
+          "description": "Shape scalable platform architecture, integrations and data models for long-running programmes and partner ecosystems."
+        },
+        "knowledgeSharing": {
+          "title": "Knowledge sharing",
+          "description": "Connect events, training, documents and expert networks in platforms that support bilingual and international programmes."
+        },
+        "partnerEcosystems": {
+          "title": "Partner ecosystems",
+          "description": "Enable partner onboarding, collaboration spaces and reporting for programmes that span organisations and regions."
+        },
+        "platformOperations": {
+          "title": "Platform operations",
+          "description": "Document, support and refine platforms with handover criteria administrators and IT teams can sustain."
+        }
+      }
+    },
+    "relatedServices": {
+      "eyebrow": "Related services",
+      "title": "More paths for digital delivery",
+      "description": "Explore complementary services across software development, enterprise digitalization, cloud security and e-commerce.",
+      "cta": "Talk to our team",
+      "items": {
+        "softwareDevelopment": {
+          "title": "Software Development",
+          "description": "Custom software, web applications and integrations built around real operational needs."
+        },
+        "digitalization": {
+          "title": "Digitalization for Enterprises",
+          "description": "Practical roadmaps that move organizations from manual processes to connected digital operations."
+        },
+        "cloudCybersecurity": {
+          "title": "Cloud & Cybersecurity",
+          "description": "Secure cloud architecture, identity management and protection for business-critical systems."
+        },
+        "ecommerce": {
+          "title": "E-Commerce",
+          "description": "B2B and B2C commerce experiences that support catalogues, ordering, portals and marketplaces."
+        }
+      }
+    },
+    "processTimeline": {
+      "eyebrow": "Delivery process",
+      "title": "From concept to operating platform",
+      "description": "GII follows a platform-minded path — assess stakeholders, design roles and permissions, build with administrators and hand over systems programmes can run.",
+      "items": {
+        "assess": {
+          "title": "Assess",
+          "description": "Review users, partners, content types, governance needs and the outcomes administrators need from the platform."
+        },
+        "design": {
+          "title": "Design",
+          "description": "Shape information architecture, roles, workflows and integration points for the ecosystem the platform must serve."
+        },
+        "build": {
+          "title": "Build",
+          "description": "Develop the platform with testing against representative admin tasks, partner journeys and content scenarios."
+        },
+        "launch": {
+          "title": "Launch",
+          "description": "Prepare onboarding, training and launch criteria so the first user groups can adopt the platform confidently."
+        },
+        "integrate": {
+          "title": "Integrate",
+          "description": "Connect the platform with identity systems, reporting tools and data sources teams already use."
+        },
+        "operate": {
+          "title": "Operate",
+          "description": "Support documentation, admin training and refinement once the platform is live in production use."
+        }
+      }
+    },
+    "projects": {
+      "eyebrow": "Technology in action",
+      "title": "Digital platform projects in practice",
+      "description": "See how GII builds regional forums, public-service hubs and operations platforms for institutions and partner networks."
+    },
+    "cta": {
+      "eyebrow": "Next step",
+      "title": "Start with a platform discovery workshop",
+      "description": "Share your platform goals with GII. We will map a practical path — from the first portal to systems your administrators and partners can run."
+    }
+  },
+  "digitalEducationPage": {
+    "metaTitle": "Digital Education | GII",
+    "eyebrow": "Digital Education",
+    "title": "Learning platforms that expand access and outcomes",
+    "subtitle": "Learning platforms. Training. Knowledge tools.",
+    "description": "GII builds digital education solutions — learning platforms, training systems and knowledge tools that help institutions, programmes and learners achieve better outcomes.",
+    "imageAlt": "Students learning with digital education technology in a classroom setting",
+    "capabilities": {
+      "eyebrow": "Capabilities",
+      "title": "What digital education delivery covers",
+      "description": "From learning platforms and training systems to knowledge tools and programme design — GII supports education teams and learners with practical digital solutions.",
+      "featured": {
+        "title": "Education shaped by learners and educators",
+        "description": "Digital education fails when platforms ignore how teachers, trainers and learners actually work. GII designs around curriculum needs, access constraints and the outcomes programmes must prove.",
+        "descriptionSecondary": "Whether you need a bilingual training portal, capacity-building programme or knowledge platform for a regional network, we prototype with educators and hand over systems teams can sustain."
+      },
+      "items": {
+        "learningPlatforms": {
+          "title": "Learning platforms",
+          "description": "Build LMS-style platforms with courses, modules, progress tracking and roles suited to schools, institutions and training programmes."
+        },
+        "trainingSystems": {
+          "title": "Training systems",
+          "description": "Develop training workflows, workshops and certification paths for technical, professional and capacity-building programmes."
+        },
+        "knowledgeTools": {
+          "title": "Knowledge tools",
+          "description": "Connect documents, events, expert networks and searchable knowledge bases for programmes that span regions and languages."
+        },
+        "bilingualDelivery": {
+          "title": "Bilingual delivery",
+          "description": "Support Arabic, English and German content paths for international education and training programmes."
+        },
+        "learnerAnalytics": {
+          "title": "Learner analytics",
+          "description": "Provide reporting on participation, progress and outcomes for programme sponsors, administrators and educators."
+        },
+        "programmeEnablement": {
+          "title": "Programme enablement",
+          "description": "Document, train and support educators and administrators so platforms stay useful after launch."
+        }
+      }
+    },
+    "relatedServices": {
+      "eyebrow": "Related services",
+      "title": "More paths for digital delivery",
+      "description": "Explore complementary services across digital platforms, software development, enterprise digitalization and AI.",
+      "cta": "Talk to our team",
+      "items": {
+        "digitalPlatforms": {
+          "title": "Digital Platforms",
+          "description": "Multi-user platforms for institutions, partners, knowledge, events and administration."
+        },
+        "softwareDevelopment": {
+          "title": "Software Development",
+          "description": "Custom software, web applications and integrations built around real operational needs."
+        },
+        "digitalization": {
+          "title": "Digitalization for Enterprises",
+          "description": "Practical roadmaps that move organizations from manual processes to connected digital operations."
+        },
+        "ai": {
+          "title": "AI",
+          "description": "Intelligent systems, assistants and automation that support business and industry applications."
+        }
+      }
+    },
+    "processTimeline": {
+      "eyebrow": "Delivery process",
+      "title": "From needs assessment to scaled learning",
+      "description": "GII follows an education-minded path — assess learners and educators, design curriculum-aligned platforms, pilot with real cohorts and scale once adoption is proven.",
+      "items": {
+        "assess": {
+          "title": "Assess",
+          "description": "Review learners, educators, curriculum goals, languages and the outcomes the programme must deliver."
+        },
+        "design": {
+          "title": "Design",
+          "description": "Shape platform structure, content types, roles, workflows and reporting for the education context."
+        },
+        "build": {
+          "title": "Build",
+          "description": "Develop the platform with testing against representative courses, training paths and admin tasks."
+        },
+        "pilot": {
+          "title": "Pilot",
+          "description": "Run a focused pilot with a first learner cohort and educators before expanding scope."
+        },
+        "launch": {
+          "title": "Launch",
+          "description": "Prepare onboarding, educator training and launch criteria so the first user groups adopt confidently."
+        },
+        "scale": {
+          "title": "Scale",
+          "description": "Support rollout to the next programme, region or institution once the pilot is stable and outcomes are verified."
+        }
+      }
+    },
+    "projects": {
+      "eyebrow": "Technology in action",
+      "title": "Digital education projects in practice",
+      "description": "See how GII supports training programmes, knowledge platforms and public-service learning for institutions and regional networks."
+    },
+    "cta": {
+      "eyebrow": "Next step",
+      "title": "Start with an education needs review",
+      "description": "Share your learning goals with GII. We will map a practical path — from the first platform to training systems your educators and learners can use."
+    }
+  },
+  "ecommercePage": {
+    "metaTitle": "E-Commerce | GII",
+    "eyebrow": "E-Commerce",
+    "title": "Commerce experiences built for real buyers and operators",
+    "subtitle": "B2B portals. B2C storefronts. Ordering.",
+    "description": "GII builds B2B and B2C commerce experiences — with catalogues, ordering, portals and marketplaces teams can administer and customers can trust.",
+    "imageAlt": "Digital commerce checkout and online shopping experience",
+    "capabilities": {
+      "eyebrow": "Capabilities",
+      "title": "What e-commerce delivery covers",
+      "description": "From B2B portals and B2C storefronts to catalogues, ordering and fulfillment — GII builds commerce systems aligned with how teams sell and operate.",
+      "featured": {
+        "title": "Commerce shaped by operations",
+        "description": "E-commerce fails when checkout looks polished but ordering, catalogues and fulfillment still run on spreadsheets. GII designs around the workflows sales, procurement and operations teams already use.",
+        "descriptionSecondary": "Whether you need a B2B ordering portal, product catalogue or marketplace for partners, we prototype with real users and hand over platforms teams can extend."
+      },
+      "items": {
+        "b2bCommerce": {
+          "title": "B2B commerce",
+          "description": "Build ordering portals, account-based pricing and approval workflows for business buyers and procurement teams."
+        },
+        "b2cStorefronts": {
+          "title": "B2C storefronts",
+          "description": "Develop customer-facing shops with catalogues, checkout and account management suited to your product range and regions."
+        },
+        "orderFulfillment": {
+          "title": "Order & fulfillment",
+          "description": "Connect ordering with inventory, logistics and status updates so operations teams can fulfill without manual rework."
+        },
+        "productCatalogues": {
+          "title": "Product catalogues",
+          "description": "Structure products, variants, documentation and multilingual content for complex B2B and specialist markets."
+        },
+        "paymentIntegration": {
+          "title": "Payment integration",
+          "description": "Integrate secure payment, invoicing and account billing paths aligned with business and compliance needs."
+        },
+        "platformAdministration": {
+          "title": "Platform administration",
+          "description": "Provide admin tools, reporting and handover documentation so commerce teams can manage catalogues and orders."
+        }
+      }
+    },
+    "relatedServices": {
+      "eyebrow": "Related services",
+      "title": "More paths for digital delivery",
+      "description": "Explore complementary services across software development, digital platforms, cloud security and enterprise digitalization.",
+      "cta": "Talk to our team",
+      "items": {
+        "softwareDevelopment": {
+          "title": "Software Development",
+          "description": "Custom software, web applications and integrations built around real operational needs."
+        },
+        "digitalPlatforms": {
+          "title": "Digital Platforms",
+          "description": "Multi-user platforms for institutions, partners, knowledge, events and administration."
+        },
+        "cloudCybersecurity": {
+          "title": "Cloud & Cybersecurity",
+          "description": "Secure cloud architecture, identity management and protection for business-critical systems."
+        },
+        "digitalization": {
+          "title": "Digitalization for Enterprises",
+          "description": "Practical roadmaps that move organizations from manual processes to connected digital operations."
+        }
+      }
+    },
+    "processTimeline": {
+      "eyebrow": "Delivery process",
+      "title": "From catalogue to live commerce",
+      "description": "GII follows a commerce-ready path — assess buyers and operators, design catalogues and checkout, integrate with fulfillment and hand over platforms teams can run.",
+      "items": {
+        "assess": {
+          "title": "Assess",
+          "description": "Review product range, buyer journeys, ordering workflows, integrations and the outcomes commerce teams need."
+        },
+        "design": {
+          "title": "Design",
+          "description": "Shape catalogue structure, checkout flows, roles, pricing logic and admin tools for the market you serve."
+        },
+        "build": {
+          "title": "Build",
+          "description": "Develop the storefront or portal with testing against representative products, orders and admin tasks."
+        },
+        "integrate": {
+          "title": "Integrate",
+          "description": "Connect commerce with ERP, inventory, payment, logistics and CRM systems teams already use."
+        },
+        "launch": {
+          "title": "Launch",
+          "description": "Prepare onboarding, operator training and launch criteria so the first buyers and admins can transact confidently."
+        },
+        "operate": {
+          "title": "Operate",
+          "description": "Support documentation, catalogue refinement and feature expansion once the platform is live in production use."
+        }
+      }
+    },
+    "projects": {
+      "eyebrow": "Technology in action",
+      "title": "E-commerce projects in practice",
+      "description": "See how GII builds B2B ordering portals, product catalogues and commerce platforms for healthcare, Mittelstand and specialist markets."
+    },
+    "cta": {
+      "eyebrow": "Next step",
+      "title": "Start with a commerce discovery session",
+      "description": "Share your e-commerce goals with GII. We will map a practical path — from the first catalogue to platforms your teams and customers can rely on."
+    }
+  },
+  "aiTransformationPage": {
+    "metaTitle": "AI Transformation | GII",
+    "eyebrow": "AI Transformation",
+    "title": "Practical AI that improves how teams work",
+    "subtitle": "Use cases. Automation. Decision support.",
+    "description": "GII helps organizations identify, implement and scale AI where it creates real value — with use-case discovery, workflow automation and data foundations teams can adopt and maintain.",
+    "imageAlt": "Abstract artificial intelligence and data visualization concept",
+    "capabilities": {
+      "eyebrow": "Capabilities",
+      "title": "What AI transformation delivery covers",
+      "description": "From use-case discovery and workflow automation to data foundations and integration — GII delivers AI systems aligned with how teams actually operate.",
+      "featured": {
+        "title": "Start with operational value",
+        "description": "AI projects fail when they chase novelty instead of daily work. GII prioritizes use cases where automation, decision support or classification remove friction teams already feel.",
+        "descriptionSecondary": "Whether you need an operations assistant, quality analytics or workflow automation inside existing platforms, we prototype quickly and integrate with the systems teams already rely on."
+      },
+      "items": {
+        "useCaseDiscovery": {
+          "title": "Use-case discovery",
+          "description": "Identify high-value AI opportunities in workflows, reporting and customer-facing processes before committing to full build-out."
+        },
+        "workflowAutomation": {
+          "title": "Workflow automation",
+          "description": "Automate repetitive tasks, routing and document handling with AI-assisted workflows embedded in existing tools."
+        },
+        "dataFoundations": {
+          "title": "Data foundations",
+          "description": "Prepare data access, quality checks and governance so AI features run on information teams can trust."
+        },
+        "decisionSupport": {
+          "title": "Decision support",
+          "description": "Build dashboards, assistants and alerts that help teams act faster without replacing human judgment."
+        },
+        "platformIntegration": {
+          "title": "Platform integration",
+          "description": "Connect AI capabilities with ERP, operations platforms and custom software teams use every day."
+        },
+        "enablementTraining": {
+          "title": "Enablement & training",
+          "description": "Document models, workflows and operating rules so teams adopt AI features confidently after handover."
+        }
+      }
+    },
+    "relatedServices": {
+      "eyebrow": "Related services",
+      "title": "More paths for intelligent operations",
+      "description": "Explore complementary services across enterprise digitalization, Industry 4.0, software development and cloud security.",
+      "cta": "Talk to our team",
+      "items": {
+        "digitalization": {
+          "title": "Digitalization for Enterprises",
+          "description": "Practical roadmaps that move organizations from manual processes to connected digital operations."
+        },
+        "industry40": {
+          "title": "Industry 4.0",
+          "description": "Smart manufacturing solutions for connected machines, production data and industrial performance."
+        },
+        "softwareDevelopment": {
+          "title": "Software Development",
+          "description": "Custom software, web applications and integrations built around real operational needs."
+        },
+        "cloudCybersecurity": {
+          "title": "Cloud & Cybersecurity",
+          "description": "Secure cloud architecture, identity management and protection for business-critical systems."
+        }
+      }
+    },
+    "processTimeline": {
+      "eyebrow": "Delivery process",
+      "title": "From use case to scaled adoption",
+      "description": "GII follows a practical AI path — assess workflows, prioritize use cases, prototype quickly and scale only after teams adopt the first rollout.",
+      "items": {
+        "assess": {
+          "title": "Assess",
+          "description": "Review workflows, data availability and the decisions or tasks where AI could remove friction or improve speed."
+        },
+        "prioritize": {
+          "title": "Prioritize",
+          "description": "Select use cases with clear value, feasible data and adoption paths aligned with team capacity."
+        },
+        "prototype": {
+          "title": "Prototype",
+          "description": "Build and test a focused AI feature or assistant with real users before expanding scope."
+        },
+        "integrate": {
+          "title": "Integrate",
+          "description": "Embed AI capabilities into existing platforms, workflows and reporting teams already use."
+        },
+        "enable": {
+          "title": "Enable",
+          "description": "Train teams, document operating rules and define monitoring so AI outputs stay useful in daily work."
+        },
+        "scale": {
+          "title": "Scale",
+          "description": "Extend successful use cases to the next team, site or process once the first rollout is stable."
+        }
+      }
+    },
+    "projects": {
+      "eyebrow": "Technology in action",
+      "title": "AI transformation projects in practice",
+      "description": "See how GII helps organizations automate workflows, support operations and turn data into decisions with practical AI."
+    },
+    "cta": {
+      "eyebrow": "Next step",
+      "title": "Start with an AI use-case workshop",
+      "description": "Share your goals with GII. We will map a practical AI path — from the first pilot to capabilities your teams can adopt."
     }
   },
   "researchPage": {

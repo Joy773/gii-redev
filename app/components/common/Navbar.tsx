@@ -26,7 +26,7 @@ const SERVICE_GROUPS: NavLink[] = [
     href: "/digital-transformation",
     children: [
       { label: "Digitalization for Enterprises", href: "/digital-transformation" },
-      { label: "SMEs", href: "/mittelstand" },
+      { label: "SMEs", href: "/sme" },
       { label: "Industry 4.0", href: "/industry-4-0" },
     ],
   },
@@ -45,7 +45,7 @@ const SERVICE_GROUPS: NavLink[] = [
     href: "/ai",
     children: [
       { label: "AI", href: "/ai" },
-      { label: "AI Transformation", href: "/ai" },
+      { label: "AI Transformation", href: "/ai-transformation" },
     ],
   },
   {
@@ -60,19 +60,19 @@ const SERVICE_GROUPS: NavLink[] = [
     label: "Sustainable Technology",
     href: "/sustainable-solutions",
     children: [
-      { label: "Water", href: "/sustainable-solutions#water" },
-      { label: "Energy", href: "/sustainable-solutions#energy" },
-      { label: "Ventilation & HVAC", href: "/sustainable-solutions#ventilation" },
-      { label: "Environment", href: "/sustainable-solutions#environment" },
+      { label: "Water", href: "/water" },
+      { label: "Energy", href: "/energy" },
+      { label: "Ventilation & HVAC", href: "/ventilation-hvac" },
+      { label: "Environment", href: "/environment" },
     ],
   },
   {
     label: "ICT Systems Integration",
-    href: "/ict",
+    href: "/cloud-cybersecurity",
     children: [
       {
         label: "Cloud & Cybersecurity",
-        href: "/digital-transformation#cloud-cybersecurity",
+        href: "/cloud-cybersecurity",
       },
     ],
   },
