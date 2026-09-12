@@ -70,6 +70,54 @@ const DIGITAL_EDUCATION_HERO_IMAGE =
 const ECOMMERCE_HERO_IMAGE =
   "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=2400&q=80";
 
+// Pexels License (free for commercial use, attribution not required):
+// https://www.pexels.com/video/an-animation-of-planet-earth-8733055/
+const HOME_EARTH_VIDEO = "/hero/earth-rotation.mp4?v=earth";
+
+function HomeEarthVideo({ alt }: { alt: string }) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    const applyPlayback = () => {
+      video.playbackRate = 0.45;
+
+      if (prefersReducedMotion) {
+        video.pause();
+        return;
+      }
+
+      void video.play().catch(() => undefined);
+    };
+
+    applyPlayback();
+    video.addEventListener("loadedmetadata", applyPlayback);
+
+    return () => {
+      video.removeEventListener("loadedmetadata", applyPlayback);
+    };
+  }, []);
+
+  return (
+    <video
+      ref={videoRef}
+      className="absolute inset-0 size-full object-cover object-center"
+      src={HOME_EARTH_VIDEO}
+      autoPlay
+      muted
+      loop
+      playsInline
+      preload="auto"
+      aria-label={alt}
+      onLoadedData={refreshScrollTriggers}
+    />
+  );
+}
+
 const hexToRgb = (hex: string): [number, number, number] => {
   const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
   if (!result) return [1, 1, 1];
@@ -1451,6 +1499,7 @@ type HeroProps = {
 };
 
 export default function Hero({ variant = "home" }: HeroProps) {
+  const isHome = variant === "home";
   const isAbout = variant === "about";
   const isProjects = variant === "projects";
   const isInsights = variant === "insights";
@@ -1604,7 +1653,7 @@ export default function Hero({ variant = "home" }: HeroProps) {
                                       : null;
 
   return (
-    <section className="relative overflow-hidden bg-soft-background">
+    <section className={`relative overflow-hidden ${isHome ? "bg-[#061018]" : "bg-soft-background"}`}>
       <div className="absolute inset-0">
         {imageHeroSrc ? (
           <Image
@@ -1725,6 +1774,8 @@ export default function Hero({ variant = "home" }: HeroProps) {
             grain
             grainIntensity={0.05}
           />
+        ) : isHome ? (
+          <HomeEarthVideo alt={t("imageAlt")} />
         ) : (
           <MoltenMetal
             color1="#123b56"
@@ -1753,12 +1804,20 @@ export default function Hero({ variant = "home" }: HeroProps) {
         className={
           isImageHero
             ? "pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(244,247,249,0.94)_0%,rgba(244,247,249,0.82)_42%,rgba(244,247,249,0.45)_72%,rgba(244,247,249,0.2)_100%)] dark:bg-[linear-gradient(90deg,rgba(11,26,36,0.9)_0%,rgba(11,26,36,0.74)_42%,rgba(11,26,36,0.4)_100%)]"
+            : isHome
+              ? "pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(6,16,24,0.38)_0%,rgba(6,16,24,0.28)_42%,rgba(6,16,24,0.52)_100%)]"
             : isCompact
               ? "pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(244,247,249,0.9)_0%,rgba(244,247,249,0.72)_38%,rgba(244,247,249,0.38)_68%,rgba(244,247,249,0.14)_100%)] dark:bg-[linear-gradient(90deg,rgba(11,26,36,0.82)_0%,rgba(11,26,36,0.62)_42%,rgba(11,26,36,0.28)_100%)]"
               : "pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(244,247,249,0.96)_0%,rgba(244,247,249,0.88)_36%,rgba(244,247,249,0.55)_62%,rgba(244,247,249,0.22)_100%)] dark:bg-[linear-gradient(90deg,rgba(11,26,36,0.88)_0%,rgba(11,26,36,0.72)_40%,rgba(11,26,36,0.42)_100%)]"
         }
       />
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(49,121,171,0.14),transparent_35%),radial-gradient(circle_at_bottom_right,rgba(18,59,86,0.12),transparent_32%)] dark:bg-[radial-gradient(circle_at_top_left,rgba(49,121,171,0.22),transparent_40%),radial-gradient(circle_at_bottom_right,rgba(18,59,86,0.28),transparent_36%)]" />
+      <div
+        className={
+          isHome
+            ? "pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(49,121,171,0.18),transparent_42%),radial-gradient(circle_at_bottom_right,rgba(6,16,24,0.35),transparent_40%)]"
+            : "pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(49,121,171,0.14),transparent_35%),radial-gradient(circle_at_bottom_right,rgba(18,59,86,0.12),transparent_32%)] dark:bg-[radial-gradient(circle_at_top_left,rgba(49,121,171,0.22),transparent_40%),radial-gradient(circle_at_bottom_right,rgba(18,59,86,0.28),transparent_36%)]"
+        }
+      />
 
       <div
         className={
@@ -1768,11 +1827,23 @@ export default function Hero({ variant = "home" }: HeroProps) {
         }
       >
         <div className="max-w-4xl text-center">
-          <span className="inline-flex max-w-full rounded-full border border-primary/15 bg-surface/80 px-3.5 py-1.5 text-center text-xs font-semibold tracking-[0.12em] text-primary uppercase shadow-sm dark:border-white/15 dark:bg-[#122A3B]/80 sm:px-6 sm:py-2.5 sm:text-xl sm:tracking-tight md:text-2xl">
+          <span
+            className={
+              isHome
+                ? "inline-flex max-w-full rounded-full border border-white/15 bg-[#122A3B]/80 px-3.5 py-1.5 text-center text-xs font-semibold tracking-[0.12em] text-white uppercase shadow-sm sm:px-6 sm:py-2.5 sm:text-xl sm:tracking-tight md:text-2xl"
+                : "inline-flex max-w-full rounded-full border border-primary/15 bg-surface/80 px-3.5 py-1.5 text-center text-xs font-semibold tracking-[0.12em] text-primary uppercase shadow-sm dark:border-white/15 dark:bg-[#122A3B]/80 sm:px-6 sm:py-2.5 sm:text-xl sm:tracking-tight md:text-2xl"
+            }
+          >
             {t("eyebrow")}
           </span>
 
-          <h1 className="mt-6 text-4xl font-semibold tracking-tight text-dark dark:text-white sm:text-5xl lg:text-6xl">
+          <h1
+            className={
+              isHome
+                ? "mt-6 text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-6xl"
+                : "mt-6 text-4xl font-semibold tracking-tight text-dark dark:text-white sm:text-5xl lg:text-6xl"
+            }
+          >
             {titleWords.map((word, index) => (
               <span
                 key={`${word}-${index}`}
@@ -1784,14 +1855,31 @@ export default function Hero({ variant = "home" }: HeroProps) {
             ))}
           </h1>
 
-          <p className="mt-4 text-lg leading-8 text-text/75 dark:text-white/78">{t("subtitle")}</p>
+          <p
+            className={
+              isHome
+                ? "mt-4 text-lg leading-8 text-white/78"
+                : "mt-4 text-lg leading-8 text-text/75 dark:text-white/78"
+            }
+          >
+            {t("subtitle")}
+          </p>
 
-          <p className="mt-5 text-base leading-7 text-text/70 dark:text-white/70 sm:text-lg">
+          <p
+            className={
+              isHome
+                ? "mt-5 text-base leading-7 text-white/70 sm:text-lg"
+                : "mt-5 text-base leading-7 text-text/70 dark:text-white/70 sm:text-lg"
+            }
+          >
             {t("description")}
           </p>
 
           <div className="mt-8 flex flex-row flex-wrap items-center justify-center gap-2 sm:gap-3">
-            <ExploreSolutionsButton className="inline-flex px-3.5 whitespace-nowrap sm:px-4" />
+            <ExploreSolutionsButton
+              variant={isHome ? "onDark" : "default"}
+              className="inline-flex px-3.5 whitespace-nowrap sm:px-4"
+            />
             <StartProjectButton className="inline-flex px-3.5 whitespace-nowrap sm:px-4" />
           </div>
         </div>

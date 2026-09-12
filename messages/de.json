@@ -54,7 +54,7 @@
     "title": "Unternehmen durch Technologie transformieren",
     "subtitle": "Digitale Transformation. Intelligente Technologie. Nachhaltige Lösungen.",
     "description": "Wir unterstützen Unternehmen, Institutionen und Entwicklungsorganisationen dabei, Prozesse zu modernisieren, digitales Wachstum zu erschließen und internationale Märkte mit deutscher Technologie zu verbinden.",
-    "imageAlt": "Modernes visuelles Motiv für Technologie und Innovation",
+    "imageAlt": "Rotierende Ansicht der Erde aus dem Weltall",
     "capabilities": {
       "digitalTransformation": "Digitale Transformation",
       "ict": "IKT",
@@ -75,8 +75,7 @@
   "qualificationStrip": {
     "since2014": "Seit 2014",
     "germanyBased": "Standort Deutschland",
-    "internationalProjects": "Internationale Projekte",
-    "arabicEnglish": "Arabisch- & Englischkompetenz"
+    "internationalProjects": "Internationale Projekte"
   },
   "aria": {
     "home": "GII Startseite",

@@ -10,6 +10,7 @@ import {
   LocaleTransitionBody,
   LocaleTransitionProvider,
 } from "../components/common/LocaleTransitionProvider";
+import DotFieldBackground from "@/components/DotFieldBackground";
 import { routing } from "@/i18n/routing";
 
 export function generateStaticParams() {
@@ -34,9 +35,14 @@ export default async function LocaleLayout({
   return (
     <NextIntlClientProvider messages={messages}>
       <LocaleTransitionProvider>
-        <NavbarIntl />
-        <LocaleTransitionBody>{children}</LocaleTransitionBody>
-        <Footer />
+        <div className="relative min-h-full">
+          <DotFieldBackground />
+          <div className="relative z-10 flex min-h-full flex-col">
+            <NavbarIntl />
+            <LocaleTransitionBody>{children}</LocaleTransitionBody>
+            <Footer />
+          </div>
+        </div>
       </LocaleTransitionProvider>
     </NextIntlClientProvider>
   );

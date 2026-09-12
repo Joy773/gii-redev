@@ -2,12 +2,7 @@
 
 import { useTranslations } from "next-intl";
 
-const ITEM_KEYS = [
-  "since2014",
-  "germanyBased",
-  "internationalProjects",
-  "arabicEnglish",
-] as const;
+const ITEM_KEYS = ["since2014", "germanyBased", "internationalProjects"] as const;
 
 export default function QualificationStrip() {
   const t = useTranslations("qualificationStrip");

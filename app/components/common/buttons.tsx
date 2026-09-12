@@ -40,9 +40,17 @@ export function StartProjectButton({
   );
 }
 
+const exploreSolutionsVariants = {
+  default:
+    "border border-primary/20 bg-white/90 text-navy shadow-[0_4px_18px_rgba(18,59,86,0.08)] hover:border-primary/35 hover:bg-white hover:text-primary hover:shadow-[0_10px_26px_rgba(18,59,86,0.12)] dark:border-white/30 dark:bg-white/10 dark:text-white dark:shadow-[0_4px_18px_rgba(0,0,0,0.25)] dark:hover:border-white/50 dark:hover:bg-white/16 dark:hover:text-white",
+  onDark:
+    "border border-white/30 bg-white/10 text-white shadow-[0_4px_18px_rgba(0,0,0,0.25)] hover:border-white/50 hover:bg-white/16 hover:text-white",
+};
+
 export function ExploreSolutionsButton({
   className = "",
   arrowClassName = "",
+  variant = "default",
 }: ButtonProps) {
   const t = useTranslations("cta");
   const locale = useLocale();
@@ -50,7 +58,7 @@ export function ExploreSolutionsButton({
   return (
     <Link
       href={`/${locale}/digital-transformation`}
-      className={`group inline-flex items-center justify-center gap-2 rounded-full border border-primary/20 bg-white/90 px-4 py-2.5 text-[13px] font-semibold text-navy shadow-[0_4px_18px_rgba(18,59,86,0.08)] transition-all duration-300 hover:-translate-y-0.5 hover:scale-[1.02] hover:border-primary/35 hover:bg-white hover:text-primary hover:shadow-[0_10px_26px_rgba(18,59,86,0.12)] dark:border-white/30 dark:bg-white/10 dark:text-white dark:shadow-[0_4px_18px_rgba(0,0,0,0.25)] dark:hover:border-white/50 dark:hover:bg-white/16 dark:hover:text-white ${className}`}
+      className={`group inline-flex items-center justify-center gap-2 rounded-full border px-4 py-2.5 text-[13px] font-semibold transition-all duration-300 hover:-translate-y-0.5 hover:scale-[1.02] ${exploreSolutionsVariants[variant]} ${className}`}
     >
       {t("exploreSolutions")}
       <ArrowIcon className={`transition-transform duration-300 group-hover:translate-x-1 ${arrowClassName}`} />

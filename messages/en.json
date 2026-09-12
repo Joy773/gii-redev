@@ -54,7 +54,7 @@
     "title": "Transforming Business Through Technology",
     "subtitle": "Digital Transformation. Intelligent Technology. Sustainable Solutions.",
     "description": "We help companies, institutions and development organizations modernize operations, unlock digital growth and connect international markets with German technology.",
-    "imageAlt": "Modern technology and innovation hero visual",
+    "imageAlt": "Rotating view of planet Earth from space",
     "capabilities": {
       "digitalTransformation": "Digital Transformation",
       "ict": "ICT",
@@ -75,8 +75,7 @@
   "qualificationStrip": {
     "since2014": "Since 2014",
     "germanyBased": "Germany-Based",
-    "internationalProjects": "International Projects",
-    "arabicEnglish": "Arabic & English Capability"
+    "internationalProjects": "International Projects"
   },
   "aria": {
     "home": "GII home",
