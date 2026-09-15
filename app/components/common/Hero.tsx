@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useTheme } from "next-themes";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Mesh, Program, Renderer, RenderTarget, Triangle } from "ogl";
 
 import { ExploreSolutionsButton, StartProjectButton } from "./buttons";
@@ -70,51 +70,130 @@ const DIGITAL_EDUCATION_HERO_IMAGE =
 const ECOMMERCE_HERO_IMAGE =
   "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=2400&q=80";
 
-// Pexels License (free for commercial use, attribution not required):
-// https://www.pexels.com/video/an-animation-of-planet-earth-8733055/
-const HOME_EARTH_VIDEO = "/hero/earth-rotation.mp4?v=earth";
+// Free commercial-use clips (Pexels / Mixkit):
+// Earth: https://www.pexels.com/video/an-animation-of-planet-earth-8733055/
+// Drone field: https://www.pexels.com/video/drone-footage-of-agricultural-land-during-sunrise-6989012/
+// Trash recycle: https://mixkit.co/free-stock-video/kid-tossing-bottles-into-bin-101112/
+// Solar farm: https://mixkit.co/free-stock-video/aerial-view-of-solar-panels-in-a-field-at-sunset-46623/
+// Factory robot: https://mixkit.co/free-stock-video/robot-working-in-a-production-line-47257/
+// Data center: https://mixkit.co/free-stock-video/engineers-working-in-the-data-center-22966/
+const HOME_HERO_CLIPS = [
+  { id: "earth", src: "/hero/earth-rotation.mp4?v=earth", playbackRate: 0.45, holdSeconds: 4 },
+  { id: "drone", src: "/hero/drone-field.mp4", playbackRate: 1 },
+  { id: "trash", src: "/hero/trash-recycle.mp4", playbackRate: 1 },
+  { id: "solar", src: "/hero/solar-farm.mp4", playbackRate: 1 },
+  { id: "factory", src: "/hero/factory-robot.mp4", playbackRate: 1 },
+  { id: "datacenter", src: "/hero/data-center.mp4", playbackRate: 1 },
+] as const;
 
-function HomeEarthVideo({ alt }: { alt: string }) {
-  const videoRef = useRef<HTMLVideoElement>(null);
+type HomeHeroClipId = (typeof HOME_HERO_CLIPS)[number]["id"];
+
+function HomeHeroVideos({ alt }: { alt: string }) {
+  const videoRefs = useRef<Record<HomeHeroClipId, HTMLVideoElement | null>>({
+    earth: null,
+    drone: null,
+    trash: null,
+    solar: null,
+    factory: null,
+    datacenter: null,
+  });
+  const [activeClip, setActiveClip] = useState<HomeHeroClipId>("earth");
+  const segmentTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
-
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-    const applyPlayback = () => {
-      video.playbackRate = 0.45;
+    const clearSegmentTimer = () => {
+      if (segmentTimerRef.current !== null) {
+        clearTimeout(segmentTimerRef.current);
+        segmentTimerRef.current = null;
+      }
+    };
+
+    const getVideo = (id: HomeHeroClipId) => videoRefs.current[id];
+
+    const playClip = (id: HomeHeroClipId) => {
+      const clip = HOME_HERO_CLIPS.find((item) => item.id === id);
+      const next = getVideo(id);
+      if (!clip || !next) return;
+
+      clearSegmentTimer();
+      setActiveClip(id);
+
+      for (const item of HOME_HERO_CLIPS) {
+        if (item.id === id) continue;
+        getVideo(item.id)?.pause();
+      }
+
+      next.currentTime = 0;
+      next.playbackRate = clip.playbackRate;
 
       if (prefersReducedMotion) {
-        video.pause();
+        next.pause();
         return;
       }
 
-      void video.play().catch(() => undefined);
+      void next.play().catch(() => undefined);
+
+      if ("holdSeconds" in clip && typeof clip.holdSeconds === "number") {
+        segmentTimerRef.current = setTimeout(() => {
+          const index = HOME_HERO_CLIPS.findIndex((item) => item.id === id);
+          const following = HOME_HERO_CLIPS[(index + 1) % HOME_HERO_CLIPS.length];
+          playClip(following.id);
+        }, clip.holdSeconds * 1000);
+      }
     };
 
-    applyPlayback();
-    video.addEventListener("loadedmetadata", applyPlayback);
+    const onEnded = (id: HomeHeroClipId) => {
+      const index = HOME_HERO_CLIPS.findIndex((item) => item.id === id);
+      const following = HOME_HERO_CLIPS[(index + 1) % HOME_HERO_CLIPS.length];
+      playClip(following.id);
+    };
+
+    const cleanups: Array<() => void> = [];
+    for (const item of HOME_HERO_CLIPS) {
+      if ("holdSeconds" in item) continue;
+      const video = getVideo(item.id);
+      if (!video) continue;
+      const handler = () => onEnded(item.id);
+      video.addEventListener("ended", handler);
+      cleanups.push(() => video.removeEventListener("ended", handler));
+    }
+
+    const earth = getVideo("earth");
+    if (earth && earth.readyState >= 1) {
+      playClip("earth");
+    } else if (earth) {
+      earth.addEventListener("loadedmetadata", () => playClip("earth"), { once: true });
+    }
 
     return () => {
-      video.removeEventListener("loadedmetadata", applyPlayback);
+      clearSegmentTimer();
+      for (const cleanup of cleanups) cleanup();
     };
   }, []);
 
   return (
-    <video
-      ref={videoRef}
-      className="absolute inset-0 size-full object-cover object-center"
-      src={HOME_EARTH_VIDEO}
-      autoPlay
-      muted
-      loop
-      playsInline
-      preload="auto"
-      aria-label={alt}
-      onLoadedData={refreshScrollTriggers}
-    />
+    <>
+      {HOME_HERO_CLIPS.map((clip) => (
+        <video
+          key={clip.id}
+          ref={(node) => {
+            videoRefs.current[clip.id] = node;
+          }}
+          className={`absolute inset-0 size-full object-cover object-center transition-opacity duration-700 ${
+            activeClip === clip.id ? "opacity-100" : "opacity-0"
+          }`}
+          src={clip.src}
+          muted
+          playsInline
+          preload="auto"
+          aria-label={alt}
+          aria-hidden={activeClip !== clip.id}
+          onLoadedData={clip.id === "earth" ? refreshScrollTriggers : undefined}
+        />
+      ))}
+    </>
   );
 }
 
@@ -1775,7 +1854,7 @@ export default function Hero({ variant = "home" }: HeroProps) {
             grainIntensity={0.05}
           />
         ) : isHome ? (
-          <HomeEarthVideo alt={t("imageAlt")} />
+          <HomeHeroVideos alt={t("imageAlt")} />
         ) : (
           <MoltenMetal
             color1="#123b56"

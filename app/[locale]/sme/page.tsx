@@ -33,7 +33,7 @@ export default function SmePage() {
           "smeFieldServiceApp",
         ]}
         sectionNamespace="smePage.projects"
-        backgroundClassName="bg-[#FFFFFF]"
+        backgroundClassName="grid-surface-white"
       />
       <CTA
         namespace="smePage.cta"

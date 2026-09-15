@@ -29,7 +29,7 @@ export default function DigitalTransformationPage() {
       <Projects
         filterByProjectIds={["nexaOps", "mittelstandCloud", "publicServiceHub"]}
         sectionNamespace="digitalizationForEnterprisesPage.projects"
-        backgroundClassName="bg-[#FFFFFF]"
+        backgroundClassName="grid-surface-white"
       />
       <CTA
         namespace="digitalizationForEnterprisesPage.cta"

@@ -39,7 +39,7 @@ export default function ProjectCard({
             sizes="(min-width: 1280px) 360px, (min-width: 768px) 50vw, 100vw"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-navy/50 to-transparent" />
-          <span className="relative z-10 rounded-full bg-surface/90 px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-primary dark:bg-[#122A3B]/90 dark:text-primary">
+          <span className="relative z-10 rounded-full border border-white/10 bg-[#122A3B]/92 px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-primary shadow-sm backdrop-blur-sm dark:border-white/15 dark:bg-[#0B1F2C]/95 dark:text-[#7CC3F0]">
             {t(`items.${project.id}.category`)}
           </span>
         </div>
