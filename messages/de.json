@@ -180,6 +180,7 @@
     "title": "Ausgewählte Projekte aus verschiedenen Branchen",
     "subtitle": "Digitale Transformation. Industrie. Nachhaltige Technologie.",
     "description": "Ein Einblick, wie GII Strategie in konkrete Lösungen für digitale Transformation, Industrie und nachhaltige Technologie umsetzt.",
+    "imageAlt": "Interdisziplinäres Team bei der Zusammenarbeit an Technologieprojekten in einem modernen Arbeitsumfeld",
     "cta": "Alle Projekte ansehen",
     "metaTitle": "Projekte | GII",
     "filters": {
@@ -3131,7 +3132,7 @@
     "title": "Angewandte Forschung, die Technologie praxisnah macht",
     "subtitle": "Methoden. Prototypen. Technologietransfer.",
     "description": "GII verbindet Forschung und Umsetzung — Ideen validieren, Programme gestalten und deutsche Innovation in reale Abläufe in digitalen und nachhaltigen Domänen bringen.",
-    "imageAlt": "Technologie und digitale Innovation als Motiv",
+    "imageAlt": "Forschende bei der gemeinsamen Arbeit an einem Technologieprototyp im Innovationslabor",
     "themes": {
       "eyebrow": "Schwerpunkte",
       "title": "Wo Forschung auf Umsetzung trifft",
@@ -3199,6 +3200,7 @@
     "title": "Beratung für Technologie & nachhaltige Lösungen",
     "subtitle": "ICT-Beratung. Nachhaltige Technologie. Von der Analyse bis zur Umsetzung.",
     "description": "GII unterstützt Organisationen bei Technologiebewertung, Fahrplänen, Lösungsauswahl und der Umsetzung von Strategie in digitale und nachhaltige Projekte.",
+    "imageAlt": "Beraterinnen und Berater besprechen einen Technologieplan am Laptop in einem modernen Büro",
     "consultancies": {
       "eyebrow": "Beratungsfelder",
       "title": "Zwei Domänen. Ein Umsetzungspartner.",
@@ -3353,6 +3355,7 @@
     "title": "Wissen, das Technologie praxisnah macht",
     "subtitle": "News. Leitfäden. Technologie-Einblicke.",
     "description": "Artikel, Berichte und praxisnahe Beiträge aus der Arbeit von GII in Digitalisierung, Industrie und nachhaltiger Technologie.",
+    "imageAlt": "Fachleute prüfen Einblicke und Technologie-Notizen in einem modernen Arbeitsbereich",
     "readArticle": "Artikel lesen",
     "back": "Zurück zu den Einblicken",
     "onThisPage": "Auf dieser Seite",
@@ -3460,6 +3463,7 @@
     "title": "Deutsche Technologie, international angewendet",
     "subtitle": "Beratung. Software. Angewandte Ingenieurkompetenz.",
     "description": "GII ist ein in Berlin ansässiger Innovationspartner für Unternehmen, öffentliche Einrichtungen und Entwicklungsorganisationen. Wir modernisieren Abläufe, liefern digitale und industrielle Systeme und verbinden internationale Märkte mit deutscher Technologiekompetenz.",
+    "imageAlt": "GII-Team bei der Zusammenarbeit in einem modernen Berliner Büroatrium",
     "whoTitle": "Wer wir sind",
     "whoLead": "GII verbindet Beratung, Software und angewandte Ingenieurkompetenz. Von Berlin aus arbeiten wir mit Partnern in Deutschland, Europa und der MENA-Region, die Technologie brauchen, die sich umsetzen, betreiben und verantworten lässt.",
     "whoBody": "Unsere Arbeit reicht von digitaler Transformation und Industrie 4.0 über KI und IoT bis zu Medizintechnik, Wasser, Energie und Umwelttechnik. Wir bleiben bei der Umsetzung: Strategie, Software, Systeme und Qualifizierung aus einer Hand.",
@@ -3554,7 +3558,9 @@
     "metaTitle": "Kontakt | GII",
     "eyebrow": "Projekt starten",
     "title": "Sagen Sie uns, was Sie transformieren möchten",
+    "subtitle": "Ziele. Zeitrahmen. Deutsche Innovationskompetenz.",
     "description": "Teilen Sie Ziele, Zeitrahmen und die Technologien, die Sie prüfen möchten. GII meldet sich mit einer Fachperson, die Ihnen hilft, Abläufe zu modernisieren und deutsche Innovation anzubinden.",
+    "imageAlt": "GII-Team empfängt einen Besucher am Empfang eines modernen Berliner Büros",
     "formHeading": "Kontaktieren Sie unser Team",
     "fields": {
       "name": "Name",

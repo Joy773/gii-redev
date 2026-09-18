@@ -11,7 +11,6 @@ import {
   FiPhone,
 } from "react-icons/fi";
 
-import ScrollReveal from "./common/ScrollReveal";
 import { SERVICE_COLUMNS } from "./common/navConfig";
 
 const BUDGETS = ["undecided", "s", "m", "l", "xl"] as const;
@@ -57,26 +56,7 @@ export default function Contact() {
     <section className="grid-surface grid-surface-white py-16 sm:py-20 lg:py-24">
       <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16 lg:px-8">
         <div className="mx-auto max-w-xl text-center lg:mx-0 lg:text-left">
-          <span className="inline-flex items-center gap-2 rounded-full bg-primary/8 px-3 py-1 text-sm font-medium text-primary">
-            <span className="size-2 rounded-full bg-primary" />
-            {t("eyebrow")}
-          </span>
-          <ScrollReveal
-            playOnMount
-            baseOpacity={0.25}
-            enableBlur
-            baseRotation={4}
-            blurStrength={18}
-            containerClassName="mt-6 text-center lg:text-left"
-            textClassName="text-center text-4xl font-semibold tracking-tight text-dark sm:text-5xl lg:text-left"
-          >
-            {t("title")}
-          </ScrollReveal>
-          <p className="mt-5 text-base leading-7 text-text/70 sm:text-lg sm:leading-8">
-            {t("description")}
-          </p>
-
-          <ul className="mt-10 grid grid-cols-2 gap-3 text-left">
+          <ul className="grid grid-cols-2 gap-3 text-left">
             <li className={contactCardClass}>
               <span className={contactIconClass}>
                 <FiMail className="size-4" aria-hidden="true" />

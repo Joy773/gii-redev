@@ -16,8 +16,18 @@ function refreshScrollTriggers() {
   });
 }
 
-const RESEARCH_HERO_IMAGE =
-  "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2400&q=80";
+const RESEARCH_HERO_IMAGE = "/hero/research-innovation-hero.jpg";
+
+const CONSULTANCY_HERO_IMAGE = "/hero/consultancy-hero-meeting.jpg";
+
+const ABOUT_HERO_IMAGE = "/hero/about-hero.jpg";
+
+const CONTACT_HERO_IMAGE = "/hero/contact-hero.jpg";
+
+const INSIGHTS_HERO_IMAGE = "/hero/insights-hero.jpg";
+
+const PROJECTS_HERO_IMAGE =
+  "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2400&q=80";
 
 const INDUSTRIES_HERO_IMAGE =
   "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=2400&q=80";
@@ -1556,6 +1566,7 @@ type HeroProps = {
     | "about"
     | "projects"
     | "insights"
+    | "contact"
     | "consultancy"
     | "research"
     | "industries"
@@ -1582,6 +1593,7 @@ export default function Hero({ variant = "home" }: HeroProps) {
   const isAbout = variant === "about";
   const isProjects = variant === "projects";
   const isInsights = variant === "insights";
+  const isContact = variant === "contact";
   const isConsultancy = variant === "consultancy";
   const isResearch = variant === "research";
   const isIndustries = variant === "industries";
@@ -1602,7 +1614,12 @@ export default function Hero({ variant = "home" }: HeroProps) {
   const isDigitalEducation = variant === "digitalEducation";
   const isEcommerce = variant === "ecommerce";
   const isImageHero =
+    isProjects ||
     isResearch ||
+    isConsultancy ||
+    isAbout ||
+    isInsights ||
+    isContact ||
     isIndustries ||
     isDigitalizationForEnterprises ||
     isSme ||
@@ -1624,6 +1641,7 @@ export default function Hero({ variant = "home" }: HeroProps) {
     isAbout ||
     isProjects ||
     isInsights ||
+    isContact ||
     isConsultancy ||
     isResearch ||
     isIndustries ||
@@ -1650,6 +1668,8 @@ export default function Hero({ variant = "home" }: HeroProps) {
         ? "projects"
         : isInsights
           ? "insightsPage"
+          : isContact
+            ? "contactPage"
           : isConsultancy
             ? "consultancyPage"
             : isResearch
@@ -1693,43 +1713,54 @@ export default function Hero({ variant = "home" }: HeroProps) {
   const { resolvedTheme } = useTheme();
   const isDark = resolvedTheme === "dark";
   const titleWords = t("title").split(" ");
-  const imageHeroSrc = isResearch
-    ? RESEARCH_HERO_IMAGE
-    : isIndustries
-      ? INDUSTRIES_HERO_IMAGE
-      : isDigitalizationForEnterprises
-        ? DIGITALIZATION_HERO_IMAGE
-        : isSme
-          ? SME_HERO_IMAGE
-          : isIndustry40
-            ? INDUSTRY40_HERO_IMAGE
-            : isIotEmbedded
-              ? IOT_EMBEDDED_HERO_IMAGE
-              : isMedicalTechnology
-                ? MEDICAL_TECHNOLOGY_HERO_IMAGE
-                : isCloudCybersecurity
-                  ? CLOUD_CYBERSECURITY_HERO_IMAGE
-                  : isAiTransformation
-                    ? AI_TRANSFORMATION_HERO_IMAGE
-                    : isAi
-                      ? AI_HERO_IMAGE
-                      : isWater
-                        ? WATER_HERO_IMAGE
-                        : isEnergy
-                          ? ENERGY_HERO_IMAGE
-                          : isVentilationHvac
-                            ? VENTILATION_HVAC_HERO_IMAGE
-                            : isEnvironment
-                              ? ENVIRONMENT_HERO_IMAGE
-                              : isSoftwareDevelopment
-                                ? SOFTWARE_DEVELOPMENT_HERO_IMAGE
-                                : isDigitalPlatforms
-                                  ? DIGITAL_PLATFORMS_HERO_IMAGE
-                                  : isDigitalEducation
-                                    ? DIGITAL_EDUCATION_HERO_IMAGE
-                                    : isEcommerce
-                                      ? ECOMMERCE_HERO_IMAGE
-                                      : null;
+  const [heroAspectRatio, setHeroAspectRatio] = useState(16 / 9);
+  const imageHeroSrc = isProjects
+    ? PROJECTS_HERO_IMAGE
+    : isResearch
+      ? RESEARCH_HERO_IMAGE
+      : isConsultancy
+        ? CONSULTANCY_HERO_IMAGE
+      : isAbout
+        ? ABOUT_HERO_IMAGE
+      : isInsights
+        ? INSIGHTS_HERO_IMAGE
+      : isContact
+        ? CONTACT_HERO_IMAGE
+      : isIndustries
+        ? INDUSTRIES_HERO_IMAGE
+        : isDigitalizationForEnterprises
+          ? DIGITALIZATION_HERO_IMAGE
+          : isSme
+            ? SME_HERO_IMAGE
+            : isIndustry40
+              ? INDUSTRY40_HERO_IMAGE
+              : isIotEmbedded
+                ? IOT_EMBEDDED_HERO_IMAGE
+                : isMedicalTechnology
+                  ? MEDICAL_TECHNOLOGY_HERO_IMAGE
+                  : isCloudCybersecurity
+                    ? CLOUD_CYBERSECURITY_HERO_IMAGE
+                    : isAiTransformation
+                      ? AI_TRANSFORMATION_HERO_IMAGE
+                      : isAi
+                        ? AI_HERO_IMAGE
+                        : isWater
+                          ? WATER_HERO_IMAGE
+                          : isEnergy
+                            ? ENERGY_HERO_IMAGE
+                            : isVentilationHvac
+                              ? VENTILATION_HVAC_HERO_IMAGE
+                              : isEnvironment
+                                ? ENVIRONMENT_HERO_IMAGE
+                                : isSoftwareDevelopment
+                                  ? SOFTWARE_DEVELOPMENT_HERO_IMAGE
+                                  : isDigitalPlatforms
+                                    ? DIGITAL_PLATFORMS_HERO_IMAGE
+                                    : isDigitalEducation
+                                      ? DIGITAL_EDUCATION_HERO_IMAGE
+                                      : isEcommerce
+                                        ? ECOMMERCE_HERO_IMAGE
+                                        : null;
 
   return (
     <section className={`relative overflow-hidden ${isHome ? "bg-[#061018]" : "bg-soft-background"}`}>
@@ -1741,8 +1772,14 @@ export default function Hero({ variant = "home" }: HeroProps) {
             fill
             priority
             sizes="100vw"
-            className="object-cover object-center"
-            onLoad={refreshScrollTriggers}
+            className="object-contain object-center"
+            onLoad={(event) => {
+              const { naturalWidth, naturalHeight } = event.currentTarget;
+              if (naturalWidth && naturalHeight) {
+                setHeroAspectRatio(naturalWidth / naturalHeight);
+              }
+              refreshScrollTriggers();
+            }}
           />
         ) : isAbout ? (
           <LightTunnel
@@ -1774,30 +1811,6 @@ export default function Hero({ variant = "home" }: HeroProps) {
             opacity={isDark ? 0.92 : 0.88}
             mouseInteraction
             mouseStrength={0.1}
-          />
-        ) : isProjects ? (
-          <WebThreads
-            color1="#3179ab"
-            color2={isDark ? "#9ecce8" : "#5aa3d4"}
-            color3={isDark ? "#f4f7f9" : "#ffffff"}
-            speed={0.2}
-            threadCount={6}
-            frequency={5}
-            spread={0.18}
-            taper={1}
-            position={0.5}
-            fanMode="center"
-            glow={0.02}
-            falloff={0.6}
-            thickness={1.1}
-            brightness={isDark ? 0.72 : 0.55}
-            opacity={1}
-            mirror
-            shimmer={false}
-            grain
-            grainIntensity={0.05}
-            mouseInteraction
-            mouseStrength={0.3}
           />
         ) : isInsights ? (
           <Scanner
@@ -1879,31 +1892,36 @@ export default function Hero({ variant = "home" }: HeroProps) {
         )}
       </div>
 
-      <div
-        className={
-          isImageHero
-            ? "pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(244,247,249,0.94)_0%,rgba(244,247,249,0.82)_42%,rgba(244,247,249,0.45)_72%,rgba(244,247,249,0.2)_100%)] dark:bg-[linear-gradient(90deg,rgba(11,26,36,0.9)_0%,rgba(11,26,36,0.74)_42%,rgba(11,26,36,0.4)_100%)]"
-            : isHome
+      {!isImageHero && (
+        <div
+          className={
+            isHome
               ? "pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(6,16,24,0.38)_0%,rgba(6,16,24,0.28)_42%,rgba(6,16,24,0.52)_100%)]"
-            : isCompact
-              ? "pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(244,247,249,0.9)_0%,rgba(244,247,249,0.72)_38%,rgba(244,247,249,0.38)_68%,rgba(244,247,249,0.14)_100%)] dark:bg-[linear-gradient(90deg,rgba(11,26,36,0.82)_0%,rgba(11,26,36,0.62)_42%,rgba(11,26,36,0.28)_100%)]"
-              : "pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(244,247,249,0.96)_0%,rgba(244,247,249,0.88)_36%,rgba(244,247,249,0.55)_62%,rgba(244,247,249,0.22)_100%)] dark:bg-[linear-gradient(90deg,rgba(11,26,36,0.88)_0%,rgba(11,26,36,0.72)_40%,rgba(11,26,36,0.42)_100%)]"
-        }
-      />
-      <div
-        className={
-          isHome
-            ? "pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(49,121,171,0.18),transparent_42%),radial-gradient(circle_at_bottom_right,rgba(6,16,24,0.35),transparent_40%)]"
-            : "pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(49,121,171,0.14),transparent_35%),radial-gradient(circle_at_bottom_right,rgba(18,59,86,0.12),transparent_32%)] dark:bg-[radial-gradient(circle_at_top_left,rgba(49,121,171,0.22),transparent_40%),radial-gradient(circle_at_bottom_right,rgba(18,59,86,0.28),transparent_36%)]"
-        }
-      />
+              : isCompact
+                ? "pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(244,247,249,0.55)_0%,rgba(244,247,249,0.32)_38%,rgba(244,247,249,0.12)_68%,rgba(244,247,249,0.04)_100%)] dark:bg-[linear-gradient(90deg,rgba(11,26,36,0.82)_0%,rgba(11,26,36,0.62)_42%,rgba(11,26,36,0.28)_100%)]"
+                : "pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(244,247,249,0.62)_0%,rgba(244,247,249,0.4)_36%,rgba(244,247,249,0.16)_62%,rgba(244,247,249,0.05)_100%)] dark:bg-[linear-gradient(90deg,rgba(11,26,36,0.88)_0%,rgba(11,26,36,0.72)_40%,rgba(11,26,36,0.42)_100%)]"
+          }
+        />
+      )}
+      {!isImageHero && (
+        <div
+          className={
+            isHome
+              ? "pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(49,121,171,0.18),transparent_42%),radial-gradient(circle_at_bottom_right,rgba(6,16,24,0.35),transparent_40%)]"
+              : "pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(49,121,171,0.1),transparent_35%),radial-gradient(circle_at_bottom_right,rgba(18,59,86,0.08),transparent_32%)] dark:bg-[radial-gradient(circle_at_top_left,rgba(49,121,171,0.22),transparent_40%),radial-gradient(circle_at_bottom_right,rgba(18,59,86,0.28),transparent_36%)]"
+          }
+        />
+      )}
 
       <div
         className={
-          isCompact
-            ? "relative mx-auto flex min-h-[22rem] max-w-7xl items-center justify-center px-4 py-10 sm:min-h-[28rem] sm:px-6 sm:py-12 md:min-h-[32rem] md:py-16 lg:min-h-[36rem] lg:px-8"
-            : "relative mx-auto flex max-w-7xl items-center justify-center px-4 py-10 sm:px-6 sm:py-14 md:min-h-[calc(100vh-4.25rem)] md:py-16 lg:px-8 lg:py-20"
+          isImageHero
+            ? "relative mx-auto flex min-h-[22rem] w-full max-w-none items-center justify-center px-4 py-10 sm:min-h-[26rem] sm:px-6 sm:py-12 md:min-h-0 md:py-16 lg:px-8"
+            : isCompact
+              ? "relative mx-auto flex min-h-[22rem] max-w-7xl items-center justify-center px-4 py-10 sm:min-h-[28rem] sm:px-6 sm:py-12 md:min-h-[32rem] md:py-16 lg:min-h-[36rem] lg:px-8"
+              : "relative mx-auto flex max-w-7xl items-center justify-center px-4 py-10 sm:px-6 sm:py-14 md:min-h-[calc(100vh-4.25rem)] md:py-16 lg:px-8 lg:py-20"
         }
+        style={isImageHero ? { aspectRatio: heroAspectRatio } : undefined}
       >
         <div className="max-w-4xl text-center">
           <span
@@ -1918,7 +1936,7 @@ export default function Hero({ variant = "home" }: HeroProps) {
 
           <h1
             className={
-              isHome
+              isHome || isImageHero
                 ? "mt-6 text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-6xl"
                 : "mt-6 text-4xl font-semibold tracking-tight text-dark dark:text-white sm:text-5xl lg:text-6xl"
             }
@@ -1936,8 +1954,8 @@ export default function Hero({ variant = "home" }: HeroProps) {
 
           <p
             className={
-              isHome
-                ? "mt-4 text-lg leading-8 text-white/78"
+              isHome || isImageHero
+                ? "mt-4 text-lg leading-8 text-white"
                 : "mt-4 text-lg leading-8 text-text/75 dark:text-white/78"
             }
           >
@@ -1946,8 +1964,8 @@ export default function Hero({ variant = "home" }: HeroProps) {
 
           <p
             className={
-              isHome
-                ? "mt-5 text-base leading-7 text-white/70 sm:text-lg"
+              isHome || isImageHero
+                ? "mt-5 text-base leading-7 text-white sm:text-lg"
                 : "mt-5 text-base leading-7 text-text/70 dark:text-white/70 sm:text-lg"
             }
           >
@@ -1956,7 +1974,7 @@ export default function Hero({ variant = "home" }: HeroProps) {
 
           <div className="mt-8 flex flex-row flex-wrap items-center justify-center gap-2 sm:gap-3">
             <ExploreSolutionsButton
-              variant={isHome ? "onDark" : "default"}
+              variant={isHome || isImageHero ? "onDark" : "default"}
               className="inline-flex px-3.5 whitespace-nowrap sm:px-4"
             />
             <StartProjectButton className="inline-flex px-3.5 whitespace-nowrap sm:px-4" />

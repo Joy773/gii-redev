@@ -180,6 +180,7 @@
     "title": "Selected projects across industries",
     "subtitle": "Digital transformation. Industry. Sustainable technology.",
     "description": "A look at how GII turns strategy into applied solutions across digital transformation, industry and sustainable technology.",
+    "imageAlt": "Cross-functional team collaborating on technology projects in a modern workspace",
     "cta": "View all projects",
     "metaTitle": "Projects | GII",
     "filters": {
@@ -3131,7 +3132,7 @@
     "title": "Applied research that turns technology into practice",
     "subtitle": "Methods. Prototypes. Technology transfer.",
     "description": "GII bridges research and delivery — validating ideas, shaping programmes and moving German innovation into real operations across digital and sustainable domains.",
-    "imageAlt": "Technology circuitry and digital innovation visual",
+    "imageAlt": "Researchers collaborating on a technology prototype in an innovation lab",
     "themes": {
       "eyebrow": "Focus areas",
       "title": "Where research meets delivery",
@@ -3199,6 +3200,7 @@
     "title": "Technology & Sustainable Solutions Consultancy",
     "subtitle": "ICT advisory. Sustainable technology. From assessment to implementation.",
     "description": "GII helps organizations assess technology options, plan roadmaps, select solutions and move from strategy to delivery across digital and sustainable domains.",
+    "imageAlt": "Consultants discussing a technology plan around a laptop in a modern office",
     "consultancies": {
       "eyebrow": "Advisory areas",
       "title": "Two domains. One delivery partner.",
@@ -3353,6 +3355,7 @@
     "title": "Knowledge that turns technology into practice",
     "subtitle": "News. Guides. Technology insight.",
     "description": "Articles, reports and practical notes from GII’s work in digitalization, industry and sustainable technology.",
+    "imageAlt": "Professionals reviewing insights and technology notes in a modern workspace",
     "readArticle": "Read article",
     "back": "Back to insights",
     "onThisPage": "On this page",
@@ -3460,6 +3463,7 @@
     "title": "German technology, applied internationally",
     "subtitle": "Consultancy. Software. Applied engineering.",
     "description": "GII is a Berlin-based innovation partner for companies, public institutions and development organizations. We modernize operations, deliver digital and industrial systems, and connect international markets with German technology expertise.",
+    "imageAlt": "GII team collaborating in a modern Berlin office atrium",
     "whoTitle": "Who we are",
     "whoLead": "GII combines consultancy, software and applied engineering. From Berlin, we work with partners in Germany, Europe and the MENA region who need technology that can be delivered, operated and trusted.",
     "whoBody": "Our work spans digital transformation, Industry 4.0, AI, IoT, medical technology, water, energy and environmental systems. We stay with the implementation: strategy, software, systems and training under one roof.",
@@ -3554,7 +3558,9 @@
     "metaTitle": "Contact | GII",
     "eyebrow": "Start a project",
     "title": "Tell us what you want to transform",
+    "subtitle": "Goals. Timeline. German innovation expertise.",
     "description": "Share your goals, timeline and the technologies you want to explore. GII will follow up with a specialist who can help you modernize operations and connect with German innovation.",
+    "imageAlt": "GII team welcoming a visitor at a modern Berlin office reception",
     "formHeading": "Contact our team",
     "fields": {
       "name": "Name",

@@ -16,12 +16,12 @@ export default function QualificationStrip() {
               {index > 0 ? (
                 <span
                   aria-hidden="true"
-                  className="select-none text-[11px] font-medium text-white/35"
+                  className="select-none text-sm font-medium text-white/35 sm:text-base"
                 >
                   |
                 </span>
               ) : null}
-              <span className="text-[11px] font-semibold uppercase tracking-[0.14em] text-white/88 sm:text-xs">
+              <span className="text-sm font-semibold uppercase tracking-[0.14em] text-white/88 sm:text-base">
                 {t(key)}
               </span>
             </span>
