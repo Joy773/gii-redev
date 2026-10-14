@@ -7,8 +7,6 @@ import { useEffect, useRef, useState } from "react";
 import { Mesh, Program, Renderer, RenderTarget, Triangle } from "ogl";
 
 import { ExploreSolutionsButton, StartProjectButton } from "./buttons";
-import LightTunnel from "./LightTunnel";
-import MoltenMetal from "./MoltenMetal";
 
 function refreshScrollTriggers() {
   void import("gsap/ScrollTrigger").then(({ ScrollTrigger }) => {
@@ -1781,37 +1779,6 @@ export default function Hero({ variant = "home" }: HeroProps) {
               refreshScrollTriggers();
             }}
           />
-        ) : isAbout ? (
-          <LightTunnel
-            cableColor="#3179ab"
-            pulseColor={isDark ? "#9ecce8" : "#5aa3d4"}
-            tunnelColor="#123b56"
-            tunnelOpacity={isDark ? 0.18 : 0.08}
-            speed={0.1}
-            flowDirection="outward"
-            pulseSpeed={2}
-            pulseLength={0.28}
-            pulseBlend={1}
-            pulseWidth={1}
-            cableCount={20}
-            thickness={0.35}
-            rimWidth={0.15}
-            waviness={0.3}
-            sway={0.5}
-            size={1}
-            centerX={0}
-            centerY={0}
-            glow={isDark ? 1.15 : 0.95}
-            fadeNear={0.5}
-            fadeFar={2}
-            brightness={isDark ? 1.05 : 0.92}
-            colorVariance
-            grain
-            grainIntensity={0.05}
-            opacity={isDark ? 0.92 : 0.88}
-            mouseInteraction
-            mouseStrength={0.1}
-          />
         ) : isInsights ? (
           <Scanner
             color1="#123b56"
@@ -1868,28 +1835,7 @@ export default function Hero({ variant = "home" }: HeroProps) {
           />
         ) : isHome ? (
           <HomeHeroVideos alt={t("imageAlt")} />
-        ) : (
-          <MoltenMetal
-            color1="#123b56"
-            color2="#3179ab"
-            color3={isDark ? "#1a3d52" : "#F4F7F9"}
-            colorMode="frost"
-            speed={0.28}
-            scale={3.6}
-            detail={3}
-            glow={isDark ? 0.9 : 1.4}
-            coreSize={0.12}
-            swirl={0.85}
-            fold={-0.18}
-            blackPoint={isDark ? 0.22 : 0.08}
-            brightness={isDark ? 0.72 : 1.15}
-            grain
-            grainIntensity={0.04}
-            mouseInteraction
-            mouseStrength={0.25}
-            opacity={0.9}
-          />
-        )}
+        ) : null}
       </div>
 
       {!isImageHero && (
