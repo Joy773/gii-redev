@@ -81,14 +81,12 @@ const ECOMMERCE_HERO_IMAGE =
 // Free commercial-use clips (Pexels / Mixkit):
 // Earth: https://www.pexels.com/video/an-animation-of-planet-earth-8733055/
 // Drone field: https://www.pexels.com/video/drone-footage-of-agricultural-land-during-sunrise-6989012/
-// Trash recycle: https://mixkit.co/free-stock-video/kid-tossing-bottles-into-bin-101112/
 // Solar farm: https://mixkit.co/free-stock-video/aerial-view-of-solar-panels-in-a-field-at-sunset-46623/
 // Factory robot: https://mixkit.co/free-stock-video/robot-working-in-a-production-line-47257/
 // Data center: https://mixkit.co/free-stock-video/engineers-working-in-the-data-center-22966/
 const HOME_HERO_CLIPS = [
   { id: "earth", src: "/hero/earth-rotation.mp4?v=earth", playbackRate: 0.45, holdSeconds: 4 },
   { id: "drone", src: "/hero/drone-field.mp4", playbackRate: 1 },
-  { id: "trash", src: "/hero/trash-recycle.mp4", playbackRate: 1 },
   { id: "solar", src: "/hero/solar-farm.mp4", playbackRate: 1 },
   { id: "factory", src: "/hero/factory-robot.mp4", playbackRate: 1 },
   { id: "datacenter", src: "/hero/data-center.mp4", playbackRate: 1 },
@@ -100,7 +98,6 @@ function HomeHeroVideos({ alt }: { alt: string }) {
   const videoRefs = useRef<Record<HomeHeroClipId, HTMLVideoElement | null>>({
     earth: null,
     drone: null,
-    trash: null,
     solar: null,
     factory: null,
     datacenter: null,
