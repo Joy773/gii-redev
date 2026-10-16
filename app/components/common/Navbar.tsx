@@ -90,7 +90,7 @@ const NAV_ITEMS: NavItem[] = [
   { label: "Research & Innovation", href: "/research-innovation" },
   { label: "Consultancy", href: "/consultancy" },
   { label: "About", href: "/about" },
-  { label: "Insights", href: "/insights" },
+  { label: "Products", href: "/products" },
   { label: "Contact", href: "/contact" },
 ];
 
