@@ -13,6 +13,10 @@ import { ThemeToggle } from "@/components/theme-toggle";
 
 import type { ReactNode } from "react";
 
+const PRIMARY_NAV_LINKS = NAV_LINKS.map((item) =>
+  item.id === "insights" ? { id: "products", labelKey: "products", href: "/products" } : item,
+);
+
 const LOCALE_LABELS: Record<string, string> = {
   en: "EN",
   de: "DE",
@@ -159,7 +163,7 @@ export default function NavbarIntl(): ReactNode {
 
         <nav className="hidden min-w-0 flex-1 items-center justify-center xl:flex" aria-label="Primary">
           <ul className="flex items-center gap-0.5 rounded-full border border-border/60 bg-soft-background/60 p-1">
-            {NAV_LINKS.map((item) => {
+            {PRIMARY_NAV_LINKS.map((item) => {
               const active = isActive(item.href);
               const isServices = item.id === "services";
 
@@ -289,7 +293,7 @@ export default function NavbarIntl(): ReactNode {
         >
           <nav aria-label="Mobile" className="p-4">
             <ul className="flex flex-col gap-1">
-              {NAV_LINKS.map((item) => {
+              {PRIMARY_NAV_LINKS.map((item) => {
                 const active = isActive(item.href);
                 if (item.id === "services") {
                   return (
