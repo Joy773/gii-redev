@@ -30,8 +30,7 @@ const SOCIAL_LINKS: SocialLink[] = [
 
 const LEGAL_LINKS: NavLink[] = [
   { id: "support", labelKey: "support", href: "/contact" },
-  { id: "privacy", labelKey: "privacy", href: "/privacy" },
-  { id: "terms", labelKey: "terms", href: "/terms" },
+  { id: "privacy", labelKey: "privacy", href: "/privacy-policy" },
   { id: "imprint", labelKey: "imprint", href: "/imprint" },
 ];
 
