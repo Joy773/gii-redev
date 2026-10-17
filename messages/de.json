@@ -3611,6 +3611,15 @@
     "phoneLabel": "Telefon",
     "phoneValue": "+49 (0) 30 53152061"
   },
+  "cookieBanner": {
+    "ariaLabel": "Cookie-Einwilligung",
+    "eyebrow": "Ihre Privatsphäre",
+    "title": "Wir verwenden Cookies",
+    "description": "Wir verwenden Cookies, um unsere Website sicher zu betreiben, ihre Nutzung zu verstehen und Ihr Erlebnis zu verbessern.",
+    "privacyLink": "Datenschutzerklärung",
+    "decline": "Nein, danke",
+    "accept": "Cookies akzeptieren"
+  },
   "imprintPage": {
     "metaTitle": "Impressum | GII",
     "eyebrow": "Rechtliches",
@@ -3665,8 +3674,7 @@
       "rightsBody": "Sie haben nach Maßgabe der DSGVO das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Datenübertragbarkeit. Sie können der Verarbeitung auf Grundlage eines berechtigten Interesses aus Gründen Ihrer besonderen Situation widersprechen. Erteilte Einwilligungen können Sie jederzeit mit Wirkung für die Zukunft widerrufen. Zur Ausübung Ihrer Rechte wenden Sie sich bitte an info@g-ii.eu.",
       "complaintTitle": "5. Beschwerderecht",
       "complaintBody": "Sie haben das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren. Zuständige Behörde: Berliner Beauftragte für Datenschutz und Informationsfreiheit.",
-      "updated": "Stand: Oktober 2026"
+      "updated": "Stand: 17. Oktober 2026"
     }
   }
 }
-
