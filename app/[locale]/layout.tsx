@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 
 import NavbarIntl from "../components/common/NavbarIntl";
 import Footer from "../components/common/Footer";
+import CookieBanner from "../components/CookieBanner";
 import {
   LocaleTransitionBody,
   LocaleTransitionProvider,
@@ -26,7 +27,7 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params;
 
-  if (!routing.locales.includes(locale as any)) {
+  if (!routing.locales.includes(locale as (typeof routing.locales)[number])) {
     notFound();
   }
 
@@ -41,10 +42,10 @@ export default async function LocaleLayout({
             <NavbarIntl />
             <LocaleTransitionBody>{children}</LocaleTransitionBody>
             <Footer />
+            <CookieBanner />
           </div>
         </div>
       </LocaleTransitionProvider>
     </NextIntlClientProvider>
   );
 }
-
