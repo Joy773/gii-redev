@@ -3460,36 +3460,18 @@
   },
   "aboutPage": {
     "metaTitle": "About | GII",
-    "eyebrow": "About GII",
+    "eyebrow": "ABOUT G II",
     "title": "German technology, applied internationally",
-    "subtitle": "Consultancy. Software. Applied engineering.",
-    "description": "GII is a Berlin-based innovation partner for companies, public institutions and development organizations. We modernize operations, deliver digital and industrial systems, and connect international markets with German technology expertise.",
+    "tagline": "Ideas. Opportunities. Connections.",
+    "subtitle": "G II – German Innovation Institution GmbH is a Berlin-based company focused on identifying business opportunities, exploring practical solutions and developing connections across sectors and markets. We take an international outlook while remaining attentive to the needs of local businesses and customers.",
+    "description": "Our areas of interest include business development, strategy, technology and energy-related solutions. We aim to approach each opportunity with careful evaluation, clear communication and a long-term perspective.",
     "imageAlt": "GII team collaborating in a modern Berlin office atrium",
     "whoTitle": "Who we are",
     "whoLead": "GII combines consultancy, software and applied engineering. From Berlin, we work with partners in Germany, Europe and the MENA region who need technology that can be delivered, operated and trusted.",
     "whoBody": "Our work spans digital transformation, Industry 4.0, AI, IoT, medical technology, water, energy and environmental systems. We stay with the implementation: strategy, software, systems and training under one roof.",
-    "ourStory": {
-      "eyebrow": "Our Story",
-      "title": "A Berlin institution built for international delivery",
-      "description": "GII was founded to connect German engineering with organisations that need technology they can operate, not just specify. From Berlin we work with companies, public institutions and development partners across Europe and the MENA region.",
-      "body": "Consultancy, software and applied engineering sit under one roof, so strategy becomes systems that teams can run.",
-      "facts": {
-        "years": {
-          "value": "10+",
-          "title": "Years of delivery",
-          "body": "Technology and innovation experience since 2014."
-        },
-        "projects": {
-          "value": "100+",
-          "title": "Projects delivered",
-          "body": "Digital, technical and consulting solutions across sectors."
-        },
-        "regions": {
-          "value": "3",
-          "title": "Core regions",
-          "body": "Active delivery across Germany, Europe and the MENA region."
-        }
-      }
+    "ourApproach": {
+      "title": "OUR APPROACH",
+      "description": "We believe that useful business solutions begin with understanding real needs. Our approach is to assess opportunities, bring together relevant expertise and partners where appropriate, and develop commercially practical ideas step by step."
     },
     "approachEyebrow": "How we work",
     "approachTitle": "From diagnosis to delivery",
@@ -3510,24 +3492,30 @@
     "team": {
       "eyebrow": "OUR BUSINESS AREAS",
       "title": "We turn opportunities into lasting impact",
-      "description": "From business development and strategic consulting to technology innovation and sustainable energy, we connect ideas, expertise and partnerships to create practical solutions.",
+      "description": "We believe that useful business solutions begin with understanding real needs. Our approach is to assess opportunities, bring together relevant expertise and partners where appropriate, and develop commercially practical ideas step by step.",
       "areas": {
         "businessDevelopment": {
           "title": "Business Development",
-          "description": "Exploring commercial opportunities and potential partnerships."
+          "description": "Identifying market opportunities, exploring commercial concepts and developing potential business relationships."
         },
         "strategyConsulting": {
           "title": "Strategy & Consulting",
-          "description": "Business planning, market analysis and strategic development."
+          "description": "Supporting the evaluation of business ideas through research, planning and informed commercial decision-making."
         },
         "technologyInnovation": {
           "title": "Technology & Innovation",
-          "description": "Identifying technologies and solutions for business applications."
+          "description": "Exploring technologies and applications that may help businesses improve processes and discover new possibilities."
         },
         "energySustainability": {
           "title": "Energy & Sustainability",
-          "description": "Exploring products and opportunities in energy efficiency and sustainable technologies."
+          "description": "Reviewing energy-related products and efficiency-focused solutions, with attention to suitability and practical market needs."
         }
+      },
+      "workWithUs": {
+        "title": "WORK WITH US",
+        "description": "We welcome conversations with businesses, suppliers and potential partners who would like to explore relevant opportunities. Contact us to introduce your idea or discuss an area of mutual interest.",
+        "contactLabel": "Contact:",
+        "websiteLabel": "Website:"
       },
       "members": {
         "lukas": {
