@@ -86,6 +86,40 @@ export default function BusinessArea() {
             </li>
           ))}
         </ul>
+
+        <div className="mt-14 rounded-2xl border border-border/70 bg-surface/80 px-5 py-8 text-center shadow-[0_12px_32px_rgba(18,59,86,0.07)] sm:mt-20 sm:rounded-3xl sm:px-10 sm:py-10 lg:px-16">
+          <h2 className="text-xl font-semibold tracking-tight text-dark sm:text-2xl">
+            {t("workWithUs.title")}
+          </h2>
+          <p className="mx-auto mt-3 max-w-3xl text-sm leading-6 text-text/70 sm:text-base sm:leading-7">
+            {t("workWithUs.description")}
+          </p>
+          <div className="mt-5 flex flex-col items-center justify-center gap-2 text-sm font-medium sm:flex-row sm:gap-3 sm:text-base">
+            <span>
+              {t("workWithUs.contactLabel")}{" "}
+              <a
+                href="mailto:info@g-ii.eu"
+                className="text-primary transition-colors hover:text-dark"
+              >
+                info@g-ii.eu
+              </a>
+            </span>
+            <span className="hidden text-text/35 sm:inline" aria-hidden="true">
+              |
+            </span>
+            <span>
+              {t("workWithUs.websiteLabel")}{" "}
+              <a
+                href="https://www.g-ii.eu"
+                target="_blank"
+                rel="noreferrer"
+                className="text-primary transition-colors hover:text-dark"
+              >
+                www.g-ii.eu
+              </a>
+            </span>
+          </div>
+        </div>
       </div>
     </section>
   );
