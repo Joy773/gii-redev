@@ -1895,6 +1895,12 @@ export default function Hero({ variant = "home" }: HeroProps) {
             ))}
           </h1>
 
+          {isAbout && (
+            <p className="mt-4 text-xl font-semibold tracking-tight text-white sm:text-2xl">
+              {t("tagline")}
+            </p>
+          )}
+
           <p
             className={
               isHome || isImageHero
