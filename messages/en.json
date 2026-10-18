@@ -3508,9 +3508,27 @@
       }
     },
     "team": {
-      "eyebrow": "The team",
-      "title": "We are the people who make up GII",
-      "description": "Our philosophy is simple: hire specialists who can deliver German technology, then give them the space to do their best work with international partners.",
+      "eyebrow": "OUR BUSINESS AREAS",
+      "title": "We turn opportunities into lasting impact",
+      "description": "From business development and strategic consulting to technology innovation and sustainable energy, we connect ideas, expertise and partnerships to create practical solutions.",
+      "areas": {
+        "businessDevelopment": {
+          "title": "Business Development",
+          "description": "Exploring commercial opportunities and potential partnerships."
+        },
+        "strategyConsulting": {
+          "title": "Strategy & Consulting",
+          "description": "Business planning, market analysis and strategic development."
+        },
+        "technologyInnovation": {
+          "title": "Technology & Innovation",
+          "description": "Identifying technologies and solutions for business applications."
+        },
+        "energySustainability": {
+          "title": "Energy & Sustainability",
+          "description": "Exploring products and opportunities in energy efficiency and sustainable technologies."
+        }
+      },
       "members": {
         "lukas": {
           "name": "Dr. Lukas Weber",
