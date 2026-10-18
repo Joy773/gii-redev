@@ -3508,9 +3508,27 @@
       }
     },
     "team": {
-      "eyebrow": "Das Team",
-      "title": "Wir sind die Menschen, die GII ausmachen",
-      "description": "Unsere Haltung ist einfach: Spezialistinnen und Spezialisten zusammenbringen, die deutsche Technologie umsetzen — und ihnen den Raum geben, mit internationalen Partnern ihre beste Arbeit zu leisten.",
+      "eyebrow": "UNSERE GESCHÄFTSBEREICHE",
+      "title": "Wir machen aus Chancen nachhaltige Wirkung",
+      "description": "Von Geschäftsentwicklung und strategischer Beratung bis zu technologischer Innovation und nachhaltiger Energie verbinden wir Ideen, Expertise und Partnerschaften zu praxisnahen Lösungen.",
+      "areas": {
+        "businessDevelopment": {
+          "title": "Geschäftsentwicklung",
+          "description": "Erschließung kommerzieller Chancen und potenzieller Partnerschaften."
+        },
+        "strategyConsulting": {
+          "title": "Strategie & Beratung",
+          "description": "Geschäftsplanung, Marktanalyse und strategische Entwicklung."
+        },
+        "technologyInnovation": {
+          "title": "Technologie & Innovation",
+          "description": "Identifizierung von Technologien und Lösungen für geschäftliche Anwendungen."
+        },
+        "energySustainability": {
+          "title": "Energie & Nachhaltigkeit",
+          "description": "Erschließung von Produkten und Chancen in den Bereichen Energieeffizienz und nachhaltige Technologien."
+        }
+      },
       "members": {
         "lukas": {
           "name": "Dr. Lukas Weber",
