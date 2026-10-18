@@ -1,6 +1,6 @@
 import CTA from "./common/CTA";
 import Hero from "./common/Hero";
-import OurStory from "./OurStory";
+import OurApproach from "./OurApproach";
 import ProcessTimeline from "./ProcessTimeline";
 import QualificationStrip from "./QualificationStrip";
 import BusinessArea from "./BusinessArea";
@@ -10,7 +10,7 @@ export default function About() {
     <>
       <QualificationStrip />
       <Hero variant="about" />
-      <OurStory />
+      <OurApproach />
       <BusinessArea />
       <ProcessTimeline />
       <CTA namespace="aboutPage.cta" backgroundClassName="grid-surface-soft" />
