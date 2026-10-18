@@ -3,7 +3,7 @@ import Hero from "./common/Hero";
 import OurStory from "./OurStory";
 import ProcessTimeline from "./ProcessTimeline";
 import QualificationStrip from "./QualificationStrip";
-import Team from "./Team";
+import BusinessArea from "./BusinessArea";
 
 export default function About() {
   return (
@@ -11,7 +11,7 @@ export default function About() {
       <QualificationStrip />
       <Hero variant="about" />
       <OurStory />
-      <Team />
+      <BusinessArea />
       <ProcessTimeline />
       <CTA namespace="aboutPage.cta" backgroundClassName="grid-surface-soft" />
     </>
