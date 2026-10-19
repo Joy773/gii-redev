@@ -53,10 +53,10 @@ export default function Contact() {
   }
 
   return (
-    <section className="grid-surface grid-surface-white py-16 sm:py-20 lg:py-24">
-      <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16 lg:px-8">
-        <div className="mx-auto max-w-xl text-center lg:mx-0 lg:text-left">
-          <ul className="grid grid-cols-2 gap-3 text-left">
+    <section className="grid-surface grid-surface-white w-full max-w-full overflow-hidden py-16 sm:py-20 lg:py-24">
+      <div className="mx-auto grid w-full min-w-0 max-w-7xl grid-cols-[minmax(0,1fr)] gap-12 px-4 sm:px-6 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-16 lg:px-8">
+        <div className="mx-auto w-full min-w-0 max-w-xl text-center lg:mx-0 lg:text-left">
+          <ul className="grid w-full min-w-0 grid-cols-1 gap-3 text-left sm:grid-cols-2">
             <li className={contactCardClass}>
               <span className={contactIconClass}>
                 <FiMail className="size-4" aria-hidden="true" />
@@ -67,7 +67,7 @@ export default function Contact() {
                 </div>
                 <a
                   href={`mailto:${t("emailValue")}`}
-                  className="mt-1 block truncate text-sm font-medium text-dark transition-colors group-hover:text-primary"
+                  className="mt-1 block break-all text-sm font-medium text-dark transition-colors group-hover:text-primary"
                 >
                   {t("emailValue")}
                 </a>
@@ -83,13 +83,13 @@ export default function Contact() {
                 </div>
                 <a
                   href="tel:+493053152061"
-                  className="mt-1 block text-sm font-medium text-dark transition-colors group-hover:text-primary"
+                  className="mt-1 block break-words text-sm font-medium text-dark transition-colors group-hover:text-primary"
                 >
                   {t("phoneValue")}
                 </a>
               </div>
             </li>
-            <li className={`col-span-2 ${contactCardClass}`}>
+            <li className={`sm:col-span-2 ${contactCardClass}`}>
               <span className={contactIconClass}>
                 <FiMapPin className="size-4" aria-hidden="true" />
               </span>
@@ -97,7 +97,7 @@ export default function Contact() {
                 <div className="text-xs font-semibold uppercase tracking-[0.14em] text-text/45">
                   {t("locationLabel")}
                 </div>
-                <p className="mt-1 text-sm font-medium leading-6 text-dark transition-colors group-hover:text-primary">
+                <p className="mt-1 break-words text-sm font-medium leading-6 text-dark transition-colors group-hover:text-primary">
                   {t("locationCompany")}, {t("locationStreet")} {t("locationCity")} {t("locationCountry")}
                 </p>
               </div>
@@ -107,13 +107,13 @@ export default function Contact() {
 
         <form
           onSubmit={handleSubmit}
-          className="panel-surface rounded-[1.75rem] border border-border/70 p-5 shadow-[0_16px_48px_rgba(18,59,86,0.08)] dark:shadow-[0_16px_48px_rgba(0,0,0,0.35)] sm:p-8"
+          className="panel-surface w-full min-w-0 max-w-full overflow-hidden rounded-[1.75rem] border border-border/70 p-5 shadow-[0_16px_48px_rgba(18,59,86,0.08)] dark:shadow-[0_16px_48px_rgba(0,0,0,0.35)] sm:p-8"
         >
           <h2 className="text-xl font-semibold tracking-tight text-dark sm:text-2xl">
             {t("formHeading")}
           </h2>
 
-          <div className="mt-6 grid gap-4 sm:grid-cols-2">
+          <div className="mt-6 grid min-w-0 grid-cols-[minmax(0,1fr)] gap-4 sm:grid-cols-2">
             <Field label={t("fields.name")} htmlFor="contact-name">
               <input id="contact-name" name="name" required autoComplete="name" className={fieldClass} />
             </Field>
@@ -222,13 +222,13 @@ export default function Contact() {
 }
 
 const contactCardClass =
-  "group flex items-start gap-3 rounded-2xl border border-border/70 bg-[var(--soft-background)] p-4 shadow-[0_8px_24px_rgba(18,59,86,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-primary/25 hover:bg-[var(--elevated)] hover:shadow-[0_14px_36px_rgba(18,59,86,0.1)]";
+  "group flex w-full min-w-0 max-w-full items-start gap-3 overflow-hidden rounded-2xl border border-border/70 bg-[var(--soft-background)] p-4 shadow-[0_8px_24px_rgba(18,59,86,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-primary/25 hover:bg-[var(--elevated)] hover:shadow-[0_14px_36px_rgba(18,59,86,0.1)]";
 
 const contactIconClass =
   "panel-surface inline-flex size-10 shrink-0 items-center justify-center rounded-full text-primary shadow-sm transition-all duration-300 group-hover:scale-110 group-hover:border-primary/25 group-hover:bg-primary/10";
 
 const fieldClass =
-  "field-fill mt-1.5 w-full rounded-xl border border-border/80 px-3.5 py-2.5 text-sm outline-none transition-shadow placeholder:text-text/40 focus:border-primary/40 focus:shadow-[0_0_0_3px_rgba(49,121,171,0.16)]";
+  "field-fill mt-1.5 w-full min-w-0 max-w-full rounded-xl border border-border/80 px-3.5 py-2.5 text-sm outline-none transition-shadow placeholder:text-text/40 focus:border-primary/40 focus:shadow-[0_0_0_3px_rgba(49,121,171,0.16)]";
 
 function Field({
   label,
@@ -242,7 +242,7 @@ function Field({
   className?: string;
 }) {
   return (
-    <div className={className}>
+    <div className={`min-w-0 ${className}`}>
       <label htmlFor={htmlFor} className="text-sm font-medium text-dark">
         {label}
       </label>
