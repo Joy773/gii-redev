@@ -24,6 +24,7 @@ type CTAProps = {
     | "energyPage.cta"
     | "ventilationHvacPage.cta"
     | "environmentPage.cta"
+    | "sustainableTechnologyPage.cta"
     | "softwareDevelopmentPage.cta"
     | "digitalPlatformsPage.cta"
     | "digitalEducationPage.cta"
