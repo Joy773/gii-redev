@@ -154,6 +154,15 @@ const ENVIRONMENT_PROCESS_STEPS: ProcessStep[] = [
   { id: "operate", icon: FiRefreshCw },
 ];
 
+const SUSTAINABLE_TECHNOLOGY_PROCESS_STEPS: ProcessStep[] = [
+  { id: "assess", icon: FiSearch },
+  { id: "baseline", icon: FiLayers },
+  { id: "design", icon: FiTool },
+  { id: "integrate", icon: FiCheckCircle },
+  { id: "commission", icon: FiUsers },
+  { id: "optimize", icon: FiRefreshCw },
+];
+
 const SOFTWARE_DEVELOPMENT_PROCESS_STEPS: ProcessStep[] = [
   { id: "assess", icon: FiSearch },
   { id: "design", icon: FiLayers },
@@ -292,6 +301,13 @@ const PROCESS_CONFIG = {
   environment: {
     namespace: "environmentPage.processTimeline",
     steps: ENVIRONMENT_PROCESS_STEPS,
+    backgroundClassName: "grid-surface-soft",
+    cta: "startProject" as const,
+    onDark: false,
+  },
+  sustainableTechnology: {
+    namespace: "sustainableTechnologyPage.processTimeline",
+    steps: SUSTAINABLE_TECHNOLOGY_PROCESS_STEPS,
     backgroundClassName: "grid-surface-soft",
     cta: "startProject" as const,
     onDark: false,
