@@ -1577,6 +1577,7 @@ type HeroProps = {
     | "energy"
     | "ventilationHvac"
     | "environment"
+    | "sustainableTechnology"
     | "softwareDevelopment"
     | "digitalPlatforms"
     | "digitalEducation"
@@ -1604,6 +1605,7 @@ export default function Hero({ variant = "home" }: HeroProps) {
   const isEnergy = variant === "energy";
   const isVentilationHvac = variant === "ventilationHvac";
   const isEnvironment = variant === "environment";
+  const isSustainableTechnology = variant === "sustainableTechnology";
   const isSoftwareDevelopment = variant === "softwareDevelopment";
   const isDigitalPlatforms = variant === "digitalPlatforms";
   const isDigitalEducation = variant === "digitalEducation";
@@ -1628,10 +1630,12 @@ export default function Hero({ variant = "home" }: HeroProps) {
     isEnergy ||
     isVentilationHvac ||
     isEnvironment ||
+    isSustainableTechnology ||
     isSoftwareDevelopment ||
     isDigitalPlatforms ||
     isDigitalEducation ||
     isEcommerce;
+  const hasMobileImageHeroLayout = isImageHero && !isInsights;
   const isCompact =
     isAbout ||
     isProjects ||
@@ -1701,14 +1705,15 @@ export default function Hero({ variant = "home" }: HeroProps) {
                                             ? "digitalPlatformsPage"
                                             : isDigitalEducation
                                               ? "digitalEducationPage"
-                                              : isEcommerce
-                                                ? "ecommercePage"
-                                                : "hero",
+                                      : isEcommerce
+                                        ? "ecommercePage"
+                                        : isSustainableTechnology
+                                          ? "sustainableTechnologyPage"
+                                        : "hero",
   );
   const { resolvedTheme } = useTheme();
   const isDark = resolvedTheme === "dark";
   const titleWords = t("title").split(" ");
-  const [heroAspectRatio, setHeroAspectRatio] = useState(16 / 9);
   const imageHeroSrc = isProjects
     ? PROJECTS_HERO_IMAGE
     : isResearch
@@ -1747,6 +1752,8 @@ export default function Hero({ variant = "home" }: HeroProps) {
                               ? VENTILATION_HVAC_HERO_IMAGE
                               : isEnvironment
                                 ? ENVIRONMENT_HERO_IMAGE
+                                : isSustainableTechnology
+                                  ? ENVIRONMENT_HERO_IMAGE
                                 : isSoftwareDevelopment
                                   ? SOFTWARE_DEVELOPMENT_HERO_IMAGE
                                   : isDigitalPlatforms
@@ -1767,14 +1774,8 @@ export default function Hero({ variant = "home" }: HeroProps) {
             fill
             priority
             sizes="100vw"
-            className="object-contain object-center"
-            onLoad={(event) => {
-              const { naturalWidth, naturalHeight } = event.currentTarget;
-              if (naturalWidth && naturalHeight) {
-                setHeroAspectRatio(naturalWidth / naturalHeight);
-              }
-              refreshScrollTriggers();
-            }}
+            className="object-cover object-center"
+            onLoad={refreshScrollTriggers}
           />
         ) : isInsights ? (
           <Scanner
@@ -1835,6 +1836,10 @@ export default function Hero({ variant = "home" }: HeroProps) {
         ) : null}
       </div>
 
+      {hasMobileImageHeroLayout && (
+        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(6,16,24,0.54)_0%,rgba(6,16,24,0.42)_45%,rgba(6,16,24,0.64)_100%)] sm:bg-[linear-gradient(90deg,rgba(6,16,24,0.48)_0%,rgba(6,16,24,0.28)_50%,rgba(6,16,24,0.48)_100%)]" />
+      )}
+
       {!isImageHero && (
         <div
           className={
@@ -1858,15 +1863,18 @@ export default function Hero({ variant = "home" }: HeroProps) {
 
       <div
         className={
-          isImageHero
-            ? "relative mx-auto flex min-h-[22rem] w-full max-w-none items-center justify-center px-4 py-10 sm:min-h-[26rem] sm:px-6 sm:py-12 md:min-h-0 md:py-16 lg:px-8"
+          isAbout
+            ? "relative mx-auto flex min-h-[46rem] w-full items-start justify-center px-4 pt-12 pb-10 sm:min-h-[42rem] sm:px-6 sm:pt-16 sm:pb-12 md:min-h-[calc(100vh-4.25rem)] md:pt-[clamp(8rem,28vh,15rem)] md:pb-16 lg:px-8"
+            : hasMobileImageHeroLayout
+              ? "relative mx-auto flex min-h-[36rem] w-full items-start justify-center px-4 pt-12 pb-10 sm:min-h-[38rem] sm:px-6 sm:pt-16 sm:pb-12 md:min-h-[calc(100vh-4.25rem)] md:pt-[clamp(8rem,28vh,15rem)] md:pb-16 lg:px-8"
+            : isImageHero
+            ? "relative mx-auto flex min-h-[22rem] w-full max-w-none items-start justify-center px-4 pt-12 pb-10 sm:min-h-[26rem] sm:px-6 sm:pt-16 sm:pb-12 md:min-h-[calc(100vh-4.25rem)] md:pt-[clamp(8rem,28vh,15rem)] md:pb-16 lg:px-8"
             : isCompact
-              ? "relative mx-auto flex min-h-[22rem] max-w-7xl items-center justify-center px-4 py-10 sm:min-h-[28rem] sm:px-6 sm:py-12 md:min-h-[32rem] md:py-16 lg:min-h-[36rem] lg:px-8"
-              : "relative mx-auto flex max-w-7xl items-center justify-center px-4 py-10 sm:px-6 sm:py-14 md:min-h-[calc(100vh-4.25rem)] md:py-16 lg:px-8 lg:py-20"
+              ? "relative mx-auto flex min-h-[22rem] max-w-7xl items-start justify-center px-4 pt-12 pb-10 sm:min-h-[28rem] sm:px-6 sm:pt-16 sm:pb-12 md:min-h-[calc(100vh-4.25rem)] md:pt-[clamp(8rem,28vh,15rem)] md:pb-16 lg:px-8"
+              : "relative mx-auto flex max-w-7xl items-start justify-center px-4 pt-12 pb-10 sm:px-6 sm:pt-16 sm:pb-12 md:min-h-[calc(100vh-4.25rem)] md:pt-[clamp(8rem,28vh,15rem)] md:pb-16 lg:px-8"
         }
-        style={isImageHero ? { aspectRatio: heroAspectRatio } : undefined}
       >
-        <div className="max-w-4xl text-center">
+        <div className="mx-auto w-full min-w-0 max-w-4xl text-center">
           <span
             className={
               isHome
@@ -1880,7 +1888,9 @@ export default function Hero({ variant = "home" }: HeroProps) {
           <h1
             className={
               isHome || isImageHero
-                ? "mt-6 text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-6xl"
+                ? hasMobileImageHeroLayout
+                  ? "mt-5 text-3xl font-semibold tracking-tight text-white sm:mt-6 sm:text-5xl lg:text-6xl"
+                  : "mt-6 text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-6xl"
                 : "mt-6 text-4xl font-semibold tracking-tight text-dark dark:text-white sm:text-5xl lg:text-6xl"
             }
           >
@@ -1896,37 +1906,56 @@ export default function Hero({ variant = "home" }: HeroProps) {
           </h1>
 
           {isAbout && (
-            <p className="mt-4 text-xl font-semibold tracking-tight text-white sm:text-2xl">
-              {t("tagline")}
+            <p className="mt-4 text-base leading-7 text-white sm:text-lg sm:leading-8">
+              {t("heroDescription")}
             </p>
           )}
 
-          <p
+          {!isHome && !isProjects && !isResearch && !isIndustries && !isConsultancy && !isContact && !isAbout && (
+            <p
+              className={
+                isHome || isImageHero
+                  ? hasMobileImageHeroLayout
+                    ? "mt-4 text-base leading-7 text-white sm:text-lg sm:leading-8"
+                    : "mt-4 text-lg leading-8 text-white"
+                  : "mt-4 text-lg leading-8 text-text/75 dark:text-white/78"
+              }
+            >
+              {t("subtitle")}
+            </p>
+          )}
+
+          {!isAbout && (
+            <p
+              className={
+                isHome || isImageHero
+                  ? hasMobileImageHeroLayout
+                    ? "mt-4 text-sm leading-6 text-white sm:mt-5 sm:text-lg sm:leading-7"
+                    : "mt-5 text-base leading-7 text-white sm:text-lg"
+                  : "mt-5 text-base leading-7 text-text/70 dark:text-white/70 sm:text-lg"
+              }
+            >
+              {t("description")}
+            </p>
+          )}
+
+          <div
             className={
-              isHome || isImageHero
-                ? "mt-4 text-lg leading-8 text-white"
-                : "mt-4 text-lg leading-8 text-text/75 dark:text-white/78"
+              hasMobileImageHeroLayout
+                ? "mt-7 flex flex-col items-stretch justify-center gap-2 min-[360px]:flex-row min-[360px]:items-center sm:mt-8 sm:gap-3"
+                : "mt-8 flex flex-row flex-wrap items-center justify-center gap-2 sm:gap-3"
             }
           >
-            {t("subtitle")}
-          </p>
-
-          <p
-            className={
-              isHome || isImageHero
-                ? "mt-5 text-base leading-7 text-white sm:text-lg"
-                : "mt-5 text-base leading-7 text-text/70 dark:text-white/70 sm:text-lg"
-            }
-          >
-            {t("description")}
-          </p>
-
-          <div className="mt-8 flex flex-row flex-wrap items-center justify-center gap-2 sm:gap-3">
             <ExploreSolutionsButton
               variant={isHome || isImageHero ? "onDark" : "default"}
-              className="inline-flex px-3.5 whitespace-nowrap sm:px-4"
+              className={`${hasMobileImageHeroLayout ? "w-full min-[360px]:w-auto" : ""} inline-flex px-3.5 whitespace-nowrap sm:px-4`}
             />
-            <StartProjectButton className="inline-flex px-3.5 whitespace-nowrap sm:px-4" />
+            {!isContact && (
+              <StartProjectButton
+                variant={hasMobileImageHeroLayout ? "onDark" : "default"}
+                className={`${hasMobileImageHeroLayout ? "w-full min-[360px]:w-auto" : ""} inline-flex px-3.5 whitespace-nowrap sm:px-4`}
+              />
+            )}
           </div>
         </div>
       </div>
