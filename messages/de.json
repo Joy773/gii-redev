@@ -53,7 +53,6 @@
   "hero": {
     "eyebrow": "German Innovation Institution",
     "title": "Unternehmen durch Technologie transformieren",
-    "subtitle": "Digitale Transformation. Intelligente Technologie. Nachhaltige Lösungen.",
     "description": "Wir unterstützen Unternehmen, Institutionen und Entwicklungsorganisationen dabei, Prozesse zu modernisieren, digitales Wachstum zu erschließen und internationale Märkte mit deutscher Technologie zu verbinden.",
     "imageAlt": "Rotierende Ansicht der Erde aus dem Weltall",
     "capabilities": {
@@ -179,7 +178,6 @@
   "projects": {
     "eyebrow": "Technologie in der Praxis",
     "title": "Ausgewählte Projekte aus verschiedenen Branchen",
-    "subtitle": "Digitale Transformation. Industrie. Nachhaltige Technologie.",
     "description": "Ein Einblick, wie GII Strategie in konkrete Lösungen für digitale Transformation, Industrie und nachhaltige Technologie umsetzt.",
     "imageAlt": "Interdisziplinäres Team bei der Zusammenarbeit an Technologieprojekten in einem modernen Arbeitsumfeld",
     "cta": "Alle Projekte ansehen",
@@ -1251,7 +1249,6 @@
     "metaTitle": "Branchen | GII",
     "eyebrow": "Branchen",
     "title": "Technologie für die Branchen, in denen Sie tätig sind",
-    "subtitle": "Fertigung. Gesundheitswesen. Wasser & Energie. Öffentlicher Sektor.",
     "description": "GII liefert deutsche Ingenieurs- und Digitaltechnik in Fertigung, Versorgung, Gesundheitswesen und öffentlichen Institutionen — von Strategie und Software bis zur einsatzbereiten Umsetzung.",
     "imageAlt": "Industrietechnik und technischer Arbeitsplatz",
     "sectors": {
@@ -2144,6 +2141,102 @@
       "eyebrow": "Nächster Schritt",
       "title": "Mit einem KI-Prototyp starten",
       "description": "Teilen Sie Ihre KI-Ziele mit GII. Wir entwickeln einen praxisnahen Weg — vom ersten intelligenten Feature bis zu Systemen, die Ihre Teams täglich nutzen."
+    }
+  },
+  "sustainableTechnologyPage": {
+    "metaTitle": "Nachhaltige Technologie | GII",
+    "eyebrow": "Nachhaltige Technologie",
+    "title": "Nachhaltige Systeme für den realen Betrieb",
+    "subtitle": "Wasser. Energie. Umwelt. Gebäudeperformance.",
+    "description": "GII verbindet deutsche Ingenieurskompetenz, vernetztes Monitoring und praktische Umsetzung, um die Ressourceneffizienz in Versorgungsbetrieben, Gebäuden, Infrastrukturen und öffentlichen Programmen zu verbessern.",
+    "imageAlt": "Nachhaltige Infrastruktur und Umwelttechnologie",
+    "capabilities": {
+      "eyebrow": "Kompetenzen",
+      "title": "Was nachhaltige Technologielösungen umfassen",
+      "featured": {
+        "title": "Vernetzte Nachhaltigkeit für den täglichen Betrieb",
+        "description": "Nachhaltigkeit wird messbar, wenn Feldtechnik, Monitoring-Plattformen und Betriebsteams als ein System arbeiten. GII verbindet technische Entscheidungen mit klaren Daten und praxistauglichen Abläufen.",
+        "descriptionSecondary": "Von der ersten Bestandsaufnahme bis zur Inbetriebnahme und Übergabe entwickeln wir Lösungen für die Menschen, die täglich für Leistung, Wartung und Berichterstattung verantwortlich sind."
+      },
+      "items": {
+        "waterSystems": {
+          "title": "Wassersysteme",
+          "description": "Monitoring, Leckageerkennung und Qualitätssensorik für Versorger und Infrastrukturbetreiber."
+        },
+        "energySystems": {
+          "title": "Energiesysteme",
+          "description": "Intelligente Zähler, Verbrauchstransparenz und Effizienzverbesserungen für Gebäude und Infrastruktur."
+        },
+        "environmentalMonitoring": {
+          "title": "Umweltmonitoring",
+          "description": "Praxistaugliche Sensornetze, Dashboards und Berichtswege für Umweltbedingungen, Ressourcennutzung und intelligente Infrastruktur."
+        }
+      }
+    },
+    "relatedServices": {
+      "eyebrow": "Nachhaltige Lösungen",
+      "title": "Technologie für ressourceneffiziente Abläufe",
+      "description": "Entdecken Sie die vernetzten Disziplinen, die GII für Versorger, Gebäude, Infrastruktur und Umweltprogramme zusammenführt.",
+      "cta": "Sprechen Sie mit unserem Team",
+      "items": {
+        "water": {
+          "title": "Wasser",
+          "description": "Digitale Wassersysteme für Monitoring, Leckageerkennung, Qualität und Versorgungsbetrieb."
+        },
+        "energy": {
+          "title": "Energie",
+          "description": "Energieeffizienz, intelligente Zähler und Managementplattformen für Gebäude und Infrastruktur."
+        },
+        "ventilationHvac": {
+          "title": "Lüftung & HVAC",
+          "description": "Raumluft- und Klimasysteme für Komfort, Effizienz und zuverlässigen Betrieb."
+        },
+        "environment": {
+          "title": "Umwelt",
+          "description": "Umweltmonitoring und Ressourceneffizienzsysteme für vernetzte Infrastruktur."
+        }
+      }
+    },
+    "processTimeline": {
+      "eyebrow": "Umsetzungsprozess",
+      "title": "Von der Ausgangslage zur messbaren Verbesserung",
+      "description": "GII folgt einem betriebsorientierten Weg, der Analyse, Engineering, Monitoring und Übergabe verbindet.",
+      "items": {
+        "assess": {
+          "title": "Analysieren",
+          "description": "Standorte, Anlagen, Ressourcennutzung, Betriebsbedingungen und gewünschte Verbesserungen gemeinsam bewerten."
+        },
+        "baseline": {
+          "title": "Ausgangslage",
+          "description": "Aktuelle Leistung, Datenverfügbarkeit und messbare Ziele vor der Technologieauswahl festlegen."
+        },
+        "design": {
+          "title": "Entwerfen",
+          "description": "Engineering, Messpunkte, Integrationen und Betriebsabläufe für die Zielumgebung gestalten."
+        },
+        "integrate": {
+          "title": "Integrieren",
+          "description": "Feldsysteme, Sensoren und Dashboards mit den bereits genutzten Plattformen verbinden."
+        },
+        "commission": {
+          "title": "In Betrieb nehmen",
+          "description": "Leistung, Alarme und Berichte unter realen Bedingungen testen, dokumentieren und das Betriebsteam schulen."
+        },
+        "optimize": {
+          "title": "Optimieren",
+          "description": "Schwellwerte, Effizienzmaßnahmen und Wartungsroutinen anhand wachsender Betriebserfahrung verfeinern."
+        }
+      }
+    },
+    "projects": {
+      "eyebrow": "Technologie im Einsatz",
+      "title": "Projekte für nachhaltige Technologie",
+      "description": "Erfahren Sie, wie GII Wasser-, Energie- und Klimatechnologien in Programmen und Betriebsumgebungen einsetzt."
+    },
+    "cta": {
+      "eyebrow": "Nächster Schritt",
+      "title": "Planen Sie Ihr nachhaltiges Technologieprojekt",
+      "description": "Teilen Sie uns Ihre Ressourcen-, Infrastruktur- oder Umweltziele mit. GII entwickelt einen praktischen Weg von der Analyse bis zur betriebsfähigen Lösung."
     }
   },
   "waterPage": {
@@ -3131,7 +3224,6 @@
     "metaTitle": "Forschung & Innovation | GII",
     "eyebrow": "Forschung & Innovation",
     "title": "Angewandte Forschung, die Technologie praxisnah macht",
-    "subtitle": "Methoden. Prototypen. Technologietransfer.",
     "description": "GII verbindet Forschung und Umsetzung — Ideen validieren, Programme gestalten und deutsche Innovation in reale Abläufe in digitalen und nachhaltigen Domänen bringen.",
     "imageAlt": "Forschende bei der gemeinsamen Arbeit an einem Technologieprototyp im Innovationslabor",
     "themes": {
@@ -3199,7 +3291,6 @@
     "metaTitle": "Beratung | GII",
     "eyebrow": "Beratung",
     "title": "Beratung für Technologie & nachhaltige Lösungen",
-    "subtitle": "ICT-Beratung. Nachhaltige Technologie. Von der Analyse bis zur Umsetzung.",
     "description": "GII unterstützt Organisationen bei Technologiebewertung, Fahrplänen, Lösungsauswahl und der Umsetzung von Strategie in digitale und nachhaltige Projekte.",
     "imageAlt": "Beraterinnen und Berater besprechen einen Technologieplan am Laptop in einem modernen Büro",
     "consultancies": {
@@ -3462,7 +3553,7 @@
     "metaTitle": "Über uns | GII",
     "eyebrow": "ÜBER G II",
     "title": "Deutsche Technologie, international angewendet",
-    "tagline": "Ideen. Chancen. Verbindungen.",
+    "heroDescription": "Wir verbinden praxisnahe deutsche Expertise mit Chancen, die Organisationen voranbringen.",
     "subtitle": "Die G II – German Innovation Institution GmbH ist ein in Berlin ansässiges Unternehmen, das sich auf die Identifizierung von Geschäftsmöglichkeiten, die Erkundung praxisnaher Lösungen und den Aufbau von Verbindungen über Branchen und Märkte hinweg konzentriert. Wir verfolgen eine internationale Perspektive und berücksichtigen zugleich die Bedürfnisse lokaler Unternehmen und Kunden.",
     "description": "Zu unseren Interessengebieten gehören Geschäftsentwicklung, Strategie, Technologie und energienahe Lösungen. Jede Chance möchten wir mit sorgfältiger Bewertung, klarer Kommunikation und einer langfristigen Perspektive angehen.",
     "imageAlt": "GII-Team bei der Zusammenarbeit in einem modernen Berliner Büroatrium",
@@ -3565,7 +3656,6 @@
     "metaTitle": "Kontakt | GII",
     "eyebrow": "Projekt starten",
     "title": "Sagen Sie uns, was Sie transformieren möchten",
-    "subtitle": "Ziele. Zeitrahmen. Deutsche Innovationskompetenz.",
     "description": "Teilen Sie Ziele, Zeitrahmen und die Technologien, die Sie prüfen möchten. GII meldet sich mit einer Fachperson, die Ihnen hilft, Abläufe zu modernisieren und deutsche Innovation anzubinden.",
     "imageAlt": "GII-Team empfängt einen Besucher am Empfang eines modernen Berliner Büros",
     "formHeading": "Kontaktieren Sie unser Team",
