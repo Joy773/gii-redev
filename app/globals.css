@@ -51,9 +51,12 @@
 html {
   scroll-padding-top: 7rem;
   background: var(--background);
+  overflow-x: clip;
 }
 
 body {
+  width: 100%;
+  overflow-x: clip;
   background: transparent;
   color: var(--foreground);
   font-family: var(--font-sans), sans-serif;
