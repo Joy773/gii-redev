@@ -214,6 +214,21 @@ const SERVICE_CAPABILITIES_CONFIG = {
     ],
     featuredIcon: FiCompass,
   },
+  sustainableTechnology: {
+    namespace: "sustainableTechnologyPage.capabilities",
+    backgroundClassName: "grid-surface-soft",
+    lightCards: [
+      { id: "waterSystems", icon: FiDroplet },
+      { id: "energySystems", icon: FiZap },
+      {
+        id: "environmentalMonitoring",
+        icon: FiCompass,
+        className: "lg:col-span-2 lg:col-start-1 lg:row-start-2",
+        largeDescription: true,
+      },
+    ],
+    featuredIcon: FiRefreshCw,
+  },
   softwareDevelopment: {
     namespace: "softwareDevelopmentPage.capabilities",
     backgroundClassName: "grid-surface-soft",
