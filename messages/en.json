@@ -53,7 +53,6 @@
   "hero": {
     "eyebrow": "German Innovation Institution",
     "title": "Transforming Business Through Technology",
-    "subtitle": "Digital Transformation. Intelligent Technology. Sustainable Solutions.",
     "description": "We help companies, institutions and development organizations modernize operations, unlock digital growth and connect international markets with German technology.",
     "imageAlt": "Rotating view of planet Earth from space",
     "capabilities": {
@@ -179,7 +178,6 @@
   "projects": {
     "eyebrow": "Technology in Action",
     "title": "Selected projects across industries",
-    "subtitle": "Digital transformation. Industry. Sustainable technology.",
     "description": "A look at how GII turns strategy into applied solutions across digital transformation, industry and sustainable technology.",
     "imageAlt": "Cross-functional team collaborating on technology projects in a modern workspace",
     "cta": "View all projects",
@@ -1251,7 +1249,6 @@
     "metaTitle": "Industries | GII",
     "eyebrow": "Industries",
     "title": "Technology for the sectors you operate in",
-    "subtitle": "Manufacturing. Healthcare. Water & energy. Public sector.",
     "description": "GII delivers German engineering and digital systems across manufacturing, utilities, healthcare and public institutions — from strategy and software to field-ready implementation.",
     "imageAlt": "Industrial technology and engineering workspace",
     "sectors": {
@@ -2144,6 +2141,102 @@
       "eyebrow": "Next step",
       "title": "Start with an AI prototype",
       "description": "Share your AI goals with GII. We will map a practical path — from the first intelligent feature to systems your teams can use every day."
+    }
+  },
+  "sustainableTechnologyPage": {
+    "metaTitle": "Sustainable Technology | GII",
+    "eyebrow": "Sustainable Technology",
+    "title": "Sustainable systems built for real operations",
+    "subtitle": "Water. Energy. Environment. Building performance.",
+    "description": "GII combines German engineering, connected monitoring and practical implementation to improve resource efficiency across utilities, buildings, infrastructure and public programmes.",
+    "imageAlt": "Sustainable infrastructure and environmental technology landscape",
+    "capabilities": {
+      "eyebrow": "Capabilities",
+      "title": "What sustainable technology delivery covers",
+      "featured": {
+        "title": "Connected sustainability that teams can operate",
+        "description": "Sustainability becomes measurable when field equipment, monitoring platforms and operating teams work as one system. GII connects engineering decisions with clear data and practical workflows.",
+        "descriptionSecondary": "From an initial baseline to commissioning and handover, we design solutions around the people responsible for daily performance, maintenance and reporting."
+      },
+      "items": {
+        "waterSystems": {
+          "title": "Water systems",
+          "description": "Monitoring, leak detection and quality sensing for utilities and infrastructure operators."
+        },
+        "energySystems": {
+          "title": "Energy systems",
+          "description": "Smart metering, consumption visibility and efficiency improvements for buildings and infrastructure."
+        },
+        "environmentalMonitoring": {
+          "title": "Environmental monitoring",
+          "description": "Field-ready sensor networks, dashboards and reporting paths for environmental conditions, resource use and smart infrastructure."
+        }
+      }
+    },
+    "relatedServices": {
+      "eyebrow": "Sustainable solutions",
+      "title": "Technology for resource-efficient operations",
+      "description": "Explore the connected disciplines GII brings together for utilities, buildings, infrastructure and environmental programmes.",
+      "cta": "Talk to our team",
+      "items": {
+        "water": {
+          "title": "Water",
+          "description": "Digital water systems for monitoring, leak detection, quality and utility operations."
+        },
+        "energy": {
+          "title": "Energy",
+          "description": "Energy efficiency, smart metering and management platforms for buildings and infrastructure."
+        },
+        "ventilationHvac": {
+          "title": "Ventilation & HVAC",
+          "description": "Indoor-air and climate systems designed for comfort, efficiency and reliable operation."
+        },
+        "environment": {
+          "title": "Environment",
+          "description": "Environmental monitoring and resource-efficiency systems for connected infrastructure."
+        }
+      }
+    },
+    "processTimeline": {
+      "eyebrow": "Delivery process",
+      "title": "From baseline to measurable improvement",
+      "description": "GII follows an operations-first path that connects assessment, engineering, monitoring and handover.",
+      "items": {
+        "assess": {
+          "title": "Assess",
+          "description": "Review sites, equipment, resource use, operating constraints and the outcomes teams need to improve."
+        },
+        "baseline": {
+          "title": "Baseline",
+          "description": "Establish current performance, data availability and measurable targets before selecting technology."
+        },
+        "design": {
+          "title": "Design",
+          "description": "Shape the engineering, monitoring points, integrations and operating workflows for the target environment."
+        },
+        "integrate": {
+          "title": "Integrate",
+          "description": "Connect field systems, sensors and dashboards with the platforms operators already use."
+        },
+        "commission": {
+          "title": "Commission",
+          "description": "Test performance, alerts and reporting under real conditions, then document and train the operating team."
+        },
+        "optimize": {
+          "title": "Optimize",
+          "description": "Refine thresholds, efficiency measures and maintenance routines as operating evidence grows."
+        }
+      }
+    },
+    "projects": {
+      "eyebrow": "Technology in action",
+      "title": "Sustainable technology projects",
+      "description": "See how GII applies water, energy and climate technologies in programmes and operating environments."
+    },
+    "cta": {
+      "eyebrow": "Next step",
+      "title": "Plan your sustainable technology project",
+      "description": "Share your resource, infrastructure or environmental goals. GII will map a practical path from assessment to an operating solution."
     }
   },
   "waterPage": {
@@ -3131,7 +3224,6 @@
     "metaTitle": "Research & Innovation | GII",
     "eyebrow": "Research & Innovation",
     "title": "Applied research that turns technology into practice",
-    "subtitle": "Methods. Prototypes. Technology transfer.",
     "description": "GII bridges research and delivery — validating ideas, shaping programmes and moving German innovation into real operations across digital and sustainable domains.",
     "imageAlt": "Researchers collaborating on a technology prototype in an innovation lab",
     "themes": {
@@ -3199,7 +3291,6 @@
     "metaTitle": "Consultancy | GII",
     "eyebrow": "Consultancy",
     "title": "Technology & Sustainable Solutions Consultancy",
-    "subtitle": "ICT advisory. Sustainable technology. From assessment to implementation.",
     "description": "GII helps organizations assess technology options, plan roadmaps, select solutions and move from strategy to delivery across digital and sustainable domains.",
     "imageAlt": "Consultants discussing a technology plan around a laptop in a modern office",
     "consultancies": {
@@ -3462,7 +3553,7 @@
     "metaTitle": "About | GII",
     "eyebrow": "ABOUT G II",
     "title": "German technology, applied internationally",
-    "tagline": "Ideas. Opportunities. Connections.",
+    "heroDescription": "Connecting practical German expertise with opportunities that move organizations forward.",
     "subtitle": "G II – German Innovation Institution GmbH is a Berlin-based company focused on identifying business opportunities, exploring practical solutions and developing connections across sectors and markets. We take an international outlook while remaining attentive to the needs of local businesses and customers.",
     "description": "Our areas of interest include business development, strategy, technology and energy-related solutions. We aim to approach each opportunity with careful evaluation, clear communication and a long-term perspective.",
     "imageAlt": "GII team collaborating in a modern Berlin office atrium",
@@ -3565,7 +3656,6 @@
     "metaTitle": "Contact | GII",
     "eyebrow": "Start a project",
     "title": "Tell us what you want to transform",
-    "subtitle": "Goals. Timeline. German innovation expertise.",
     "description": "Share your goals, timeline and the technologies you want to explore. GII will follow up with a specialist who can help you modernize operations and connect with German innovation.",
     "imageAlt": "GII team welcoming a visitor at a modern Berlin office reception",
     "formHeading": "Contact our team",
