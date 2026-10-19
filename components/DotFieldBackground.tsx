@@ -18,7 +18,7 @@ export default function DotFieldBackground() {
   return (
     <div
       aria-hidden="true"
-      className="pointer-events-none fixed inset-0 z-0 h-[100dvh] w-screen overflow-hidden bg-[var(--background)]"
+      className="pointer-events-none fixed inset-0 z-0 h-[100dvh] w-full overflow-hidden bg-[var(--background)]"
     >
       <DotField
         className="absolute inset-0 h-full w-full"
