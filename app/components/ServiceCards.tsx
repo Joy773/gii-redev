@@ -208,6 +208,13 @@ const ECOMMERCE_RELATED_SERVICES: ServiceItem[] = [
   { id: "digitalization", icon: FiRefreshCcw },
 ];
 
+const SUSTAINABLE_TECHNOLOGY_SERVICES: ServiceItem[] = [
+  { id: "water", icon: FiDroplet },
+  { id: "energy", icon: FiZap },
+  { id: "ventilationHvac", icon: FiWind },
+  { id: "environment", icon: FiCompass },
+];
+
 const SERVICE_CARDS_CONFIG = {
   default: {
     namespace: "serviceCards",
@@ -302,6 +309,12 @@ const SERVICE_CARDS_CONFIG = {
   },
   environment: {
     namespace: "environmentPage.relatedServices",
+    backgroundClassName: "grid-surface-white",
+    cardsClassName: "grid gap-4 sm:grid-cols-2",
+    onDark: false,
+  },
+  sustainableTechnology: {
+    namespace: "sustainableTechnologyPage.relatedServices",
     backgroundClassName: "grid-surface-white",
     cardsClassName: "grid gap-4 sm:grid-cols-2",
     onDark: false,
@@ -567,6 +580,8 @@ export default function ServiceCards({
                                 ? VENTILATION_HVAC_RELATED_SERVICES
                                 : variant === "environment"
                                   ? ENVIRONMENT_RELATED_SERVICES
+                                  : variant === "sustainableTechnology"
+                                    ? SUSTAINABLE_TECHNOLOGY_SERVICES
                                   : variant === "softwareDevelopment"
                                     ? SOFTWARE_DEVELOPMENT_RELATED_SERVICES
                                     : variant === "digitalPlatforms"
