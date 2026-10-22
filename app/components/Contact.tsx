@@ -7,7 +7,6 @@ import {
   FiCheck,
   FiMail,
   FiMapPin,
-  FiPaperclip,
   FiPhone,
 } from "react-icons/fi";
 
@@ -20,7 +19,6 @@ export default function Contact() {
   const t = useTranslations("contactPage");
   const tNav = useTranslations("nav");
   const [email, setEmail] = useState("");
-  const [fileName, setFileName] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
   useEffect(() => {
@@ -193,20 +191,6 @@ export default function Contact() {
               className={`${fieldClass} resize-y`}
             />
           </Field>
-
-          <label className="field-fill mt-4 flex cursor-pointer items-center gap-3 rounded-2xl border border-dashed border-border px-4 py-3 text-sm text-text/70 transition-colors hover:border-primary/35 hover:text-primary">
-            <FiPaperclip className="size-4 shrink-0" aria-hidden="true" />
-            <span className="min-w-0 truncate">
-              {fileName || t("fields.file")}
-            </span>
-            <input
-              type="file"
-              name="brief"
-              className="sr-only"
-              accept=".pdf,.doc,.docx,.txt,.png,.jpg"
-              onChange={(event) => setFileName(event.target.files?.[0]?.name ?? "")}
-            />
-          </label>
 
           <button
             type="submit"
