@@ -175,6 +175,50 @@
       }
     }
   },
+  "productsPage": {
+    "metaTitle": "Technologieprodukte | GII",
+    "eyebrow": "Unsere Produkte",
+    "title": "Produkte für messbare Wirkung",
+    "description": "Entdecken Sie vernetzte digitale und industrielle Lösungen, die Abläufe intelligenter, schneller und widerstandsfähiger machen.",
+    "imageAlt": "Vernetzte industrielle Technologieprodukte und ein digitales Betriebsdashboard",
+    "categories": {
+      "placeholder": "Kategorie auswählen",
+      "clear": "Ausgewählte Kategorie löschen",
+      "items": {
+        "heatPumps": "Wärmepumpen",
+        "heatingSystems": "Heizsysteme",
+        "ventilationHeatRecovery": "Lüftung & Wärmerückgewinnung",
+        "airConditioningCooling": "Klimatisierung & Kühlung",
+        "airPurificationFiltration": "Luftreinigung & Filtration",
+        "humidifiersDehumidifiers": "Luftbefeuchter & Luftentfeuchter",
+        "industrialHeatingVentilation": "Industrielle Heizung & Lüftung"
+      }
+    },
+    "physicalProducts": {
+      "eyebrow": "Komfort durch Technik",
+      "title": "Lösungen für Klimatechnik",
+      "dimensions": "Abmessungen",
+      "items": {
+        "cwp-m-monoblock": {"title":"CWP-M Monoblock-Wärmepumpe","description":"Luft-Wasser-Inverter-Wärmepumpe zum Heizen und Kühlen, geeignet für Fußbodenheizung, Heizkörper und Gebläsekonvektoren.","dimensions":"1150–1200 × 758–878 × 345–460 mm (B × H × T)","specs":[{"label":"Heizleistung","value":"6–15,5 kW"},{"label":"Kühlleistung","value":"5,8–14,5 kW"},{"label":"COP","value":"4,30–5,0"},{"label":"Kältemittel","value":"R32"}]},
+        "cwp-sh-split": {"title":"CWP-SH Split-Wärmepumpe","description":"Luft-Wasser-Splitsystem mit Außen- und Hydro-Innengerät einschließlich zweistufiger elektrischer Zusatzheizung.","dimensions":"Innen: 460 × 860 × 318 mm; Außengerät je nach Leistung","specs":[{"label":"Heizleistung","value":"6–15,5 kW"},{"label":"Kühlleistung","value":"4,09–11,6 kW"},{"label":"Schalldruck","value":"34–40 dB(A) bei 10 m"},{"label":"Arbeitsbereich","value":"−25 bis +35 °C"}]},
+        "cwp-sb-split": {"title":"CWP-SB Split-Wärmepumpe","description":"Heiz- und Kühlsystem aus Außengerät, Hydro-Innengerät und integriertem Brauchwasserspeicher.","dimensions":"Innen: 460 × 860 × 318 mm; Außengerät je nach Leistung","specs":[{"label":"Heizleistung","value":"6–15,5 kW"},{"label":"Kühlleistung","value":"4,09–11,6 kW"},{"label":"Speicher","value":"200 L"},{"label":"Kältemittel","value":"R32"}]},
+        "bws300-hot-water-tank": {"title":"BWS 300 Brauchwasserspeicher","description":"Doppelt emaillierter Brauchwasserspeicher mit zwei Glattrohr-Wärmetauschern für den direkten Wärmepumpenanschluss.","dimensions":"Ø 620 × 1725 mm","specs":[{"label":"Inhalt","value":"300 L"},{"label":"E-Patrone","value":"3 kW"},{"label":"Isolierung","value":"50 mm PU-Hartschaum"},{"label":"Gewicht","value":"150 kg"}]},
+        "srh-sound-reduction-hood": {"title":"SRH Schallreduzierungshaube","description":"Witterungsbeständige Einhausung für Wärmepumpen und Klimageräte bei geräuschsensiblen Aufstellbedingungen.","dimensions":"1385 × 1155 × 1100 mm (B × H × T)","specs":[{"label":"Reduzierung","value":"Bis 15 dB(A)"},{"label":"Material","value":"EPP-Polypropylen"},{"label":"Brandschutz","value":"Klasse B2"},{"label":"Gewicht","value":"40 kg"}]},
+        "cwp-16sh": {"title":"CWP 16 SH Hochleistungs-Wärmepumpe","description":"Split-Wärmepumpe zum Heizen und Kühlen, optional mit Brauchwasserspeicher erhältlich.","dimensions":"Außen- und Innengerät; Maße abhängig von der Konfiguration","specs":[{"label":"Leistung","value":"6–16 kW"},{"label":"Funktionen","value":"Heizen und Kühlen"},{"label":"Ausführung","value":"Split-System"}]},
+        "ce200-heat-recovery": {"title":"CE 200 Lüftung mit Wärmerückgewinnung","description":"Dezentrales Zu- und Abluftgerät mit Wärmerückgewinnung für eine ausgeglichene Raumlüftung.","dimensions":"270 × 270 × 330–550 mm (B × H × T)","specs":[{"label":"Luftmenge max.","value":"300 m³/h"},{"label":"Luftmenge min.","value":"75 m³/h"},{"label":"Wirkungsgrad","value":"Bis 75 %"}]},
+        "ce100-sn-heat-recovery": {"title":"CE 100 SN Lüftung mit Wärmerückgewinnung","description":"Platzsparendes dezentrales Lüftungsgerät für horizontale oder vertikale Montage mit nur zwei Wanddurchführungen.","dimensions":"610 × 386 × 140 mm (B × H × T)","specs":[{"label":"Luftmenge","value":"110 m³/h"},{"label":"Wärmerückgewinnung","value":"Bis 90 %"},{"label":"Wandöffnungen","value":"2 × 100 mm"}]},
+        "r12-hp": {"title":"R12 HP Kompakt-Wärmepumpe","description":"Kompaktes Wandgerät zum Heizen und Kühlen ohne sichtbares Außengerät.","dimensions":"980 × 610 × 350 mm (B × H × T)","specs":[{"label":"Kühlleistung","value":"3,0 kW"},{"label":"Heizleistung","value":"3,0 kW"},{"label":"Luftmenge","value":"490 m³/h"},{"label":"Anschluss","value":"230 V"}]},
+        "dt2000-wall-heater": {"title":"DT 2000 Wandheizgerät","description":"Spezial-Wandheizgerät mit begrenzter Oberflächen- und Ausblastemperatur für sensible Aufenthaltsbereiche.","dimensions":"Wandmontage; modellspezifische Abmessungen","specs":[{"label":"Heizleistung","value":"1 / 1,5 / 2 kW"},{"label":"Temperaturlimit","value":"Bis +60 °C"},{"label":"Einsatz","value":"Schulen, Pflegeheime, Wohnräume"}]},
+        "eh2000-electric-heater": {"title":"EH 2000 Elektroheizer","description":"Steckerfertiges Elektroheizgerät mit oszillierender Wärmeverteilung für flexible Raumbeheizung.","dimensions":"240 × 604 × 190 mm (B × H × T)","specs":[{"label":"Heizleistung","value":"2 kW"},{"label":"Anschluss","value":"Steckerfertig"},{"label":"Verteilung","value":"Oszillierend"}]},
+        "vf15-fan-heater": {"title":"VF 15 Industrie-Heizlüfter","description":"Mobiler Elektro-Heizlüfter für Industrie, Gewerbe, Baustellen und Landwirtschaft.","dimensions":"Mobiles Industriegehäuse; modellspezifische Abmessungen","specs":[{"label":"Heizleistung","value":"15 kW"},{"label":"Anschluss","value":"400 V CEE"},{"label":"Baureihe","value":"2–15 kW"}]},
+        "cls20-air-heater": {"title":"CLS 20 Außen-Lufterhitzer","description":"Wettergeschützter Lufterhitzer für Industrieumgebungen und den Frostschutz außenliegender Rohrleitungen.","dimensions":"Individuelle Einbaumaße","specs":[{"label":"Heizleistung","value":"15 / 18 / 20 / 25 kW+"},{"label":"Aufstellung","value":"Außen"},{"label":"Einsatz","value":"Industrieheizung und Frostschutz"}]},
+        "cb40-dehumidifier": {"title":"CB 40 Luftentfeuchter","description":"Mobiler Hochleistungs-Luftentfeuchter für Räume bis 200 m³ sowie Gewerbe- und Trocknungseinsätze.","dimensions":"312 × 635 × 453 mm (B × H × T)","specs":[{"label":"Entfeuchtung","value":"40 L/Tag"},{"label":"Luftmenge","value":"240 m³/h"},{"label":"Raumvolumen","value":"Bis 200 m³"}]},
+        "cb30s-dehumidifier": {"title":"CB 30 S Hochleistungs-Luftentfeuchter","description":"Robuster Entfeuchter für Bautrocknung und Schwimmhallen, ausgelegt bis 30 °C und 80 % relativer Luftfeuchte.","dimensions":"380 × 630 × 400 mm (B × H × T)","specs":[{"label":"Entfeuchtung","value":"30 L/Tag"},{"label":"Einsatz","value":"Bau- und Schwimmhallentrocknung"},{"label":"Max. Bedingung","value":"30 °C / 80 % r. F."}]},
+        "aqc450-air-quality-center": {"title":"AQC 450 Luftqualitäts-Center","description":"Kombigerät für Luftbefeuchtung, Luftreinigung und Beduftung mit Warm- und Kaltnebelbetrieb.","dimensions":"284 × 318 × 165 mm (B × H × T)","specs":[{"label":"Raumgröße","value":"Bis 27 m²"},{"label":"Leistung","value":"450 / 250 ml/h"},{"label":"Tank","value":"5 L"},{"label":"Verbindung","value":"Integriertes WLAN"}]},
+        "acs300-air-purifier": {"title":"ACS 300 Luftreiniger","description":"Steckerfertiger Universal-Luftreiniger mit medizinischem Filter gegen Pollen, Abgase, Grillgerüche und Tabakrauch.","dimensions":"Kompaktes mobiles Format; Maße im Katalog nicht angegeben","specs":[{"label":"Luftmenge","value":"Bis 300 m³/h"},{"label":"Filter","value":"Medizinische Qualität"},{"label":"Anschluss","value":"Steckerfertig"}]}
+      }
+    }
+  },
   "projects": {
     "eyebrow": "Technologie in der Praxis",
     "title": "Ausgewählte Projekte aus verschiedenen Branchen",
