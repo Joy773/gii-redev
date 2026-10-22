@@ -27,6 +27,8 @@ const INSIGHTS_HERO_IMAGE = "/hero/insights-hero.jpg";
 const PROJECTS_HERO_IMAGE =
   "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2400&q=80";
 
+const PRODUCTS_HERO_IMAGE = "/hero/products-hero.webp";
+
 const INDUSTRIES_HERO_IMAGE =
   "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=2400&q=80";
 
@@ -1560,6 +1562,7 @@ type HeroProps = {
     | "home"
     | "about"
     | "projects"
+    | "products"
     | "insights"
     | "contact"
     | "consultancy"
@@ -1588,6 +1591,7 @@ export default function Hero({ variant = "home" }: HeroProps) {
   const isHome = variant === "home";
   const isAbout = variant === "about";
   const isProjects = variant === "projects";
+  const isProducts = variant === "products";
   const isInsights = variant === "insights";
   const isContact = variant === "contact";
   const isConsultancy = variant === "consultancy";
@@ -1612,6 +1616,7 @@ export default function Hero({ variant = "home" }: HeroProps) {
   const isEcommerce = variant === "ecommerce";
   const isImageHero =
     isProjects ||
+    isProducts ||
     isResearch ||
     isConsultancy ||
     isAbout ||
@@ -1639,6 +1644,7 @@ export default function Hero({ variant = "home" }: HeroProps) {
   const isCompact =
     isAbout ||
     isProjects ||
+    isProducts ||
     isInsights ||
     isContact ||
     isConsultancy ||
@@ -1665,6 +1671,8 @@ export default function Hero({ variant = "home" }: HeroProps) {
       ? "aboutPage"
       : isProjects
         ? "projects"
+        : isProducts
+          ? "productsPage"
         : isInsights
           ? "insightsPage"
           : isContact
@@ -1716,6 +1724,8 @@ export default function Hero({ variant = "home" }: HeroProps) {
   const titleWords = t("title").split(" ");
   const imageHeroSrc = isProjects
     ? PROJECTS_HERO_IMAGE
+    : isProducts
+      ? PRODUCTS_HERO_IMAGE
     : isResearch
       ? RESEARCH_HERO_IMAGE
       : isConsultancy
@@ -1911,7 +1921,7 @@ export default function Hero({ variant = "home" }: HeroProps) {
             </p>
           )}
 
-          {!isHome && !isProjects && !isResearch && !isIndustries && !isConsultancy && !isContact && !isAbout && (
+          {!isHome && !isProjects && !isProducts && !isResearch && !isIndustries && !isConsultancy && !isContact && !isAbout && (
             <p
               className={
                 isHome || isImageHero
