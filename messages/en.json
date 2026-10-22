@@ -175,6 +175,50 @@
       }
     }
   },
+  "productsPage": {
+    "metaTitle": "Technology Products | GII",
+    "eyebrow": "Our Products",
+    "title": "Products Built for Real-World Impact",
+    "description": "Explore connected digital and industrial solutions designed to make operations smarter, faster and more resilient.",
+    "imageAlt": "Connected industrial technology products and a digital operations dashboard",
+    "categories": {
+      "placeholder": "Choose a category",
+      "clear": "Clear selected category",
+      "items": {
+        "heatPumps": "Heat Pumps",
+        "heatingSystems": "Heating Systems",
+        "ventilationHeatRecovery": "Ventilation & Heat Recovery",
+        "airConditioningCooling": "Air Conditioning & Cooling",
+        "airPurificationFiltration": "Air Purification & Filtration",
+        "humidifiersDehumidifiers": "Humidifiers & Dehumidifiers",
+        "industrialHeatingVentilation": "Industrial Heating & Ventilation"
+      }
+    },
+    "physicalProducts": {
+      "eyebrow": "Engineered comfort",
+      "title": "Climate technology solutions",
+      "dimensions": "Dimensions",
+      "items": {
+        "cwp-m-monoblock": {"title":"CWP-M Monoblock Heat Pump","description":"Air-to-water inverter heat pump for heating and cooling, suitable for underfloor heating, radiators and fan coils.","dimensions":"1150–1200 × 758–878 × 345–460 mm (W × H × D)","specs":[{"label":"Heating","value":"6–15.5 kW"},{"label":"Cooling","value":"5.8–14.5 kW"},{"label":"COP","value":"4.30–5.0"},{"label":"Refrigerant","value":"R32"}]},
+        "cwp-sh-split": {"title":"CWP-SH Split Heat Pump","description":"Split air-to-water system with outdoor unit and hydro indoor module, including staged electric auxiliary heating.","dimensions":"Indoor: 460 × 860 × 318 mm; outdoor sizes vary by output","specs":[{"label":"Heating","value":"6–15.5 kW"},{"label":"Cooling","value":"4.09–11.6 kW"},{"label":"Sound pressure","value":"34–40 dB(A) at 10 m"},{"label":"Operating range","value":"−25 to +35 °C"}]},
+        "cwp-sb-split": {"title":"CWP-SB Split Heat Pump","description":"Heating and cooling system combining an outdoor unit with an indoor hydro module and integrated domestic hot-water storage.","dimensions":"Indoor: 460 × 860 × 318 mm; outdoor sizes vary by output","specs":[{"label":"Heating","value":"6–15.5 kW"},{"label":"Cooling","value":"4.09–11.6 kW"},{"label":"Hot-water tank","value":"200 L"},{"label":"Refrigerant","value":"R32"}]},
+        "bws300-hot-water-tank": {"title":"BWS 300 Hot-Water Tank","description":"Double-enamelled domestic hot-water tank with two smooth-tube heat exchangers, designed for direct heat-pump connection.","dimensions":"Ø 620 × 1725 mm","specs":[{"label":"Capacity","value":"300 L"},{"label":"Electric element","value":"3 kW"},{"label":"Insulation","value":"50 mm PU foam"},{"label":"Weight","value":"150 kg"}]},
+        "srh-sound-reduction-hood": {"title":"SRH Sound-Reduction Hood","description":"Weather-resistant enclosure for heat pumps and air-conditioning units in noise-sensitive installation areas.","dimensions":"1385 × 1155 × 1100 mm (W × H × D)","specs":[{"label":"Noise reduction","value":"Up to 15 dB(A)"},{"label":"Material","value":"EPP polypropylene"},{"label":"Fire class","value":"B2"},{"label":"Weight","value":"40 kg"}]},
+        "cwp-16sh": {"title":"CWP 16 SH High-Performance Heat Pump","description":"High-performance split heat pump for space heating and cooling, available with domestic hot-water storage options.","dimensions":"Outdoor and indoor modules; dimensions depend on configuration","specs":[{"label":"Output range","value":"6–16 kW"},{"label":"Functions","value":"Heating and cooling"},{"label":"Configuration","value":"Split system"}]},
+        "ce200-heat-recovery": {"title":"CE 200 Heat-Recovery Ventilation","description":"Decentralized supply and extract-air ventilation unit with heat recovery for balanced room ventilation.","dimensions":"270 × 270 × 330–550 mm (W × H × D)","specs":[{"label":"Maximum airflow","value":"300 m³/h"},{"label":"Minimum airflow","value":"75 m³/h"},{"label":"Efficiency","value":"Up to 75%"}]},
+        "ce100-sn-heat-recovery": {"title":"CE 100 SN Heat-Recovery Ventilation","description":"Space-saving decentralized ventilation unit for horizontal or vertical installation using only two wall penetrations.","dimensions":"610 × 386 × 140 mm (W × H × D)","specs":[{"label":"Airflow","value":"110 m³/h"},{"label":"Heat recovery","value":"Up to 90%"},{"label":"Wall penetrations","value":"2 × 100 mm"}]},
+        "r12-hp": {"title":"R12 HP Compact Heat Pump","description":"Compact wall-mounted heating and cooling unit that operates without a visible outdoor unit.","dimensions":"980 × 610 × 350 mm (W × H × D)","specs":[{"label":"Cooling","value":"3.0 kW"},{"label":"Heating","value":"3.0 kW"},{"label":"Airflow","value":"490 m³/h"},{"label":"Supply","value":"230 V"}]},
+        "dt2000-wall-heater": {"title":"DT 2000 Wall-Mounted Heater","description":"Special wall heater with regulated surface and outlet-air temperature, intended for sensitive occupied spaces.","dimensions":"Wall-mounted format; model-specific dimensions","specs":[{"label":"Heating capacities","value":"1 / 1.5 / 2 kW"},{"label":"Temperature limit","value":"Up to +60 °C"},{"label":"Applications","value":"Schools, care facilities, living spaces"}]},
+        "eh2000-electric-heater": {"title":"EH 2000 Electric Heater","description":"Plug-in electric heater with oscillating heat distribution for flexible room heating.","dimensions":"240 × 604 × 190 mm (W × H × D)","specs":[{"label":"Heating output","value":"2 kW"},{"label":"Connection","value":"Plug-in"},{"label":"Distribution","value":"Oscillating"}]},
+        "vf15-fan-heater": {"title":"VF 15 Heavy-Duty Fan Heater","description":"Portable heavy-duty electric fan heater for industrial, commercial, construction and agricultural use.","dimensions":"Portable industrial enclosure; model-specific dimensions","specs":[{"label":"Heating output","value":"15 kW"},{"label":"Supply","value":"400 V CEE"},{"label":"Series range","value":"2–15 kW"}]},
+        "cls20-air-heater": {"title":"CLS 20 Outdoor Air Heater","description":"Weather-protected outdoor air heater designed for industrial environments and frost protection of external pipework.","dimensions":"Custom installation dimensions","specs":[{"label":"Heating capacities","value":"15 / 18 / 20 / 25 kW+"},{"label":"Installation","value":"Outdoor"},{"label":"Use","value":"Industrial heating and frost protection"}]},
+        "cb40-dehumidifier": {"title":"CB 40 Dehumidifier","description":"Mobile high-capacity dehumidifier for rooms up to 200 m³, designed for commercial and restoration work.","dimensions":"312 × 635 × 453 mm (W × H × D)","specs":[{"label":"Extraction","value":"40 L/day"},{"label":"Airflow","value":"240 m³/h"},{"label":"Room volume","value":"Up to 200 m³"}]},
+        "cb30s-dehumidifier": {"title":"CB 30 S Heavy-Duty Dehumidifier","description":"Rugged dehumidifier for building drying and swimming-pool applications, designed for operation up to 30 °C and 80% RH.","dimensions":"380 × 630 × 400 mm (W × H × D)","specs":[{"label":"Extraction","value":"30 L/day"},{"label":"Application","value":"Building and pool drying"},{"label":"Maximum condition","value":"30 °C / 80% RH"}]},
+        "aqc450-air-quality-center": {"title":"AQC 450 Air Quality Center","description":"Combined humidification, air-purification and fragrance-diffusion unit with hot- and cold-mist operation.","dimensions":"284 × 318 × 165 mm (W × H × D)","specs":[{"label":"Room size","value":"Up to 27 m²"},{"label":"Output","value":"450 / 250 ml/h"},{"label":"Tank","value":"5 L"},{"label":"Connectivity","value":"Integrated Wi-Fi"}]},
+        "acs300-air-purifier": {"title":"ACS 300 Air Purifier","description":"Universal plug-in air purifier with a medical-grade filter for pollen, exhaust fumes, barbecue odours and tobacco smoke.","dimensions":"Compact mobile format; dimensions not specified in catalog","specs":[{"label":"Airflow","value":"Up to 300 m³/h"},{"label":"Filter","value":"Medical-grade"},{"label":"Connection","value":"Plug-in"}]}
+      }
+    }
+  },
   "projects": {
     "eyebrow": "Technology in Action",
     "title": "Selected projects across industries",
